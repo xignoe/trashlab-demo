@@ -129,7 +129,7 @@ describe('accounts table', () => {
 
   it('windows thousands of rows instead of rendering them all', () => {
     const { container } = renderList('?sample=5000')
-    expect(screen.getByText(/of|accounts/, { selector: '.accounts-foot > span:first-child' }).textContent).toMatch(/^5,0\d\d accounts$/)
+    expect(screen.getByText(/^5,0\d\d accounts$/, { selector: '.accounts-foot-left span' })).toBeTruthy()
     expect(container.querySelectorAll('tr.accounts-row').length).toBeLessThan(100)
   })
 })

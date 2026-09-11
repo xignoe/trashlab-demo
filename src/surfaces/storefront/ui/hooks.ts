@@ -5,6 +5,7 @@ import { useCallback, useMemo } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { resolvePrice } from '../../../store/engine';
 import { useStore } from '../../../store/useStore';
+import { tenantById, type TenantProfile } from '../../../tenants';
 import type { FeeRule } from '../../../types';
 import { formatCents } from '../lib/money';
 import {
@@ -19,6 +20,20 @@ import { viewOf, type SfView } from '../lib/view';
 /** The keyed view of the live Db and the storefront sidecars. The same object until one of them changes. */
 export function useView(): SfView {
   return useStore((s) => viewOf(s));
+}
+
+/**
+ * The signed-in hauler (src/tenants). The storefront reads it for the things that are the company rather than the
+ * data: which lines of business it sells, its service area, its phone, and any promotion it advertises. Prices,
+ * zones, and routes still come from the Db, because those are the hauler's world rather than its profile.
+ */
+export function useTenantProfile(): TenantProfile {
+  return useStore((s) => tenantById(s.tenantId));
+}
+
+/** Whether this hauler sells curbside service to homeowners. False closes the residential path in the storefront. */
+export function useSellsResidential(): boolean {
+  return useTenantProfile().lines.includes('residential');
 }
 
 const setUi: StorefrontUiSetter = (patch) => useStore.getState().sfSetUi(patch);

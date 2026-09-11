@@ -9,9 +9,8 @@ import type { SeedAddress } from '../../../seed';
 import { useStore } from '../../../store/useStore';
 import { pathFor } from '../lib/paths';
 import { formatAddress, searchAddresses } from '../lib/serviceability';
-import { ADDRESS_BOOK } from '../lib/view';
 import { Container, cx, PrimaryButton } from './components';
-import { useUi } from './hooks';
+import { useUi, useView } from './hooks';
 
 export const LANDING_SENTENCE = 'Enter your address to confirm service, see your complete price, and get your earliest start date.';
 
@@ -30,7 +29,9 @@ export function Landing() {
   const business = useUi((s) => s.business);
   const navigate = useNavigate();
 
-  const matches = useMemo(() => searchAddresses(query, { addresses: ADDRESS_BOOK }), [query]);
+  // The signed-in hauler's address book, so the typeahead only ever offers addresses this hauler serves.
+  const addresses = useView().addresses;
+  const matches = useMemo(() => searchAddresses(query, { addresses }), [query, addresses]);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);

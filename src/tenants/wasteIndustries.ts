@@ -1,0 +1,201 @@
+/**
+ * Waste Industries Inc., Elizabeth NJ. Read from https://www.waste-industries.com on 2026-09-11, plus the company's
+ * "Roll Off Containers" spec sheet (Kevin, 2026-09-11).
+ *
+ * The full-service hauler of the three: municipal and residential curbside, commercial solid waste and recycling,
+ * construction and demolition roll-off, and compactors, across Essex, Middlesex, Somerset, Passaic, and Bergen
+ * counties. It is the tenant where all three onboarding paths are open.
+ *
+ * What is real: the name, the service lines, the counties and towns, the yard at 800 East Grand Street, the phone
+ * and email, the yellow on navy brand, and the four roll-off classes with their dimensions, capacity, and intended
+ * jobs. Waste Industries markets its smallest box as one "10-15 cubic yard" class, so that is its name here; it sits
+ * on the shared cat_ro_10yd id because the storefront's size table matches on id, not name. The company publishes no
+ * prices, so every rate below is modeled at New Jersey market levels.
+ */
+import type { TenantConfig } from './types';
+
+export const wasteIndustries: TenantConfig = {
+  id: 'waste-industries',
+  name: 'Waste Industries',
+  shortName: 'Waste Industries',
+  tagline: 'Streamline waste management with dependable collection',
+  phone: '(908) 436-1966',
+  email: 'info@waste-industries.com',
+  address: '800 East Grand Street',
+  city: 'Elizabeth',
+  state: 'NJ',
+  serviceArea: ['Elizabeth', 'Newark', 'Linden', 'Union', 'Hillside', 'Roselle', 'Clifton', 'Paterson'],
+  lines: ['residential', 'frontload', 'rolloff'],
+  brand: {
+    accent: '#16324F',
+    onAccent: '#FFFFFF',
+    deep: '#0E2338',
+    mark: '#FFC425',
+    bg: '#F4F6FA',
+  },
+  source: 'https://www.waste-industries.com',
+  note: 'Service lines, counties, address, phone, email, brand, and the four roll-off container classes are from the live site and its roll-off spec sheet. The company publishes no rates, so prices here are modeled at New Jersey market levels.',
+  // New Jersey charges sales tax on solid waste collection at the state rate.
+  taxRatePct: 6.625,
+  fuelPct: 7,
+  envFeeCents: 150,
+  zones: [
+    { id: 'zone_open', name: 'Open market, Union and Essex', serviceability: 'open' },
+    { id: 'zone_franchise', name: 'Newark municipal contract (City of Newark)', serviceability: 'franchise', franchiseFeePct: 15 },
+    { id: 'zone_boundary', name: 'Bergen and Passaic edge', serviceability: 'boundary', deliveryFeeCents: 3500 },
+    { id: 'zone_notserved', name: 'Outside the service area', serviceability: 'notServed' },
+  ],
+  routes: [
+    { id: 'route_mon_res', day: 'Mon', lob: 'residential' },
+    { id: 'route_tue_res', day: 'Tue', lob: 'residential' },
+    { id: 'route_wed_fl', day: 'Wed', lob: 'frontload' },
+    { id: 'route_thu_ro', day: 'Thu', lob: 'rolloff' },
+  ],
+  services: [
+    { catalogId: 'cat_res_96', rates: { weekly: 3400 } },
+    { catalogId: 'cat_res_64', rates: { weekly: 3000 } },
+    { catalogId: 'cat_res_extra_cart', rates: { weekly: 1100 } },
+    { catalogId: 'cat_res_recycling', rates: { eow: 1200, weekly: 1800 } },
+    { catalogId: 'cat_fl_2yd', rates: { eow: 14000, weekly: 21000, '2x': 34000, '3x': 46000 } },
+    { catalogId: 'cat_fl_3yd', rates: { eow: 17000, weekly: 25500, '2x': 41000, '3x': 55000, '4x': 68000 } },
+    { catalogId: 'cat_fl_4yd', rates: { eow: 20000, weekly: 30000, '2x': 48000, '3x': 64500, '4x': 80000 } },
+    { catalogId: 'cat_fl_6yd', rates: { eow: 25500, weekly: 38000, '2x': 61000, '3x': 82000, '4x': 101000, '5x': 119000 } },
+    { catalogId: 'cat_fl_8yd', rates: { eow: 31000, weekly: 46000, '2x': 74000, '3x': 99500, '4x': 123000, '5x': 145000, '6x': 166000 } },
+    // The four roll-off classes, as the company's spec sheet names and describes them.
+    {
+      catalogId: 'cat_ro_10yd',
+      name: '10-15 cubic yard roll-off',
+      sizeLabel: '10-15 yd',
+      description: "15'-20' long x 8' wide x 4' tall. Open top holds about 5-6 pickup truck loads. Ideal for a small construction, renovation, or landscaping project.",
+      rates: { onCall: 47500 },
+      includedTons: 2,
+    },
+    {
+      catalogId: 'cat_ro_20yd',
+      name: '20 cubic yard roll-off',
+      sizeLabel: '20 yd',
+      description: "20' long x 8' wide x 4' tall. Open top holds about 10 pickup truck loads. Ideal for small to medium construction projects or garage cleanouts.",
+      rates: { onCall: 52500 },
+      includedTons: 3,
+    },
+    {
+      catalogId: 'cat_ro_30yd',
+      name: '30 cubic yard roll-off',
+      sizeLabel: '30 yd',
+      description: "20' long x 8' wide x 6' tall. Open top holds about 15 pickup truck loads. Ideal for commercial construction, large residential renovations, or large cleanouts.",
+      rates: { onCall: 58500 },
+      includedTons: 4,
+    },
+    {
+      catalogId: 'cat_ro_40yd',
+      name: '40 cubic yard roll-off',
+      sizeLabel: '40 yd',
+      description: "20' long x 8' wide x 8' tall. Open top holds about 20 pickup truck loads. Ideal for large construction jobs, new home construction, or a large cleanout project.",
+      rates: { onCall: 64500 },
+      includedTons: 5,
+    },
+    { catalogId: 'cat_ro_compactor_30yd', rates: {}, includedTons: 6 },
+  ],
+  rolloff: {
+    freeRadiusMiles: 12,
+    tripCentsPerMile: 400,
+    swapCents: 32500,
+    relocationCents: 8500,
+    dryRunCents: 17500,
+    prohibited: ['Hazardous'],
+  },
+  customers: [
+    {
+      key: 'wi_reyes',
+      name: 'Daniela Reyes',
+      kind: 'homeowner',
+      address: '318 Magnolia Ave, Elizabeth, NJ 07206',
+      zoneId: 'zone_open',
+      routeId: 'route_mon_res',
+      cycle: 'quarterly',
+      lines: [
+        { catalogId: 'cat_res_96', qty: 1, frequency: 'weekly' },
+        { catalogId: 'cat_res_recycling', qty: 1, frequency: 'eow' },
+      ],
+      role: 'Homeowner, residential curbside',
+      blurb: 'A 96 gallon cart and recycling on the Monday route. Bills quarterly.',
+    },
+    {
+      key: 'wi_ironbound',
+      name: 'Ironbound Grill',
+      kind: 'business',
+      address: '742 Ferry St, Newark, NJ 07105',
+      zoneId: 'zone_open',
+      routeId: 'route_wed_fl',
+      cycle: 'monthly',
+      accessNotes: 'Container in the rear alley, gate opens at 6am',
+      lines: [{ catalogId: 'cat_fl_4yd', qty: 1, frequency: '3x' }],
+      role: 'Restaurant, commercial front load',
+      blurb: 'A 4 yard container emptied three times a week. Bills monthly.',
+    },
+    {
+      key: 'wi_kearny',
+      name: 'Kearny Builders LLC',
+      kind: 'contractor',
+      address: '55 Central Ave, Kearny, NJ 07032',
+      zoneId: 'zone_open',
+      routeId: 'route_thu_ro',
+      cycle: 'perJob',
+      lines: [{ catalogId: 'cat_ro_30yd', qty: 1, frequency: 'onCall' }],
+      role: 'Contractor, roll-off',
+      blurb: 'A 30 yard box on a job site, hauled on call and billed per job.',
+    },
+  ],
+  addresses: [
+    {
+      id: 'wi_addr_open_res',
+      label: 'Residential, Monday route',
+      line1: '204 Bayway Ave',
+      city: 'Elizabeth',
+      state: 'NJ',
+      zip: '07202',
+      zoneId: 'zone_open',
+      routeId: 'route_mon_res',
+    },
+    {
+      id: 'wi_addr_open_res2',
+      label: 'Residential, Tuesday route',
+      line1: '1130 Liberty Ave',
+      city: 'Hillside',
+      state: 'NJ',
+      zip: '07205',
+      zoneId: 'zone_open',
+      routeId: 'route_tue_res',
+    },
+    {
+      id: 'wi_addr_open_comm',
+      label: 'Commercial, Wednesday front load route',
+      line1: '89 Frelinghuysen Ave',
+      city: 'Newark',
+      state: 'NJ',
+      zip: '07114',
+      zoneId: 'zone_open',
+      routeId: 'route_wed_fl',
+    },
+    {
+      id: 'wi_addr_franchise',
+      label: 'Inside the Newark municipal contract',
+      line1: '920 Broad St',
+      city: 'Newark',
+      state: 'NJ',
+      zip: '07102',
+      zoneId: 'zone_franchise',
+      franchiseHolder: 'City of Newark',
+    },
+    {
+      id: 'wi_addr_boundary',
+      label: 'Edge of the service area, private road',
+      line1: '77 Ridge Rd',
+      city: 'Paramus',
+      state: 'NJ',
+      zip: '07652',
+      zoneId: 'zone_boundary',
+      boundaryReason: 'private road access',
+    },
+  ],
+};

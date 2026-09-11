@@ -783,16 +783,19 @@
     .accounts-empty { padding: var(--space-6); text-align: center; }
     .accounts-foot {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       gap: var(--space-4);
-      padding: 10px var(--space-5);
+      padding: 8px var(--space-5);
       border-top: 1px solid var(--line);
       font-size: var(--text-sm);
       line-height: 16px;
       font-weight: var(--weight-meta);
       color: var(--ink-2);
     }
-    .accounts-foot-totals { display: flex; gap: var(--space-6); }
+    .accounts-foot-totals { display: flex; gap: var(--space-6); align-items: center; }
+    /* the Add account button sits at the left of the footer, beside the row count */
+    .accounts-foot-left { display: flex; align-items: center; gap: var(--space-3); }
     .accounts-foot-totals .mono { color: var(--ink); font-weight: var(--weight-label); margin-left: 6px; }
     .accounts-foot-totals .mono.danger-text { color: var(--danger); }
     .rail-back { font-family: var(--font-heading); font-size: var(--text-sm); font-weight: var(--weight-label); }

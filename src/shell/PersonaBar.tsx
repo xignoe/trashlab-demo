@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useStore } from '../store/useStore'
+import { tenantById } from '../tenants'
 import { today } from '../store/clock'
 import { describeOpenItems, OPEN_ITEM_SELECTORS, type OpenItemKey } from './openItems'
 import { isScreenActive, PERSONAS, personaFor, type Screen } from './routes'
@@ -49,10 +50,15 @@ export function PersonaBar() {
   const day = useStore(() => today())
   const reset = useStore(s => s.reset)
   const counts = useOpenItemCounts()
+  // Which hauler's world is showing, and who is sitting in it. Both come from the store, so every screen agrees.
+  const tenant = useStore(s => tenantById(s.tenantId))
+  const session = useStore(s => s.tenantSession)
 
   return (
     <header className="pb-bar" data-testid="persona-bar">
-      <Link to="/" className="pb-brand">TrashLab</Link>
+      <Link to="/login" className="pb-brand" title="Sign in as another hauler" data-testid="tenant-brand">
+        {tenant.shortName}
+      </Link>
       <nav className="pb-personas" aria-label="Persona">
         {PERSONAS.map(p => {
           const keys = keysOf(p.screens)
@@ -93,6 +99,14 @@ export function PersonaBar() {
         </nav>
       )}
       <div className="pb-right">
+        {session ? (
+          <span className="pb-clock" title={`Signed in to ${tenant.name}`} data-testid="tenant-session">
+            <span className="pb-clock-label">Signed in</span> {session.name}
+          </span>
+        ) : null}
+        <Link to="/login" className="pb-reset" data-testid="switch-tenant">
+          Switch hauler
+        </Link>
         <span className="pb-clock" title="Demo clock. Every surface reads this date; Next cycle on Accounts moves it.">
           <span className="pb-clock-label">Today</span> {clockLabel(day)}
         </span>

@@ -25,6 +25,7 @@ import {
   type NextRunPreview, type PriceExplanation,
 } from './lib/engine'
 import { nextId } from './lib/ids'
+import { isClosedAccount } from './lib/lifecycle'
 import type { LedgerWrite, ServiceChangeArgs, ServiceChangePlan, StatusChange, SuspensionReason } from './lib/types'
 
 /** The five accounts pinned in the rail, in the order the checklist names them. Account ids are shared across seeds. */
@@ -852,6 +853,8 @@ export interface AccountRow {
   monthlyRevenueCents: number
   /** Lines left out of monthlyRevenueCents because no published price resolves for them. */
   unpricedLines: number
+  /** Closed by the office: suspended with every service line ended (isClosedAccount). */
+  isClosed: boolean
   balanceCents: number
   pastDueCents: number
   /** Days since the oldest past-due invoice fell due; 0 when nothing is past due. */
@@ -896,12 +899,14 @@ export function buildAccountRows(db: Db): AccountRow[] {
   return db.accounts.map((account): AccountRow => {
     const payer = parties.get(account.payerPartyId)
     const sites = sitesByAccount.get(account.id) ?? []
+    const accountItems: ServiceItem[] = []
     let serviceCount = 0
     let openItems = 0
     let monthlyRevenueCents = 0
     let unpricedLines = 0
     for (const site of sites) {
       for (const item of itemsBySite.get(site.id) ?? []) {
+        accountItems.push(item)
         if (item.status !== 'ended') serviceCount += 1
         const inForce = dayOf(item.effectiveFrom) <= now && (item.effectiveTo === undefined || dayOf(item.effectiveTo) > now)
         if (account.status === 'suspended' || item.status !== 'active' || item.frequency === 'onCall' || !inForce) continue
@@ -948,6 +953,7 @@ export function buildAccountRows(db: Db): AccountRow[] {
       autopay: account.autopay,
       deliveryMethod: account.deliveryMethod,
       serviceCount,
+      isClosed: isClosedAccount(account, accountItems),
       monthlyRevenueCents,
       unpricedLines,
       balanceCents,

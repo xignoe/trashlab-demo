@@ -18,9 +18,6 @@ export interface InvariantResult {
 /** Any object whose keys are store fields and actions: the root store in the app, a fake in a test. */
 export type StoreSurface = Record<string, unknown>
 
-const PAIRED_PAYMENT = 'pay_chk_oakridge'
-const PAIRED_BATCH = 'batch_0908'
-
 /** Invariant 2: every Charge carries base, fees, tax, source, and ruleWon, and base + fees + tax = total. */
 export function checkChargeShape(state: Db): InvariantResult {
   const bad = state.charges.filter(
@@ -87,33 +84,56 @@ export function checkWaivedKept(store: StoreSurface, state: Db, seedWaived: read
   }
 }
 
-/** Invariant 6: allocation is many-to-many, and a batch splits into gross, fees, and per-invoice allocations. */
+/**
+ * Invariant 6: allocation is many-to-many, and a batch splits into gross, fees, and per-invoice allocations.
+ *
+ * The check is on the property, not on particular rows. It takes whichever payment on this hauler's books spreads
+ * across the most invoices and asks whether it splits cleanly, then asks the same of every processor batch. A hauler
+ * with neither yet (a new tenant, before its first bill run) has nothing to violate, so it passes and says so. Naming
+ * specific seeded ids here would fail for every hauler but the seeded one.
+ */
 export function checkManyToMany(state: Db): InvariantResult {
-  const check = state.allocations.filter(a => a.sourceType === 'payment' && a.sourceId === PAIRED_PAYMENT)
-  const invoices = new Set(check.map(a => a.invoiceId))
-  const payment = state.payments.find(p => p.id === PAIRED_PAYMENT)
-  const checkSplits = check.length >= 2 && invoices.size === check.length && payment?.cents === check.reduce((s, a) => s + a.cents, 0)
+  const byPayment = new Map<string, typeof state.allocations>()
+  for (const a of state.allocations.filter(a => a.sourceType === 'payment')) {
+    byPayment.set(a.sourceId, [...(byPayment.get(a.sourceId) ?? []), a])
+  }
+  // The clearest example of the property: the payment spread across the most invoices.
+  const split = [...byPayment.entries()]
+    .map(([id, allocs]) => ({ id, allocs, invoices: new Set(allocs.map(a => a.invoiceId)) }))
+    .filter(p => p.allocs.length >= 2)
+    .sort((a, b) => b.invoices.size - a.invoices.size)[0]
+  const splitPayment = split ? state.payments.find(p => p.id === split.id) : undefined
+  const splitsCleanly = Boolean(split)
+    && split.invoices.size === split.allocs.length
+    && splitPayment?.cents === split.allocs.reduce((s, a) => s + a.cents, 0)
 
-  const batch = state.processorBatches.find(b => b.id === PAIRED_BATCH)
-  const batchPays = batch ? state.payments.filter(p => batch.paymentIds.includes(p.id)) : []
-  const batchAllocated = batchPays.every(p => state.allocations.some(a => a.sourceType === 'payment' && a.sourceId === p.id))
-  const batchSplits = Boolean(batch)
-    && batch!.grossCents === batchPays.reduce((s, p) => s + p.cents, 0)
-    && batch!.grossCents - batch!.feeCents === batch!.netCents
-    && batchAllocated
+  const batches = state.processorBatches.map(batch => {
+    const pays = state.payments.filter(p => batch.paymentIds.includes(p.id))
+    const allocated = pays.every(p => state.allocations.some(a => a.sourceType === 'payment' && a.sourceId === p.id))
+    const ok = batch.grossCents === pays.reduce((s, p) => s + p.cents, 0)
+      && batch.grossCents - batch.feeCents === batch.netCents
+      && allocated
+    return { batch, pays, allocated, ok }
+  })
 
-  const pass = checkSplits && batchSplits
+  const nothingToCheck = !split && batches.length === 0
+  const pass = nothingToCheck || ((!split || splitsCleanly) && batches.every(b => b.ok))
+
+  const parts: string[] = []
+  if (split) {
+    parts.push(`${split.id}: ${split.allocs.length} allocations across ${split.invoices.size} invoices${splitsCleanly ? ', summing to the payment' : ', does not split cleanly'}`)
+  }
+  for (const b of batches) {
+    parts.push(`${b.batch.id}: ${b.pays.length} payments, gross ${b.batch.grossCents} = fees ${b.batch.feeCents} + net ${b.batch.netCents}${b.allocated ? ', each allocated' : ', some unallocated'}`)
+  }
+  if (nothingToCheck) parts.push('No split payment or processor batch on this hauler\'s books yet')
+
   return {
     id: 'manyToMany',
     number: 6,
     title: 'Allocation is many-to-many',
     pass,
-    detail: [
-      `${PAIRED_PAYMENT}: ${check.length} allocations across ${invoices.size} invoices${checkSplits ? ', summing to the check' : ', does not split cleanly'}`,
-      batch
-        ? `${PAIRED_BATCH}: ${batchPays.length} payments, gross ${batch.grossCents} = fees ${batch.feeCents} + net ${batch.netCents}${batchAllocated ? ', each allocated' : ', some unallocated'}`
-        : `${PAIRED_BATCH} not found`,
-    ].join('; '),
+    detail: parts.join('; '),
   }
 }
 

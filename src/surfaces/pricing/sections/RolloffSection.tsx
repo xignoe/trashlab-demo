@@ -228,6 +228,7 @@ export default function RolloffSection({ today }: { today: string }) {
         <CellDrawer
           cell={editingCell}
           size={editingSize}
+          zoneName={db.zones.find(z => z.id === zoneId)?.name ?? zoneId}
           today={today}
           onClose={close}
           onSaved={row => {
@@ -293,6 +294,8 @@ function CellView({ cell, label, scheduledFrom, onOpen }: { cell: MatrixCell; la
     >
       {priced && cell.haulCents !== undefined && <span className="block font-mono text-mono font-semibold text-ink">{formatCents(cell.haulCents)}</span>}
       {!priced && <span className="block text-small font-semibold text-muted">{REASON[cell.status]}</span>}
+      {/* A cell that is not taken still says when a saved change starts, so a scheduled save is never invisible. */}
+      {cell.status === 'notAccepted' && scheduledFrom && badges}
       {cell.status !== 'notAccepted' && (
         <>
           <span className="block text-small">{tonsText(t.includedTons)} t incl.</span>

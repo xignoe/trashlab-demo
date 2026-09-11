@@ -3,12 +3,14 @@
 // Search, the status filter, and the sort run over the flat rows from buildAccountRows. A row opens the account's own
 // page at /office/account/:accountId, where the four actions live.
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type KeyboardEvent, type ReactNode, type UIEvent } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { CYCLE_LABEL, PARTY_KIND_LABEL, STATUS_LABEL, fmtDate, money } from '../components/format';
 import { ROUTE_DAY_LONG, useAccountRows, type AccountRow } from '../selectors';
 import type { BillingAccount } from '../../../types';
 import { CycleBanner } from '../../billing/components/CycleBanner';
 import { CycleButton } from '../components/CycleButton';
+import { AddAccountDrawer } from '../components/AddAccountDrawer';
+import { Toast, type ToastMessage } from '../components/Toast';
 import { useReviewCounts } from '../../billing/components/useBillingData';
 
 const ROW_HEIGHT = 40;
@@ -16,7 +18,8 @@ const OVERSCAN = 12;
 
 type SortKey = 'reviewCount' | 'name' | 'id' | 'kind' | 'address' | 'routeDay' | 'serviceCount' | 'cycle' | 'autopay' | 'status' | 'openItems' | 'lastPaymentAt' | 'monthlyRevenueCents' | 'daysLate' | 'pastDueCents' | 'balanceCents';
 type SortDir = 'asc' | 'desc';
-type StatusFilter = 'all' | BillingAccount['status'];
+/** The status chips: the four BillingAccount statuses plus Closed, which is suspended with every line ended. */
+type StatusFilter = 'all' | BillingAccount['status'] | 'closed';
 /** An account row plus its charges waiting on a decision in the current billing cycle. */
 type Row = AccountRow & { reviewCount: number };
 
@@ -35,7 +38,10 @@ interface Column {
 
 const DAY_ORDER: Record<string, number> = { Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5 };
 const STATUS_ORDER: Record<BillingAccount['status'], number> = { pastDue: 0, suspended: 1, hold: 2, active: 3 };
-const STATUS_FILTERS: StatusFilter[] = ['all', 'pastDue', 'suspended', 'hold', 'active'];
+const STATUS_FILTERS: StatusFilter[] = ['all', 'pastDue', 'suspended', 'hold', 'closed', 'active'];
+const FILTER_LABEL = (s: StatusFilter): string => (s === 'all' ? 'All' : s === 'closed' ? 'Closed' : STATUS_LABEL[s]);
+/** Which chip a row is counted under: a closed account is Closed, not Suspended. */
+const filterOf = (row: Row): Exclude<StatusFilter, 'all'> => (row.isClosed ? 'closed' : row.status);
 
 const COLUMNS: Column[] = [
   { key: 'name', label: 'Account', render: (r) => <span className="acct-name" title={r.name}>{r.name}</span> },
@@ -55,7 +61,12 @@ const COLUMNS: Column[] = [
   { key: 'serviceCount', label: 'Services', width: '88px', numeric: true, firstDir: 'desc', render: (r) => r.serviceCount },
   { key: 'cycle', label: 'Cycle', width: '76px', render: (r) => CYCLE_LABEL[r.cycle] },
   { key: 'autopay', label: 'Autopay', width: '80px', render: (r) => (r.autopay ? 'On' : <span className="muted">Off</span>) },
-  { key: 'status', label: 'Status', width: '108px', render: (r) => <span className={`pill pill-${r.status}`}>{STATUS_LABEL[r.status]}</span> },
+  {
+    key: 'status',
+    label: 'Status',
+    width: '108px',
+    render: (r) => (r.isClosed ? <span className="pill" title="Suspended with every service line ended">Closed</span> : <span className={`pill pill-${r.status}`}>{STATUS_LABEL[r.status]}</span>),
+  },
   {
     key: 'reviewCount',
     label: 'Review',
@@ -93,7 +104,7 @@ const COLUMNS: Column[] = [
 function sortValue(row: Row, key: SortKey): string | number {
   switch (key) {
     case 'routeDay': return row.routeDay ? DAY_ORDER[row.routeDay] : 99;
-    case 'status': return STATUS_ORDER[row.status];
+    case 'status': return row.isClosed ? 4 : STATUS_ORDER[row.status];
     case 'autopay': return row.autopay ? 1 : 0;
     case 'kind': return row.kind ? PARTY_KIND_LABEL[row.kind] : '';
     case 'address': return row.address ?? '';
@@ -131,7 +142,24 @@ function withSampleRows(rows: Row[], count: number): Row[] {
 
 export function AccountsPage() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [params, setParams] = useSearchParams();
+  const [adding, setAdding] = useState(false);
+  const [toast, setToast] = useState<ToastMessage | undefined>();
+  const toastSeq = useRef(0);
+  const showToast = (title: string, detail?: string) => {
+    toastSeq.current += 1;
+    setToast({ key: toastSeq.current, title, detail });
+  };
+  // A delete on an account's own page sends its confirmation here, since that page is gone.
+  const handedOver = (location.state as { toast?: { title: string; detail: string } } | null)?.toast;
+  useEffect(() => {
+    if (!handedOver) return;
+    showToast(handedOver.title, handedOver.detail);
+    navigate(location.pathname + location.search, { replace: true, state: null });
+    // The handed-over toast is shown once, when it arrives.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [handedOver]);
   const sample = Math.min(50000, Math.max(0, Number(params.get('sample')) || 0));
   const accountRows = useAccountRows();
   const reviewCounts = useReviewCounts();
@@ -158,7 +186,7 @@ export function AccountsPage() {
   // the search, and To review counts within the chosen status and the search.
   const { statusCounts, toReview, anyToReview } = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const counts: Record<StatusFilter, number> = { all: 0, active: 0, pastDue: 0, suspended: 0, hold: 0 };
+    const counts: Record<StatusFilter, number> = { all: 0, active: 0, pastDue: 0, suspended: 0, hold: 0, closed: 0 };
     let review = 0;
     let anyReview = false;
     for (const r of allRows) {
@@ -166,16 +194,16 @@ export function AccountsPage() {
       if (q && !r.haystack.includes(q)) continue;
       if (!reviewOnly || r.reviewCount > 0) {
         counts.all += 1;
-        counts[r.status] += 1;
+        counts[filterOf(r)] += 1;
       }
-      if (r.reviewCount > 0 && (status === 'all' || r.status === status)) review += 1;
+      if (r.reviewCount > 0 && (status === 'all' || filterOf(r) === status)) review += 1;
     }
     return { statusCounts: counts, toReview: review, anyToReview: anyReview };
   }, [allRows, query, status, reviewOnly]);
 
   const rows = useMemo(() => {
     const q = query.trim().toLowerCase();
-    const filtered = allRows.filter((r) => (status === 'all' || r.status === status) && (!reviewOnly || r.reviewCount > 0) && (!q || r.haystack.includes(q)));
+    const filtered = allRows.filter((r) => (status === 'all' || filterOf(r) === status) && (!reviewOnly || r.reviewCount > 0) && (!q || r.haystack.includes(q)));
     return filtered.sort(compareRows(sortKey, sortDir));
   }, [allRows, query, status, reviewOnly, sortKey, sortDir]);
 
@@ -265,7 +293,7 @@ export function AccountsPage() {
                 aria-pressed={status === s}
                 onClick={() => setParam({ status: s === 'all' ? undefined : s })}
               >
-                {s === 'all' ? 'All' : STATUS_LABEL[s]}
+                {FILTER_LABEL(s)}
                 <span className="filter-chip-count">{statusCounts[s].toLocaleString('en-US')}</span>
               </button>
             ))}
@@ -354,10 +382,13 @@ export function AccountsPage() {
           {rows.length === 0 && <div className="card-empty accounts-empty">No accounts match.</div>}
         </div>
         <div className="accounts-foot">
-          <span>
-            {rows.length === allRows.length
-              ? `${rows.length.toLocaleString('en-US')} accounts`
-              : `${rows.length.toLocaleString('en-US')} of ${allRows.length.toLocaleString('en-US')} accounts`}
+          <span className="accounts-foot-left">
+            <button type="button" className="btn btn-primary btn-sm" onClick={() => setAdding(true)} aria-haspopup="dialog">Add account</button>
+            <span>
+              {rows.length === allRows.length
+                ? `${rows.length.toLocaleString('en-US')} accounts`
+                : `${rows.length.toLocaleString('en-US')} of ${allRows.length.toLocaleString('en-US')} accounts`}
+            </span>
           </span>
           <span className="accounts-foot-totals">
             <span>Revenue / mo <span className="mono">{money(totals.revenue)}</span></span>
@@ -366,6 +397,18 @@ export function AccountsPage() {
           </span>
         </div>
       </div>
+      <div id="drawer-root" className="drawer-root" />
+      {adding && (
+        <AddAccountDrawer
+          onClose={() => setAdding(false)}
+          onDone={(result) => {
+            setAdding(false);
+            // The new account's own page opens straight away, and shows the confirmation there.
+            navigate(`/office/account/${result.accountId}`, { state: { toast: { title: result.title, detail: result.detail } } });
+          }}
+        />
+      )}
+      <Toast toast={toast} onDismiss={() => setToast(undefined)} />
     </div>
   );
 }

@@ -72,7 +72,7 @@ describe('routes', () => {
   })
 
   it.each([
-    ['/', '/office/account'],
+    ['/', '/login'],
     ['/owner', '/owner/pricing'],
     ['/owner/pricing/quote', '/owner/pricing'],
     ['/office', '/office/account'],
