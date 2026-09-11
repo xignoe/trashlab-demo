@@ -30,6 +30,9 @@ import {
 } from '../../surfaces/account/lib/engine'
 import { nextId } from '../../surfaces/account/lib/ids'
 import {
+  planAddAccount, planRemoveAccount, type AddAccountPlan, type NewAccountDraft, type RemoveAccountPlan,
+} from '../../surfaces/account/lib/lifecycle'
+import {
   DELIVERY_NAME, INVOICE_DELIVERIES, membersOf, planAddToGroup, planGroupSave, planRemoveGroup, planTakeOut, type AddToGroupPlan, type BillingGroupDraft,
 } from '../../surfaces/account/lib/billingGroups'
 import type {
@@ -157,6 +160,28 @@ export interface AccountSlice {
   setInvoiceDelivery(accountId: string, method: InvoiceDelivery): BillingAccount
   /** Switch every member of a group to the group's delivery. Returns how many accounts changed. */
   applyGroupDelivery(groupId: string): number
+
+  /**
+   * The office's own intake (the storefront signs customers up; this is the account taken over the phone or counter).
+   * Writes one Party, one BillingAccount, one Site and, when the draft carries a first service, its ServiceItem,
+   * Container and open delivery WorkOrder, in one update. Throws on an invalid draft (addAccountError) and writes
+   * nothing. No Charge: the account's first invoice comes from the next billing run like any other.
+   */
+  addAccount(draft: NewAccountDraft): AddAccountPlan
+  /**
+   * Closes an account: every service line ends on the effective date, the containers still out get one open recovery
+   * work order, autopay goes off and the account is suspended, with a StatusChange recording it. Invoices, payments,
+   * credits, charges, and waives are untouched, and an open balance stays owed.
+   */
+  closeAccount(accountId: string, opts?: { effectiveFrom?: string; note?: string }): RemoveAccountPlan
+  /**
+   * Removes an account that carries no money and no field history at all (planRemoveAccount's canDelete): its row,
+   * its sites, service items, containers, work orders, requests, and the payer party when nothing else names it.
+   * Refused for any account with a charge, invoice, payment, credit memo, service event, scale ticket, or contract;
+   * close those instead. The second delete in this slice (deleteBillingGroup is the first), and like that one it
+   * removes no financial record, so invariant 5 holds.
+   */
+  deleteAccount(accountId: string): RemoveAccountPlan
 }
 
 /** Fresh session log: nothing recorded this session. */
@@ -448,5 +473,65 @@ export const createAccountSlice: SliceCreator<AccountSlice> = (_set, get) => ({
     const accounts = membersOf(db, groupId).filter(a => a.deliveryMethod !== group.delivery).map(a => ({ ...a, deliveryMethod: group.delivery }))
     if (accounts.length) get().mutateDb(d => withRows(d, { accounts }))
     return accounts.length
+  },
+
+  addAccount(draft) {
+    const plan = planAddAccount(draft, get().db)
+    get().mutateDb(d => ({
+      ...withRows(d, {
+        accounts: [plan.account],
+        serviceItems: plan.item ? [plan.item] : undefined,
+        containers: plan.container ? [plan.container] : undefined,
+        workOrders: plan.workOrder ? [plan.workOrder] : undefined,
+      }),
+      // Party and Site have no withRows key (the account surface never created them until now), so they append here.
+      parties: [...d.parties, plan.party],
+      sites: [...d.sites, plan.site],
+    }))
+    return plan
+  },
+
+  closeAccount(accountId, opts = {}) {
+    const plan = planRemoveAccount(get().db, accountId, { effectiveFrom: opts.effectiveFrom })
+    const { account, items, recovery, effectiveFrom } = plan.closes
+    const change: StatusChange = {
+      id: nextId('sc', get().accountEdits.statusChanges.map(c => c.id)),
+      accountId,
+      kind: 'suspend',
+      from: requireAccount(get().db, accountId).status,
+      to: 'suspended',
+      effectiveFrom,
+      reason: 'customerRequest',
+      note: opts.note ? `Account closed. ${opts.note}` : 'Account closed',
+      itemIds: items.map(i => i.id),
+      at: today(),
+    }
+    get().mutateDb(
+      d => withRows(d, { accounts: [account], serviceItems: items, workOrders: recovery ? [recovery] : undefined }),
+      s => ({ accountEdits: { ...s.accountEdits, statusChanges: [...s.accountEdits.statusChanges, change] } }),
+    )
+    return plan
+  },
+
+  deleteAccount(accountId) {
+    const plan = planRemoveAccount(get().db, accountId)
+    if (!plan.canDelete) {
+      throw new EngineError(`${plan.name} carries ${plan.blockers.join(', ')}, so it cannot be deleted. Close the account instead.`)
+    }
+    const { siteIds, itemIds, containerIds, workOrderIds, requestIds, partyIds } = plan.deletes
+    const gone = (ids: string[]) => new Set(ids)
+    const [sites, items, containers, workOrders, requests, parties] =
+      [gone(siteIds), gone(itemIds), gone(containerIds), gone(workOrderIds), gone(requestIds), gone(partyIds)]
+    get().mutateDb(d => ({
+      ...d,
+      accounts: d.accounts.filter(a => a.id !== accountId),
+      sites: d.sites.filter(s => !sites.has(s.id)),
+      serviceItems: d.serviceItems.filter(i => !items.has(i.id)),
+      containers: d.containers.filter(c => !containers.has(c.id)),
+      workOrders: d.workOrders.filter(w => !workOrders.has(w.id)),
+      requests: d.requests.filter(r => !requests.has(r.id)),
+      parties: d.parties.filter(p => !parties.has(p.id)),
+    }))
+    return plan
   },
 })

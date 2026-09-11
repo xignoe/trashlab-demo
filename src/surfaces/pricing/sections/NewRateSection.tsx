@@ -489,6 +489,7 @@ function Wizard({ today, onOpenSection, onDone }: { today: string; onOpenSection
           <CellDrawer
             cell={cell}
             size={item}
+            zoneName={zone?.name ?? zoneId}
             today={today}
             onClose={close}
             onSaved={row => {

@@ -22,6 +22,7 @@ const sidecars = (): AccountSidecars => ({
   statusChanges: st().accountEdits.statusChanges,
 })
 const view = (id: string) => buildAccountView(id, st().db, sidecars())!
+const byIdIn = <T extends { id: string }>(rows: T[], id: string) => rows.find(r => r.id === id)
 
 beforeEach(() => st().reset())
 afterEach(() => setToday())
@@ -43,9 +44,12 @@ describe('slice shape', () => {
   it('no action anywhere in the account slice deletes, removes, drops, or clears (invariant 5)', () => {
     const actions = Object.entries(sliceRegistry.account(useStore.setState, useStore.getState, useStore)).filter(([, v]) => typeof v === 'function').map(([k]) => k)
     expect(actions.length).toBeGreaterThan(5)
-    // One exception, asked for by Kevin (addendum Q): deleteBillingGroup removes a grouping row after moving its members.
-    // It removes no charge, invoice, payment, or waive, so invariant 5 is untouched.
-    for (const name of actions.filter(n => n !== 'deleteBillingGroup')) expect(name).not.toMatch(/delete|remove|drop|clear/i)
+    // Two exceptions, both asked for by Kevin. deleteBillingGroup (addendum Q) removes a grouping row after moving its
+    // members. deleteAccount removes an account that carries no charge, invoice, payment, credit memo, service event,
+    // scale ticket, or contract (a typo or duplicate); any account with history is closed instead, never deleted.
+    // Neither removes a financial record, so invariant 5 is untouched.
+    const allowed = ['deleteBillingGroup', 'deleteAccount']
+    for (const name of actions.filter(n => !allowed.includes(n))) expect(name).not.toMatch(/delete|remove|drop|clear/i)
   })
 
   it('reset empties every sidecar and restores the seed', () => {
@@ -291,5 +295,86 @@ describe('Scenario E: the next billing run preview recomputes on every store cha
     expect(v.openWorkOrders.map(w => w.workOrder.id)).toEqual(['wo_ac_0004'])
     const q3 = v.invoices.find(i => i.invoice.number === 'INV-2026-0203')!
     expect([q3.invoice.totalCents, q3.openCents]).toEqual([18074, 8745])
+  })
+})
+
+describe('add and remove an account (the office\'s own intake)', () => {
+  const draft = {
+    payerName: 'Fern Hollow HOA',
+    kind: 'hoa' as const,
+    address: '88 Fern Hollow Rd',
+    zoneId: 'zone_open',
+    routeId: 'route_mon_res',
+    cycle: 'quarterly' as const,
+    billedInAdvance: true,
+    deliveryMethod: 'mail' as const,
+    autopay: false,
+    taxExempt: false,
+    service: { catalogId: 'cat_res_96', qty: 1, frequency: 'weekly' as const, startOn: '2026-09-14' },
+  }
+
+  it('writes the party, account, site, first service, its container and an open delivery work order', () => {
+    const before = st().db.accounts.length
+    const plan = st().addAccount(draft)
+    const db = st().db
+    expect(db.accounts).toHaveLength(before + 1)
+    expect(byIdIn(db.accounts, plan.account.id)).toMatchObject({ status: 'active', cycle: 'quarterly', deliveryMethod: 'mail' })
+    expect(byIdIn(db.parties, plan.party.id)?.name).toBe('Fern Hollow HOA')
+    expect(byIdIn(db.sites, plan.site.id)).toMatchObject({ accountId: plan.account.id, address: '88 Fern Hollow Rd', routeId: 'route_mon_res' })
+    expect(plan.item && byIdIn(db.serviceItems, plan.item.id)).toMatchObject({ status: 'active', effectiveFrom: '2026-09-14' })
+    expect(plan.container && byIdIn(db.containers, plan.container.id)?.assignedFrom).toBe('2026-09-13')
+    expect(plan.workOrder && byIdIn(db.workOrders, plan.workOrder.id)).toMatchObject({ kind: 'deliver', status: 'open', scheduledFor: '2026-09-13' })
+    // $29.00 a month at the open-zone weekly rate, the figure the table then shows as revenue.
+    expect(plan.priceCents).toBe(2900)
+    expect(st().db.charges.filter(c => c.accountId === plan.account.id)).toEqual([])
+  })
+
+  it('refuses a draft with no name, and the same payer twice at one address, writing nothing', () => {
+    const before = st().db
+    expect(() => st().addAccount({ ...draft, payerName: '  ' })).toThrow(/payer name/i)
+    st().addAccount(draft)
+    expect(() => st().addAccount(draft)).toThrow(/already has an account/i)
+    expect(st().db.accounts.filter(a => a.payerPartyId.includes('_ac_'))).toHaveLength(1)
+    expect(before.invoices).toBe(st().db.invoices)
+  })
+
+  it('deletes an account it just added, with its party, site, service, container and work order', () => {
+    const plan = st().addAccount(draft)
+    const removal = st().deleteAccount(plan.account.id)
+    expect(removal.canDelete).toBe(true)
+    const db = st().db
+    expect(byIdIn(db.accounts, plan.account.id)).toBeUndefined()
+    expect(byIdIn(db.parties, plan.party.id)).toBeUndefined()
+    expect(byIdIn(db.sites, plan.site.id)).toBeUndefined()
+    expect(byIdIn(db.serviceItems, plan.item!.id)).toBeUndefined()
+    expect(byIdIn(db.containers, plan.container!.id)).toBeUndefined()
+    expect(byIdIn(db.workOrders, plan.workOrder!.id)).toBeUndefined()
+  })
+
+  it('refuses to delete an account with history and changes nothing', () => {
+    const before = st().db
+    expect(() => st().deleteAccount('acct_res_maple')).toThrow(/cannot be deleted/i)
+    expect(st().db).toBe(before)
+  })
+
+  it('closing Maple ends her lines, raises one recovery work order, and keeps every invoice and payment', () => {
+    const invoicesBefore = st().db.invoices.length
+    const paymentsBefore = st().db.payments.length
+    const plan = st().closeAccount('acct_res_maple', { effectiveFrom: '2026-10-01' })
+    const db = st().db
+    const v = view('acct_res_maple')
+    expect(plan.canDelete).toBe(false)
+    expect(v.account.status).toBe('suspended')
+    expect(v.account.autopay).toBe(false)
+    expect(v.sites.flatMap(s => s.activeLines)).toEqual([])
+    expect(db.serviceItems.filter(i => i.siteId === 'site_maple').every(i => i.status === 'ended' && i.effectiveTo === '2026-10-01')).toBe(true)
+    const recovery = db.workOrders.filter(w => w.siteId === 'site_maple' && w.kind === 'recovery')
+    expect(recovery).toHaveLength(1)
+    expect(recovery[0].status).toBe('open')
+    // The money is untouched: nothing is written off by closing.
+    expect(db.invoices).toHaveLength(invoicesBefore)
+    expect(db.payments).toHaveLength(paymentsBefore)
+    expect([v.balance, v.pastDue]).toEqual([8745, 8745])
+    expect(st().accountEdits.statusChanges.at(-1)).toMatchObject({ kind: 'suspend', reason: 'customerRequest', note: 'Account closed' })
   })
 })

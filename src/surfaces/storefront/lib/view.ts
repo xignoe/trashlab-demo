@@ -7,6 +7,7 @@
 // through the storefront slice's actions and get().mutateDb.
 import type { Db } from '../../../store/db';
 import { ADDRESSES, type SeedAddress } from '../../../seed';
+import { tenantById } from '../../../tenants';
 import type {
   BillingAccount, Charge, Container, Contract, FeeRule, Hauler, Party, Payment, Quote, RateVersion, Route,
   ServiceCatalog, ServiceItem, Site, TaxRule, WorkOrder, Zone,
@@ -18,6 +19,8 @@ export interface SfSource {
   db: Db;
   quoteIntake: Keyed<QuoteIntake>;
   paymentTokens: Keyed<PaymentToken>;
+  /** The signed-in hauler, which decides the address book. Absent means the seeded hauler's. */
+  tenantId?: string;
 }
 
 export interface DbTables {
@@ -55,8 +58,28 @@ function byId<T extends { id: string }>(rows: readonly T[]): Keyed<T> {
   return out;
 }
 
-/** The address book, keyed once: it never changes at runtime. */
+/** The seeded hauler's address book, keyed. The default when a caller names no tenant. */
 export const ADDRESS_BOOK: Keyed<SeedAddress> = byId(ADDRESSES);
+
+/**
+ * Each hauler's address book, keyed and built once.
+ *
+ * The address book stands in for a geocoder and is never a Db table (addendum B3), but it still belongs to one
+ * hauler: the storefront must not offer a New Jersey address to a Georgia hauler's buyer. It is resolved from the
+ * view's tenant rather than held in a module variable, because a module variable is state outside the store, and
+ * anything that switched it would leak into every other reader in the process.
+ */
+const addressBooks = new Map<string, Keyed<SeedAddress>>();
+
+function addressBookFor(tenantId: string | undefined): Keyed<SeedAddress> {
+  if (!tenantId) return ADDRESS_BOOK;
+  let book = addressBooks.get(tenantId);
+  if (!book) {
+    book = byId(tenantById(tenantId).addresses);
+    addressBooks.set(tenantId, book);
+  }
+  return book;
+}
 
 function tablesOf(db: Db): DbTables {
   const hauler = db.hauler[0];
@@ -103,7 +126,7 @@ export function viewOf(src: SfSource): SfView {
   }
   let view = byTokens.get(src.paymentTokens);
   if (!view) {
-    view = { ...entry.tables, db: src.db, addresses: ADDRESS_BOOK, quoteIntake: src.quoteIntake, paymentTokens: src.paymentTokens };
+    view = { ...entry.tables, db: src.db, addresses: addressBookFor(src.tenantId), quoteIntake: src.quoteIntake, paymentTokens: src.paymentTokens };
     byTokens.set(src.paymentTokens, view);
   }
   return view;

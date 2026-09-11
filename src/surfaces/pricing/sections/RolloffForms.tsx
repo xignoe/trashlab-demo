@@ -110,7 +110,7 @@ function MarginHint({ overage, disposal }: { overage: number | undefined; dispos
  * the cell in force then; the old row is kept. The standard material's haul price is the size's published rate, so its
  * haul delta is fixed at 0 and its cell only replaces the catalog's weight terms from its date.
  */
-export function CellDrawer({ cell, size, today, onClose, onSaved }: { cell: MatrixCell; size: ServiceCatalog; today: string; onClose: () => void; onSaved: (row: RolloffRate) => void }) {
+export function CellDrawer({ cell, size, zoneName, today, onClose, onSaved }: { cell: MatrixCell; size: ServiceCatalog; zoneName: string; today: string; onClose: () => void; onSaved: (row: RolloffRate) => void }) {
   const saveRolloffRate = useStore(s => s.saveRolloffRate)
   const { material, terms } = cell
   const standard = material.handling === 'standard'
@@ -120,13 +120,19 @@ export function CellDrawer({ cell, size, today, onClose, onSaved }: { cell: Matr
   const [overage, setOverage] = useState<number | undefined>(terms.overageCentsPerTon)
   const [tiers, setTiers] = useState(() => tierDrafts(terms.overageTiers))
   const [minBilled, setMinBilled] = useState<number | undefined>(terms.minBilledTons)
-  const [effectiveFrom, setEffectiveFrom] = useState(firstOfNextMonth(today))
+  // Taking a material in a size for the first time is not a price change for anyone, so it starts today. A cell that
+  // already prices hauls defaults to next month, like a rate change.
+  const [effectiveFrom, setEffectiveFrom] = useState(terms.available ? firstOfNextMonth(today) : today)
   const [problems, setProblems] = useState<string[]>([])
   const sizeHaul = cell.haulCents !== undefined ? cell.haulCents - terms.haulDeltaCents : undefined
+  const later = effectiveFrom > today
+  // The price a haul of this material costs in the zone on screen: the size's rate plus this cell's delta. Typing a
+  // price sets the delta, so the owner never has to work the difference out.
+  const priceCents = sizeHaul !== undefined && haulDelta !== undefined ? sizeHaul + (standard ? 0 : haulDelta) : undefined
 
   const save = () => {
     const local: string[] = []
-    if (!standard && haulDelta === undefined) local.push('Enter the haul delta, 0.00 for none')
+    if (!standard && haulDelta === undefined) local.push('Enter the haul price, or a delta of 0.00 to charge the size rate')
     if (includedTons === undefined) local.push('Enter the included tons')
     if (overage === undefined) local.push('Enter the overage per ton')
     const t = tiersFrom(tiers)
@@ -165,7 +171,7 @@ export function CellDrawer({ cell, size, today, onClose, onSaved }: { cell: Matr
       footer={
         <>
           <button type="button" className={BUTTON_SECONDARY} onClick={onClose}>Cancel</button>
-          <button type="button" className={BUTTON_PRIMARY} onClick={save}>Save cell</button>
+          <button type="button" className={BUTTON_PRIMARY} onClick={save}>{standard || available ? 'Save cell' : 'Save as not taken'}</button>
         </>
       }
     >
@@ -177,11 +183,32 @@ export function CellDrawer({ cell, size, today, onClose, onSaved }: { cell: Matr
         </div>
         <Toggle on={standard || available} onChange={setAvailable} label="Available" disabled={standard} />
       </div>
+      {!standard && !available && (
+        <p role="note" data-testid="not-taken-warning" className="rounded-md border border-warning/40 bg-warning/10 px-3 py-2 text-small text-ink">
+          <span className="font-semibold">{material.name} is not taken in {sizeName(size)}.</span>{' '}
+          Switch Available on to take it and put the price below in the grid. With it off the numbers are kept on file, but every quote and ticket still refuses this material.
+        </p>
+      )}
+      <Field
+        label={`Haul price in ${zoneName}`}
+        hint={sizeHaul === undefined
+          ? `No haul rate for ${sizeName(size)} in ${zoneName} yet. Add one under Rates, or set the delta below and this cell follows whatever the size charges.`
+          : standard
+            ? `The published ${sizeName(size)} rate. Change it under Rates.`
+            : `What a haul of this material costs here. The ${sizeName(size)} rate is ${formatCents(sizeHaul)}, so the difference is the delta below, which every zone uses.`}
+      >
+        <MoneyInput
+          cents={priceCents}
+          onChange={c => setHaulDelta(c === undefined || sizeHaul === undefined ? undefined : c - sizeHaul)}
+          disabled={standard || sizeHaul === undefined}
+          ariaLabel="Haul price"
+        />
+      </Field>
       <Field
         label="Haul delta"
         hint={standard
           ? `The standard material's haul price is the size's published rate${sizeHaul !== undefined ? ` (${formatCents(sizeHaul)} in this zone)` : ''}; change it under Rates.`
-          : `Added to the size's haul rate${sizeHaul !== undefined ? ` (${formatCents(sizeHaul)} in this zone)` : ''}. Negative for a discount.`}
+          : `Added to the size's haul rate in every zone${sizeHaul !== undefined ? ` (${formatCents(sizeHaul)} in ${zoneName})` : ''}. Negative for a discount.`}
       >
         <MoneyInput cents={standard ? 0 : haulDelta} onChange={setHaulDelta} signed disabled={standard} ariaLabel="Haul delta" />
       </Field>
@@ -199,7 +226,12 @@ export function CellDrawer({ cell, size, today, onClose, onSaved }: { cell: Matr
         <Field label="Minimum billed tons" hint="A light load still bills this many. Blank for none.">
           <NumberInput value={minBilled} onChange={setMinBilled} min={0} suffix="t" ariaLabel="Minimum billed tons" />
         </Field>
-        <Field label="Effective from" hint="The cell in force before it is kept.">
+        <Field
+          label="Effective from"
+          hint={later
+            ? `Starts ${effectiveFrom}. Until then the grid keeps showing what is in force now. The cell in force before it is kept.`
+            : 'In force today, so the grid shows it at once. The cell in force before it is kept.'}
+        >
           <DateInput value={effectiveFrom} onChange={setEffectiveFrom} ariaLabel="Effective from" />
         </Field>
       </div>

@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { Layout } from './shell/Layout'
 import { NotFound } from './shell/NotFound'
+import { SignIn } from './shell/SignIn'
 import AccountSurface, { BillingGroupsSurface } from './surfaces/account'
 import BillingSurface from './surfaces/billing'
 import PortalSurface from './surfaces/portal'
@@ -18,8 +19,10 @@ export const ROUTER_FUTURE = { v7_startTransition: true, v7_relativeSplatPath: t
 export function AppRoutes() {
   return (
     <Routes>
+      {/* Sign-in is the front door and stands outside the shell: there is no persona bar until you are in a hauler. */}
+      <Route path="login" element={<SignIn />} />
       <Route element={<Layout />}>
-        <Route index element={<Navigate to="/office/account" replace />} />
+        <Route index element={<Navigate to="/login" replace />} />
         <Route path="owner" element={<Navigate to="/owner/pricing" replace />} />
         <Route path="owner/pricing/*" element={<PricingSurface />} />
         <Route path="office" element={<Navigate to="/office/account" replace />} />

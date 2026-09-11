@@ -4,7 +4,7 @@
 // drawers portal into the element with id "drawer-root"; Phase 4 wires "Change service", Phase 5 "Take a payment"
 // (with allocation of unapplied payments) and "Issue credit"; Phase 6 the hold or suspension.
 import { useEffect, useRef, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { AccountHeader, MoneyStrip } from '../components/AccountHeader';
 import { AccountRail } from '../components/AccountRail';
 import { ActionButtons, type AccountAction } from '../components/ActionButtons';
@@ -12,6 +12,7 @@ import { ChangeServiceDrawer, type ChangeServiceTarget } from '../components/Cha
 import { ContractCard } from '../components/ContractCard';
 import { CreditDrawer } from '../components/CreditDrawer';
 import { PaymentDrawer, type DrawerResult, type PaymentDrawerSource } from '../components/PaymentDrawer';
+import { RemoveAccountDrawer } from '../components/RemoveAccountDrawer';
 import { FieldHistory } from '../components/FieldHistory';
 import { HoldDrawer } from '../components/HoldDrawer';
 import { InvoicesPanel } from '../components/InvoicesPanel';
@@ -33,14 +34,17 @@ type DrawerState =
   | { kind: 'changeService'; target: ChangeServiceTarget }
   | { kind: 'payment'; source?: PaymentDrawerSource }
   | { kind: 'credit'; invoiceId?: string }
-  | { kind: 'hold'; initial?: PortalHoldDraft };
+  | { kind: 'hold'; initial?: PortalHoldDraft }
+  | { kind: 'remove' };
 
 /** Actions with a working drawer; the rest keep their "later phase" title until their phase lands. */
-const WIRED_ACTIONS: AccountAction[] = ['takePayment', 'changeService', 'issueCredit', 'holdOrSuspend'];
+const WIRED_ACTIONS: AccountAction[] = ['takePayment', 'changeService', 'issueCredit', 'holdOrSuspend', 'removeAccount'];
 
 export function AccountPage() {
   // The router sends bare /account to the default account, so accountId is always present here.
   const accountId = useParams<{ accountId: string }>().accountId ?? DEFAULT_ACCOUNT_ID;
+  const navigate = useNavigate();
+  const location = useLocation();
   const view = useAccountView(accountId);
   const [drawer, setDrawer] = useState<DrawerState | undefined>();
   const [toast, setToast] = useState<ToastMessage | undefined>();
@@ -48,6 +52,16 @@ export function AccountPage() {
 
   // A drawer belongs to the account it was opened on; switching accounts closes it.
   useEffect(() => setDrawer(undefined), [accountId]);
+
+  // A confirmation handed over by the page that sent us here (Add account on the table) is shown once, on arrival.
+  const handedOver = (location.state as { toast?: { title: string; detail: string } } | null)?.toast;
+  useEffect(() => {
+    if (!handedOver) return;
+    toastSeq.current += 1;
+    setToast({ key: toastSeq.current, title: handedOver.title, detail: handedOver.detail });
+    navigate(location.pathname, { replace: true, state: null });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [handedOver]);
 
   const openChangeService = (siteId: string, replaceItemId?: string) =>
     setDrawer({ kind: 'changeService', target: { accountId, siteId, replaceItemId } });
@@ -60,6 +74,7 @@ export function AccountPage() {
     if (action === 'takePayment') setDrawer({ kind: 'payment' });
     if (action === 'issueCredit') setDrawer({ kind: 'credit' });
     if (action === 'holdOrSuspend') setDrawer({ kind: 'hold' });
+    if (action === 'removeAccount') setDrawer({ kind: 'remove' });
   };
 
   const showToast = (title: string, detail?: string) => {
@@ -160,6 +175,18 @@ export function AccountPage() {
           initialInvoiceId={drawer.invoiceId}
           onClose={() => setDrawer(undefined)}
           onDone={onMoneyDone}
+        />
+      )}
+      {drawer?.kind === 'remove' && view && (
+        <RemoveAccountDrawer
+          accountId={accountId}
+          onClose={() => setDrawer(undefined)}
+          onDone={(result) => {
+            setDrawer(undefined);
+            // A deleted account has no page left; the table is where the office goes back to.
+            if (result.deleted) navigate('/office/account', { state: { toast: result } });
+            else showToast(result.title, result.detail);
+          }}
         />
       )}
       {drawer?.kind === 'hold' && view && (

@@ -129,7 +129,9 @@ function LineEditor({
   const allowed = containersFor(term);
   const frequencies = frequenciesFor(catalog[line.catalogId]);
   const id = (field: string) => `line-${index}-${field}`;
-  const group = (ids: readonly string[]) => ids.filter((c) => allowed.includes(c));
+  // Only sizes this hauler actually stocks. The id tables above are the same for every hauler, so a hauler that does
+  // not carry a size simply has no catalog row for it and it must not appear as an option (src/tenants).
+  const group = (ids: readonly string[]) => ids.filter((c) => allowed.includes(c) && Boolean(catalog[c]));
 
   function setContainer(catalogId: string) {
     const next = frequenciesFor(catalog[catalogId]);
@@ -147,7 +149,7 @@ function LineEditor({
         ) : null}
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
-        <Field label="Size" htmlFor={id('size')}>
+        <Field label="Size" htmlFor={id('size')} hint={catalog[line.catalogId]?.description}>
           <Select id={id('size')} value={line.catalogId} onChange={(e) => setContainer(e.target.value)}>
             {group(FRONTLOAD_CONTAINER_IDS).length ? (
               <optgroup label="Front load, emptied on a schedule">
@@ -158,13 +160,15 @@ function LineEditor({
                 ))}
               </optgroup>
             ) : null}
-            <optgroup label="Rolloff, hauled when you call">
-              {group(ROLLOFF_CONTAINER_IDS).map((c) => (
-                <option key={c} value={c}>
-                  {catalog[c]?.name ?? c}
-                </option>
-              ))}
-            </optgroup>
+            {group(ROLLOFF_CONTAINER_IDS).length ? (
+              <optgroup label="Rolloff, hauled when you call">
+                {group(ROLLOFF_CONTAINER_IDS).map((c) => (
+                  <option key={c} value={c}>
+                    {catalog[c]?.name ?? c}
+                  </option>
+                ))}
+              </optgroup>
+            ) : null}
           </Select>
         </Field>
         <Field label="How many" htmlFor={id('qty')}>
