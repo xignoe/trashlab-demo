@@ -1,0 +1,14 @@
+[
+  {
+    "id": "hauler_piedmont",
+    "name": "Piedmont Disposal",
+    "policy": {
+      "proration": "none",
+      "lateFeeCents": 1000,
+      "lateFeeDay": 5,
+      "graceMissedPickups": 2,
+      "suspendAfterDays": 30,
+      "reinstatementFeeCents": 2500
+    }
+  }
+]

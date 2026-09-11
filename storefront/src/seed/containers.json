@@ -1,0 +1,373 @@
+[
+  {
+    "id": "cont_maple_96",
+    "serial": "PD-C-1001",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_maple",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_maple_extra",
+    "serial": "PD-C-1002",
+    "catalogId": "cat_res_extra_cart",
+    "siteId": "site_res_maple",
+    "assignedFrom": "2025-06-02"
+  },
+  {
+    "id": "cont_maple_recycling",
+    "serial": "PD-C-1003",
+    "catalogId": "cat_res_recycling",
+    "siteId": "site_res_maple",
+    "assignedFrom": "2025-06-02"
+  },
+  {
+    "id": "cont_holt_96",
+    "serial": "PD-C-1004",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_holt",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_kerr_96",
+    "serial": "PD-C-1005",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_kerr",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_bakery_3yd",
+    "serial": "PD-F-201",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_bakery",
+    "assignedFrom": "2026-01-01"
+  },
+  {
+    "id": "cont_bakery_3yd_wood",
+    "serial": "PD-F-202",
+    "catalogId": "cat_fl_3yd_wood",
+    "siteId": "site_bakery",
+    "assignedFrom": "2026-01-01"
+  },
+  {
+    "id": "cont_oakridge_1",
+    "serial": "PD-C-1006",
+    "catalogId": "cat_res_96",
+    "siteId": "site_oakridge_1",
+    "assignedFrom": "2025-02-03"
+  },
+  {
+    "id": "cont_oakridge_2",
+    "serial": "PD-C-1007",
+    "catalogId": "cat_res_96",
+    "siteId": "site_oakridge_2",
+    "assignedFrom": "2025-02-03"
+  },
+  {
+    "id": "cont_oakridge_3",
+    "serial": "PD-C-1008",
+    "catalogId": "cat_res_96",
+    "siteId": "site_oakridge_3",
+    "assignedFrom": "2025-02-03"
+  },
+  {
+    "id": "cont_oakridge_4",
+    "serial": "PD-C-1009",
+    "catalogId": "cat_res_96",
+    "siteId": "site_oakridge_4",
+    "assignedFrom": "2025-02-03"
+  },
+  {
+    "id": "cont_ro_101",
+    "serial": "PD-R-101",
+    "catalogId": "cat_ro_20yd",
+    "siteId": "site_hale_riverside",
+    "assignedFrom": "2026-08-13"
+  },
+  {
+    "id": "cont_ro_102",
+    "serial": "PD-R-102",
+    "catalogId": "cat_ro_20yd",
+    "siteId": "site_hale_riverside",
+    "assignedFrom": "2026-08-13"
+  },
+  {
+    "id": "cont_ro_103",
+    "serial": "PD-R-103",
+    "catalogId": "cat_ro_20yd",
+    "siteId": "site_hale_depot",
+    "assignedFrom": "2026-08-20"
+  },
+  {
+    "id": "cont_ro_104",
+    "serial": "PD-R-104",
+    "catalogId": "cat_ro_20yd",
+    "siteId": "site_ro_homeowner",
+    "assignedFrom": "2026-08-07"
+  },
+  {
+    "id": "cont_res_001",
+    "serial": "PD-C-1010",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_001",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_002",
+    "serial": "PD-C-1011",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_002",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_003",
+    "serial": "PD-C-1012",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_003",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_004",
+    "serial": "PD-C-1013",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_004",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_005",
+    "serial": "PD-C-1014",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_005",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_006",
+    "serial": "PD-C-1015",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_006",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_007",
+    "serial": "PD-C-1016",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_007",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_008",
+    "serial": "PD-C-1017",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_008",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_009",
+    "serial": "PD-C-1018",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_009",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_010",
+    "serial": "PD-C-1019",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_010",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_011",
+    "serial": "PD-C-1020",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_011",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_012",
+    "serial": "PD-C-1021",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_012",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_013",
+    "serial": "PD-C-1022",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_013",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_014",
+    "serial": "PD-C-1023",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_014",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_015",
+    "serial": "PD-C-1024",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_015",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_016",
+    "serial": "PD-C-1025",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_016",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_017",
+    "serial": "PD-C-1026",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_017",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_018",
+    "serial": "PD-C-1027",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_018",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_019",
+    "serial": "PD-C-1028",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_019",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_020",
+    "serial": "PD-C-1029",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_020",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_021",
+    "serial": "PD-C-1030",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_021",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_022",
+    "serial": "PD-C-1031",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_022",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_023",
+    "serial": "PD-C-1032",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_023",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_024",
+    "serial": "PD-C-1033",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_024",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_025",
+    "serial": "PD-C-1034",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_025",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_026",
+    "serial": "PD-C-1035",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_026",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_027",
+    "serial": "PD-C-1036",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_027",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_028",
+    "serial": "PD-C-1037",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_028",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_029",
+    "serial": "PD-C-1038",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_029",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_res_030",
+    "serial": "PD-C-1039",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_030",
+    "assignedFrom": "2024-03-04"
+  },
+  {
+    "id": "cont_fl_001",
+    "serial": "PD-F-203",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_fl_001",
+    "assignedFrom": "2025-01-06"
+  },
+  {
+    "id": "cont_fl_002",
+    "serial": "PD-F-204",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_fl_002",
+    "assignedFrom": "2025-01-06"
+  },
+  {
+    "id": "cont_fl_003",
+    "serial": "PD-F-205",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_fl_003",
+    "assignedFrom": "2025-01-06"
+  },
+  {
+    "id": "cont_fl_004",
+    "serial": "PD-F-206",
+    "catalogId": "cat_fl_2yd",
+    "siteId": "site_fl_004",
+    "assignedFrom": "2025-01-06"
+  },
+  {
+    "id": "cont_fl_005",
+    "serial": "PD-F-207",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_fl_005",
+    "assignedFrom": "2025-01-06"
+  },
+  {
+    "id": "cont_fl_006",
+    "serial": "PD-F-208",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_fl_006",
+    "assignedFrom": "2025-01-06"
+  },
+  {
+    "id": "cont_fl_007",
+    "serial": "PD-F-209",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_fl_007",
+    "assignedFrom": "2025-01-06"
+  },
+  {
+    "id": "cont_fl_008",
+    "serial": "PD-F-210",
+    "catalogId": "cat_fl_2yd",
+    "siteId": "site_fl_008",
+    "assignedFrom": "2025-01-06"
+  }
+]

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Cart blocked by a parked vehicle in the driveway">
+  <rect width="640" height="400" fill="#9db4c4"/>
+  <rect x="0" y="300" width="640" height="100" fill="#5b6b76"/>
+  <rect x="80" y="220" width="70" height="90" rx="6" fill="#2f6b4f"/>
+  <rect x="86" y="212" width="58" height="12" rx="3" fill="#25543f"/>
+  <rect x="180" y="200" width="300" height="100" rx="18" fill="#c8402f"/>
+  <rect x="230" y="160" width="190" height="60" rx="14" fill="#a83222"/>
+  <circle cx="240" cy="305" r="24" fill="#222"/><circle cx="420" cy="305" r="24" fill="#222"/>
+  <circle cx="240" cy="305" r="10" fill="#888"/><circle cx="420" cy="305" r="10" fill="#888"/>
+  <text x="20" y="380" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18" fill="#ffffff">Cart blocked by a parked vehicle in the driveway</text>
+  <text x="620" y="30" text-anchor="end" font-family="ui-monospace, monospace" font-size="14" fill="#ffffff" opacity="0.8">Driver photo, placeholder</text>
+</svg>

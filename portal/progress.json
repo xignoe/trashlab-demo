@@ -1,0 +1,374 @@
+{
+  "1:1": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "Scaffold Vite + React 18 + TypeScript in this directory (`npm create vite@latest . -- --template react-ts` or equivalent"
+  },
+  "1:2": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/types.ts` transcribed from the \"src/types.ts\" section of SHARED_CONTRACT.md: every entity, every field, every union"
+  },
+  "1:3": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/store/clock.ts` exports `TODAY = '2026-09-10'` and helpers `addDays`, `nextRouteDay(routeDay, fromDate)`, `nextBusi"
+  },
+  "1:4": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/hauler.json`: hauler_piedmont \"Piedmont Disposal\" with policy proration none, lateFeeCents 1000, lateFeeDay 5,"
+  },
+  "1:5": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/zones.json`: zone_open (open, tax 7, franchise 0, delivery 2500, publicPricing true), zone_boundary (boundary,"
+  },
+  "1:6": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/routes.json`: route_mon_res (Mon, residential), route_tue_res (Tue, residential), route_wed_fl (Wed, frontload"
+  },
+  "1:7": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/catalog.json`: cat_res_96, cat_res_64, cat_res_extra_cart, cat_res_recycling, cat_fl_2yd, cat_fl_3yd, cat_fl_3"
+  },
+  "1:8": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/rateVersions.json`: published zone_open versions effective 2026-01-01: cat_res_96 weekly 2900, cat_res_64 week"
+  },
+  "1:9": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/feeRules.json` and `src/seed/taxRules.json`: fee_fuel_7pct (percent 7, base serviceLines, appliesTo recurring "
+  },
+  "1:10": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/parties.json`, `accounts.json`, `sites.json`, `serviceItems.json`, `containers.json` cover every named account"
+  },
+  "1:11": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "acct_res_maple: homeowner party \"Dana Maple\", site site_maple on route_mon_res in zone_open, three active ServiceItems ("
+  },
+  "1:12": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "acct_pm_oakridge: propertyManager party \"Oakridge Property Management\", cycle net30, billedInAdvance false, four sites s"
+  },
+  "1:13": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/contracts.json`: contract_bakery (10% below rate card on cat_fl_3yd and cat_fl_3yd_wood, reason \"competitive m"
+  },
+  "1:14": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/serviceEvents.json` for the last 14 days plus the week before, for Maple's site: 2026-08-17 completed with exc"
+  },
+  "1:15": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/photos/`: four placeholder images (SVG is fine) referenced by the seeded photoUrls: blocked driveway, extra ba"
+  },
+  "1:16": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/charges.json` and `invoices.json`: Maple has a posted, locked Q3 invoice inv_maple_2026q3 (issued 2026-07-01, "
+  },
+  "1:17": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/payments.json`, `allocations.json`, `batches.json`: pay_chk_oakridge (check) allocated across the three older "
+  },
+  "1:18": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/workOrders.json`, `requests.json`, `quotes.json`, `waived.json`, `creditMemos.json`, `scaleTickets.json`: one "
+  },
+  "1:19": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`src/seed/index.ts` imports every JSON file and exports one typed `seed` object keyed by table name (hauler, parties, ac"
+  },
+  "1:20": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`scripts/check_seed.mjs` loads every JSON file and asserts: every referenced id exists (accountId, siteId, zoneId, route"
+  },
+  "1:21": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "Paper MCP attempted: call get_basic_info; the open file has no artboards and no tokens, so write a neutral token set to "
+  },
+  "1:22": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`DESIGN.md` names every token group and the component patterns (table, side panel or drawer, status pill, button, form f"
+  },
+  "1:23": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`DECISIONS.md` started with: types transcribed from prose contract, cat_res_extra_pickup added, vacation hold policy con"
+  },
+  "1:24": {
+    "first_ticked": "2026-09-10T20:25:39+00:00",
+    "text": "`npm run dev` starts clean with no TypeScript errors and no console errors, `npm run build` passes, and the root page re"
+  },
+  "2:1": {
+    "first_ticked": "2026-09-10T20:32:13+00:00",
+    "text": "`src/store/engine.ts` exports `resolvePrice({ catalogId, frequency, zoneId, accountId, onDate })` with the contract prec"
+  },
+  "2:2": {
+    "first_ticked": "2026-09-10T20:32:13+00:00",
+    "text": "`resolvePrice` unit tests in `src/store/engine.test.ts` (vitest): zone rate wins for Maple, contract override wins for b"
+  },
+  "2:3": {
+    "first_ticked": "2026-09-10T20:32:13+00:00",
+    "text": "`src/store/engine.ts` exports `computeCharge({ accountId, siteId, lineType, baseCents, servicedOn|period, source, catalo"
+  },
+  "2:4": {
+    "first_ticked": "2026-09-10T20:32:13+00:00",
+    "text": "`computeCharge` unit tests: Maple cat_res_96 monthly recurring produces base 2900, fuel 203, env 100, tax 217 (7% of 310"
+  },
+  "2:5": {
+    "first_ticked": "2026-09-10T20:32:13+00:00",
+    "text": "`src/store/engine.ts` exports `allocate({ sourceType, sourceId, invoiceIds, cents })` returning PaymentAllocation[] and "
+  },
+  "2:6": {
+    "first_ticked": "2026-09-10T20:32:13+00:00",
+    "text": "`src/store/selectors.ts` exports `invoiceOpenBalance(state, invoiceId)`, `accountBalance(state, accountId)`, `sitesForAc"
+  },
+  "2:7": {
+    "first_ticked": "2026-09-10T20:32:13+00:00",
+    "text": "`src/store/useStore.ts`: one zustand store holding every seed table as an array keyed like a Postgres table, plus `sessi"
+  },
+  "2:8": {
+    "first_ticked": "2026-09-10T20:32:13+00:00",
+    "text": "Store never mutates a locked Invoice or a posted Charge; a unit test proves `updateInvoice` on a locked invoice throws"
+  },
+  "2:9": {
+    "first_ticked": "2026-09-10T20:36:14+00:00",
+    "text": "Portal shell: top bar with hauler name, \"Signed in as\" account switcher between Dana Maple (acct_res_maple) and Oakridge"
+  },
+  "2:10": {
+    "first_ticked": "2026-09-10T20:36:14+00:00",
+    "text": "Site switcher appears only for accounts with more than one site, lists each site address with its PO number, and drives "
+  },
+  "2:11": {
+    "first_ticked": "2026-09-10T20:36:14+00:00",
+    "text": "Left nav or tabs: Overview, Billing, Requests, with React state routing (no router dependency required) and the current "
+  },
+  "2:12": {
+    "first_ticked": "2026-09-10T20:36:14+00:00",
+    "text": "Overview screen: account status pill (active, pastDue, suspended, hold), balance due, next pickup day computed from the "
+  },
+  "2:13": {
+    "first_ticked": "2026-09-10T20:36:14+00:00",
+    "text": "Every screen renders with seed data for both accounts and all four Oakridge sites without console errors; `npm run build"
+  },
+  "3:1": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "Billing screen lists the account's invoices newest first with number, issued, due, total, paid, open balance, and a stat"
+  },
+  "3:2": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "Invoice detail shows each charge as a line with description, service period or serviced date, site (and PO for Oakridge)"
+  },
+  "3:3": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "\"Why this charge\" drawer opens from every line and walks provenance in order: source (ServiceItem with catalog name, fre"
+  },
+  "3:4": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "The drawer for a lateFee line says plainly that late fees carry no fuel fee and no tax, citing the hauler policy (lateFe"
+  },
+  "3:5": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "Locked invoices show a \"Posted and locked\" badge and a one-line note that corrections arrive as credit memos, never edit"
+  },
+  "3:6": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "Pay now: button on any invoice with an open balance opens a payment sheet showing amount (default open balance, editable"
+  },
+  "3:7": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "Confirming payment creates a Payment (method card or ach, status settled, receivedAt now) and PaymentAllocations via `al"
+  },
+  "3:8": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "Autopay toggle on the Billing screen: turning on requires a saved method (offers to save one via the mock token sheet if"
+  },
+  "3:9": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "Saved method panel: shows kind (card or ach) and last four from a small `paymentMethods` table in the store keyed by acc"
+  },
+  "3:10": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "Payment history: every Payment for the account newest first with method, date, amount, status, processor batch id when p"
+  },
+  "3:11": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "Billing screen works for Oakridge with all four sites on one invoice: lines grouped by site with PO in each group header"
+  },
+  "3:12": {
+    "first_ticked": "2026-09-10T20:48:55+00:00",
+    "text": "Every money value on the Billing screen formats through one `money(cents)` helper; `npm run build` and `npx vitest run` "
+  },
+  "4:1": {
+    "first_ticked": "2026-09-10T23:41:39+00:00",
+    "text": "Addendum: B2. src/types.ts is identical to ../shared/types.ts below the header comment (today only Invoice.deliveredVia "
+  },
+  "4:2": {
+    "first_ticked": "2026-09-10T23:41:39+00:00",
+    "text": "Addendum: B1. Contract.escalator.anniversary is a full ISO date (\"2027-01-01\") in src/seed/contracts.json and in scripts"
+  },
+  "4:3": {
+    "first_ticked": "2026-09-10T23:41:39+00:00",
+    "text": "Addendum: C8. src/seed/taxRules.json has exactly three rules, one each for zone_open, zone_boundary, zone_franchise at 7"
+  },
+  "4:4": {
+    "first_ticked": "2026-09-10T23:41:39+00:00",
+    "text": "Addendum: C5. computeCharge applies flat fees once per whole month in the charge's period (a quarterly line carries fee_"
+  },
+  "4:5": {
+    "first_ticked": "2026-09-10T23:41:39+00:00",
+    "text": "Addendum: C5 follow-through. Maple's past due balance stays exactly 8745 after the reseed (adjust pay_card_maple_partial"
+  },
+  "4:6": {
+    "first_ticked": "2026-09-10T23:41:39+00:00",
+    "text": "Addendum: D5. Retire cat_res_extra_pickup and its two RateVersions from the seed; add src/seed/eventRates.json with the "
+  },
+  "4:7": {
+    "first_ticked": "2026-09-10T23:41:39+00:00",
+    "text": "Requests screen has a request picker (Extra pickup, Vacation hold, Cart size change, Missed pickup, and Request a quote "
+  },
+  "4:9": {
+    "first_ticked": "2026-09-10T23:41:39+00:00",
+    "text": "Extra pickup eligibility runs three checks in order and shows each as a pass or fail row: account status active or pastD"
+  },
+  "4:10": {
+    "first_ticked": "2026-09-10T23:41:39+00:00",
+    "text": "Extra pickup quote: base from eventRates.json extraPickup (addendum D5) fed into `computeCharge` as lineType event, sour"
+  },
+  "4:11": {
+    "first_ticked": "2026-09-10T23:41:39+00:00",
+    "text": "Extra pickup payment: uses the same mock token sheet as Billing; on success creates the Charge (status approved, lineTyp"
+  },
+  "4:18": {
+    "first_ticked": "2026-09-10T23:41:39+00:00",
+    "text": "Next cycle start for quarterly accounts is the first day of the next calendar quarter after TODAY (2026-10-01) and for m"
+  },
+  "4:13": {
+    "first_ticked": "2026-09-10T23:43:00+00:00",
+    "text": "Vacation hold form: start and end date inputs, both must be on or after tomorrow, end after start; policy check against "
+  },
+  "4:14": {
+    "first_ticked": "2026-09-10T23:43:00+00:00",
+    "text": "Vacation hold success: stub the ServiceItem status change and BillingAccount hold behind `requestServiceItemHold()` (OWN"
+  },
+  "4:15": {
+    "first_ticked": "2026-09-10T23:43:00+00:00",
+    "text": "Vacation hold failure: a range shorter than 7 days or longer than 90 shows the policy reason inline and offers HandoffCa"
+  },
+  "4:16": {
+    "first_ticked": "2026-09-10T23:43:31+00:00",
+    "text": "Cart size change: pick the active cart ServiceItem (cat_res_96 or cat_res_64) and the target size; shows current monthly"
+  },
+  "4:17": {
+    "first_ticked": "2026-09-10T23:43:31+00:00",
+    "text": "Cart size change confirm: stub the ServiceItem end-date and new ServiceItem behind `proposeCartChange()` (OWNERSHIP.md: "
+  },
+  "4:8": {
+    "first_ticked": "2026-09-10T23:44:49+00:00",
+    "text": "Shared `src/lib/handoff.ts` exports `handoff(reason)` returning `{ reason, followUpBy }` where followUpBy is `nextBusine"
+  },
+  "4:12": {
+    "first_ticked": "2026-09-10T23:44:49+00:00",
+    "text": "Extra pickup failure path: any failed check shows the HandoffCard and creates a Request of kind extraPickup status open "
+  },
+  "4:19": {
+    "first_ticked": "2026-09-10T23:44:49+00:00",
+    "text": "Open items list shows every Request for the account (all sites) with kind, site, created date, status pill using the exa"
+  },
+  "4:20": {
+    "first_ticked": "2026-09-10T23:44:49+00:00",
+    "text": "Every mutation in this phase appears in the store log and the Overview open items count updates; `npm run build` and `np"
+  },
+  "5:1": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Missed pickup form: date picker limited to the last 14 days, defaults to the most recent route day for the site, and loo"
+  },
+  "5:2": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Missed pickup, event completed: shows \"Our driver completed this stop at <time>\" with the driver name and the photo, and"
+  },
+  "5:3": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Missed pickup, event blocked or exception notOut: shows the driver note and the photo, explains no recovery is scheduled"
+  },
+  "5:4": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Missed pickup, event missed: creates a WorkOrder kind recovery status scheduled with scheduledFor = next business day, a"
+  },
+  "5:5": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Missed pickup, event skippedSuspended or no event found: shows HandoffCard with the reason (\"No route record for <date>\""
+  },
+  "5:6": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Missed pickup, selected date is not the site's route day: says so and offers the nearest route day instead"
+  },
+  "5:7": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Commercial quote request (Oakridge only, hidden for Maple): form with site (defaults to the current site), container siz"
+  },
+  "5:8": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Submitting: stub the Quote write behind `submitQuoteRequest()` (OWNERSHIP.md: storefront and pricing write Quote), note "
+  },
+  "5:9": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Open items shows the quote request with the quote id and \"Priced by a person, we will send the quote by <followUpBy>\""
+  },
+  "5:10": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Maple never sees the quote option; Oakridge sees it on every site and the site switcher changes the default site in the "
+  },
+  "5:11": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Cart size change is hidden in the request picker for accounts whose sites have no residential cart ServiceItem (Oakridge"
+  },
+  "5:12": {
+    "first_ticked": "2026-09-10T23:58:09+00:00",
+    "text": "Every request kind in the contract (extraPickup, vacationHold, cartChange, missedPickup, quote) has at least one path th"
+  },
+  "6:5": {
+    "first_ticked": "2026-09-11T00:03:11+00:00",
+    "text": "Raise `MISSED_PICKUP_WINDOW_DAYS` in src/store/engine.ts from 14 to 21 so Maple's seeded 2026-08-24 missed event is reac"
+  },
+  "6:1": {
+    "first_ticked": "2026-09-11T00:04:18+00:00",
+    "text": "Addendum: F2 (polish). Adopt ../shared/tokens.css as the portal token source (copy it into src/styles, since shared/ is "
+  },
+  "6:3": {
+    "first_ticked": "2026-09-11T00:04:18+00:00",
+    "text": "DESIGN.md updated with a \"Drift\" section comparing the running screens to the Paper artboards (or stating Paper was unav"
+  },
+  "6:4": {
+    "first_ticked": "2026-09-11T00:04:18+00:00",
+    "text": "`src/lib/invariants.ts` exports checks the UI can run: every Charge has base, fees, tax, source, ruleWon (invariant 2); "
+  },
+  "6:2": {
+    "first_ticked": "2026-09-11T00:04:32+00:00",
+    "text": "Paper: manager. One artboard each for Overview, Billing with the drawer open, Requests with the extra pickup flow, and t"
+  },
+  "6:7": {
+    "first_ticked": "2026-09-11T00:06:05+00:00",
+    "text": "Scenario 1 verified in the browser: after paying, inv_maple_2026q3 balance is 0, account pill reads active, autopay read"
+  },
+  "6:8": {
+    "first_ticked": "2026-09-11T00:07:21+00:00",
+    "text": "Scenario 2 verified in the browser: 2026-09-07 shows the blocked note and photo and no recovery work order is created; 2"
+  },
+  "6:9": {
+    "first_ticked": "2026-09-11T00:07:58+00:00",
+    "text": "Scenario 3 verified in the browser: extra pickup shows the three checks passing, the price stack, payment, and the open "
+  },
+  "6:6": {
+    "first_ticked": "2026-09-11T00:08:43+00:00",
+    "text": "RUNBOOK.md: how to start (`npm install && npm run dev`), the two logins, and a scripted walkthrough under five minutes o"
+  },
+  "6:10": {
+    "first_ticked": "2026-09-11T00:08:43+00:00",
+    "text": "Scenario 4 verified in the browser: Oakridge switches sites, submits a quote request, and the open items list shows it w"
+  },
+  "6:11": {
+    "first_ticked": "2026-09-11T00:08:43+00:00",
+    "text": "Empty and edge states have copy: no invoices, no open items, no events in range, a fully paid account with no Pay now bu"
+  },
+  "6:12": {
+    "first_ticked": "2026-09-11T00:12:17+00:00",
+    "text": "Clean install check: `rm -rf node_modules && npm install && npm run build && npx vitest run` passes; an em dash search o"
+  }
+}

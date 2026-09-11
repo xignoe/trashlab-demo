@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "./styles/tokens.css";
+
+/* Tailwind theme reads every value from tokens.css so utilities like bg-surface, text-muted,
+   border-line, rounded-card, font-sans and text-display resolve to the Paper derived variables. */
+@theme inline {
+  --color-bg: var(--tl-bg);
+  --color-surface: var(--tl-surface);
+  --color-surface-muted: var(--tl-surface-muted);
+  --color-line: var(--tl-border);
+  --color-ink: var(--tl-text);
+  --color-muted: var(--tl-text-muted);
+  --color-accent: var(--tl-accent);
+  --color-accent-soft: var(--tl-accent-soft);
+  --color-accent-strong: var(--tl-accent-strong);
+  --color-success: var(--tl-success);
+  --color-success-soft: var(--tl-success-soft);
+  --color-warning: var(--tl-warning);
+  --color-warning-soft: var(--tl-warning-soft);
+  --color-danger: var(--tl-danger);
+  --color-danger-soft: var(--tl-danger-soft);
+  --color-info: var(--tl-info);
+
+  --font-sans: var(--tl-font-sans);
+  --font-mono: var(--tl-font-mono);
+
+  --text-display: var(--tl-text-display);
+  --text-display--line-height: var(--tl-leading-tight);
+  --text-h1: var(--tl-text-h1);
+  --text-h1--line-height: var(--tl-leading-tight);
+  --text-h2: var(--tl-text-h2);
+  --text-h2--line-height: var(--tl-leading-tight);
+  --text-body: var(--tl-text-body);
+  --text-body--line-height: var(--tl-leading-body);
+  --text-small: var(--tl-text-small);
+  --text-small--line-height: var(--tl-leading-body);
+  --text-mono: var(--tl-text-mono);
+  --text-eyebrow: var(--tl-text-eyebrow);
+
+  --radius-sm: var(--tl-radius-sm);
+  --radius-md: var(--tl-radius-md);
+  --radius-card: var(--tl-radius-lg);
+  --radius-pill: var(--tl-radius-pill);
+
+  --shadow-card: var(--tl-shadow-card);
+  --shadow-raised: var(--tl-shadow-raised);
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--tl-bg);
+  color: var(--tl-text);
+  font-family: var(--tl-font-sans);
+  font-size: var(--tl-text-body);
+  line-height: var(--tl-leading-body);
+  -webkit-font-smoothing: antialiased;
+}

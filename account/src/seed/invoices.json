@@ -1,0 +1,839 @@
+[
+  {
+    "id": "inv_maple_q3",
+    "accountId": "acct_res_maple",
+    "number": "PD-2026-0404",
+    "chargeIds": [
+      "ch_maple_q3_96",
+      "ch_maple_q3_extra",
+      "ch_maple_q3_recycling"
+    ],
+    "subtotalCents": 15000,
+    "feeCents": 1950,
+    "taxCents": 1124,
+    "totalCents": 18074,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_holt_q3",
+    "accountId": "acct_res_holt",
+    "number": "PD-2026-0402",
+    "chargeIds": [
+      "ch_holt_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_kerr_q3",
+    "accountId": "acct_res_kerr",
+    "number": "PD-2026-0403",
+    "chargeIds": [
+      "ch_kerr_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_bakery_0801",
+    "accountId": "acct_bakery",
+    "number": "PD-2026-0436",
+    "chargeIds": [
+      "ch_bakery_0801_3yd",
+      "ch_bakery_0801_wood"
+    ],
+    "subtotalCents": 36900,
+    "feeCents": 2783,
+    "taxCents": 2764,
+    "totalCents": 42447,
+    "issuedAt": "2026-07-20",
+    "dueAt": "2026-08-04",
+    "postedAt": "2026-07-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_bakery_0901",
+    "accountId": "acct_bakery",
+    "number": "PD-2026-0439",
+    "chargeIds": [
+      "ch_bakery_0901_3yd",
+      "ch_bakery_0901_wood"
+    ],
+    "subtotalCents": 36900,
+    "feeCents": 2783,
+    "taxCents": 2764,
+    "totalCents": 42447,
+    "issuedAt": "2026-08-20",
+    "dueAt": "2026-09-04",
+    "postedAt": "2026-08-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_oak_0601",
+    "accountId": "acct_pm_oakridge",
+    "number": "PD-2026-0401",
+    "chargeIds": [
+      "ch_oak_0601_1",
+      "ch_oak_0601_2",
+      "ch_oak_0601_3",
+      "ch_oak_0601_4"
+    ],
+    "subtotalCents": 66000,
+    "feeCents": 5020,
+    "taxCents": 4944,
+    "totalCents": 75964,
+    "issuedAt": "2026-06-01",
+    "dueAt": "2026-07-01",
+    "postedAt": "2026-06-01",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_oak_0701",
+    "accountId": "acct_pm_oakridge",
+    "number": "PD-2026-0435",
+    "chargeIds": [
+      "ch_oak_0701_1",
+      "ch_oak_0701_2",
+      "ch_oak_0701_3",
+      "ch_oak_0701_4"
+    ],
+    "subtotalCents": 66000,
+    "feeCents": 5020,
+    "taxCents": 4944,
+    "totalCents": 75964,
+    "issuedAt": "2026-07-01",
+    "dueAt": "2026-07-31",
+    "postedAt": "2026-07-01",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_oak_0801",
+    "accountId": "acct_pm_oakridge",
+    "number": "PD-2026-0437",
+    "chargeIds": [
+      "ch_oak_0801_1",
+      "ch_oak_0801_2",
+      "ch_oak_0801_3",
+      "ch_oak_0801_4"
+    ],
+    "subtotalCents": 66000,
+    "feeCents": 5020,
+    "taxCents": 4944,
+    "totalCents": 75964,
+    "issuedAt": "2026-08-01",
+    "dueAt": "2026-08-31",
+    "postedAt": "2026-08-01",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_hale_0901",
+    "accountId": "acct_contractor_hale",
+    "number": "PD-2026-0448",
+    "chargeIds": [
+      "ch_hale_haul_1",
+      "ch_hale_haul_2",
+      "ch_hale_haul_3"
+    ],
+    "subtotalCents": 172500,
+    "feeCents": 12075,
+    "taxCents": 12921,
+    "totalCents": 197496,
+    "issuedAt": "2026-09-01",
+    "dueAt": "2026-10-01",
+    "postedAt": "2026-09-01",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_ro_home_0805",
+    "accountId": "acct_ro_homeowner",
+    "number": "PD-2026-0438",
+    "chargeIds": [
+      "ch_ro_home_haul"
+    ],
+    "subtotalCents": 57500,
+    "feeCents": 4025,
+    "taxCents": 4307,
+    "totalCents": 65832,
+    "issuedAt": "2026-08-05",
+    "dueAt": "2026-08-20",
+    "postedAt": "2026-08-05",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_001_q3",
+    "accountId": "acct_res_001",
+    "number": "PD-2026-0405",
+    "chargeIds": [
+      "ch_res_001_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_002_q3",
+    "accountId": "acct_res_002",
+    "number": "PD-2026-0406",
+    "chargeIds": [
+      "ch_res_002_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_003_q3",
+    "accountId": "acct_res_003",
+    "number": "PD-2026-0407",
+    "chargeIds": [
+      "ch_res_003_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_res_004_q3",
+    "accountId": "acct_res_004",
+    "number": "PD-2026-0408",
+    "chargeIds": [
+      "ch_res_004_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_005_q3",
+    "accountId": "acct_res_005",
+    "number": "PD-2026-0409",
+    "chargeIds": [
+      "ch_res_005_q3_96",
+      "ch_res_005_q3_rec"
+    ],
+    "subtotalCents": 12300,
+    "feeCents": 1461,
+    "taxCents": 922,
+    "totalCents": 14683,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_006_q3",
+    "accountId": "acct_res_006",
+    "number": "PD-2026-0410",
+    "chargeIds": [
+      "ch_res_006_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_res_007_q3",
+    "accountId": "acct_res_007",
+    "number": "PD-2026-0411",
+    "chargeIds": [
+      "ch_res_007_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_008_q3",
+    "accountId": "acct_res_008",
+    "number": "PD-2026-0412",
+    "chargeIds": [
+      "ch_res_008_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_009_q3",
+    "accountId": "acct_res_009",
+    "number": "PD-2026-0413",
+    "chargeIds": [
+      "ch_res_009_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_res_010_q3",
+    "accountId": "acct_res_010",
+    "number": "PD-2026-0414",
+    "chargeIds": [
+      "ch_res_010_q3_96",
+      "ch_res_010_q3_rec"
+    ],
+    "subtotalCents": 12300,
+    "feeCents": 1461,
+    "taxCents": 922,
+    "totalCents": 14683,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_011_q3",
+    "accountId": "acct_res_011",
+    "number": "PD-2026-0415",
+    "chargeIds": [
+      "ch_res_011_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_012_q3",
+    "accountId": "acct_res_012",
+    "number": "PD-2026-0416",
+    "chargeIds": [
+      "ch_res_012_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_res_013_q3",
+    "accountId": "acct_res_013",
+    "number": "PD-2026-0417",
+    "chargeIds": [
+      "ch_res_013_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_014_q3",
+    "accountId": "acct_res_014",
+    "number": "PD-2026-0418",
+    "chargeIds": [
+      "ch_res_014_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_015_q3",
+    "accountId": "acct_res_015",
+    "number": "PD-2026-0419",
+    "chargeIds": [
+      "ch_res_015_q3_96",
+      "ch_res_015_q3_rec"
+    ],
+    "subtotalCents": 12300,
+    "feeCents": 1461,
+    "taxCents": 922,
+    "totalCents": 14683,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_res_016_q3",
+    "accountId": "acct_res_016",
+    "number": "PD-2026-0420",
+    "chargeIds": [
+      "ch_res_016_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_017_q3",
+    "accountId": "acct_res_017",
+    "number": "PD-2026-0421",
+    "chargeIds": [
+      "ch_res_017_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_018_q3",
+    "accountId": "acct_res_018",
+    "number": "PD-2026-0422",
+    "chargeIds": [
+      "ch_res_018_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_res_019_q3",
+    "accountId": "acct_res_019",
+    "number": "PD-2026-0423",
+    "chargeIds": [
+      "ch_res_019_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_020_q3",
+    "accountId": "acct_res_020",
+    "number": "PD-2026-0424",
+    "chargeIds": [
+      "ch_res_020_q3_96",
+      "ch_res_020_q3_rec"
+    ],
+    "subtotalCents": 12300,
+    "feeCents": 1461,
+    "taxCents": 922,
+    "totalCents": 14683,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_021_q3",
+    "accountId": "acct_res_021",
+    "number": "PD-2026-0425",
+    "chargeIds": [
+      "ch_res_021_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_res_022_q3",
+    "accountId": "acct_res_022",
+    "number": "PD-2026-0426",
+    "chargeIds": [
+      "ch_res_022_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_023_q3",
+    "accountId": "acct_res_023",
+    "number": "PD-2026-0427",
+    "chargeIds": [
+      "ch_res_023_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_024_q3",
+    "accountId": "acct_res_024",
+    "number": "PD-2026-0428",
+    "chargeIds": [
+      "ch_res_024_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_res_025_q3",
+    "accountId": "acct_res_025",
+    "number": "PD-2026-0429",
+    "chargeIds": [
+      "ch_res_025_q3_96",
+      "ch_res_025_q3_rec"
+    ],
+    "subtotalCents": 12300,
+    "feeCents": 1461,
+    "taxCents": 922,
+    "totalCents": 14683,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_026_q3",
+    "accountId": "acct_res_026",
+    "number": "PD-2026-0430",
+    "chargeIds": [
+      "ch_res_026_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_027_q3",
+    "accountId": "acct_res_027",
+    "number": "PD-2026-0431",
+    "chargeIds": [
+      "ch_res_027_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_res_028_q3",
+    "accountId": "acct_res_028",
+    "number": "PD-2026-0432",
+    "chargeIds": [
+      "ch_res_028_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_029_q3",
+    "accountId": "acct_res_029",
+    "number": "PD-2026-0433",
+    "chargeIds": [
+      "ch_res_029_q3_96"
+    ],
+    "subtotalCents": 8700,
+    "feeCents": 909,
+    "taxCents": 652,
+    "totalCents": 10261,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_res_030_q3",
+    "accountId": "acct_res_030",
+    "number": "PD-2026-0434",
+    "chargeIds": [
+      "ch_res_030_q3_96",
+      "ch_res_030_q3_rec"
+    ],
+    "subtotalCents": 12300,
+    "feeCents": 1461,
+    "taxCents": 922,
+    "totalCents": 14683,
+    "issuedAt": "2026-06-20",
+    "dueAt": "2026-07-05",
+    "postedAt": "2026-06-20",
+    "locked": true,
+    "deliveredVia": "mail"
+  },
+  {
+    "id": "inv_fl_001_0901",
+    "accountId": "acct_fl_001",
+    "number": "PD-2026-0440",
+    "chargeIds": [
+      "ch_fl_001_0901"
+    ],
+    "subtotalCents": 15675,
+    "feeCents": 1197,
+    "taxCents": 1174,
+    "totalCents": 18046,
+    "issuedAt": "2026-08-20",
+    "dueAt": "2026-09-04",
+    "postedAt": "2026-08-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_fl_002_0901",
+    "accountId": "acct_fl_002",
+    "number": "PD-2026-0441",
+    "chargeIds": [
+      "ch_fl_002_0901"
+    ],
+    "subtotalCents": 20900,
+    "feeCents": 1563,
+    "taxCents": 1565,
+    "totalCents": 24028,
+    "issuedAt": "2026-08-20",
+    "dueAt": "2026-09-04",
+    "postedAt": "2026-08-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_fl_003_0901",
+    "accountId": "acct_fl_003",
+    "number": "PD-2026-0442",
+    "chargeIds": [
+      "ch_fl_003_0901"
+    ],
+    "subtotalCents": 15675,
+    "feeCents": 1197,
+    "taxCents": 1174,
+    "totalCents": 18046,
+    "issuedAt": "2026-08-20",
+    "dueAt": "2026-09-04",
+    "postedAt": "2026-08-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_fl_004_0901",
+    "accountId": "acct_fl_004",
+    "number": "PD-2026-0443",
+    "chargeIds": [
+      "ch_fl_004_0901"
+    ],
+    "subtotalCents": 20900,
+    "feeCents": 1563,
+    "taxCents": 1565,
+    "totalCents": 24028,
+    "issuedAt": "2026-08-20",
+    "dueAt": "2026-09-04",
+    "postedAt": "2026-08-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_fl_005_0901",
+    "accountId": "acct_fl_005",
+    "number": "PD-2026-0444",
+    "chargeIds": [
+      "ch_fl_005_0901"
+    ],
+    "subtotalCents": 16500,
+    "feeCents": 1255,
+    "taxCents": 1236,
+    "totalCents": 18991,
+    "issuedAt": "2026-08-20",
+    "dueAt": "2026-09-04",
+    "postedAt": "2026-08-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_fl_006_0901",
+    "accountId": "acct_fl_006",
+    "number": "PD-2026-0445",
+    "chargeIds": [
+      "ch_fl_006_0901"
+    ],
+    "subtotalCents": 22000,
+    "feeCents": 1640,
+    "taxCents": 1648,
+    "totalCents": 25288,
+    "issuedAt": "2026-08-20",
+    "dueAt": "2026-09-04",
+    "postedAt": "2026-08-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_fl_007_0901",
+    "accountId": "acct_fl_007",
+    "number": "PD-2026-0446",
+    "chargeIds": [
+      "ch_fl_007_0901"
+    ],
+    "subtotalCents": 16500,
+    "feeCents": 1255,
+    "taxCents": 1236,
+    "totalCents": 18991,
+    "issuedAt": "2026-08-20",
+    "dueAt": "2026-09-04",
+    "postedAt": "2026-08-20",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_fl_008_0901",
+    "accountId": "acct_fl_008",
+    "number": "PD-2026-0447",
+    "chargeIds": [
+      "ch_fl_008_0901"
+    ],
+    "subtotalCents": 22000,
+    "feeCents": 1640,
+    "taxCents": 1648,
+    "totalCents": 25288,
+    "issuedAt": "2026-08-20",
+    "dueAt": "2026-09-04",
+    "postedAt": "2026-08-20",
+    "locked": true,
+    "deliveredVia": "email"
+  }
+]

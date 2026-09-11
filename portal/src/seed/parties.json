@@ -1,0 +1,227 @@
+[
+  {
+    "id": "party_maple",
+    "name": "Dana Maple",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_holt",
+    "name": "Marcus Holt",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_kerr",
+    "name": "Linda Kerr",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_bakery",
+    "name": "Sunrise Bakery",
+    "kind": "business"
+  },
+  {
+    "id": "party_oakridge",
+    "name": "Oakridge Property Management",
+    "kind": "propertyManager"
+  },
+  {
+    "id": "party_hale",
+    "name": "Hale Construction LLC",
+    "kind": "contractor"
+  },
+  {
+    "id": "party_raman",
+    "name": "Priya Raman",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_001",
+    "name": "Jordan Whitfield",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_002",
+    "name": "Riley Adeyemi",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_003",
+    "name": "Casey Castillo",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_004",
+    "name": "Morgan Kowalski",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_005",
+    "name": "Taylor Brennan",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_006",
+    "name": "Quinn Ibarra",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_007",
+    "name": "Reese Lindqvist",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_008",
+    "name": "Parker Sorensen",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_009",
+    "name": "Emerson Garcia",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_010",
+    "name": "Hayden Mbeki",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_011",
+    "name": "Rowan Okafor",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_012",
+    "name": "Sawyer Duval",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_013",
+    "name": "Finley Patel",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_014",
+    "name": "Blake Tanaka",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_015",
+    "name": "Avery Nguyen",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_016",
+    "name": "Jordan Whitfield",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_017",
+    "name": "Riley Adeyemi",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_018",
+    "name": "Casey Castillo",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_019",
+    "name": "Morgan Kowalski",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_020",
+    "name": "Taylor Brennan",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_021",
+    "name": "Quinn Ibarra",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_022",
+    "name": "Reese Lindqvist",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_023",
+    "name": "Parker Sorensen",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_024",
+    "name": "Emerson Garcia",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_025",
+    "name": "Hayden Mbeki",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_026",
+    "name": "Rowan Okafor",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_027",
+    "name": "Sawyer Duval",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_028",
+    "name": "Finley Patel",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_029",
+    "name": "Blake Tanaka",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_030",
+    "name": "Avery Nguyen",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_fl_001",
+    "name": "Riverbend Auto Care",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_002",
+    "name": "Copper Kettle Diner",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_003",
+    "name": "Northgate Pharmacy",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_004",
+    "name": "Elm Street Hardware",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_005",
+    "name": "Blue Heron Veterinary",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_006",
+    "name": "Summit Fitness",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_007",
+    "name": "Harbor Print Shop",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_008",
+    "name": "Lakeside Dental",
+    "kind": "business"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "req_holt_hold",
+    "accountId": "acct_res_holt",
+    "siteId": "site_holt",
+    "kind": "vacationHold",
+    "status": "scheduled",
+    "createdVia": "portal",
+    "note": "Away 2026-08-28 to 2026-09-13; resume service Tue 2026-09-15"
+  }
+]

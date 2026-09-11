@@ -1,0 +1,72 @@
+[
+  {
+    "id": "cat_res_96",
+    "lob": "residential",
+    "name": "96 gallon cart",
+    "sizeLabel": "96 gal",
+    "unit": "cart",
+    "public": true
+  },
+  {
+    "id": "cat_res_64",
+    "lob": "residential",
+    "name": "64 gallon cart",
+    "sizeLabel": "64 gal",
+    "unit": "cart",
+    "public": true
+  },
+  {
+    "id": "cat_res_extra_cart",
+    "lob": "residential",
+    "name": "Extra 96 gallon cart",
+    "sizeLabel": "96 gal",
+    "unit": "cart",
+    "public": true
+  },
+  {
+    "id": "cat_res_recycling",
+    "lob": "residential",
+    "name": "Recycling cart",
+    "sizeLabel": "96 gal",
+    "unit": "cart",
+    "public": true
+  },
+  {
+    "id": "cat_fl_2yd",
+    "lob": "frontload",
+    "name": "2 yard front load container",
+    "sizeLabel": "2 yd",
+    "unit": "container",
+    "public": false
+  },
+  {
+    "id": "cat_fl_3yd",
+    "lob": "frontload",
+    "name": "3 yard front load container",
+    "sizeLabel": "3 yd",
+    "unit": "container",
+    "public": false
+  },
+  {
+    "id": "cat_fl_3yd_wood",
+    "lob": "frontload",
+    "name": "3 yard front load container, wood waste",
+    "sizeLabel": "3 yd",
+    "unit": "container",
+    "public": false
+  },
+  {
+    "id": "cat_ro_20yd",
+    "lob": "rolloff",
+    "name": "20 yard roll off box",
+    "sizeLabel": "20 yd",
+    "unit": "box",
+    "rolloff": {
+      "includedTons": 3,
+      "includedDays": 30,
+      "extraDayCents": 700,
+      "overageCentsPerTon": 7000
+    },
+    "public": false
+  }
+]

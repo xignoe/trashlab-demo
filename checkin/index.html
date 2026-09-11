@@ -1,0 +1,101 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TrashLab check-in</title>
+<style>
+:root{--bg:#F7F7FF;--surface:#fff;--ink:#1A174F;--muted:#6B7194;--brand:#312D97;--line:#E4E4F4;--ok:#1F6F5F;--warn:#B0402C;--warn-soft:#F7E3DE;--ok-soft:#E1EFEA}
+*{box-sizing:border-box}body{margin:0;font:14px/1.45 Manrope,Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+.top{background:var(--brand);color:#fff;padding:18px 32px;display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}
+.top h1{margin:0;font-size:20px}.top .dim{opacity:.75}.top a{color:#fff}
+main{padding:24px 32px;max-width:1500px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.card header{display:flex;justify-content:space-between;gap:12px}.card h2{margin:2px 0 4px;font-size:17px}
+.persona{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+.purpose{margin:0;color:var(--muted);font-size:13px}
+.big{font-size:30px;font-weight:800;text-align:right;line-height:1}.big small{display:block;font-size:11px;font-weight:500;color:var(--muted);margin-top:4px}
+.shot{display:block;border:1px solid var(--line);border-radius:8px;overflow:hidden;aspect-ratio:16/10;background:#eee}.shot img{width:100%;height:100%;object-fit:cover;object-position:top}
+.shot.empty{display:flex;align-items:center;justify-content:center;color:var(--muted);text-decoration:none}
+.meta{display:flex;gap:12px;align-items:center;flex-wrap:wrap}.dim{color:var(--muted)}
+.btn{background:var(--brand);color:#fff;text-decoration:none;padding:6px 12px;border-radius:999px;font-weight:700;font-size:13px}
+.flags{display:flex;gap:6px;flex-wrap:wrap}.flag{background:var(--warn-soft);color:var(--warn);padding:2px 8px;border-radius:999px;font-size:12px}.flag.ok{background:var(--ok-soft);color:var(--ok)}
+.ph{margin:4px 0}.ph-t{display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden}.bar i{display:block;height:100%;background:var(--brand)}
+details summary{cursor:pointer;color:var(--brand);font-weight:600}details ul{margin:6px 0 0;padding-left:18px;color:var(--muted)}
+table{border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:12px;width:100%;font-size:13px}th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:600}
+tr.shared td:first-child{font-weight:700}
+h3{margin:32px 0 10px}.docs{display:flex;gap:10px;flex-wrap:wrap}.docs a{background:var(--surface);border:1px solid var(--line);padding:8px 12px;border-radius:8px;color:var(--brand);text-decoration:none;font-weight:600}
+</style></head><body>
+<div class="top"><h1>TrashLab check-in</h1><span>524/536 boxes across five surfaces</span><span class="dim">generated 2026-09-11T00:09-04:00</span><span class="dim">regenerate: python3 checkin/build_status.py --run-builds</span></div>
+<main>
+<div class="docs"><a href="../shared/README.md">shared/README.md</a><a href="../shared/CONTRACT_ADDENDUM.md">CONTRACT_ADDENDUM.md</a><a href="../shared/OWNERSHIP.md">OWNERSHIP.md</a><a href="../shared/STATUS.md">STATUS.md</a><a href="../shared/DECISIONS_SYNTHESIS.md">DECISIONS_SYNTHESIS.md</a><a href="../shared/RESUME_PROMPT.md">RESUME_PROMPT.md</a></div>
+<h3>Surfaces</h3>
+<div class="grid">
+<section class="card" id="storefront">
+  <header>
+    <div><span class="persona">Customer</span><h2>Prospective customer storefront</h2><p class="purpose">Address first. Public price, fee stack, pay first cycle, account and delivery order created atomically.</p></div>
+    <div class="big">100%<small>110/110 boxes</small></div>
+  </header>
+  <a class="shot" href="http://localhost:5173/" target="_blank"><img src="shots/storefront.png" alt="Prospective customer storefront screenshot"></a>
+  <div class="meta"><a class="btn" href="http://localhost:5173/" target="_blank">Open :5173</a> <span>All phases complete</span> <span class="dim">build ok 62 tests pass</span></div>
+  <div class="flags"><span class="flag ok">no drift flags</span></div>
+  <div class="phases"><div class="ph"><div class="ph-t"><span>Phase 1: Scaffold, contract types, canonical seed, tokens</span><span>20/20</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 2: Engine, store, and the four branch transactions (no UI)</span><span>20/20</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 3: Storefront UI, open zone end to end</span><span>13/13</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 4: Franchise stop, held signup, office approval, commercial request</span><span>19/19</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 5: Agent panel drawer</span><span>10/10</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 6: Proof view, runbook, design notes, final polish</span><span>12/12</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 7: trashlab.com design language</span><span>16/16</span></div><div class="bar"><i style="width:100%"></i></div></div></div>
+  <details><summary>Next boxes in the current phase</summary><ul><li>none</li></ul></details>
+</section>
+<section class="card" id="account">
+  <header>
+    <div><span class="persona">Office</span><h2>Account tracker: account view</h2><p class="purpose">One screen that answers a phone call. Services, price source, balance, events, requests, four actions.</p></div>
+    <div class="big">100%<small>108/108 boxes</small></div>
+  </header>
+  <a class="shot" href="http://localhost:5199/account" target="_blank"><img src="shots/account.png" alt="Account tracker: account view screenshot"></a>
+  <div class="meta"><a class="btn" href="http://localhost:5199/account" target="_blank">Open :5199</a> <span>All phases complete</span> <span class="dim">build ok 124 tests pass</span></div>
+  <div class="flags"><span class="flag ok">no drift flags</span></div>
+  <div class="phases"><div class="ph"><div class="ph-t"><span>Phase 1: Foundation (types, seed, tokens, scaffold)</span><span>26/26</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 1b: Paper tokens (runs alongside Phase 2; touches only src/styles, src/index.css, index.html, DESIGN.md, DECISIONS.md)</span><span>6/6</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 2: Engine (src/store/engine.ts) with tests</span><span>13/13</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 3: Account view, read side</span><span>15/15</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 4: Action, change a service (invariant 3)</span><span>15/15</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 5: Actions, take a payment and issue a credit (invariant 6)</span><span>9/9</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 6: Action, hold or suspension with route stub (invariant 4)</span><span>11/11</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 7: Polish, design check, runbook, final verification</span><span>13/13</span></div><div class="bar"><i style="width:100%"></i></div></div></div>
+  <details><summary>Next boxes in the current phase</summary><ul><li>none</li></ul></details>
+</section>
+<section class="card" id="billing">
+  <header>
+    <div><span class="persona">Office</span><h2>Account tracker: billing run</h2><p class="purpose">Batch summary, exception queue, approve, edit, waive with reason, post and lock, leakage tile.</p></div>
+    <div class="big">100%<small>76/76 boxes</small></div>
+  </header>
+  <a class="shot" href="http://localhost:5179/billing" target="_blank"><img src="shots/billing.png" alt="Account tracker: billing run screenshot"></a>
+  <div class="meta"><a class="btn" href="http://localhost:5179/billing" target="_blank">Open :5179</a> <span>All phases complete</span> <span class="dim">build ok 220 tests pass</span></div>
+  <div class="flags"><span class="flag ok">no drift flags</span></div>
+  <div class="phases"><div class="ph"><div class="ph-t"><span>Phase 1: Scaffold, contract types, seed, tokens</span><span>22/22</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 2: Pricing kernel</span><span>7/7</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 3: Charge generation, posting, allocation</span><span>12/12</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 4: Store and billing run screen</span><span>12/12</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 5: Decisions, posting, leakage</span><span>9/9</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 6: Payments tab</span><span>6/6</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 7: Runbook, decisions, final verification</span><span>8/8</span></div><div class="bar"><i style="width:100%"></i></div></div></div>
+  <details><summary>Next boxes in the current phase</summary><ul><li>none</li></ul></details>
+</section>
+<section class="card" id="pricing">
+  <header>
+    <div><span class="persona">Owner</span><h2>Pricing modeler</h2><p class="purpose">Ratebook by line of business, rate versions, blast radius preview, publish, quote workbench.</p></div>
+    <div class="big">100%<small>88/88 boxes</small></div>
+  </header>
+  <a class="shot" href="http://localhost:5180/pricing" target="_blank"><img src="shots/pricing.png" alt="Pricing modeler screenshot"></a>
+  <div class="meta"><a class="btn" href="http://localhost:5180/pricing" target="_blank">Open :5180</a> <span>All phases complete</span> <span class="dim">build ok 108 tests pass</span></div>
+  <div class="flags"><span class="flag ok">no drift flags</span></div>
+  <div class="phases"><div class="ph"><div class="ph-t"><span>Phase 1: Foundation (types, seed, tokens, scaffold)</span><span>24/24</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 2: Pricing engine and store actions</span><span>12/12</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 3: Ratebook screen (read side)</span><span>8/8</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 4: Draft, blast radius preview, and publish</span><span>12/12</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 5: Quote workbench</span><span>11/11</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 6: Agent panel (annual increase proposals)</span><span>10/10</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 7: Runbook, decisions, final proof</span><span>11/11</span></div><div class="bar"><i style="width:100%"></i></div></div></div>
+  <details><summary>Next boxes in the current phase</summary><ul><li>none</li></ul></details>
+</section>
+<section class="card" id="portal">
+  <header>
+    <div><span class="persona">Customer</span><h2>Customer portal</h2><p class="purpose">Invoices, pay, autopay, extra pickup, vacation hold, cart change, missed pickup report.</p></div>
+    <div class="big">100%<small>93/93 boxes</small></div>
+  </header>
+  <a class="shot" href="http://localhost:5175/" target="_blank"><img src="shots/portal.png" alt="Customer portal screenshot"></a>
+  <div class="meta"><a class="btn" href="http://localhost:5175/" target="_blank">Open :5175</a> <span>All phases complete</span> <span class="dim">build ok 82 tests pass</span></div>
+  <div class="flags"><span class="flag ok">no drift flags</span></div>
+  <div class="phases"><div class="ph"><div class="ph-t"><span>Phase 1: Contract, seed, tokens, scaffold</span><span>24/24</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 2: Store, engine, portal shell</span><span>13/13</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 3: Billing</span><span>12/12</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 4: Requests, part one</span><span>20/20</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 5: Requests, part two</span><span>12/12</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 6: Paper artboards, docs, invariants, scenario pass</span><span>12/12</span></div><div class="bar"><i style="width:100%"></i></div></div></div>
+  <details><summary>Next boxes in the current phase</summary><ul><li>none</li></ul></details>
+</section>
+<section class="card" id="merged">
+  <header>
+    <div><span class="persona">All personas</span><h2>Merged app</h2><p class="purpose">One Vite app at the repo root: persona switcher, one store, one seed, the five surfaces wired together.</p></div>
+    <div class="big">80%<small>49/61 boxes</small></div>
+  </header>
+  <a class="shot" href="http://localhost:5200/" target="_blank"><img src="shots/merged.png" alt="Merged app screenshot"></a>
+  <div class="meta"><a class="btn" href="http://localhost:5200/" target="_blank">Open :5200</a> <span>Phase 4: Scenarios, runbook, final verification</span> <span class="dim"> </span></div>
+  <div class="flags"><span class="flag ok">no drift flags</span></div>
+  <div class="phases"><div class="ph"><div class="ph-t"><span>Phase 1: Foundation, shell, and the billing surface</span><span>12/12</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 2: Port the four remaining surfaces (four agents in parallel, each writes only its own folders)</span><span>20/20</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 3: Cross-surface flows</span><span>17/17</span></div><div class="bar"><i style="width:100%"></i></div></div><div class="ph"><div class="ph-t"><span>Phase 4: Scenarios, runbook, final verification</span><span>0/12</span></div><div class="bar"><i style="width:0%"></i></div></div></div>
+  <details><summary>Next boxes in the current phase</summary><ul><li>4.1 Scenario 1: homeowner signs up instantly at a zone_open address; delivery work order created; first invoice appears in the next billing run. Fixed if broken.</li><li>4.2 Scenario 2: zone_boundary signup is held with reason and deadline; office approves from the storefront office screen; account is charged and activated with no second conversation.</li><li>4.3 Scenario 3: bakery quote priced 10% under ratebook with a contract exception in the quote workbench; the next billing run&#x27;s bakery invoice shows the contract price and its source.</li><li>4.4 Scenario 4: Maple extraBags event appears in the exception queue with a photo; office waives as goodwill; leakage tile updates.</li><li>4.5 Scenario 5: Hale rolloff over cap by 1.2 tons proposes an overage charge with the scale ticket attached; approved; charged to card on file (allocation visible).</li><li>4.5a Charge to card on file does not exist yet (Phase 3E report): nothing in the app charges a card, and acct_contractor_hale has no paymentMethodOnFile. Seed Hale with card on file through scripts/gen_seed.ts, and add a billing action that, after posting, charges accounts with autopay or a card on file for the invoice total: it creates a settled card Payment and allocates it through allocate(). Scenario 5 shows the overage invoice paid with the allocation visible on the Payments tab and the account view.</li></ul></details>
+</section></div>
+<h3>Seed id drift</h3>
+<p class="dim">Shared tables must agree on ids across all five. Derived tables may differ until the merge regenerates them from billing's generator (addendum D2).</p>
+<table><thead><tr><th>Table</th><th>Group</th><th>storefront</th><th>account</th><th>billing</th><th>pricing</th><th>portal</th><th>Shared / union</th></tr></thead><tbody><tr class='shared'><td>accounts</td><td>shared</td><td>45</td><td>45</td><td>45</td><td>45</td><td>45</td><td><b>45</b>/45</td></tr><tr class='shared'><td>catalog</td><td>shared</td><td>8</td><td>-</td><td>8</td><td>8</td><td>8</td><td><b>8</b>/8</td></tr><tr class='shared'><td>zones</td><td>shared</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td><b>4</b>/4</td></tr><tr class='shared'><td>routes</td><td>shared</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td><b>4</b>/4</td></tr><tr class='shared'><td>quotes</td><td>shared</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td><b>2</b>/2</td></tr><tr class='shared'><td>feeRules</td><td>shared</td><td>2</td><td>2</td><td>2</td><td>2</td><td>2</td><td><b>2</b>/2</td></tr><tr class='derived'><td>rateVersions</td><td>derived</td><td>13</td><td>9</td><td>13</td><td>15</td><td>12</td><td><b>0</b>/46</td></tr><tr class='derived'><td>serviceItems</td><td>derived</td><td>53</td><td>58</td><td>61</td><td>68</td><td>68</td><td><b>1</b>/235</td></tr><tr class='derived'><td>invoices</td><td>derived</td><td>5</td><td>48</td><td>22</td><td>5</td><td>36</td><td><b>0</b>/111</td></tr><tr class='derived'><td>charges</td><td>derived</td><td>14</td><td>69</td><td>45</td><td>17</td><td>69</td><td><b>0</b>/214</td></tr><tr class='derived'><td>payments</td><td>derived</td><td>16</td><td>44</td><td>18</td><td>15</td><td>17</td><td><b>1</b>/78</td></tr></tbody></table>
+</main></body></html>

@@ -1,0 +1,44 @@
+[
+  {
+    "chargeId": "chg_waived_res012_0324",
+    "reason": "immaterial",
+    "note": "One bag, long tenure customer",
+    "by": "M. Alvarez",
+    "at": "2026-04-02T09:15:00-04:00"
+  },
+  {
+    "chargeId": "chg_waived_bakery_0325",
+    "reason": "operationalFault",
+    "note": "Driver arrived before the agreed 6am window",
+    "by": "M. Alvarez",
+    "at": "2026-04-03T10:40:00-04:00"
+  },
+  {
+    "chargeId": "chg_waived_res021_0622",
+    "reason": "insufficientEvidence",
+    "note": "No photo on the event",
+    "by": "M. Alvarez",
+    "at": "2026-07-02T08:50:00-04:00"
+  },
+  {
+    "chargeId": "chg_waived_fl005_0617",
+    "reason": "goodwill",
+    "note": "First dry run on the account, called and coached",
+    "by": "M. Alvarez",
+    "at": "2026-07-02T11:20:00-04:00"
+  },
+  {
+    "chargeId": "chg_waived_res008_0825",
+    "reason": "immaterial",
+    "note": "Under one dollar of margin, no dispute worth having",
+    "by": "M. Alvarez",
+    "at": "2026-09-02T09:05:00-04:00"
+  },
+  {
+    "chargeId": "chg_waived_fl003_0826",
+    "reason": "operationalFault",
+    "note": "Shared enclosure, cardboard came from the neighbor",
+    "by": "M. Alvarez",
+    "at": "2026-09-03T14:10:00-04:00"
+  }
+]

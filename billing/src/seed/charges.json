@@ -1,0 +1,1569 @@
+[
+  {
+    "id": "chg_oak_2026_06_1",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_1",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Jun 1 to Jun 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_1"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_1"
+    ]
+  },
+  {
+    "id": "chg_oak_2026_06_2",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_2",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Jun 1 to Jun 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_2"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_2"
+    ]
+  },
+  {
+    "id": "chg_oak_2026_06_3",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_3",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Jun 1 to Jun 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_3"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_3"
+    ]
+  },
+  {
+    "id": "chg_oak_2026_06_4",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_4",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Jun 1 to Jun 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_4"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_4"
+    ]
+  },
+  {
+    "id": "chg_oak_2026_07_1",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_1",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Jul 1 to Jul 31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_1"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_1"
+    ]
+  },
+  {
+    "id": "chg_oak_2026_07_2",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_2",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Jul 1 to Jul 31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_2"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_2"
+    ]
+  },
+  {
+    "id": "chg_oak_2026_07_3",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_3",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Jul 1 to Jul 31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_3"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_3"
+    ]
+  },
+  {
+    "id": "chg_oak_2026_07_4",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_4",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Jul 1 to Jul 31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_4"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_4"
+    ]
+  },
+  {
+    "id": "chg_oak_2026_08_1",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_1",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Aug 1 to Aug 31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_1"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_1"
+    ]
+  },
+  {
+    "id": "chg_oak_2026_08_2",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_2",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Aug 1 to Aug 31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_2"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_2"
+    ]
+  },
+  {
+    "id": "chg_oak_2026_08_3",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_3",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Aug 1 to Aug 31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_3"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_3"
+    ]
+  },
+  {
+    "id": "chg_oak_2026_08_4",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_4",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload container, weekly, Aug 1 to Aug 31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_4"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 15000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1050
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 0,
+    "totalCents": 16150,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_oak_4"
+    ]
+  },
+  {
+    "id": "chg_maple_2026q3_1",
+    "accountId": "acct_res_maple",
+    "siteId": "site_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Jul 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_maple_96"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_maple_96"
+    ]
+  },
+  {
+    "id": "chg_maple_2026q3_2",
+    "accountId": "acct_res_maple",
+    "siteId": "site_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_extra_cart",
+    "description": "Extra 96 gal cart, weekly, Jul 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_maple_extra"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 189
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 202,
+    "totalCents": 3391,
+    "pricing": {
+      "rateVersionId": "rv_res_extra_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_maple_extra"
+    ]
+  },
+  {
+    "id": "chg_maple_2026q3_3",
+    "accountId": "acct_res_maple",
+    "siteId": "site_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, Jul 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_maple_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_maple_recycling"
+    ]
+  },
+  {
+    "id": "chg_res_017_2026q3_1",
+    "accountId": "acct_res_017",
+    "siteId": "site_res_017",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Jul 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_017_main"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_017_main"
+    ]
+  },
+  {
+    "id": "chg_res_003_2026_08_1",
+    "accountId": "acct_res_003",
+    "siteId": "site_res_003",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Aug 1 to Aug 31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_003_main"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_003_main"
+    ]
+  },
+  {
+    "id": "chg_res_003_2026_09_1",
+    "accountId": "acct_res_003",
+    "siteId": "site_res_003",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_003_main"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_003_main"
+    ]
+  },
+  {
+    "id": "chg_ro_home_2026_08_1",
+    "accountId": "acct_ro_homeowner",
+    "siteId": "site_ro_home",
+    "lineType": "event",
+    "catalogId": "cat_ro_20yd",
+    "description": "20 yd rolloff haul, 3 t and 30 days included, Aug 7",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_ro_home"
+    },
+    "servicedOn": "2026-08-07",
+    "baseCents": 57500,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 4025
+      }
+    ],
+    "taxCents": 4307,
+    "totalCents": 65832,
+    "pricing": {
+      "rateVersionId": "rv_ro_20yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_ro_home"
+    ]
+  },
+  {
+    "id": "chg_ro_home_2026_08_2",
+    "accountId": "acct_ro_homeowner",
+    "siteId": "site_ro_home",
+    "lineType": "fee",
+    "description": "Delivery fee, 20 yd box",
+    "source": {
+      "type": "manual",
+      "id": "wo_ro_home_deliver"
+    },
+    "servicedOn": "2026-08-07",
+    "baseCents": 2500,
+    "fees": [],
+    "taxCents": 175,
+    "totalCents": 2675,
+    "pricing": {
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "wo_ro_home_deliver"
+    ]
+  },
+  {
+    "id": "chg_res_001_2026_09_1",
+    "accountId": "acct_res_001",
+    "siteId": "site_res_001",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_001_main"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_001_main"
+    ]
+  },
+  {
+    "id": "chg_res_002_2026_09_1",
+    "accountId": "acct_res_002",
+    "siteId": "site_res_002",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_002_main"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_002_main"
+    ]
+  },
+  {
+    "id": "chg_res_002_2026_09_fee",
+    "accountId": "acct_res_002",
+    "siteId": "site_res_002",
+    "lineType": "fee",
+    "description": "Delivery fee, 96 gal cart",
+    "source": {
+      "type": "manual",
+      "id": "si_res_002_main"
+    },
+    "servicedOn": "2026-08-20",
+    "baseCents": 2500,
+    "fees": [],
+    "taxCents": 175,
+    "totalCents": 2675,
+    "pricing": {
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_002_main"
+    ]
+  },
+  {
+    "id": "chg_res_006_2026_09_1",
+    "accountId": "acct_res_006",
+    "siteId": "site_res_006",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_006_main"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_006_main"
+    ]
+  },
+  {
+    "id": "chg_res_007_2026_09_1",
+    "accountId": "acct_res_007",
+    "siteId": "site_res_007",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_007_main"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_007_main"
+    ]
+  },
+  {
+    "id": "chg_res_009_2026_09_1",
+    "accountId": "acct_res_009",
+    "siteId": "site_res_009",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_009_main"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_009_main"
+    ]
+  },
+  {
+    "id": "chg_res_004_2026_09_1",
+    "accountId": "acct_res_004",
+    "siteId": "site_res_004",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_004_main"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_004_main"
+    ]
+  },
+  {
+    "id": "chg_res_004_2026_09_2",
+    "accountId": "acct_res_004",
+    "siteId": "site_res_004",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_004_recycling"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 1200,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 84
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 90,
+    "totalCents": 1474,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_004_recycling"
+    ]
+  },
+  {
+    "id": "chg_res_008_2026_09_1",
+    "accountId": "acct_res_008",
+    "siteId": "site_res_008",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_008_main"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_008_main"
+    ]
+  },
+  {
+    "id": "chg_res_008_2026_09_2",
+    "accountId": "acct_res_008",
+    "siteId": "site_res_008",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_008_recycling"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 1200,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 84
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 90,
+    "totalCents": 1474,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_008_recycling"
+    ]
+  },
+  {
+    "id": "chg_res_015_2026q3_1",
+    "accountId": "acct_res_015",
+    "siteId": "site_res_015",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gal cart, weekly, Jul 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_015_main"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 7800,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 546
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 584,
+    "totalCents": 9230,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_015_main"
+    ]
+  },
+  {
+    "id": "chg_res_025_2026q3_1",
+    "accountId": "acct_res_025",
+    "siteId": "site_res_025",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gal cart, weekly, Jul 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_025_main"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 7800,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 546
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 584,
+    "totalCents": 9230,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_025_main"
+    ]
+  },
+  {
+    "id": "chg_res_030_2026q3_1",
+    "accountId": "acct_res_030",
+    "siteId": "site_res_030",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gal cart, weekly, Jul 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_030_main"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 7800,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 546
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 584,
+    "totalCents": 9230,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_030_main"
+    ]
+  },
+  {
+    "id": "chg_res_020_2026q3_1",
+    "accountId": "acct_res_020",
+    "siteId": "site_res_020",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gal cart, weekly, Jul 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_020_main"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 7800,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 546
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 584,
+    "totalCents": 9230,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_020_main"
+    ]
+  },
+  {
+    "id": "chg_res_020_2026q3_2",
+    "accountId": "acct_res_020",
+    "siteId": "site_res_020",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, Jul 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_020_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_020_recycling"
+    ]
+  },
+  {
+    "id": "chg_fl_002_2026_09_1",
+    "accountId": "acct_fl_002",
+    "siteId": "site_fl_002",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd",
+    "description": "3 yd frontload container, 2x weekly, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_fl_002"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 20900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1463
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1565,
+    "totalCents": 24028,
+    "pricing": {
+      "contractId": "contract_fl_002",
+      "ruleWon": "contractOverride"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_fl_002"
+    ]
+  },
+  {
+    "id": "chg_fl_004_2026_09_1",
+    "accountId": "acct_fl_004",
+    "siteId": "site_fl_004",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd",
+    "description": "3 yd frontload container, 2x weekly, Sep 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_fl_004"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 20900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1463
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1565,
+    "totalCents": 24028,
+    "pricing": {
+      "contractId": "contract_fl_004",
+      "ruleWon": "contractOverride"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_fl_004"
+    ]
+  },
+  {
+    "id": "chg_fl_004_2026_09_evt",
+    "accountId": "acct_fl_004",
+    "siteId": "site_fl_004",
+    "lineType": "event",
+    "description": "Contamination, Aug 19",
+    "source": {
+      "type": "serviceEvent",
+      "id": "evt_hist_fl004_contam"
+    },
+    "servicedOn": "2026-08-19",
+    "baseCents": 2000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 140
+      }
+    ],
+    "taxCents": 150,
+    "totalCents": 2290,
+    "pricing": {
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "evt_hist_fl004_contam"
+    ]
+  },
+  {
+    "id": "chg_res_011_2026q3_1",
+    "accountId": "acct_res_011",
+    "siteId": "site_res_011",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Jul 1 to Sep 30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_011_main"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": [
+      "si_res_011_main"
+    ]
+  },
+  {
+    "id": "chg_waived_res012_0324",
+    "accountId": "acct_res_012",
+    "siteId": "site_res_012",
+    "lineType": "event",
+    "description": "Extra bags, Mar 24",
+    "source": {
+      "type": "serviceEvent",
+      "id": "evt_hist_res012_extrabags"
+    },
+    "servicedOn": "2026-03-24",
+    "baseCents": 250,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 18
+      }
+    ],
+    "taxCents": 19,
+    "totalCents": 287,
+    "pricing": {
+      "ruleWon": "standardRate"
+    },
+    "status": "waived",
+    "evidenceIds": [
+      "evt_hist_res012_extrabags"
+    ]
+  },
+  {
+    "id": "chg_waived_bakery_0325",
+    "accountId": "acct_bakery",
+    "siteId": "site_bakery",
+    "lineType": "event",
+    "description": "Dry run, Mar 25",
+    "source": {
+      "type": "serviceEvent",
+      "id": "evt_hist_bakery_dryrun"
+    },
+    "servicedOn": "2026-03-25",
+    "baseCents": 2500,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 175
+      }
+    ],
+    "taxCents": 187,
+    "totalCents": 2862,
+    "pricing": {
+      "ruleWon": "standardRate"
+    },
+    "status": "waived",
+    "evidenceIds": [
+      "evt_hist_bakery_dryrun"
+    ]
+  },
+  {
+    "id": "chg_waived_res021_0622",
+    "accountId": "acct_res_021",
+    "siteId": "site_res_021",
+    "lineType": "event",
+    "description": "Overloaded cart, Jun 22",
+    "source": {
+      "type": "serviceEvent",
+      "id": "evt_hist_res021_overload"
+    },
+    "servicedOn": "2026-06-22",
+    "baseCents": 1000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 70
+      }
+    ],
+    "taxCents": 75,
+    "totalCents": 1145,
+    "pricing": {
+      "ruleWon": "standardRate"
+    },
+    "status": "waived",
+    "evidenceIds": [
+      "evt_hist_res021_overload"
+    ]
+  },
+  {
+    "id": "chg_waived_fl005_0617",
+    "accountId": "acct_fl_005",
+    "siteId": "site_fl_005",
+    "lineType": "event",
+    "description": "Dry run, Jun 17",
+    "source": {
+      "type": "serviceEvent",
+      "id": "evt_hist_fl005_dryrun"
+    },
+    "servicedOn": "2026-06-17",
+    "baseCents": 2500,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 175
+      }
+    ],
+    "taxCents": 187,
+    "totalCents": 2862,
+    "pricing": {
+      "ruleWon": "standardRate"
+    },
+    "status": "waived",
+    "evidenceIds": [
+      "evt_hist_fl005_dryrun"
+    ]
+  },
+  {
+    "id": "chg_waived_res008_0825",
+    "accountId": "acct_res_008",
+    "siteId": "site_res_008",
+    "lineType": "event",
+    "description": "Extra bags, Aug 25",
+    "source": {
+      "type": "serviceEvent",
+      "id": "evt_hist_res008_extrabags"
+    },
+    "servicedOn": "2026-08-25",
+    "baseCents": 250,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 18
+      }
+    ],
+    "taxCents": 19,
+    "totalCents": 287,
+    "pricing": {
+      "ruleWon": "standardRate"
+    },
+    "status": "waived",
+    "evidenceIds": [
+      "evt_hist_res008_extrabags"
+    ]
+  },
+  {
+    "id": "chg_waived_fl003_0826",
+    "accountId": "acct_fl_003",
+    "siteId": "site_fl_003",
+    "lineType": "event",
+    "description": "Contamination, Aug 26",
+    "source": {
+      "type": "serviceEvent",
+      "id": "evt_hist_fl003_contam"
+    },
+    "servicedOn": "2026-08-26",
+    "baseCents": 2000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 140
+      }
+    ],
+    "taxCents": 150,
+    "totalCents": 2290,
+    "pricing": {
+      "ruleWon": "standardRate"
+    },
+    "status": "waived",
+    "evidenceIds": [
+      "evt_hist_fl003_contam"
+    ]
+  }
+]

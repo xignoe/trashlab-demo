@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "portal-verify",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["vite", "--port", "5185", "--strictPort"],
+      "port": 5185
+    }
+  ]
+}

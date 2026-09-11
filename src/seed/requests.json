@@ -1,0 +1,30 @@
+[
+  {
+    "id": "req_holt_vacation",
+    "accountId": "acct_res_holt",
+    "siteId": "site_holt",
+    "kind": "vacationHold",
+    "status": "scheduled",
+    "createdVia": "portal",
+    "note": "Away Sep 1 to Sep 21, resume service Sep 28"
+  },
+  {
+    "id": "req_res_007_cart",
+    "accountId": "acct_res_007",
+    "siteId": "site_res_007",
+    "kind": "cartChange",
+    "status": "done",
+    "createdVia": "phone",
+    "workOrderId": "wo_res_007_deliver",
+    "note": "Add a second 96 gal cart"
+  },
+  {
+    "id": "req_bakery_quote",
+    "accountId": "acct_bakery",
+    "siteId": "site_bakery",
+    "kind": "quote",
+    "status": "open",
+    "createdVia": "storefront",
+    "note": "Asked about moving the 3 yd to 3x weekly for the holiday season"
+  }
+]

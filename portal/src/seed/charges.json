@@ -1,0 +1,2403 @@
+[
+  {
+    "id": "chg_maple_q2_96",
+    "accountId": "acct_res_maple",
+    "siteId": "site_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-04-01 to 2026-06-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_maple_96"
+    },
+    "period": {
+      "start": "2026-04-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_maple_q2_extra",
+    "accountId": "acct_res_maple",
+    "siteId": "site_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_extra_cart",
+    "description": "Extra trash cart, weekly, 2026-04-01 to 2026-06-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_maple_extra"
+    },
+    "period": {
+      "start": "2026-04-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 2700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 189
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 202,
+    "totalCents": 3391,
+    "pricing": {
+      "rateVersionId": "rv_res_extra_cart_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_maple_q2_recycling",
+    "accountId": "acct_res_maple",
+    "siteId": "site_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-04-01 to 2026-06-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_maple_recycling"
+    },
+    "period": {
+      "start": "2026-04-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_maple_q3_96",
+    "accountId": "acct_res_maple",
+    "siteId": "site_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_maple_96"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_maple_q3_extra",
+    "accountId": "acct_res_maple",
+    "siteId": "site_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_extra_cart",
+    "description": "Extra trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_maple_extra"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 189
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 202,
+    "totalCents": 3391,
+    "pricing": {
+      "rateVersionId": "rv_res_extra_cart_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_maple_q3_recycling",
+    "accountId": "acct_res_maple",
+    "siteId": "site_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_maple_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_maple_q3_latefee",
+    "accountId": "acct_res_maple",
+    "siteId": "site_maple",
+    "lineType": "lateFee",
+    "description": "Late fee, balance unpaid 5 days after the due date (hauler policy)",
+    "source": {
+      "type": "manual",
+      "id": "hauler_piedmont"
+    },
+    "servicedOn": "2026-07-20",
+    "baseCents": 1000,
+    "fees": [],
+    "taxCents": 0,
+    "totalCents": 1000,
+    "pricing": {
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_06_s1",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_1",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd",
+    "description": "3 yard front load container, 2x weekly, 100 Oakridge Commons, Bldg A, PO-OAK-1041, 2026-05-01 to 2026-05-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_1"
+    },
+    "period": {
+      "start": "2026-05-01",
+      "end": "2026-05-31"
+    },
+    "baseCents": 22000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1540
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1648,
+    "totalCents": 25288,
+    "pricing": {
+      "rateVersionId": "rv_fl_3yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_06_s2",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_2",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yard front load container, 2x weekly, 100 Oakridge Commons, Bldg B, PO-OAK-1042, 2026-05-01 to 2026-05-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_2"
+    },
+    "period": {
+      "start": "2026-05-01",
+      "end": "2026-05-31"
+    },
+    "baseCents": 18000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1260
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1348,
+    "totalCents": 20708,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_06_s3",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_3",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd",
+    "description": "3 yard front load container, 2x weekly, 35 Ridgeview Plaza, PO-OAK-1107, 2026-05-01 to 2026-05-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_3"
+    },
+    "period": {
+      "start": "2026-05-01",
+      "end": "2026-05-31"
+    },
+    "baseCents": 22000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1540
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1648,
+    "totalCents": 25288,
+    "pricing": {
+      "rateVersionId": "rv_fl_3yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_06_s4",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_4",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yard front load container, 2x weekly, 8 Elmwood Terrace Apartments, PO-OAK-1210, 2026-05-01 to 2026-05-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_4"
+    },
+    "period": {
+      "start": "2026-05-01",
+      "end": "2026-05-31"
+    },
+    "baseCents": 18000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1260
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1348,
+    "totalCents": 20708,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_07_s1",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_1",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd",
+    "description": "3 yard front load container, 2x weekly, 100 Oakridge Commons, Bldg A, PO-OAK-1041, 2026-06-01 to 2026-06-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_1"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 22000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1540
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1648,
+    "totalCents": 25288,
+    "pricing": {
+      "rateVersionId": "rv_fl_3yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_07_s2",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_2",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yard front load container, 2x weekly, 100 Oakridge Commons, Bldg B, PO-OAK-1042, 2026-06-01 to 2026-06-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_2"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 18000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1260
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1348,
+    "totalCents": 20708,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_07_s3",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_3",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd",
+    "description": "3 yard front load container, 2x weekly, 35 Ridgeview Plaza, PO-OAK-1107, 2026-06-01 to 2026-06-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_3"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 22000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1540
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1648,
+    "totalCents": 25288,
+    "pricing": {
+      "rateVersionId": "rv_fl_3yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_07_s4",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_4",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yard front load container, 2x weekly, 8 Elmwood Terrace Apartments, PO-OAK-1210, 2026-06-01 to 2026-06-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_4"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 18000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1260
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1348,
+    "totalCents": 20708,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_08_s1",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_1",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd",
+    "description": "3 yard front load container, 2x weekly, 100 Oakridge Commons, Bldg A, PO-OAK-1041, 2026-07-01 to 2026-07-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_1"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 22000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1540
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1648,
+    "totalCents": 25288,
+    "pricing": {
+      "rateVersionId": "rv_fl_3yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_08_s2",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_2",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yard front load container, 2x weekly, 100 Oakridge Commons, Bldg B, PO-OAK-1042, 2026-07-01 to 2026-07-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_2"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 18000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1260
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1348,
+    "totalCents": 20708,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_08_s3",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_3",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd",
+    "description": "3 yard front load container, 2x weekly, 35 Ridgeview Plaza, PO-OAK-1107, 2026-07-01 to 2026-07-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_3"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 22000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1540
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1648,
+    "totalCents": 25288,
+    "pricing": {
+      "rateVersionId": "rv_fl_3yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_08_s4",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_4",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yard front load container, 2x weekly, 8 Elmwood Terrace Apartments, PO-OAK-1210, 2026-07-01 to 2026-07-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_4"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 18000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1260
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1348,
+    "totalCents": 20708,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_09_s1",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_1",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd",
+    "description": "3 yard front load container, 2x weekly, 100 Oakridge Commons, Bldg A, PO-OAK-1041, 2026-08-01 to 2026-08-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_1"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 22000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1540
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1648,
+    "totalCents": 25288,
+    "pricing": {
+      "rateVersionId": "rv_fl_3yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_09_s2",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_2",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yard front load container, 2x weekly, 100 Oakridge Commons, Bldg B, PO-OAK-1042, 2026-08-01 to 2026-08-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_2"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 18000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1260
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1348,
+    "totalCents": 20708,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_09_s3",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_3",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd",
+    "description": "3 yard front load container, 2x weekly, 35 Ridgeview Plaza, PO-OAK-1107, 2026-08-01 to 2026-08-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_3"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 22000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1540
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1648,
+    "totalCents": 25288,
+    "pricing": {
+      "rateVersionId": "rv_fl_3yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_oak_2026_09_s4",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oak_4",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yard front load container, 2x weekly, 8 Elmwood Terrace Apartments, PO-OAK-1210, 2026-08-01 to 2026-08-31",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oak_4"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 18000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1260
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1348,
+    "totalCents": 20708,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_001_0",
+    "accountId": "acct_res_001",
+    "siteId": "site_res_001",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_001_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_002_0",
+    "accountId": "acct_res_002",
+    "siteId": "site_res_002",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_002_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_003_0",
+    "accountId": "acct_res_003",
+    "siteId": "site_res_003",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_003_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 182
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 195,
+    "totalCents": 3077,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_004_0",
+    "accountId": "acct_res_004",
+    "siteId": "site_res_004",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_004_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_004_1",
+    "accountId": "acct_res_004",
+    "siteId": "site_res_004",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_004_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_005_0",
+    "accountId": "acct_res_005",
+    "siteId": "site_res_005",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_005_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_005_1",
+    "accountId": "acct_res_005",
+    "siteId": "site_res_005",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_005_recycling"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 1200,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 84
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 90,
+    "totalCents": 1474,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_006_0",
+    "accountId": "acct_res_006",
+    "siteId": "site_res_006",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_006_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 7800,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 546
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 584,
+    "totalCents": 9230,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_007_0",
+    "accountId": "acct_res_007",
+    "siteId": "site_res_007",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_007_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_007_1",
+    "accountId": "acct_res_007",
+    "siteId": "site_res_007",
+    "lineType": "recurring",
+    "catalogId": "cat_res_extra_cart",
+    "description": "Extra trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_007_extra"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 63
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 67,
+    "totalCents": 1130,
+    "pricing": {
+      "rateVersionId": "rv_res_extra_cart_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_008_0",
+    "accountId": "acct_res_008",
+    "siteId": "site_res_008",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_008_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_008_1",
+    "accountId": "acct_res_008",
+    "siteId": "site_res_008",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_008_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_009_0",
+    "accountId": "acct_res_009",
+    "siteId": "site_res_009",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_009_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 182
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 195,
+    "totalCents": 3077,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_010_0",
+    "accountId": "acct_res_010",
+    "siteId": "site_res_010",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_010_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_010_1",
+    "accountId": "acct_res_010",
+    "siteId": "site_res_010",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_010_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_011_0",
+    "accountId": "acct_res_011",
+    "siteId": "site_res_011",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_011_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_012_0",
+    "accountId": "acct_res_012",
+    "siteId": "site_res_012",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_012_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 7800,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 546
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 584,
+    "totalCents": 9230,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_012_1",
+    "accountId": "acct_res_012",
+    "siteId": "site_res_012",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_012_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_013_0",
+    "accountId": "acct_res_013",
+    "siteId": "site_res_013",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_013_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_014_0",
+    "accountId": "acct_res_014",
+    "siteId": "site_res_014",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_014_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_014_1",
+    "accountId": "acct_res_014",
+    "siteId": "site_res_014",
+    "lineType": "recurring",
+    "catalogId": "cat_res_extra_cart",
+    "description": "Extra trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_014_extra"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 189
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 202,
+    "totalCents": 3391,
+    "pricing": {
+      "rateVersionId": "rv_res_extra_cart_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_015_0",
+    "accountId": "acct_res_015",
+    "siteId": "site_res_015",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_015_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 182
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 195,
+    "totalCents": 3077,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_015_1",
+    "accountId": "acct_res_015",
+    "siteId": "site_res_015",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_015_recycling"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 1200,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 84
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 90,
+    "totalCents": 1474,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_016_0",
+    "accountId": "acct_res_016",
+    "siteId": "site_res_016",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_016_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_016_1",
+    "accountId": "acct_res_016",
+    "siteId": "site_res_016",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_016_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_017_0",
+    "accountId": "acct_res_017",
+    "siteId": "site_res_017",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_017_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_018_0",
+    "accountId": "acct_res_018",
+    "siteId": "site_res_018",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_018_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 7800,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 546
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 584,
+    "totalCents": 9230,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_019_0",
+    "accountId": "acct_res_019",
+    "siteId": "site_res_019",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_019_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_020_0",
+    "accountId": "acct_res_020",
+    "siteId": "site_res_020",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_020_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_020_1",
+    "accountId": "acct_res_020",
+    "siteId": "site_res_020",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_020_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_021_0",
+    "accountId": "acct_res_021",
+    "siteId": "site_res_021",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_021_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 182
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 195,
+    "totalCents": 3077,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_021_1",
+    "accountId": "acct_res_021",
+    "siteId": "site_res_021",
+    "lineType": "recurring",
+    "catalogId": "cat_res_extra_cart",
+    "description": "Extra trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_021_extra"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 63
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 67,
+    "totalCents": 1130,
+    "pricing": {
+      "rateVersionId": "rv_res_extra_cart_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_022_0",
+    "accountId": "acct_res_022",
+    "siteId": "site_res_022",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_022_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_023_0",
+    "accountId": "acct_res_023",
+    "siteId": "site_res_023",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_023_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_024_0",
+    "accountId": "acct_res_024",
+    "siteId": "site_res_024",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_024_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 7800,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 546
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 584,
+    "totalCents": 9230,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_024_1",
+    "accountId": "acct_res_024",
+    "siteId": "site_res_024",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_024_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_025_0",
+    "accountId": "acct_res_025",
+    "siteId": "site_res_025",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_025_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_025_1",
+    "accountId": "acct_res_025",
+    "siteId": "site_res_025",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_025_recycling"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 1200,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 84
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 90,
+    "totalCents": 1474,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_026_0",
+    "accountId": "acct_res_026",
+    "siteId": "site_res_026",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_026_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_027_0",
+    "accountId": "acct_res_027",
+    "siteId": "site_res_027",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_027_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 182
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 195,
+    "totalCents": 3077,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_028_0",
+    "accountId": "acct_res_028",
+    "siteId": "site_res_028",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_028_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 8700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 609
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 652,
+    "totalCents": 10261,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_028_1",
+    "accountId": "acct_res_028",
+    "siteId": "site_res_028",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_028_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_028_2",
+    "accountId": "acct_res_028",
+    "siteId": "site_res_028",
+    "lineType": "recurring",
+    "catalogId": "cat_res_extra_cart",
+    "description": "Extra trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_028_extra"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2700,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 189
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 202,
+    "totalCents": 3391,
+    "pricing": {
+      "rateVersionId": "rv_res_extra_cart_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_029_0",
+    "accountId": "acct_res_029",
+    "siteId": "site_res_029",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gallon trash cart, weekly, 2026-09-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_029_trash"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 2900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 203
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 217,
+    "totalCents": 3420,
+    "pricing": {
+      "rateVersionId": "rv_res_96_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_030_0",
+    "accountId": "acct_res_030",
+    "siteId": "site_res_030",
+    "lineType": "recurring",
+    "catalogId": "cat_res_64",
+    "description": "64 gallon trash cart, weekly, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_030_trash"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 7800,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 546
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 584,
+    "totalCents": 9230,
+    "pricing": {
+      "rateVersionId": "rv_res_64_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "chg_res_030_1",
+    "accountId": "acct_res_030",
+    "siteId": "site_res_030",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, 2026-07-01 to 2026-09-30",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_030_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 3600,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 252
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 300
+      }
+    ],
+    "taxCents": 270,
+    "totalCents": 4422,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_2026",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  }
+]

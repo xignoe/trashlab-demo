@@ -1,0 +1,368 @@
+[
+  {
+    "id": "pay_chk_maple",
+    "accountId": "acct_res_maple",
+    "method": "check",
+    "cents": 9329,
+    "receivedAt": "2026-07-14",
+    "status": "settled"
+  },
+  {
+    "id": "pay_auto_holt",
+    "accountId": "acct_res_holt",
+    "method": "autopay",
+    "cents": 10261,
+    "receivedAt": "2026-07-01",
+    "status": "settled"
+  },
+  {
+    "id": "pay_ach_bakery_0801",
+    "accountId": "acct_bakery",
+    "method": "ach",
+    "cents": 42447,
+    "receivedAt": "2026-07-30",
+    "status": "settled"
+  },
+  {
+    "id": "pay_ach_bakery_0901",
+    "accountId": "acct_bakery",
+    "method": "ach",
+    "cents": 42447,
+    "receivedAt": "2026-08-31",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_oakridge",
+    "accountId": "acct_pm_oakridge",
+    "method": "check",
+    "cents": 227892,
+    "receivedAt": "2026-09-08",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_ro_home",
+    "accountId": "acct_ro_homeowner",
+    "method": "card",
+    "cents": 65832,
+    "receivedAt": "2026-08-05",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_res_005",
+    "accountId": "acct_res_005",
+    "method": "check",
+    "cents": 14683,
+    "receivedAt": "2026-07-07",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_res_010",
+    "accountId": "acct_res_010",
+    "method": "check",
+    "cents": 14683,
+    "receivedAt": "2026-07-12",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_res_015",
+    "accountId": "acct_res_015",
+    "method": "check",
+    "cents": 14683,
+    "receivedAt": "2026-07-17",
+    "status": "settled"
+  },
+  {
+    "id": "pay_auto_res_017",
+    "accountId": "acct_res_017",
+    "method": "autopay",
+    "cents": 10261,
+    "receivedAt": "2026-07-01",
+    "status": "settled"
+  },
+  {
+    "id": "pay_auto_res_018",
+    "accountId": "acct_res_018",
+    "method": "autopay",
+    "cents": 10261,
+    "receivedAt": "2026-07-01",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_res_019",
+    "accountId": "acct_res_019",
+    "method": "check",
+    "cents": 10261,
+    "receivedAt": "2026-07-21",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_res_020",
+    "accountId": "acct_res_020",
+    "method": "check",
+    "cents": 14683,
+    "receivedAt": "2026-07-02",
+    "status": "settled"
+  },
+  {
+    "id": "pay_auto_res_021",
+    "accountId": "acct_res_021",
+    "method": "autopay",
+    "cents": 10261,
+    "receivedAt": "2026-07-01",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_res_023",
+    "accountId": "acct_res_023",
+    "method": "check",
+    "cents": 10261,
+    "receivedAt": "2026-07-05",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_res_024",
+    "accountId": "acct_res_024",
+    "method": "check",
+    "cents": 10261,
+    "receivedAt": "2026-07-06",
+    "status": "settled"
+  },
+  {
+    "id": "pay_auto_res_025",
+    "accountId": "acct_res_025",
+    "method": "autopay",
+    "cents": 14683,
+    "receivedAt": "2026-07-01",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_res_026",
+    "accountId": "acct_res_026",
+    "method": "check",
+    "cents": 10261,
+    "receivedAt": "2026-07-08",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_res_027",
+    "accountId": "acct_res_027",
+    "method": "check",
+    "cents": 10261,
+    "receivedAt": "2026-07-09",
+    "status": "settled"
+  },
+  {
+    "id": "pay_auto_res_028",
+    "accountId": "acct_res_028",
+    "method": "autopay",
+    "cents": 10261,
+    "receivedAt": "2026-07-01",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_res_029",
+    "accountId": "acct_res_029",
+    "method": "check",
+    "cents": 10261,
+    "receivedAt": "2026-07-11",
+    "status": "settled"
+  },
+  {
+    "id": "pay_chk_res_030",
+    "accountId": "acct_res_030",
+    "method": "check",
+    "cents": 14683,
+    "receivedAt": "2026-07-12",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_001",
+    "accountId": "acct_res_001",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-04",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_002",
+    "accountId": "acct_res_002",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-05",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_003",
+    "accountId": "acct_res_003",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-06",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_004",
+    "accountId": "acct_res_004",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-07",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_005",
+    "accountId": "acct_res_006",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-04",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_006",
+    "accountId": "acct_res_007",
+    "method": "card",
+    "cents": 5000,
+    "receivedAt": "2026-09-05",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_007",
+    "accountId": "acct_res_008",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-06",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_008",
+    "accountId": "acct_res_009",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-07",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_009",
+    "accountId": "acct_res_011",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-04",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_010",
+    "accountId": "acct_res_012",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-05",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_011",
+    "accountId": "acct_res_013",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-06",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_012",
+    "accountId": "acct_res_014",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-07",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_013",
+    "accountId": "acct_res_016",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-04",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_card_014",
+    "accountId": "acct_res_022",
+    "method": "card",
+    "cents": 3710,
+    "receivedAt": "2026-09-05",
+    "status": "settled",
+    "processorBatchId": "batch_0908"
+  },
+  {
+    "id": "pay_ach_fl_001",
+    "accountId": "acct_fl_001",
+    "method": "ach",
+    "cents": 18046,
+    "receivedAt": "2026-08-25",
+    "status": "settled"
+  },
+  {
+    "id": "pay_ach_fl_002",
+    "accountId": "acct_fl_002",
+    "method": "ach",
+    "cents": 24028,
+    "receivedAt": "2026-08-26",
+    "status": "settled"
+  },
+  {
+    "id": "pay_ach_fl_003",
+    "accountId": "acct_fl_003",
+    "method": "ach",
+    "cents": 18046,
+    "receivedAt": "2026-08-27",
+    "status": "settled"
+  },
+  {
+    "id": "pay_ach_fl_004",
+    "accountId": "acct_fl_004",
+    "method": "ach",
+    "cents": 24028,
+    "receivedAt": "2026-08-28",
+    "status": "settled"
+  },
+  {
+    "id": "pay_ach_fl_005",
+    "accountId": "acct_fl_005",
+    "method": "ach",
+    "cents": 18991,
+    "receivedAt": "2026-08-24",
+    "status": "settled"
+  },
+  {
+    "id": "pay_ach_fl_006",
+    "accountId": "acct_fl_006",
+    "method": "ach",
+    "cents": 25288,
+    "receivedAt": "2026-08-25",
+    "status": "settled"
+  },
+  {
+    "id": "pay_ach_fl_007",
+    "accountId": "acct_fl_007",
+    "method": "ach",
+    "cents": 18991,
+    "receivedAt": "2026-08-26",
+    "status": "settled"
+  },
+  {
+    "id": "pay_ach_fl_008",
+    "accountId": "acct_fl_008",
+    "method": "ach",
+    "cents": 25288,
+    "receivedAt": "2026-08-27",
+    "status": "settled"
+  }
+]

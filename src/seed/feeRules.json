@@ -1,0 +1,269 @@
+[
+  {
+    "id": "fee_fuel_7pct",
+    "name": "Fuel surcharge",
+    "kind": "percent",
+    "value": 7,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring",
+      "event"
+    ],
+    "taxable": true,
+    "category": "surcharge",
+    "description": "Tracks diesel cost; reviewed quarterly"
+  },
+  {
+    "id": "fee_env_1",
+    "name": "Environmental fee",
+    "kind": "flat",
+    "value": 100,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring"
+    ],
+    "taxable": false,
+    "category": "regulatory",
+    "description": "Landfill host and state solid waste fees, passed through per month"
+  },
+  {
+    "id": "fee_loc_remote",
+    "name": "Remote area surcharge",
+    "kind": "percent",
+    "value": 10,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring"
+    ],
+    "taxable": true,
+    "category": "location",
+    "description": "Longer drive and deadhead miles for stops 25 to 40 miles from the yard",
+    "when": {
+      "lob": [
+        "residential",
+        "frontload"
+      ]
+    },
+    "minMiles": 25,
+    "maxMiles": 40,
+    "exemptContracts": true,
+    "effectiveFrom": "2027-01-01"
+  },
+  {
+    "id": "fee_loc_extended",
+    "name": "Extended area surcharge",
+    "kind": "percent",
+    "value": 18,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring"
+    ],
+    "taxable": true,
+    "category": "location",
+    "description": "Stops 40 miles or more from the yard, at least $6.00 a month",
+    "when": {
+      "lob": [
+        "residential",
+        "frontload"
+      ]
+    },
+    "minMiles": 40,
+    "minCents": 600,
+    "exemptContracts": true,
+    "effectiveFrom": "2027-01-01"
+  },
+  {
+    "id": "fee_loc_dense",
+    "name": "Dense route credit",
+    "kind": "percent",
+    "value": -5,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring"
+    ],
+    "taxable": true,
+    "category": "credit",
+    "description": "Eight or more of our stops within a quarter mile: the truck barely moves between them",
+    "when": {
+      "lob": [
+        "residential"
+      ]
+    },
+    "minNeighborStops": 8,
+    "exemptContracts": true,
+    "effectiveFrom": "2027-01-01"
+  },
+  {
+    "id": "fee_speed_nextday",
+    "name": "Next-day service",
+    "kind": "percent",
+    "value": 25,
+    "base": "serviceLines",
+    "appliesTo": [
+      "event"
+    ],
+    "taxable": true,
+    "category": "surcharge",
+    "description": "On-demand job run the next business day",
+    "when": {
+      "serviceSpeed": [
+        "nextDay"
+      ]
+    },
+    "stackGroup": "rush"
+  },
+  {
+    "id": "fee_speed_sameday",
+    "name": "Same-day service",
+    "kind": "percent",
+    "value": 50,
+    "base": "serviceLines",
+    "appliesTo": [
+      "event"
+    ],
+    "taxable": true,
+    "category": "surcharge",
+    "description": "On-demand job run the day it is booked",
+    "when": {
+      "serviceSpeed": [
+        "sameDay"
+      ]
+    },
+    "stackGroup": "rush"
+  },
+  {
+    "id": "fee_weekend",
+    "name": "Weekend service",
+    "kind": "flat",
+    "value": 3500,
+    "base": "serviceLines",
+    "appliesTo": [
+      "event"
+    ],
+    "taxable": true,
+    "category": "surcharge",
+    "description": "Special pickups on a Saturday or Sunday",
+    "when": {
+      "dayOfWeek": [
+        "sat",
+        "sun"
+      ],
+      "lob": [
+        "residential",
+        "frontload"
+      ]
+    },
+    "effectiveFrom": "2027-01-01"
+  },
+  {
+    "id": "fee_tier_vip",
+    "name": "VIP discount",
+    "kind": "percent",
+    "value": -10,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring"
+    ],
+    "taxable": true,
+    "category": "credit",
+    "description": "Long-standing and referral customers",
+    "when": {
+      "customerTier": [
+        "vip"
+      ]
+    },
+    "stackGroup": "customerDiscount",
+    "exemptContracts": true,
+    "effectiveFrom": "2027-01-01"
+  },
+  {
+    "id": "fee_tier_ff",
+    "name": "Friends and family",
+    "kind": "percent",
+    "value": -15,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring"
+    ],
+    "taxable": true,
+    "category": "credit",
+    "description": "Staff and their households",
+    "when": {
+      "customerTier": [
+        "friendsFamily"
+      ]
+    },
+    "stackGroup": "customerDiscount",
+    "exemptContracts": true,
+    "effectiveFrom": "2027-01-01"
+  },
+  {
+    "id": "fee_access_walkout",
+    "name": "Walk-out service",
+    "kind": "flat",
+    "value": 500,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring"
+    ],
+    "taxable": true,
+    "category": "surcharge",
+    "description": "Driver walks the cart from the side or back yard",
+    "when": {
+      "access": [
+        "walkOut"
+      ],
+      "lob": [
+        "residential"
+      ]
+    },
+    "effectiveFrom": "2027-01-01"
+  },
+  {
+    "id": "fee_cycle_quarterly",
+    "name": "Quarterly prepay discount",
+    "kind": "percent",
+    "value": -2,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring"
+    ],
+    "taxable": true,
+    "category": "credit",
+    "description": "Proposed: a small thank-you for paying a quarter ahead",
+    "when": {
+      "cycle": [
+        "quarterly"
+      ],
+      "lob": [
+        "residential"
+      ]
+    },
+    "status": "paused",
+    "effectiveFrom": "2027-01-01"
+  },
+  {
+    "id": "fee_zone_east_county",
+    "name": "East county surcharge",
+    "kind": "flat",
+    "value": 300,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring"
+    ],
+    "taxable": true,
+    "category": "location",
+    "description": "Rural stops past the county line road, inside the East county zone drawn on the map",
+    "when": {
+      "geoZone": [
+        "gz_east_county"
+      ],
+      "lob": [
+        "residential",
+        "frontload"
+      ]
+    },
+    "exemptContracts": true,
+    "effectiveFrom": "2027-01-01"
+  }
+]

@@ -1,0 +1,896 @@
+[
+  {
+    "id": "evt_20260831_site_maple",
+    "siteId": "site_maple",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_holt",
+    "siteId": "site_holt",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_001",
+    "siteId": "site_res_001",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_003",
+    "siteId": "site_res_003",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_005",
+    "siteId": "site_res_005",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_007",
+    "siteId": "site_res_007",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_009",
+    "siteId": "site_res_009",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_011",
+    "siteId": "site_res_011",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_013",
+    "siteId": "site_res_013",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_015",
+    "siteId": "site_res_015",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_017",
+    "siteId": "site_res_017",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_019",
+    "siteId": "site_res_019",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_021",
+    "siteId": "site_res_021",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_023",
+    "siteId": "site_res_023",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_025",
+    "siteId": "site_res_025",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_027",
+    "siteId": "site_res_027",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260831_site_res_029",
+    "siteId": "site_res_029",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_maple_extrabags",
+    "siteId": "site_maple",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "exception": "extraBags",
+    "photoUrl": "/evidence/maple-extra-bags.jpg",
+    "note": "3 bags beside cart, lid closed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_holt",
+    "siteId": "site_holt",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_001",
+    "siteId": "site_res_001",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_003",
+    "siteId": "site_res_003",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_005",
+    "siteId": "site_res_005",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_007",
+    "siteId": "site_res_007",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_009",
+    "siteId": "site_res_009",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_011",
+    "siteId": "site_res_011",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_013",
+    "siteId": "site_res_013",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_015",
+    "siteId": "site_res_015",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_017",
+    "siteId": "site_res_017",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_019",
+    "siteId": "site_res_019",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_021",
+    "siteId": "site_res_021",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_023",
+    "siteId": "site_res_023",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_025",
+    "siteId": "site_res_025",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_027",
+    "siteId": "site_res_027",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260907_site_res_029",
+    "siteId": "site_res_029",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_20260901_site_kerr",
+    "siteId": "site_kerr",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "skippedSuspended",
+    "note": "Account suspended, stop skipped",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_002",
+    "siteId": "site_res_002",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_004",
+    "siteId": "site_res_004",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_006",
+    "siteId": "site_res_006",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_008",
+    "siteId": "site_res_008",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_010",
+    "siteId": "site_res_010",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_012",
+    "siteId": "site_res_012",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_014",
+    "siteId": "site_res_014",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_016",
+    "siteId": "site_res_016",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_018",
+    "siteId": "site_res_018",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_020",
+    "siteId": "site_res_020",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_022",
+    "siteId": "site_res_022",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_024",
+    "siteId": "site_res_024",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_026",
+    "siteId": "site_res_026",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_028",
+    "siteId": "site_res_028",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260901_site_res_030",
+    "siteId": "site_res_030",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_kerr",
+    "siteId": "site_kerr",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "skippedSuspended",
+    "note": "Account suspended, stop skipped",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_002",
+    "siteId": "site_res_002",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_004",
+    "siteId": "site_res_004",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_006",
+    "siteId": "site_res_006",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_008",
+    "siteId": "site_res_008",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_010",
+    "siteId": "site_res_010",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_012",
+    "siteId": "site_res_012",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_res014_overload",
+    "siteId": "site_res_014",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "exception": "overload",
+    "photoUrl": "/evidence/res014-overload.jpg",
+    "note": "Lid open 12 inches, construction debris",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_016",
+    "siteId": "site_res_016",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_018",
+    "siteId": "site_res_018",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_020",
+    "siteId": "site_res_020",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_022",
+    "siteId": "site_res_022",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_024",
+    "siteId": "site_res_024",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_026",
+    "siteId": "site_res_026",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_028",
+    "siteId": "site_res_028",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260908_site_res_030",
+    "siteId": "site_res_030",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_20260902_site_bakery",
+    "siteId": "site_bakery",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260902_site_oak_1",
+    "siteId": "site_oak_1",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260902_site_oak_2",
+    "siteId": "site_oak_2",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260902_site_oak_3",
+    "siteId": "site_oak_3",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260902_site_oak_4",
+    "siteId": "site_oak_4",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260902_site_fl_001",
+    "siteId": "site_fl_001",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260902_site_fl_002",
+    "siteId": "site_fl_002",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_fl003_dryrun",
+    "siteId": "site_fl_003",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "blocked",
+    "exception": "dryRun",
+    "note": "Gate locked, no answer at door",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260902_site_fl_004",
+    "siteId": "site_fl_004",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260902_site_fl_005",
+    "siteId": "site_fl_005",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260902_site_fl_006",
+    "siteId": "site_fl_006",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260902_site_fl_007",
+    "siteId": "site_fl_007",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260902_site_fl_008",
+    "siteId": "site_fl_008",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_bakery_contam",
+    "siteId": "site_bakery",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "exception": "contamination",
+    "photoUrl": "/evidence/bakery-wood-contamination.jpg",
+    "note": "Plastic wrap and food waste in wood container",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_oak_1",
+    "siteId": "site_oak_1",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_oak_2",
+    "siteId": "site_oak_2",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_oak_3",
+    "siteId": "site_oak_3",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_oak_4",
+    "siteId": "site_oak_4",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_fl_001",
+    "siteId": "site_fl_001",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_fl_002",
+    "siteId": "site_fl_002",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_fl_003",
+    "siteId": "site_fl_003",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_fl_004",
+    "siteId": "site_fl_004",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_fl_005",
+    "siteId": "site_fl_005",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_fl_006",
+    "siteId": "site_fl_006",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_fl_007",
+    "siteId": "site_fl_007",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260909_site_fl_008",
+    "siteId": "site_fl_008",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_20260827_site_hale_a",
+    "siteId": "site_hale_a",
+    "routeId": "route_thu_ro",
+    "date": "2026-08-27",
+    "outcome": "completed",
+    "driver": "Dale Whitfield"
+  },
+  {
+    "id": "evt_20260827_site_hale_b",
+    "siteId": "site_hale_b",
+    "routeId": "route_thu_ro",
+    "date": "2026-08-27",
+    "outcome": "completed",
+    "driver": "Dale Whitfield"
+  },
+  {
+    "id": "evt_20260827_site_ro_home",
+    "siteId": "site_ro_home",
+    "routeId": "route_thu_ro",
+    "date": "2026-08-27",
+    "outcome": "completed",
+    "driver": "Dale Whitfield"
+  },
+  {
+    "id": "evt_20260903_site_hale_a",
+    "siteId": "site_hale_a",
+    "routeId": "route_thu_ro",
+    "date": "2026-09-03",
+    "outcome": "completed",
+    "driver": "Dale Whitfield"
+  },
+  {
+    "id": "evt_hale_dryrun",
+    "siteId": "site_hale_b",
+    "routeId": "route_thu_ro",
+    "date": "2026-09-03",
+    "outcome": "blocked",
+    "exception": "dryRun",
+    "photoUrl": "/evidence/hale-b-blocked.jpg",
+    "note": "Box blocked by lumber delivery",
+    "driver": "Dale Whitfield"
+  },
+  {
+    "id": "evt_20260903_site_ro_home",
+    "siteId": "site_ro_home",
+    "routeId": "route_thu_ro",
+    "date": "2026-09-03",
+    "outcome": "completed",
+    "driver": "Dale Whitfield"
+  },
+  {
+    "id": "evt_hist_res012_extrabags",
+    "siteId": "site_res_012",
+    "routeId": "route_tue_res",
+    "date": "2026-03-24",
+    "outcome": "completed",
+    "exception": "extraBags",
+    "photoUrl": "/evidence/res012-extra-bags-0324.jpg",
+    "note": "1 bag beside cart",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_hist_bakery_dryrun",
+    "siteId": "site_bakery",
+    "routeId": "route_wed_fl",
+    "date": "2026-03-25",
+    "outcome": "blocked",
+    "exception": "dryRun",
+    "note": "Arrived 5:40, enclosure not yet unlocked",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_hist_res021_overload",
+    "siteId": "site_res_021",
+    "routeId": "route_mon_res",
+    "date": "2026-06-22",
+    "outcome": "completed",
+    "exception": "overload",
+    "note": "Lid open, no photo taken",
+    "driver": "Marcus Bell"
+  },
+  {
+    "id": "evt_hist_fl005_dryrun",
+    "siteId": "site_fl_005",
+    "routeId": "route_wed_fl",
+    "date": "2026-06-17",
+    "outcome": "blocked",
+    "exception": "dryRun",
+    "photoUrl": "/evidence/fl005-blocked-0617.jpg",
+    "note": "Delivery van parked in front of enclosure",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_hist_res008_extrabags",
+    "siteId": "site_res_008",
+    "routeId": "route_tue_res",
+    "date": "2026-08-25",
+    "outcome": "completed",
+    "exception": "extraBags",
+    "photoUrl": "/evidence/res008-extra-bags-0825.jpg",
+    "note": "2 bags beside cart after party",
+    "driver": "Tasha Green"
+  },
+  {
+    "id": "evt_hist_fl003_contam",
+    "siteId": "site_fl_003",
+    "routeId": "route_wed_fl",
+    "date": "2026-08-26",
+    "outcome": "completed",
+    "exception": "contamination",
+    "photoUrl": "/evidence/fl003-contamination-0826.jpg",
+    "note": "Cardboard bales in trash container",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_hist_fl004_contam",
+    "siteId": "site_fl_004",
+    "routeId": "route_wed_fl",
+    "date": "2026-08-19",
+    "outcome": "completed",
+    "exception": "contamination",
+    "photoUrl": "/evidence/fl004-contamination-0819.jpg",
+    "note": "Grease drums in container",
+    "driver": "Ray Ortiz"
+  },
+  {
+    "id": "evt_maple_missed_0817",
+    "siteId": "site_maple",
+    "routeId": "route_mon_res",
+    "date": "2026-08-17",
+    "outcome": "missed",
+    "note": "Stop skipped, truck full, no photo",
+    "driver": "R. Alvarez"
+  },
+  {
+    "id": "evt_maple_blocked_0824",
+    "siteId": "site_maple",
+    "routeId": "route_mon_res",
+    "date": "2026-08-24",
+    "outcome": "blocked",
+    "photoUrl": "/photos/blocked-driveway.svg",
+    "note": "Cart blocked by a parked vehicle in the driveway",
+    "driver": "R. Alvarez"
+  }
+]

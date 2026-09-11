@@ -1,0 +1,54 @@
+[
+  {
+    "id": "grp_res_quarterly",
+    "name": "Residential quarterly",
+    "schedule": {
+      "frequency": "quarterly",
+      "every": 1,
+      "startDate": "2026-01-01"
+    },
+    "termsDays": 15,
+    "delivery": "email",
+    "customerChoice": true,
+    "note": "Homeowners billed every three months, in advance."
+  },
+  {
+    "id": "grp_res_quarterly_feb",
+    "name": "Residential quarterly, February start",
+    "schedule": {
+      "frequency": "quarterly",
+      "every": 1,
+      "startDate": "2026-02-01"
+    },
+    "termsDays": 15,
+    "delivery": "email",
+    "customerChoice": true,
+    "note": "Moves some quarterly customers a month later so the office is not billing everyone in the same week."
+  },
+  {
+    "id": "grp_res_monthly",
+    "name": "Residential monthly",
+    "schedule": {
+      "frequency": "monthly",
+      "every": 1,
+      "startDate": "2026-01-01"
+    },
+    "termsDays": 15,
+    "delivery": "email",
+    "customerChoice": true,
+    "note": "Homeowners who asked for a smaller monthly bill."
+  },
+  {
+    "id": "grp_commercial_monthly",
+    "name": "Commercial monthly",
+    "schedule": {
+      "frequency": "monthly",
+      "every": 1,
+      "startDate": "2026-01-01"
+    },
+    "termsDays": 15,
+    "delivery": "email",
+    "customerChoice": true,
+    "note": "Front load customers billed on the 1st."
+  }
+]

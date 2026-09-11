@@ -1,0 +1,355 @@
+[
+  {
+    "id": "site_res_maple",
+    "accountId": "acct_res_maple",
+    "address": "917 Sycamore Ave, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_holt",
+    "accountId": "acct_res_holt",
+    "address": "44 Birchwood Ct, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_kerr",
+    "accountId": "acct_res_kerr",
+    "address": "2306 Foxglove Dr, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_bakery",
+    "accountId": "acct_bakery",
+    "address": "214 Depot St, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl",
+    "accessNotes": "Enclosure behind the loading dock, gate code 4471"
+  },
+  {
+    "id": "site_oakridge_1",
+    "accountId": "acct_pm_oakridge",
+    "address": "1401 Willow Bend Rd, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res",
+    "poNumber": "OAK-1401"
+  },
+  {
+    "id": "site_oakridge_2",
+    "accountId": "acct_pm_oakridge",
+    "address": "1409 Willow Bend Rd, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res",
+    "poNumber": "OAK-1409"
+  },
+  {
+    "id": "site_oakridge_3",
+    "accountId": "acct_pm_oakridge",
+    "address": "62 Hollis Park Ln, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res",
+    "poNumber": "OAK-0062"
+  },
+  {
+    "id": "site_oakridge_4",
+    "accountId": "acct_pm_oakridge",
+    "address": "70 Hollis Park Ln, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res",
+    "poNumber": "OAK-0070"
+  },
+  {
+    "id": "site_hale_riverside",
+    "accountId": "acct_contractor_hale",
+    "address": "3800 Riverside Pkwy, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_thu_ro",
+    "accessNotes": "Boxes on the north lot, call the super 30 minutes ahead",
+    "poNumber": "HALE-RS-22"
+  },
+  {
+    "id": "site_hale_depot",
+    "accountId": "acct_contractor_hale",
+    "address": "95 Old Depot Rd, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_thu_ro",
+    "accessNotes": "Locked gate after 4 pm",
+    "poNumber": "HALE-OD-07"
+  },
+  {
+    "id": "site_ro_homeowner",
+    "accountId": "acct_ro_homeowner",
+    "address": "18 Quarry Ridge Ct, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_thu_ro",
+    "accessNotes": "Box on the driveway apron, right side"
+  },
+  {
+    "id": "site_res_001",
+    "accountId": "acct_res_001",
+    "address": "107 Pecan Grove Rd, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_002",
+    "accountId": "acct_res_002",
+    "address": "114 Laurel St, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_003",
+    "accountId": "acct_res_003",
+    "address": "121 Hickory Ln, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_004",
+    "accountId": "acct_res_004",
+    "address": "128 Mill Creek Dr, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_005",
+    "accountId": "acct_res_005",
+    "address": "135 Chestnut Way, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_006",
+    "accountId": "acct_res_006",
+    "address": "142 Dogwood Cir, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_007",
+    "accountId": "acct_res_007",
+    "address": "149 Juniper Ct, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_008",
+    "accountId": "acct_res_008",
+    "address": "156 Magnolia Ave, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_009",
+    "accountId": "acct_res_009",
+    "address": "163 Pecan Grove Rd, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_010",
+    "accountId": "acct_res_010",
+    "address": "170 Laurel St, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_011",
+    "accountId": "acct_res_011",
+    "address": "177 Hickory Ln, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_012",
+    "accountId": "acct_res_012",
+    "address": "184 Mill Creek Dr, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_013",
+    "accountId": "acct_res_013",
+    "address": "191 Chestnut Way, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_014",
+    "accountId": "acct_res_014",
+    "address": "198 Dogwood Cir, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_015",
+    "accountId": "acct_res_015",
+    "address": "205 Juniper Ct, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_016",
+    "accountId": "acct_res_016",
+    "address": "212 Magnolia Ave, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_017",
+    "accountId": "acct_res_017",
+    "address": "219 Pecan Grove Rd, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_018",
+    "accountId": "acct_res_018",
+    "address": "226 Laurel St, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_019",
+    "accountId": "acct_res_019",
+    "address": "233 Hickory Ln, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_020",
+    "accountId": "acct_res_020",
+    "address": "240 Mill Creek Dr, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_021",
+    "accountId": "acct_res_021",
+    "address": "247 Chestnut Way, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_022",
+    "accountId": "acct_res_022",
+    "address": "254 Dogwood Cir, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_023",
+    "accountId": "acct_res_023",
+    "address": "261 Juniper Ct, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_024",
+    "accountId": "acct_res_024",
+    "address": "268 Magnolia Ave, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_025",
+    "accountId": "acct_res_025",
+    "address": "275 Pecan Grove Rd, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_026",
+    "accountId": "acct_res_026",
+    "address": "282 Laurel St, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_027",
+    "accountId": "acct_res_027",
+    "address": "289 Hickory Ln, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_028",
+    "accountId": "acct_res_028",
+    "address": "296 Mill Creek Dr, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_029",
+    "accountId": "acct_res_029",
+    "address": "303 Chestnut Way, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_030",
+    "accountId": "acct_res_030",
+    "address": "310 Dogwood Cir, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_fl_001",
+    "accountId": "acct_fl_001",
+    "address": "118 Depot St, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_002",
+    "accountId": "acct_fl_002",
+    "address": "2200 Commerce Way, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_003",
+    "accountId": "acct_fl_003",
+    "address": "640 Larkspur Ln, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_004",
+    "accountId": "acct_fl_004",
+    "address": "905 Mill Creek Dr, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_005",
+    "accountId": "acct_fl_005",
+    "address": "77 Court Square, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_006",
+    "accountId": "acct_fl_006",
+    "address": "310 Main St, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_007",
+    "accountId": "acct_fl_007",
+    "address": "50 Hollis Park Ln, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_008",
+    "accountId": "acct_fl_008",
+    "address": "3720 Riverside Pkwy, Piedmont, GA 30512",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  }
+]

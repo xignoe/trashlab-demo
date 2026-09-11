@@ -1,0 +1,38 @@
+[
+  {
+    "id": "sc_res_carts",
+    "name": "Residential carts",
+    "lob": "residential",
+    "description": "Curbside trash service, billed monthly or quarterly"
+  },
+  {
+    "id": "sc_res_addons",
+    "name": "Residential add-ons",
+    "lob": "residential",
+    "description": "Extra carts and recycling on a trash account"
+  },
+  {
+    "id": "sc_fl_trash",
+    "name": "Commercial trash",
+    "lob": "frontload",
+    "description": "Frontload containers on a set schedule"
+  },
+  {
+    "id": "sc_fl_specialty",
+    "name": "Commercial specialty",
+    "lob": "frontload",
+    "description": "Single-material containers"
+  },
+  {
+    "id": "sc_ro_boxes",
+    "name": "Roll-off boxes",
+    "lob": "rolloff",
+    "description": "Open-top boxes billed per haul, tons and days included"
+  },
+  {
+    "id": "sc_ro_compactors",
+    "name": "Compactors",
+    "lob": "rolloff",
+    "description": "Priced per haul by a person"
+  }
+]

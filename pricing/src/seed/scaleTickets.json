@@ -1,0 +1,24 @@
+[
+  {
+    "id": "st_hale_001",
+    "workOrderId": "wo_hale_001",
+    "containerId": "cont_hale_1_ro_a",
+    "facility": "Piedmont Transfer Station",
+    "material": "mixed C&D",
+    "grossLbs": 24400,
+    "tareLbs": 16000,
+    "netLbs": 8400,
+    "ticketedAt": "2026-09-03T10:42:00"
+  },
+  {
+    "id": "st_hale_002",
+    "workOrderId": "wo_hale_002",
+    "containerId": "cont_hale_2_ro_a",
+    "facility": "Piedmont Transfer Station",
+    "material": "mixed C&D",
+    "grossLbs": 23100,
+    "tareLbs": 16000,
+    "netLbs": 7100,
+    "ticketedAt": "2026-08-27T14:15:00"
+  }
+]

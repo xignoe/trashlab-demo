@@ -1,0 +1,71 @@
+[
+  {
+    "id": "wo_hale_deliver_101",
+    "siteId": "site_hale_riverside",
+    "kind": "deliver",
+    "status": "done",
+    "scheduledFor": "2026-08-13",
+    "serviceItemId": "si_hale_box_101",
+    "containerId": "cont_ro_101",
+    "completedAt": "2026-08-13T08:40:00-04:00"
+  },
+  {
+    "id": "wo_hale_deliver_102",
+    "siteId": "site_hale_riverside",
+    "kind": "deliver",
+    "status": "done",
+    "scheduledFor": "2026-08-13",
+    "serviceItemId": "si_hale_box_102",
+    "containerId": "cont_ro_102",
+    "completedAt": "2026-08-13T09:05:00-04:00"
+  },
+  {
+    "id": "wo_hale_deliver_103",
+    "siteId": "site_hale_depot",
+    "kind": "deliver",
+    "status": "done",
+    "scheduledFor": "2026-08-20",
+    "serviceItemId": "si_hale_box_103",
+    "containerId": "cont_ro_103",
+    "completedAt": "2026-08-20T10:15:00-04:00"
+  },
+  {
+    "id": "wo_hale_dar_101",
+    "siteId": "site_hale_riverside",
+    "kind": "dumpAndReturn",
+    "status": "done",
+    "scheduledFor": "2026-09-01",
+    "serviceItemId": "si_hale_box_101",
+    "containerId": "cont_ro_101",
+    "completedAt": "2026-09-01T13:50:00-04:00"
+  },
+  {
+    "id": "wo_hale_dar_102",
+    "siteId": "site_hale_riverside",
+    "kind": "dumpAndReturn",
+    "status": "done",
+    "scheduledFor": "2026-09-08",
+    "serviceItemId": "si_hale_box_102",
+    "containerId": "cont_ro_102",
+    "completedAt": "2026-09-08T14:30:00-04:00"
+  },
+  {
+    "id": "wo_hale_dar_103",
+    "siteId": "site_hale_depot",
+    "kind": "dumpAndReturn",
+    "status": "open",
+    "scheduledFor": "2026-09-03",
+    "serviceItemId": "si_hale_box_103",
+    "containerId": "cont_ro_103"
+  },
+  {
+    "id": "wo_ro_homeowner_deliver",
+    "siteId": "site_ro_homeowner",
+    "kind": "deliver",
+    "status": "done",
+    "scheduledFor": "2026-08-07",
+    "serviceItemId": "si_ro_homeowner",
+    "containerId": "cont_ro_104",
+    "completedAt": "2026-08-07T09:30:00-04:00"
+  }
+]

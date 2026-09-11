@@ -1,0 +1,224 @@
+[
+  {
+    "id": "ev_0001",
+    "siteId": "site_maple",
+    "routeId": "route_mon_res",
+    "date": "2026-08-17T07:38:00",
+    "outcome": "completed",
+    "exception": "extraBags",
+    "photoUrl": "photos/extra-bags.svg",
+    "note": "Three bags beside the cart, all taken",
+    "driver": "R. Alvarez"
+  },
+  {
+    "id": "ev_0002",
+    "siteId": "site_maple",
+    "routeId": "route_mon_res",
+    "date": "2026-08-24T00:00:00",
+    "outcome": "missed",
+    "note": "Stop skipped, truck full, no photo",
+    "driver": "R. Alvarez"
+  },
+  {
+    "id": "ev_0003",
+    "siteId": "site_maple",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31T07:42:00",
+    "outcome": "completed",
+    "photoUrl": "photos/completed-cart-at-curb.svg",
+    "note": "Cart emptied and returned to the curb",
+    "driver": "R. Alvarez"
+  },
+  {
+    "id": "ev_0004",
+    "siteId": "site_maple",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07T07:51:00",
+    "outcome": "blocked",
+    "photoUrl": "photos/blocked-driveway.svg",
+    "note": "Cart blocked by a parked vehicle in the driveway, could not reach it",
+    "driver": "R. Alvarez"
+  },
+  {
+    "id": "ev_0005",
+    "siteId": "site_holt",
+    "routeId": "route_mon_res",
+    "date": "2026-08-17T07:44:00",
+    "outcome": "completed",
+    "driver": "R. Alvarez"
+  },
+  {
+    "id": "ev_0006",
+    "siteId": "site_holt",
+    "routeId": "route_mon_res",
+    "date": "2026-08-24T07:41:00",
+    "outcome": "completed",
+    "driver": "R. Alvarez"
+  },
+  {
+    "id": "ev_0007",
+    "siteId": "site_holt",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31T07:49:00",
+    "outcome": "completed",
+    "driver": "R. Alvarez"
+  },
+  {
+    "id": "ev_0008",
+    "siteId": "site_holt",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07T07:57:00",
+    "outcome": "completed",
+    "driver": "R. Alvarez"
+  },
+  {
+    "id": "ev_0009",
+    "siteId": "site_kerr",
+    "routeId": "route_tue_res",
+    "date": "2026-08-18T08:30:00",
+    "outcome": "skippedSuspended",
+    "note": "Account suspended, stop skipped per policy",
+    "driver": "T. Boyd"
+  },
+  {
+    "id": "ev_0010",
+    "siteId": "site_kerr",
+    "routeId": "route_tue_res",
+    "date": "2026-08-25T08:30:00",
+    "outcome": "skippedSuspended",
+    "note": "Account suspended, stop skipped per policy",
+    "driver": "T. Boyd"
+  },
+  {
+    "id": "ev_0011",
+    "siteId": "site_kerr",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01T08:30:00",
+    "outcome": "skippedSuspended",
+    "note": "Account suspended, stop skipped per policy",
+    "driver": "T. Boyd"
+  },
+  {
+    "id": "ev_0012",
+    "siteId": "site_kerr",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08T08:30:00",
+    "outcome": "skippedSuspended",
+    "note": "Account suspended, stop skipped per policy",
+    "driver": "T. Boyd"
+  },
+  {
+    "id": "ev_0013",
+    "siteId": "site_res_014",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31T08:20:00",
+    "outcome": "completed",
+    "exception": "overload",
+    "photoUrl": "photos/extra-bags.svg",
+    "note": "Lid open more than a foot, cart over the weight limit",
+    "driver": "R. Alvarez"
+  },
+  {
+    "id": "ev_0014",
+    "siteId": "site_fl_003",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02T06:15:00",
+    "outcome": "blocked",
+    "exception": "dryRun",
+    "note": "Delivery truck parked in front of the enclosure, could not service",
+    "driver": "M. Okoro"
+  },
+  {
+    "id": "ev_0015",
+    "siteId": "site_hale_job1",
+    "routeId": "route_thu_ro",
+    "date": "2026-09-03T09:40:00",
+    "outcome": "blocked",
+    "exception": "dryRun",
+    "note": "Box not accessible, crane truck staged in the pull lane",
+    "driver": "D. Pruitt"
+  },
+  {
+    "id": "ev_0016",
+    "siteId": "site_bakery",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09T05:52:00",
+    "outcome": "completed",
+    "exception": "contamination",
+    "photoUrl": "photos/contamination.svg",
+    "note": "Plastic film and food waste in the wood container FL3W-1007",
+    "driver": "M. Okoro"
+  },
+  {
+    "id": "ev_0017",
+    "siteId": "site_bakery",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02T05:50:00",
+    "outcome": "completed",
+    "driver": "M. Okoro"
+  },
+  {
+    "id": "ev_0018",
+    "siteId": "site_oak_1",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02T06:30:00",
+    "outcome": "completed",
+    "driver": "M. Okoro"
+  },
+  {
+    "id": "ev_0019",
+    "siteId": "site_oak_1",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09T06:28:00",
+    "outcome": "completed",
+    "driver": "M. Okoro"
+  },
+  {
+    "id": "ev_0020",
+    "siteId": "site_oak_2",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02T06:30:00",
+    "outcome": "completed",
+    "driver": "M. Okoro"
+  },
+  {
+    "id": "ev_0021",
+    "siteId": "site_oak_2",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09T06:28:00",
+    "outcome": "completed",
+    "driver": "M. Okoro"
+  },
+  {
+    "id": "ev_0022",
+    "siteId": "site_oak_3",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02T06:30:00",
+    "outcome": "completed",
+    "driver": "M. Okoro"
+  },
+  {
+    "id": "ev_0023",
+    "siteId": "site_oak_3",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09T06:28:00",
+    "outcome": "completed",
+    "driver": "M. Okoro"
+  },
+  {
+    "id": "ev_0024",
+    "siteId": "site_oak_4",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02T06:30:00",
+    "outcome": "completed",
+    "driver": "M. Okoro"
+  },
+  {
+    "id": "ev_0025",
+    "siteId": "site_oak_4",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09T06:28:00",
+    "outcome": "completed",
+    "driver": "M. Okoro"
+  }
+]

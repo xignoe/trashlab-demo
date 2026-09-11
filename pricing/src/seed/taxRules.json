@@ -1,0 +1,5 @@
+[
+  { "id": "tax_open", "zoneId": "zone_open", "ratePct": 7, "appliesTo": ["recurring", "event", "fee"] },
+  { "id": "tax_boundary", "zoneId": "zone_boundary", "ratePct": 7, "appliesTo": ["recurring", "event", "fee"] },
+  { "id": "tax_franchise", "zoneId": "zone_franchise", "ratePct": 7, "appliesTo": ["recurring", "event", "fee"] }
+]

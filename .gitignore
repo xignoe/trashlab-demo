@@ -1,0 +1,15 @@
+node_modules
+dist
+coverage
+*.log
+*.tsbuildinfo
+.DS_Store
+.vite
+
+# Not published: TrashLab brief and context, agent prompts
+trashlab/
+trashlab-context.zip
+prompts/
+
+# Deploy scratch
+.pages-build

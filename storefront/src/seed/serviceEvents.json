@@ -1,0 +1,73 @@
+[
+  {
+    "id": "se_maple_0908",
+    "siteId": "site_res_maple",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "exception": "extraBags",
+    "photoUrl": "/evidence/se_maple_0908.jpg",
+    "note": "Four bags beside the cart",
+    "driver": "M. Ortega"
+  },
+  {
+    "id": "se_kerr_0901",
+    "siteId": "site_res_kerr",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "skippedSuspended",
+    "driver": "M. Ortega"
+  },
+  {
+    "id": "se_kerr_0908",
+    "siteId": "site_res_kerr",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "skippedSuspended",
+    "driver": "M. Ortega"
+  },
+  {
+    "id": "se_bakery_0902",
+    "siteId": "site_bakery",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "exception": "contamination",
+    "photoUrl": "/evidence/se_bakery_0902.jpg",
+    "note": "Plastic film and food waste in the wood waste container",
+    "driver": "T. Boudreaux"
+  },
+  {
+    "id": "se_hale_0903",
+    "siteId": "site_hale_depot",
+    "routeId": "route_thu_ro",
+    "date": "2026-09-03",
+    "outcome": "blocked",
+    "exception": "dryRun",
+    "photoUrl": "/evidence/se_hale_0903.jpg",
+    "note": "Gate locked, box not reachable",
+    "driver": "R. Vance"
+  },
+  {
+    "id": "se_res_014_0901",
+    "siteId": "site_res_014",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "exception": "overload",
+    "photoUrl": "/evidence/se_res_014_0901.jpg",
+    "note": "Lid open more than 12 inches, cart overfilled",
+    "driver": "M. Ortega"
+  },
+  {
+    "id": "se_fl_003_0909",
+    "siteId": "site_fl_003",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "blocked",
+    "exception": "dryRun",
+    "photoUrl": "/evidence/se_fl_003_0909.jpg",
+    "note": "Delivery van parked across the enclosure",
+    "driver": "T. Boudreaux"
+  }
+]

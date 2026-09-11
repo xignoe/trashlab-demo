@@ -1,0 +1,397 @@
+[
+  {
+    "id": "site_maple",
+    "accountId": "acct_res_maple",
+    "occupantPartyId": "party_maple",
+    "address": "412 Maple St",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res",
+    "accessNotes": "Carts at the curb by 6am; dog in the back yard"
+  },
+  {
+    "id": "site_holt",
+    "accountId": "acct_res_holt",
+    "occupantPartyId": "party_holt",
+    "address": "77 Elm Ct",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_kerr",
+    "accountId": "acct_res_kerr",
+    "occupantPartyId": "party_kerr",
+    "address": "230 Birch Ln",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_bakery",
+    "accountId": "acct_bakery",
+    "occupantPartyId": "party_bakery",
+    "address": "88 Commerce Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl",
+    "accessNotes": "Enclosure behind the loading dock; gate code 4410"
+  },
+  {
+    "id": "site_oak_1",
+    "accountId": "acct_pm_oakridge",
+    "address": "Oakridge Commons Bldg A, 100 Oakridge Dr",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl",
+    "poNumber": "PO-4471-A"
+  },
+  {
+    "id": "site_oak_2",
+    "accountId": "acct_pm_oakridge",
+    "address": "Oakridge Commons Bldg B, 120 Oakridge Dr",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl",
+    "poNumber": "PO-4471-B"
+  },
+  {
+    "id": "site_oak_3",
+    "accountId": "acct_pm_oakridge",
+    "address": "Oakridge Terrace, 15 Ridgeview Ct",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl",
+    "poNumber": "PO-4502",
+    "accessNotes": "Key box on the enclosure, code with property manager"
+  },
+  {
+    "id": "site_oak_4",
+    "accountId": "acct_pm_oakridge",
+    "address": "Oakridge Village Center, 900 Parkway Blvd",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl",
+    "poNumber": "PO-4519"
+  },
+  {
+    "id": "site_hale_job1",
+    "accountId": "acct_contractor_hale",
+    "address": "2200 Industrial Pkwy (job 1, warehouse demo)",
+    "zoneId": "zone_open",
+    "routeId": "route_thu_ro",
+    "accessNotes": "Gate opens 6:30am; call site super J. Hale before arrival"
+  },
+  {
+    "id": "site_hale_job2",
+    "accountId": "acct_contractor_hale",
+    "address": "45 Quarry Rd (job 2, retail fit-out)",
+    "zoneId": "zone_open",
+    "routeId": "route_thu_ro"
+  },
+  {
+    "id": "site_ro_home",
+    "accountId": "acct_ro_homeowner",
+    "occupantPartyId": "party_ro_home",
+    "address": "9 Fern Hollow Dr",
+    "zoneId": "zone_open",
+    "routeId": "route_thu_ro",
+    "accessNotes": "Box on the driveway, left side"
+  },
+  {
+    "id": "site_res_001",
+    "accountId": "acct_res_001",
+    "occupantPartyId": "party_res_001",
+    "address": "107 Oak Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_002",
+    "accountId": "acct_res_002",
+    "occupantPartyId": "party_res_002",
+    "address": "114 Pine Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_003",
+    "accountId": "acct_res_003",
+    "occupantPartyId": "party_res_003",
+    "address": "121 Cedar Ln",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_004",
+    "accountId": "acct_res_004",
+    "occupantPartyId": "party_res_004",
+    "address": "128 Willow Way",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_005",
+    "accountId": "acct_res_005",
+    "occupantPartyId": "party_res_005",
+    "address": "135 Ashford Dr",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_006",
+    "accountId": "acct_res_006",
+    "occupantPartyId": "party_res_006",
+    "address": "142 Chestnut St",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_007",
+    "accountId": "acct_res_007",
+    "occupantPartyId": "party_res_007",
+    "address": "149 Laurel Ct",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_008",
+    "accountId": "acct_res_008",
+    "occupantPartyId": "party_res_008",
+    "address": "156 Poplar Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_009",
+    "accountId": "acct_res_009",
+    "occupantPartyId": "party_res_009",
+    "address": "163 Sycamore Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_010",
+    "accountId": "acct_res_010",
+    "occupantPartyId": "party_res_010",
+    "address": "170 Maple St",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_011",
+    "accountId": "acct_res_011",
+    "occupantPartyId": "party_res_011",
+    "address": "177 Oak Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_012",
+    "accountId": "acct_res_012",
+    "occupantPartyId": "party_res_012",
+    "address": "184 Pine Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_013",
+    "accountId": "acct_res_013",
+    "occupantPartyId": "party_res_013",
+    "address": "191 Cedar Ln",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_014",
+    "accountId": "acct_res_014",
+    "occupantPartyId": "party_res_014",
+    "address": "198 Willow Way",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_015",
+    "accountId": "acct_res_015",
+    "occupantPartyId": "party_res_015",
+    "address": "205 Ashford Dr",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_016",
+    "accountId": "acct_res_016",
+    "occupantPartyId": "party_res_016",
+    "address": "212 Chestnut St",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_017",
+    "accountId": "acct_res_017",
+    "occupantPartyId": "party_res_017",
+    "address": "219 Laurel Ct",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_018",
+    "accountId": "acct_res_018",
+    "occupantPartyId": "party_res_018",
+    "address": "226 Poplar Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_019",
+    "accountId": "acct_res_019",
+    "occupantPartyId": "party_res_019",
+    "address": "233 Sycamore Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_020",
+    "accountId": "acct_res_020",
+    "occupantPartyId": "party_res_020",
+    "address": "240 Maple St",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_021",
+    "accountId": "acct_res_021",
+    "occupantPartyId": "party_res_021",
+    "address": "247 Oak Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_022",
+    "accountId": "acct_res_022",
+    "occupantPartyId": "party_res_022",
+    "address": "254 Pine Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_023",
+    "accountId": "acct_res_023",
+    "occupantPartyId": "party_res_023",
+    "address": "261 Cedar Ln",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_024",
+    "accountId": "acct_res_024",
+    "occupantPartyId": "party_res_024",
+    "address": "268 Willow Way",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_025",
+    "accountId": "acct_res_025",
+    "occupantPartyId": "party_res_025",
+    "address": "275 Ashford Dr",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_026",
+    "accountId": "acct_res_026",
+    "occupantPartyId": "party_res_026",
+    "address": "282 Chestnut St",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_027",
+    "accountId": "acct_res_027",
+    "occupantPartyId": "party_res_027",
+    "address": "289 Laurel Ct",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_028",
+    "accountId": "acct_res_028",
+    "occupantPartyId": "party_res_028",
+    "address": "296 Poplar Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_029",
+    "accountId": "acct_res_029",
+    "occupantPartyId": "party_res_029",
+    "address": "303 Sycamore Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_030",
+    "accountId": "acct_res_030",
+    "occupantPartyId": "party_res_030",
+    "address": "310 Maple St",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_fl_001",
+    "accountId": "acct_fl_001",
+    "occupantPartyId": "party_fl_001",
+    "address": "210 Commerce Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_002",
+    "accountId": "acct_fl_002",
+    "occupantPartyId": "party_fl_002",
+    "address": "1450 Northgate Blvd",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_003",
+    "accountId": "acct_fl_003",
+    "occupantPartyId": "party_fl_003",
+    "address": "32 Heron Way",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_004",
+    "accountId": "acct_fl_004",
+    "occupantPartyId": "party_fl_004",
+    "address": "600 Parkway Blvd",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_005",
+    "accountId": "acct_fl_005",
+    "occupantPartyId": "party_fl_005",
+    "address": "75 Market St",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_006",
+    "accountId": "acct_fl_006",
+    "occupantPartyId": "party_fl_006",
+    "address": "2100 Ridgeline Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_007",
+    "accountId": "acct_fl_007",
+    "occupantPartyId": "party_fl_007",
+    "address": "18 Tidewater Ln",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_008",
+    "accountId": "acct_fl_008",
+    "occupantPartyId": "party_fl_008",
+    "address": "410 Juniper Dr",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  }
+]

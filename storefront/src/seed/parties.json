@@ -1,0 +1,227 @@
+[
+  {
+    "id": "party_res_maple",
+    "name": "Dana Maple",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_holt",
+    "name": "Rowan Holt",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_kerr",
+    "name": "Jamie Kerr",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_bakery",
+    "name": "Sunrise Bakery",
+    "kind": "business"
+  },
+  {
+    "id": "party_pm_oakridge",
+    "name": "Oakridge Property Management",
+    "kind": "propertyManager"
+  },
+  {
+    "id": "party_contractor_hale",
+    "name": "Hale Construction",
+    "kind": "contractor"
+  },
+  {
+    "id": "party_ro_homeowner",
+    "name": "Priya Natarajan",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_001",
+    "name": "Avery Abernathy",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_002",
+    "name": "Blake Bledsoe",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_003",
+    "name": "Casey Calloway",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_004",
+    "name": "Devon Dabney",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_005",
+    "name": "Elliot Eldridge",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_006",
+    "name": "Frankie Fairchild",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_007",
+    "name": "Greer Gaskins",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_008",
+    "name": "Harper Hightower",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_009",
+    "name": "Indigo Ingle",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_010",
+    "name": "Jules Jessup",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_011",
+    "name": "Kendall Kimbrough",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_012",
+    "name": "Lane Lockhart",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_013",
+    "name": "Morgan McAfee",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_014",
+    "name": "Noel Northcutt",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_015",
+    "name": "Oakley Overstreet",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_016",
+    "name": "Parker Pruitt",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_017",
+    "name": "Quinn Quarles",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_018",
+    "name": "Reese Rutledge",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_019",
+    "name": "Sawyer Satterfield",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_020",
+    "name": "Tatum Threadgill",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_021",
+    "name": "Umber Upchurch",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_022",
+    "name": "Vale Varnell",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_023",
+    "name": "Wren Whitlock",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_024",
+    "name": "Xavi Yarbrough",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_025",
+    "name": "Yael Zeigler",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_026",
+    "name": "Zion Ashcraft",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_027",
+    "name": "Adair Brantley",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_028",
+    "name": "Bellamy Coker",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_029",
+    "name": "Corin Dorsey",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_030",
+    "name": "Darcy Etheridge",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_fl_001",
+    "name": "Depot Street Diner",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_002",
+    "name": "Ashford Auto Body",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_003",
+    "name": "Larkspur Veterinary Clinic",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_004",
+    "name": "Mill Creek Hardware",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_005",
+    "name": "Piedmont Family Dental",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_006",
+    "name": "Copper Kettle Cafe",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_007",
+    "name": "Hollis Park Apartments",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_008",
+    "name": "Riverside Fitness",
+    "kind": "business"
+  }
+]

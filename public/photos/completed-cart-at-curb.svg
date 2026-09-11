@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Cart emptied and returned to the curb">
+  <rect width="640" height="400" fill="#a9c4d6"/>
+  <rect x="0" y="300" width="640" height="100" fill="#6e7f8a"/>
+  <rect x="0" y="290" width="640" height="14" fill="#8e9aa3"/>
+  <rect x="280" y="180" width="90" height="120" rx="8" fill="#2f6b4f"/>
+  <rect x="286" y="170" width="78" height="14" rx="3" fill="#25543f"/>
+  <circle cx="300" cy="305" r="8" fill="#222"/><circle cx="350" cy="305" r="8" fill="#222"/>
+  <circle cx="120" cy="90" r="34" fill="#f2d16b"/>
+  <text x="20" y="380" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18" fill="#ffffff">Cart emptied and returned to the curb</text>
+  <text x="620" y="30" text-anchor="end" font-family="ui-monospace, monospace" font-size="14" fill="#ffffff" opacity="0.8">Driver photo, placeholder</text>
+</svg>

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "contract_bakery",
+    "accountId": "acct_bakery",
+    "termStart": "2026-01-01",
+    "termEnd": "2026-12-31",
+    "renewalNoticeDays": 60,
+    "overrides": [
+      {
+        "catalogId": "cat_fl_3yd",
+        "frequency": "2x",
+        "priceCents": 19800,
+        "reason": "competitive match",
+        "pctBelowRateCard": 10
+      },
+      {
+        "catalogId": "cat_fl_3yd_wood",
+        "frequency": "2x",
+        "priceCents": 17100,
+        "reason": "competitive match",
+        "pctBelowRateCard": 10
+      }
+    ],
+    "escalator": {
+      "kind": "fixedPct",
+      "pct": 4,
+      "anniversary": "2027-01-01"
+    }
+  },
+  {
+    "id": "contract_fl_002",
+    "accountId": "acct_fl_002",
+    "termStart": "2026-01-01",
+    "termEnd": "2026-12-31",
+    "renewalNoticeDays": 60,
+    "overrides": [
+      {
+        "catalogId": "cat_fl_3yd",
+        "frequency": "2x",
+        "priceCents": 20900,
+        "reason": "renewal incentive",
+        "pctBelowRateCard": 5
+      }
+    ]
+  },
+  {
+    "id": "contract_fl_004",
+    "accountId": "acct_fl_004",
+    "termStart": "2026-01-01",
+    "termEnd": "2026-12-31",
+    "renewalNoticeDays": 60,
+    "overrides": [
+      {
+        "catalogId": "cat_fl_3yd",
+        "frequency": "2x",
+        "priceCents": 20900,
+        "reason": "renewal incentive",
+        "pctBelowRateCard": 5
+      }
+    ]
+  },
+  {
+    "id": "contract_fl_006",
+    "accountId": "acct_fl_006",
+    "termStart": "2026-01-01",
+    "termEnd": "2026-12-31",
+    "renewalNoticeDays": 60,
+    "overrides": [
+      {
+        "catalogId": "cat_fl_3yd",
+        "frequency": "2x",
+        "priceCents": 20900,
+        "reason": "renewal incentive",
+        "pctBelowRateCard": 5
+      }
+    ]
+  },
+  {
+    "id": "contract_fl_008",
+    "accountId": "acct_fl_008",
+    "termStart": "2026-01-01",
+    "termEnd": "2026-12-31",
+    "renewalNoticeDays": 60,
+    "overrides": [
+      {
+        "catalogId": "cat_fl_3yd",
+        "frequency": "2x",
+        "priceCents": 20900,
+        "reason": "renewal incentive",
+        "pctBelowRateCard": 5
+      }
+    ]
+  }
+]

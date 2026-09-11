@@ -1,0 +1,227 @@
+[
+  {
+    "id": "party_maple",
+    "name": "Ruth Maple",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_holt",
+    "name": "Gerald Holt",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_kerr",
+    "name": "Lena Kerr",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_bakery",
+    "name": "Sunrise Bakery",
+    "kind": "business"
+  },
+  {
+    "id": "party_oakridge",
+    "name": "Oakridge Property Group",
+    "kind": "propertyManager"
+  },
+  {
+    "id": "party_hale",
+    "name": "Hale Construction",
+    "kind": "contractor"
+  },
+  {
+    "id": "party_ro_home",
+    "name": "Priya Natarajan",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_001",
+    "name": "Alicia Brandt",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_002",
+    "name": "Tomas Reyes",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_003",
+    "name": "Marcy Whitlock",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_004",
+    "name": "Devin Okafor",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_005",
+    "name": "Helen Marsh",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_006",
+    "name": "Curtis Lane",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_007",
+    "name": "Priscilla Nguyen",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_008",
+    "name": "Omar Haddad",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_009",
+    "name": "Jeanette Cole",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_010",
+    "name": "Walter Finch",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_011",
+    "name": "Sonia Petrov",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_012",
+    "name": "Brian Talley",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_013",
+    "name": "Yolanda Diaz",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_014",
+    "name": "Grant Ellison",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_015",
+    "name": "Kimberly Osei",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_016",
+    "name": "Raymond Fitch",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_017",
+    "name": "Nadia Karim",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_018",
+    "name": "Elliot Barrow",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_019",
+    "name": "Marisol Vega",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_020",
+    "name": "Howard Pruitt",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_021",
+    "name": "Tessa Lindqvist",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_022",
+    "name": "Frank Duval",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_023",
+    "name": "Renee Castillo",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_024",
+    "name": "Isaac Mbeki",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_025",
+    "name": "Colleen Harper",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_026",
+    "name": "Victor Salazar",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_027",
+    "name": "Ingrid Sorensen",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_028",
+    "name": "Miles Thornton",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_029",
+    "name": "Bethany Roux",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_030",
+    "name": "Leon Adeyemi",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_fl_001",
+    "name": "Harbor Dental Group",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_002",
+    "name": "Pine Street Laundromat",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_003",
+    "name": "Copperline Auto Body",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_004",
+    "name": "Two Rivers Brewing",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_005",
+    "name": "Meadowbrook Veterinary",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_006",
+    "name": "Lantern Hill Bistro",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_007",
+    "name": "Ridgeway Print Shop",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_008",
+    "name": "Northgate Fitness",
+    "kind": "business"
+  }
+]

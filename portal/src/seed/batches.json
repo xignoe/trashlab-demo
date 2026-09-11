@@ -1,0 +1,25 @@
+[
+  {
+    "id": "batch_0908",
+    "depositedAt": "2026-09-08T18:30:00",
+    "grossCents": 131842,
+    "feeCents": 4120,
+    "netCents": 127722,
+    "paymentIds": [
+      "pay_card_batch_01",
+      "pay_card_batch_02",
+      "pay_card_batch_03",
+      "pay_card_batch_04",
+      "pay_card_batch_05",
+      "pay_card_batch_06",
+      "pay_card_batch_07",
+      "pay_card_batch_08",
+      "pay_card_batch_09",
+      "pay_card_batch_10",
+      "pay_card_batch_11",
+      "pay_card_batch_12",
+      "pay_card_batch_13",
+      "pay_card_batch_14"
+    ]
+  }
+]

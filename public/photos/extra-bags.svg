@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Extra bags beside the cart">
+  <rect width="640" height="400" fill="#b9c7b1"/>
+  <rect x="0" y="300" width="640" height="100" fill="#6d7a66"/>
+  <rect x="250" y="190" width="90" height="120" rx="8" fill="#2f6b4f"/>
+  <rect x="256" y="180" width="78" height="14" rx="3" fill="#25543f"/>
+  <ellipse cx="170" cy="280" rx="48" ry="36" fill="#333"/>
+  <ellipse cx="120" cy="295" rx="40" ry="28" fill="#3a3a3a"/>
+  <ellipse cx="410" cy="285" rx="46" ry="34" fill="#333"/>
+  <path d="M160 248 l10 -22 l10 22 z" fill="#555"/><path d="M400 254 l10 -22 l10 22 z" fill="#555"/>
+  <text x="20" y="380" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18" fill="#ffffff">Extra bags beside the cart</text>
+  <text x="620" y="30" text-anchor="end" font-family="ui-monospace, monospace" font-size="14" fill="#ffffff" opacity="0.8">Driver photo, placeholder</text>
+</svg>

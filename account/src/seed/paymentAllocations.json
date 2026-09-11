@@ -1,0 +1,260 @@
+[
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_maple",
+    "invoiceId": "inv_maple_q3",
+    "cents": 9329
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_auto_holt",
+    "invoiceId": "inv_holt_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_ach_bakery_0801",
+    "invoiceId": "inv_bakery_0801",
+    "cents": 42447
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_ach_bakery_0901",
+    "invoiceId": "inv_bakery_0901",
+    "cents": 42447
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_ro_home",
+    "invoiceId": "inv_ro_home_0805",
+    "cents": 65832
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_res_005",
+    "invoiceId": "inv_res_005_q3",
+    "cents": 14683
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_res_010",
+    "invoiceId": "inv_res_010_q3",
+    "cents": 14683
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_res_015",
+    "invoiceId": "inv_res_015_q3",
+    "cents": 14683
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_auto_res_017",
+    "invoiceId": "inv_res_017_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_auto_res_018",
+    "invoiceId": "inv_res_018_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_res_019",
+    "invoiceId": "inv_res_019_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_res_020",
+    "invoiceId": "inv_res_020_q3",
+    "cents": 14683
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_auto_res_021",
+    "invoiceId": "inv_res_021_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_res_023",
+    "invoiceId": "inv_res_023_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_res_024",
+    "invoiceId": "inv_res_024_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_auto_res_025",
+    "invoiceId": "inv_res_025_q3",
+    "cents": 14683
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_res_026",
+    "invoiceId": "inv_res_026_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_res_027",
+    "invoiceId": "inv_res_027_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_auto_res_028",
+    "invoiceId": "inv_res_028_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_res_029",
+    "invoiceId": "inv_res_029_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_res_030",
+    "invoiceId": "inv_res_030_q3",
+    "cents": 14683
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_001",
+    "invoiceId": "inv_res_001_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_002",
+    "invoiceId": "inv_res_002_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_003",
+    "invoiceId": "inv_res_003_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_004",
+    "invoiceId": "inv_res_004_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_005",
+    "invoiceId": "inv_res_006_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_006",
+    "invoiceId": "inv_res_007_q3",
+    "cents": 5000
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_007",
+    "invoiceId": "inv_res_008_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_008",
+    "invoiceId": "inv_res_009_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_009",
+    "invoiceId": "inv_res_011_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_010",
+    "invoiceId": "inv_res_012_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_011",
+    "invoiceId": "inv_res_013_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_012",
+    "invoiceId": "inv_res_014_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_013",
+    "invoiceId": "inv_res_016_q3",
+    "cents": 10261
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_014",
+    "invoiceId": "inv_res_022_q3",
+    "cents": 3710
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_ach_fl_001",
+    "invoiceId": "inv_fl_001_0901",
+    "cents": 18046
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_ach_fl_002",
+    "invoiceId": "inv_fl_002_0901",
+    "cents": 24028
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_ach_fl_003",
+    "invoiceId": "inv_fl_003_0901",
+    "cents": 18046
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_ach_fl_004",
+    "invoiceId": "inv_fl_004_0901",
+    "cents": 24028
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_ach_fl_005",
+    "invoiceId": "inv_fl_005_0901",
+    "cents": 18991
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_ach_fl_006",
+    "invoiceId": "inv_fl_006_0901",
+    "cents": 25288
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_ach_fl_007",
+    "invoiceId": "inv_fl_007_0901",
+    "cents": 18991
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_ach_fl_008",
+    "invoiceId": "inv_fl_008_0901",
+    "cents": 25288
+  }
+]

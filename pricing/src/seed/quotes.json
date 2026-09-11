@@ -1,0 +1,32 @@
+[
+  {
+    "id": "quote_held_ridge",
+    "kind": "residentialSignup",
+    "address": "17 Ridge Rd",
+    "zoneId": "zone_boundary",
+    "lines": [
+      { "catalogId": "cat_res_96", "qty": 1, "frequency": "weekly", "priceCents": 3100 }
+    ],
+    "dueTodayCents": 11800,
+    "recurringCents": 3100,
+    "status": "held",
+    "holdReason": "confirm private road access",
+    "holdDeadline": "2026-09-11T10:00:00",
+    "expiresAt": "2026-09-24T23:59:59",
+    "createdVia": "storefront"
+  },
+  {
+    "id": "quote_bakery_request",
+    "kind": "commercialRequest",
+    "address": "88 Commerce Way",
+    "zoneId": "zone_open",
+    "lines": [
+      { "catalogId": "cat_fl_3yd", "qty": 1, "frequency": "2x", "priceCents": 22000 }
+    ],
+    "dueTodayCents": 0,
+    "recurringCents": 22000,
+    "status": "draft",
+    "expiresAt": "2026-10-10T23:59:59",
+    "createdVia": "storefront"
+  }
+]

@@ -1,0 +1,110 @@
+/* TrashLab Storefront token names. Component code and tailwind.config.cjs read these names only.
+   Since Phase 6 (addendum F2) values are aliases of the canonical --tl- set in ../shared/tokens.css, which
+   src/index.css imports before this file.
+   Phase 7 (trashlab.com design language, directed by the user): the values marked "trashlab.com" below were
+   read from the live trashlab.com DOM (docs/trashlab-design-language.md) and diverge from shared/tokens.css.
+   They are the only raw values in this file; every other token keeps its --tl- alias. The divergence and the
+   request to add them to shared/ are in DECISIONS.md, Phase 7. */
+:root {
+  /* neutrals, lightest to darkest */
+  --color-gray-50: var(--tl-bg);            /* inset areas, hover fill */
+  --color-gray-100: var(--tl-line-soft);    /* subtle fill, selected radio card, icon tile, rule chips */
+  --color-gray-200: var(--tl-line);         /* switch track off */
+  --color-gray-400: var(--tl-lavender);     /* placeholder text, disabled button */
+  --color-gray-600: var(--tl-ink-2);        /* muted text */
+  --color-gray-900: var(--tl-ink);          /* ink */
+  --color-white: var(--tl-surface);         /* panels, inputs, text on the brand color */
+
+  /* accent: the TrashLab brand */
+  --color-accent: var(--tl-brand);          /* header band, primary pill, links, selected radio, customer bubble */
+  --color-accent-strong: var(--tl-ink);     /* hover and pressed: one step darker than the brand */
+  --color-accent-soft: var(--tl-accent-soft); /* accent pill, typeahead active row */
+  --color-lavender: var(--tl-lavender);     /* feature card icons */
+
+  /* trashlab.com additions */
+  --color-cyan: #10A6CC;                    /* trashlab.com: eyebrow text and sparkle, logo accent. Shared --tl-cyan is #10D6E6 */
+  --color-brand-deep: #201A69;              /* trashlab.com: footer and deepest brand. Shared --tl-brand-deep is #2F2A90 */
+  --color-hairline-on-brand: var(--tl-ink-2); /* 2px border of a stat block sitting on the brand color */
+  --color-on-brand: var(--tl-on-brand);     /* white type on the brand color, at the opacities the site uses */
+  --color-on-brand-85: color-mix(in srgb, var(--tl-on-brand) 85%, transparent); /* hero copy */
+  --color-on-brand-80: color-mix(in srgb, var(--tl-on-brand) 80%, transparent); /* nav text, stat labels */
+  --color-on-brand-25: color-mix(in srgb, var(--tl-on-brand) 25%, transparent); /* ghost pill border */
+  --color-on-brand-18: color-mix(in srgb, var(--tl-on-brand) 18%, transparent); /* switch track on the header */
+  --color-on-brand-12: color-mix(in srgb, var(--tl-on-brand) 12%, transparent); /* hairline under the landing header (ER-0) */
+
+  /* states */
+  --color-success: var(--tl-ok);
+  --color-success-soft: var(--tl-ok-soft);
+  --color-warning: var(--tl-warn);
+  --color-warning-soft: var(--tl-warn-soft);
+  --color-danger: var(--tl-danger);
+  --color-danger-soft: var(--tl-danger-soft);
+
+  /* semantic aliases */
+  --color-bg: #F6F7FB;                      /* trashlab.com: light section ground. Shared --tl-bg is #F7F7FF */
+  --color-surface: var(--tl-surface);
+  --color-ink: var(--tl-ink);
+  --color-ink-muted: var(--tl-ink-2);
+  --color-line: #E2E8F0;                    /* trashlab.com: 1px border on white cards (slate-200). Shared --tl-line is #D3D1FF */
+
+  /* type */
+  --font-sans: var(--tl-font-sans);
+  --text-display: 48px;                     /* trashlab.com: hero headline, 48/60 (30/37.5 under 640px, below) */
+  --leading-display: 60px;
+  --tracking-display: normal;               /* trashlab.com: tracking is normal everywhere */
+  --text-title: var(--tl-text-40);          /* page title on every screen below the hero, 40/50 */
+  --leading-title: 50px;
+  --text-eyebrow: 18px;                     /* trashlab.com: eyebrow 18/27 medium, also the hero lede size */
+  --leading-eyebrow: 27px;
+  --text-lede: var(--text-eyebrow);         /* hero copy under the headline, 18/28 */
+  --leading-lede: 28px;
+  --text-heading: 24px;                     /* trashlab.com: card title 24/32 bold */
+  --leading-heading: 32px;
+  --text-stat: var(--tl-text-40);           /* amount in the indigo stat block, 40/48 bold */
+  --leading-stat: 48px;
+  --text-body: var(--tl-text-16);           /* 16px kept for a buyer on a phone (no input zoom on iOS) */
+  --leading-body: 24px;                     /* trashlab.com: body 16/24 */
+  --text-row: var(--tl-text-15);            /* price panel lines, 15/22 */
+  --leading-row: 22px;
+  --text-label: var(--tl-text-14);          /* section labels, nav text, compact buttons, stat lines, 14/20 */
+  --leading-label: 20px;
+  --text-small: var(--tl-text-13);
+  --leading-small: var(--tl-leading-13);
+  --font-weight-regular: var(--tl-weight-regular);
+  --font-weight-medium: var(--tl-weight-medium);
+  --font-weight-semibold: var(--tl-weight-semibold);
+  --font-weight-bold: var(--tl-weight-bold);
+
+  /* spacing, 4px steps */
+  --spacing-1: var(--tl-space-1);
+  --spacing-2: var(--tl-space-2);
+  --spacing-3: var(--tl-space-3);
+  --spacing-4: var(--tl-space-4);
+  --spacing-5: var(--tl-space-5);
+  --spacing-6: var(--tl-space-6);
+  --spacing-8: var(--tl-space-8);
+  --spacing-12: calc(var(--tl-space-6) * 2); /* derived: the shared scale stops at 40px */
+
+  /* sizes (trashlab.com) */
+  --size-header: 80px;                      /* indigo header bar */
+  --size-page: 1200px;                      /* centered content container */
+  --size-button: 50px;                      /* pill button */
+  --size-button-compact: 44px;              /* compact pill: header and office rows */
+
+  /* radii */
+  --radius-sm: var(--tl-radius-sm);         /* 8px: inputs, selects, text areas */
+  --radius-md: var(--tl-radius-md);         /* 12px: landing feature card icon tile (ER-0) */
+  --radius-lg: var(--tl-radius-lg);         /* 16px: panels, cards, radio cards, stat block, drawer */
+  --radius-xl: 32px;                        /* trashlab.com: feature panel, the price card */
+  --radius-pill: 9999px;                    /* trashlab.com: every button, the landing address field */
+}
+
+/* trashlab.com: headlines drop to 30/37.5 on phones (text-3xl below the sm breakpoint). */
+@media (max-width: 639.98px) {
+  :root {
+    --text-display: 30px;
+    --leading-display: 37.5px;
+    --text-title: 30px;
+    --leading-title: 37.5px;
+  }
+}

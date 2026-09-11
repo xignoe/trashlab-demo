@@ -1,0 +1,11 @@
+[
+  {
+    "id": "req_holt_hold",
+    "accountId": "acct_res_holt",
+    "siteId": "site_holt",
+    "kind": "vacationHold",
+    "status": "open",
+    "createdVia": "portal",
+    "note": "Vacation hold requested 2026-09-14 to 2026-09-28, pickups resume 2026-10-05"
+  }
+]

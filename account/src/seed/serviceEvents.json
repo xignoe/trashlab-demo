@@ -1,0 +1,747 @@
+[
+  {
+    "id": "ev_maple_0831",
+    "siteId": "site_maple",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_maple_extrabags",
+    "siteId": "site_maple",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "exception": "extraBags",
+    "photoUrl": "/photos/ev_maple_extrabags.svg",
+    "note": "3 bags beside cart",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_kerr_0901",
+    "siteId": "site_kerr",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "skippedSuspended",
+    "note": "Account suspended for non-payment",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_kerr_0908",
+    "siteId": "site_kerr",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "skippedSuspended",
+    "note": "Account suspended for non-payment",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_bakery_contamination",
+    "siteId": "site_bakery",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "exception": "contamination",
+    "photoUrl": "/photos/ev_bakery_contamination.svg",
+    "note": "Wood container (PD-FL-0106): plastic film and food waste mixed in with pallets",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_bakery_0909",
+    "siteId": "site_bakery",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_oak_1_0902",
+    "siteId": "site_oak_1",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_oak_2_0902",
+    "siteId": "site_oak_2",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_oak_3_0902",
+    "siteId": "site_oak_3",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_oak_4_0902",
+    "siteId": "site_oak_4",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_oak_1_0909",
+    "siteId": "site_oak_1",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_oak_2_0909",
+    "siteId": "site_oak_2",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_oak_3_0909",
+    "siteId": "site_oak_3",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_oak_4_0909",
+    "siteId": "site_oak_4",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_hale_dryrun",
+    "siteId": "site_hale_job1",
+    "routeId": "route_thu_ro",
+    "date": "2026-09-03",
+    "outcome": "blocked",
+    "exception": "dryRun",
+    "photoUrl": "/photos/ev_hale_dryrun.svg",
+    "note": "Gate locked, no answer from site super; box PD-RO-0112 not pulled",
+    "driver": "M. Diaz"
+  },
+  {
+    "id": "ev_res_001_0831",
+    "siteId": "site_res_001",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_001_0907",
+    "siteId": "site_res_001",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_002_0831",
+    "siteId": "site_res_002",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_002_0907",
+    "siteId": "site_res_002",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_003_0831",
+    "siteId": "site_res_003",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_003_0907",
+    "siteId": "site_res_003",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_004_0831",
+    "siteId": "site_res_004",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_004_0907",
+    "siteId": "site_res_004",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_005_0831",
+    "siteId": "site_res_005",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_005_0907",
+    "siteId": "site_res_005",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_006_0831",
+    "siteId": "site_res_006",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_006_0907",
+    "siteId": "site_res_006",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_007_0831",
+    "siteId": "site_res_007",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_007_0907",
+    "siteId": "site_res_007",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_008_0831",
+    "siteId": "site_res_008",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_008_0907",
+    "siteId": "site_res_008",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_009_0831",
+    "siteId": "site_res_009",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_009_0907",
+    "siteId": "site_res_009",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_010_0831",
+    "siteId": "site_res_010",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_010_0907",
+    "siteId": "site_res_010",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_011_0831",
+    "siteId": "site_res_011",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_011_0907",
+    "siteId": "site_res_011",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_012_0831",
+    "siteId": "site_res_012",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_012_0907",
+    "siteId": "site_res_012",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_013_0831",
+    "siteId": "site_res_013",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_013_0907",
+    "siteId": "site_res_013",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_014_0831",
+    "siteId": "site_res_014",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_014_overload",
+    "siteId": "site_res_014",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz",
+    "exception": "overload",
+    "photoUrl": "/photos/ev_res_014_overload.svg",
+    "note": "Lid open more than a foot, cart overfilled with yard debris"
+  },
+  {
+    "id": "ev_res_015_0831",
+    "siteId": "site_res_015",
+    "routeId": "route_mon_res",
+    "date": "2026-08-31",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_015_0907",
+    "siteId": "site_res_015",
+    "routeId": "route_mon_res",
+    "date": "2026-09-07",
+    "outcome": "completed",
+    "driver": "R. Ortiz"
+  },
+  {
+    "id": "ev_res_016_0901",
+    "siteId": "site_res_016",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_016_0908",
+    "siteId": "site_res_016",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_017_0901",
+    "siteId": "site_res_017",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_017_0908",
+    "siteId": "site_res_017",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_018_0901",
+    "siteId": "site_res_018",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_018_0908",
+    "siteId": "site_res_018",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_019_0901",
+    "siteId": "site_res_019",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_019_0908",
+    "siteId": "site_res_019",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_020_0901",
+    "siteId": "site_res_020",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_020_0908",
+    "siteId": "site_res_020",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_021_0901",
+    "siteId": "site_res_021",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_021_0908",
+    "siteId": "site_res_021",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_022_0901",
+    "siteId": "site_res_022",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_022_0908",
+    "siteId": "site_res_022",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_023_0901",
+    "siteId": "site_res_023",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_023_0908",
+    "siteId": "site_res_023",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_024_0901",
+    "siteId": "site_res_024",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_024_0908",
+    "siteId": "site_res_024",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_025_0901",
+    "siteId": "site_res_025",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_025_0908",
+    "siteId": "site_res_025",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_026_0901",
+    "siteId": "site_res_026",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_026_0908",
+    "siteId": "site_res_026",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_027_0901",
+    "siteId": "site_res_027",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_027_0908",
+    "siteId": "site_res_027",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_028_0901",
+    "siteId": "site_res_028",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_028_0908",
+    "siteId": "site_res_028",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_029_0901",
+    "siteId": "site_res_029",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_029_0908",
+    "siteId": "site_res_029",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_030_0901",
+    "siteId": "site_res_030",
+    "routeId": "route_tue_res",
+    "date": "2026-09-01",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_res_030_0908",
+    "siteId": "site_res_030",
+    "routeId": "route_tue_res",
+    "date": "2026-09-08",
+    "outcome": "completed",
+    "driver": "T. Nguyen"
+  },
+  {
+    "id": "ev_fl_001_0902",
+    "siteId": "site_fl_001",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_001_0909",
+    "siteId": "site_fl_001",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_002_0902",
+    "siteId": "site_fl_002",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_002_0909",
+    "siteId": "site_fl_002",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_003_0902",
+    "siteId": "site_fl_003",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_003_dryrun",
+    "siteId": "site_fl_003",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "blocked",
+    "driver": "K. Bell",
+    "exception": "dryRun",
+    "photoUrl": "/photos/ev_fl_003_dryrun.svg",
+    "note": "Delivery van parked in front of the enclosure, could not reach the container"
+  },
+  {
+    "id": "ev_fl_004_0902",
+    "siteId": "site_fl_004",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_004_0909",
+    "siteId": "site_fl_004",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_005_0902",
+    "siteId": "site_fl_005",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_005_0909",
+    "siteId": "site_fl_005",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_006_0902",
+    "siteId": "site_fl_006",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_006_0909",
+    "siteId": "site_fl_006",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_007_0902",
+    "siteId": "site_fl_007",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_007_0909",
+    "siteId": "site_fl_007",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_008_0902",
+    "siteId": "site_fl_008",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-02",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  },
+  {
+    "id": "ev_fl_008_0909",
+    "siteId": "site_fl_008",
+    "routeId": "route_wed_fl",
+    "date": "2026-09-09",
+    "outcome": "completed",
+    "driver": "K. Bell"
+  }
+]

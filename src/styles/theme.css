@@ -1,0 +1,317 @@
+/*
+  Theme bridge (CHECKLIST.md box 1.7, DESIGN.md "Theme bridge").
+
+  Every Tailwind theme name any of the five prototypes used becomes a utility whose value is a runtime variable:
+  --<namespace>-<name>: var(--rt-<namespace>-<name>). Because the block is `@theme inline`, the utility itself carries
+  var(--rt-...), so a surface restyles every utility inside its subtree by setting --rt-* on its wrapper class
+  (src/styles/surfaces/<name>.css, `.surface-<name>`). The same class name can therefore mean 13px in the account
+  view and 14px in the ratebook without renaming a single className.
+
+  :root below gives every --rt-* a default. Names Tailwind ships (white, gray-*, text-xs to text-3xl, rounded-xs to
+  rounded-xl, spacing 1 to 12) default to Tailwind's own value, which is what a prototype got when it did not define
+  the name. Custom names default to the Paper token from tokens.css (addendum F1). Fonts default to the Paper faces,
+  which all five prototypes used.
+
+  Hand-maintained; theme.test.ts checks that theme, :root, and every filled surface agree. Do not add a
+  name here in Phase 2: ask in DECISIONS.md under "Requests from <name> port".
+*/
+
+@theme inline {
+  /* color */
+  --color-white: var(--rt-color-white);
+  --color-gray-50: var(--rt-color-gray-50);
+  --color-gray-100: var(--rt-color-gray-100);
+  --color-gray-200: var(--rt-color-gray-200);
+  --color-gray-400: var(--rt-color-gray-400);
+  --color-gray-600: var(--rt-color-gray-600);
+  --color-gray-900: var(--rt-color-gray-900);
+  --color-bg: var(--rt-color-bg);
+  --color-surface: var(--rt-color-surface);
+  --color-surface-2: var(--rt-color-surface-2);
+  --color-surface-3: var(--rt-color-surface-3);
+  --color-surface-muted: var(--rt-color-surface-muted);
+  --color-ink: var(--rt-color-ink);
+  --color-ink-2: var(--rt-color-ink-2);
+  --color-ink-3: var(--rt-color-ink-3);
+  --color-ink-muted: var(--rt-color-ink-muted);
+  --color-muted: var(--rt-color-muted);
+  --color-line: var(--rt-color-line);
+  --color-line-quiet: var(--rt-color-line-quiet);
+  --color-border: var(--rt-color-border);
+  --color-accent: var(--rt-color-accent);
+  --color-accent-strong: var(--rt-color-accent-strong);
+  --color-accent-soft: var(--rt-color-accent-soft);
+  --color-accent-ink: var(--rt-color-accent-ink);
+  --color-accent-2: var(--rt-color-accent-2);
+  --color-brand: var(--rt-color-brand);
+  --color-brand-deep: var(--rt-color-brand-deep);
+  --color-cyan: var(--rt-color-cyan);
+  --color-lavender: var(--rt-color-lavender);
+  --color-code-bg: var(--rt-color-code-bg);
+  --color-gap-bg: var(--rt-color-gap-bg);
+  --color-hairline-on-brand: var(--rt-color-hairline-on-brand);
+  --color-on-brand: var(--rt-color-on-brand);
+  --color-on-brand-85: var(--rt-color-on-brand-85);
+  --color-on-brand-80: var(--rt-color-on-brand-80);
+  --color-on-brand-25: var(--rt-color-on-brand-25);
+  --color-on-brand-18: var(--rt-color-on-brand-18);
+  --color-on-brand-12: var(--rt-color-on-brand-12);
+  --color-on-accent: var(--rt-color-on-accent);
+  --color-on-accent-2: var(--rt-color-on-accent-2);
+  --color-on-accent-line: var(--rt-color-on-accent-line);
+  --color-on-accent-active: var(--rt-color-on-accent-active);
+  --color-on-accent-border: var(--rt-color-on-accent-border);
+  --color-ok: var(--rt-color-ok);
+  --color-ok-soft: var(--rt-color-ok-soft);
+  --color-ok-bg: var(--rt-color-ok-bg);
+  --color-success: var(--rt-color-success);
+  --color-success-soft: var(--rt-color-success-soft);
+  --color-warn: var(--rt-color-warn);
+  --color-warn-soft: var(--rt-color-warn-soft);
+  --color-warn-bg: var(--rt-color-warn-bg);
+  --color-warning: var(--rt-color-warning);
+  --color-warning-soft: var(--rt-color-warning-soft);
+  --color-danger: var(--rt-color-danger);
+  --color-danger-soft: var(--rt-color-danger-soft);
+  --color-danger-bg: var(--rt-color-danger-bg);
+  --color-info: var(--rt-color-info);
+  --color-info-soft: var(--rt-color-info-soft);
+  --color-info-bg: var(--rt-color-info-bg);
+  --color-hold: var(--rt-color-hold);
+  --color-hold-bg: var(--rt-color-hold-bg);
+
+  /* text (font size, with line height; display also carries letter spacing) */
+  --text-xs: var(--rt-text-xs);
+  --text-xs--line-height: var(--rt-text-xs--line-height);
+  --text-sm: var(--rt-text-sm);
+  --text-sm--line-height: var(--rt-text-sm--line-height);
+  --text-base: var(--rt-text-base);
+  --text-base--line-height: var(--rt-text-base--line-height);
+  --text-lg: var(--rt-text-lg);
+  --text-lg--line-height: var(--rt-text-lg--line-height);
+  --text-xl: var(--rt-text-xl);
+  --text-xl--line-height: var(--rt-text-xl--line-height);
+  --text-2xl: var(--rt-text-2xl);
+  --text-2xl--line-height: var(--rt-text-2xl--line-height);
+  --text-3xl: var(--rt-text-3xl);
+  --text-3xl--line-height: var(--rt-text-3xl--line-height);
+  --text-2xs: var(--rt-text-2xs);
+  --text-2xs--line-height: var(--rt-text-2xs--line-height);
+  --text-md: var(--rt-text-md);
+  --text-md--line-height: var(--rt-text-md--line-height);
+  --text-display: var(--rt-text-display);
+  --text-display--line-height: var(--rt-text-display--line-height);
+  --text-title: var(--rt-text-title);
+  --text-title--line-height: var(--rt-text-title--line-height);
+  --text-stat: var(--rt-text-stat);
+  --text-stat--line-height: var(--rt-text-stat--line-height);
+  --text-heading: var(--rt-text-heading);
+  --text-heading--line-height: var(--rt-text-heading--line-height);
+  --text-h1: var(--rt-text-h1);
+  --text-h1--line-height: var(--rt-text-h1--line-height);
+  --text-h2: var(--rt-text-h2);
+  --text-h2--line-height: var(--rt-text-h2--line-height);
+  --text-eyebrow: var(--rt-text-eyebrow);
+  --text-eyebrow--line-height: var(--rt-text-eyebrow--line-height);
+  --text-lede: var(--rt-text-lede);
+  --text-lede--line-height: var(--rt-text-lede--line-height);
+  --text-body: var(--rt-text-body);
+  --text-body--line-height: var(--rt-text-body--line-height);
+  --text-row: var(--rt-text-row);
+  --text-row--line-height: var(--rt-text-row--line-height);
+  --text-label: var(--rt-text-label);
+  --text-label--line-height: var(--rt-text-label--line-height);
+  --text-small: var(--rt-text-small);
+  --text-small--line-height: var(--rt-text-small--line-height);
+  --text-mono: var(--rt-text-mono);
+  --text-mono--line-height: var(--rt-text-mono--line-height);
+  --text-display--letter-spacing: var(--rt-text-display--letter-spacing);
+
+  /* font */
+  --font-sans: var(--rt-font-sans);
+  --font-mono: var(--rt-font-mono);
+  --font-heading: var(--rt-font-heading);
+  --font-body: var(--rt-font-body);
+
+  /* radius (bare --radius is the `rounded` utility, storefront's DEFAULT key) */
+  --radius: var(--rt-radius);
+  --radius-xs: var(--rt-radius-xs);
+  --radius-sm: var(--rt-radius-sm);
+  --radius-md: var(--rt-radius-md);
+  --radius-lg: var(--rt-radius-lg);
+  --radius-xl: var(--rt-radius-xl);
+  --radius-pill: var(--rt-radius-pill);
+  --radius-card: var(--rt-radius-card);
+
+  /* spacing */
+  --spacing-1: var(--rt-spacing-1);
+  --spacing-2: var(--rt-spacing-2);
+  --spacing-3: var(--rt-spacing-3);
+  --spacing-4: var(--rt-spacing-4);
+  --spacing-5: var(--rt-spacing-5);
+  --spacing-6: var(--rt-spacing-6);
+  --spacing-8: var(--rt-spacing-8);
+  --spacing-12: var(--rt-spacing-12);
+  --spacing-header: var(--rt-spacing-header);
+  --spacing-button: var(--rt-spacing-button);
+  --spacing-button-compact: var(--rt-spacing-button-compact);
+
+  /* shadow */
+  --shadow-card: var(--rt-shadow-card);
+  --shadow-panel: var(--rt-shadow-panel);
+  --shadow-raised: var(--rt-shadow-raised);
+  --shadow-drawer: var(--rt-shadow-drawer);
+
+  /* container */
+  --container-page: var(--rt-container-page);
+}
+
+:root {
+  /* color */
+  --rt-color-white: #fff;
+  --rt-color-gray-50: oklch(98.5% 0.002 247.839);
+  --rt-color-gray-100: oklch(96.7% 0.003 264.542);
+  --rt-color-gray-200: oklch(92.8% 0.006 264.531);
+  --rt-color-gray-400: oklch(70.7% 0.022 261.325);
+  --rt-color-gray-600: oklch(44.6% 0.03 256.802);
+  --rt-color-gray-900: oklch(21% 0.034 264.665);
+  --rt-color-bg: var(--tl-bg);
+  --rt-color-surface: var(--tl-surface);
+  --rt-color-surface-2: var(--tl-line-soft);
+  --rt-color-surface-3: var(--tl-surface-muted);
+  --rt-color-surface-muted: var(--tl-surface-muted);
+  --rt-color-ink: var(--tl-ink);
+  --rt-color-ink-2: var(--tl-ink-2);
+  --rt-color-ink-3: var(--tl-ink-3);
+  --rt-color-ink-muted: var(--tl-ink-2);
+  --rt-color-muted: var(--tl-ink-2);
+  --rt-color-line: var(--tl-line);
+  --rt-color-line-quiet: var(--tl-line-soft);
+  --rt-color-border: var(--tl-line-soft);
+  --rt-color-accent: var(--tl-brand);
+  --rt-color-accent-strong: var(--tl-brand-deep);
+  --rt-color-accent-soft: var(--tl-accent-soft);
+  --rt-color-accent-ink: var(--tl-accent-ink);
+  --rt-color-accent-2: var(--tl-lavender);
+  --rt-color-brand: var(--tl-brand);
+  --rt-color-brand-deep: var(--tl-brand-deep);
+  --rt-color-cyan: var(--tl-cyan);
+  --rt-color-lavender: var(--tl-lavender);
+  --rt-color-code-bg: var(--tl-code-bg);
+  --rt-color-gap-bg: var(--tl-warn-soft);
+  --rt-color-hairline-on-brand: var(--tl-brand-line);
+  --rt-color-on-brand: var(--tl-on-brand);
+  --rt-color-on-brand-85: color-mix(in srgb, var(--tl-on-brand) 85%, transparent);
+  --rt-color-on-brand-80: color-mix(in srgb, var(--tl-on-brand) 80%, transparent);
+  --rt-color-on-brand-25: color-mix(in srgb, var(--tl-on-brand) 25%, transparent);
+  --rt-color-on-brand-18: color-mix(in srgb, var(--tl-on-brand) 18%, transparent);
+  --rt-color-on-brand-12: color-mix(in srgb, var(--tl-on-brand) 12%, transparent);
+  --rt-color-on-accent: var(--tl-on-accent);
+  --rt-color-on-accent-2: var(--tl-line);
+  --rt-color-on-accent-line: var(--tl-brand-line);
+  --rt-color-on-accent-active: var(--tl-brand-active-bg);
+  --rt-color-on-accent-border: var(--tl-brand-line-strong);
+  --rt-color-ok: var(--tl-ok);
+  --rt-color-ok-soft: var(--tl-ok-soft);
+  --rt-color-ok-bg: var(--tl-ok-soft);
+  --rt-color-success: var(--tl-ok);
+  --rt-color-success-soft: var(--tl-ok-soft);
+  --rt-color-warn: var(--tl-warn);
+  --rt-color-warn-soft: var(--tl-warn-soft);
+  --rt-color-warn-bg: var(--tl-warn-soft);
+  --rt-color-warning: var(--tl-warn);
+  --rt-color-warning-soft: var(--tl-warn-soft);
+  --rt-color-danger: var(--tl-danger);
+  --rt-color-danger-soft: var(--tl-danger-soft);
+  --rt-color-danger-bg: var(--tl-danger-soft);
+  --rt-color-info: var(--tl-info);
+  --rt-color-info-soft: var(--tl-info-soft);
+  --rt-color-info-bg: var(--tl-info-soft);
+  --rt-color-hold: var(--tl-accent);
+  --rt-color-hold-bg: var(--tl-line-soft);
+
+  /* text */
+  --rt-text-xs: 0.75rem;
+  --rt-text-xs--line-height: calc(1 / 0.75);
+  --rt-text-sm: 0.875rem;
+  --rt-text-sm--line-height: calc(1.25 / 0.875);
+  --rt-text-base: 1rem;
+  --rt-text-base--line-height: calc(1.5 / 1);
+  --rt-text-lg: 1.125rem;
+  --rt-text-lg--line-height: calc(1.75 / 1.125);
+  --rt-text-xl: 1.25rem;
+  --rt-text-xl--line-height: calc(1.75 / 1.25);
+  --rt-text-2xl: 1.5rem;
+  --rt-text-2xl--line-height: calc(2 / 1.5);
+  --rt-text-3xl: 1.875rem;
+  --rt-text-3xl--line-height: calc(2.25 / 1.875);
+  --rt-text-2xs: var(--tl-text-11);
+  --rt-text-2xs--line-height: var(--tl-leading-11);
+  --rt-text-md: var(--tl-text-15);
+  --rt-text-md--line-height: var(--tl-leading-15);
+  --rt-text-display: var(--tl-text-40);
+  --rt-text-display--line-height: var(--tl-leading-tight);
+  --rt-text-title: var(--tl-text-28);
+  --rt-text-title--line-height: var(--tl-leading-tight);
+  --rt-text-stat: var(--tl-text-28);
+  --rt-text-stat--line-height: var(--tl-leading-28-stat);
+  --rt-text-heading: var(--tl-text-22);
+  --rt-text-heading--line-height: var(--tl-leading-tight);
+  --rt-text-h1: var(--tl-text-22);
+  --rt-text-h1--line-height: var(--tl-leading-tight);
+  --rt-text-h2: var(--tl-text-15);
+  --rt-text-h2--line-height: var(--tl-leading-15);
+  --rt-text-eyebrow: var(--tl-text-11);
+  --rt-text-eyebrow--line-height: var(--tl-leading-11);
+  --rt-text-lede: var(--tl-text-16);
+  --rt-text-lede--line-height: var(--tl-leading-16);
+  --rt-text-body: var(--tl-text-14);
+  --rt-text-body--line-height: var(--tl-leading-14);
+  --rt-text-row: var(--tl-text-14);
+  --rt-text-row--line-height: var(--tl-leading-14);
+  --rt-text-label: var(--tl-text-13);
+  --rt-text-label--line-height: var(--tl-leading-13);
+  --rt-text-small: var(--tl-text-12);
+  --rt-text-small--line-height: var(--tl-leading-12);
+  --rt-text-mono: var(--tl-text-13);
+  --rt-text-mono--line-height: var(--tl-leading-13);
+  --rt-text-display--letter-spacing: normal;
+
+  /* font */
+  --rt-font-sans: var(--tl-font-sans);
+  --rt-font-mono: var(--tl-font-mono);
+  --rt-font-heading: var(--tl-font-display);
+  --rt-font-body: var(--tl-font-sans);
+
+  /* radius */
+  --rt-radius: 0.25rem;
+  --rt-radius-xs: 0.125rem;
+  --rt-radius-sm: 0.25rem;
+  --rt-radius-md: 0.375rem;
+  --rt-radius-lg: 0.5rem;
+  --rt-radius-xl: 0.75rem;
+  --rt-radius-pill: var(--tl-radius-pill);
+  --rt-radius-card: var(--tl-radius-lg);
+
+  /* spacing */
+  --rt-spacing-1: 0.25rem;
+  --rt-spacing-2: 0.5rem;
+  --rt-spacing-3: 0.75rem;
+  --rt-spacing-4: 1rem;
+  --rt-spacing-5: 1.25rem;
+  --rt-spacing-6: 1.5rem;
+  --rt-spacing-8: 2rem;
+  --rt-spacing-12: 3rem;
+  --rt-spacing-header: var(--tl-nav-height);
+  --rt-spacing-button: var(--tl-control-height);
+  --rt-spacing-button-compact: var(--tl-control-height-compact);
+
+  /* shadow */
+  --rt-shadow-card: var(--tl-shadow-card);
+  --rt-shadow-panel: var(--tl-shadow-panel);
+  --rt-shadow-raised: var(--tl-shadow-panel);
+  --rt-shadow-drawer: -8px 0 24px color-mix(in srgb, var(--tl-ink) 12%, transparent);
+
+  /* container */
+  --rt-container-page: var(--tl-page-max);
+}

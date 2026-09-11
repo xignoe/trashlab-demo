@@ -1,0 +1,24 @@
+[
+  {
+    "id": "st_hale_0901",
+    "workOrderId": "wo_hale_dar_101",
+    "containerId": "cont_ro_101",
+    "facility": "Piedmont Regional Landfill",
+    "material": "C&D debris",
+    "grossLbs": 22400,
+    "tareLbs": 14000,
+    "netLbs": 8400,
+    "ticketedAt": "2026-09-01T13:12:00-04:00"
+  },
+  {
+    "id": "st_hale_0908",
+    "workOrderId": "wo_hale_dar_102",
+    "containerId": "cont_ro_102",
+    "facility": "Piedmont Regional Landfill",
+    "material": "C&D debris",
+    "grossLbs": 21100,
+    "tareLbs": 14000,
+    "netLbs": 7100,
+    "ticketedAt": "2026-09-08T13:48:00-04:00"
+  }
+]

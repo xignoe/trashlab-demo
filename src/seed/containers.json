@@ -1,0 +1,429 @@
+[
+  {
+    "id": "cart_maple_1",
+    "serial": "C96-10231",
+    "catalogId": "cat_res_96",
+    "siteId": "site_maple",
+    "assignedFrom": "2021-04-01"
+  },
+  {
+    "id": "cart_maple_2",
+    "serial": "C96-10232",
+    "catalogId": "cat_res_extra_cart",
+    "siteId": "site_maple",
+    "assignedFrom": "2023-06-01"
+  },
+  {
+    "id": "cart_maple_3",
+    "serial": "C96-10233",
+    "catalogId": "cat_res_recycling",
+    "siteId": "site_maple",
+    "assignedFrom": "2021-04-01"
+  },
+  {
+    "id": "cart_holt_1",
+    "serial": "C96-10234",
+    "catalogId": "cat_res_96",
+    "siteId": "site_holt",
+    "assignedFrom": "2022-09-01"
+  },
+  {
+    "id": "cart_kerr_1",
+    "serial": "C96-10235",
+    "catalogId": "cat_res_96",
+    "siteId": "site_kerr",
+    "assignedFrom": "2020-02-01"
+  },
+  {
+    "id": "fl_bakery_1",
+    "serial": "FL-451",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_bakery",
+    "assignedFrom": "2026-01-01"
+  },
+  {
+    "id": "fl_bakery_wood",
+    "serial": "FL-452",
+    "catalogId": "cat_fl_3yd_wood",
+    "siteId": "site_bakery",
+    "assignedFrom": "2026-01-01"
+  },
+  {
+    "id": "fl_oak_1",
+    "serial": "FL-453",
+    "catalogId": "cat_fl_2yd",
+    "siteId": "site_oak_1",
+    "assignedFrom": "2024-03-01"
+  },
+  {
+    "id": "fl_oak_2",
+    "serial": "FL-454",
+    "catalogId": "cat_fl_2yd",
+    "siteId": "site_oak_2",
+    "assignedFrom": "2024-03-01"
+  },
+  {
+    "id": "fl_oak_3",
+    "serial": "FL-455",
+    "catalogId": "cat_fl_2yd",
+    "siteId": "site_oak_3",
+    "assignedFrom": "2024-03-01"
+  },
+  {
+    "id": "fl_oak_4",
+    "serial": "FL-456",
+    "catalogId": "cat_fl_2yd",
+    "siteId": "site_oak_4",
+    "assignedFrom": "2024-03-01"
+  },
+  {
+    "id": "box_2001",
+    "serial": "RO20-2001",
+    "catalogId": "cat_ro_20yd",
+    "siteId": "site_hale_a",
+    "assignedFrom": "2026-08-18"
+  },
+  {
+    "id": "box_2002",
+    "serial": "RO20-2002",
+    "catalogId": "cat_ro_20yd",
+    "siteId": "site_hale_b",
+    "assignedFrom": "2026-08-24"
+  },
+  {
+    "id": "box_2003",
+    "serial": "RO20-2003",
+    "catalogId": "cat_ro_20yd",
+    "siteId": "site_hale_a",
+    "assignedFrom": "2026-08-18"
+  },
+  {
+    "id": "box_2004",
+    "serial": "RO20-2004",
+    "catalogId": "cat_ro_20yd",
+    "siteId": "site_ro_home",
+    "assignedFrom": "2026-08-07"
+  },
+  {
+    "id": "cart_res_001_1",
+    "serial": "C96-10236",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_001",
+    "assignedFrom": "2025-06-01"
+  },
+  {
+    "id": "cart_res_002_1",
+    "serial": "C96-10237",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_002",
+    "assignedFrom": "2026-08-20"
+  },
+  {
+    "id": "cart_res_003_1",
+    "serial": "C96-10238",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_003",
+    "assignedFrom": "2023-04-01"
+  },
+  {
+    "id": "cart_res_004_1",
+    "serial": "C96-10239",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_004",
+    "assignedFrom": "2022-09-01"
+  },
+  {
+    "id": "cart_res_004_2",
+    "serial": "C96-10240",
+    "catalogId": "cat_res_recycling",
+    "siteId": "site_res_004",
+    "assignedFrom": "2022-09-01"
+  },
+  {
+    "id": "cart_res_005_1",
+    "serial": "C96-10241",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_005",
+    "assignedFrom": "2021-02-01"
+  },
+  {
+    "id": "cart_res_006_1",
+    "serial": "C96-10242",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_006",
+    "assignedFrom": "2020-07-01"
+  },
+  {
+    "id": "cart_res_007_1",
+    "serial": "C96-10243",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_007",
+    "assignedFrom": "2019-12-01"
+  },
+  {
+    "id": "cart_res_007_2",
+    "serial": "C96-10244",
+    "catalogId": "cat_res_extra_cart",
+    "siteId": "site_res_007",
+    "assignedFrom": "2026-09-15"
+  },
+  {
+    "id": "cart_res_008_1",
+    "serial": "C96-10245",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_008",
+    "assignedFrom": "2018-05-01"
+  },
+  {
+    "id": "cart_res_008_2",
+    "serial": "C96-10246",
+    "catalogId": "cat_res_recycling",
+    "siteId": "site_res_008",
+    "assignedFrom": "2018-05-01"
+  },
+  {
+    "id": "cart_res_009_1",
+    "serial": "C96-10247",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_009",
+    "assignedFrom": "2025-10-01"
+  },
+  {
+    "id": "cart_res_010_1",
+    "serial": "C96-10248",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_010",
+    "assignedFrom": "2024-03-01"
+  },
+  {
+    "id": "cart_res_011_1",
+    "serial": "C96-10249",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_011",
+    "assignedFrom": "2023-08-01"
+  },
+  {
+    "id": "cart_res_012_1",
+    "serial": "C96-10250",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_012",
+    "assignedFrom": "2022-01-01"
+  },
+  {
+    "id": "cart_res_012_2",
+    "serial": "C96-10251",
+    "catalogId": "cat_res_recycling",
+    "siteId": "site_res_012",
+    "assignedFrom": "2022-01-01"
+  },
+  {
+    "id": "cart_res_013_1",
+    "serial": "C96-10252",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_013",
+    "assignedFrom": "2021-06-01"
+  },
+  {
+    "id": "cart_res_014_1",
+    "serial": "C96-10253",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_014",
+    "assignedFrom": "2020-11-01"
+  },
+  {
+    "id": "cart_res_015_1",
+    "serial": "C96-10254",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_015",
+    "assignedFrom": "2019-04-01"
+  },
+  {
+    "id": "cart_res_016_1",
+    "serial": "C96-10255",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_016",
+    "assignedFrom": "2018-09-01"
+  },
+  {
+    "id": "cart_res_016_2",
+    "serial": "C96-10256",
+    "catalogId": "cat_res_recycling",
+    "siteId": "site_res_016",
+    "assignedFrom": "2018-09-01"
+  },
+  {
+    "id": "cart_res_017_1",
+    "serial": "C96-10257",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_017",
+    "assignedFrom": "2025-02-01"
+  },
+  {
+    "id": "cart_res_018_1",
+    "serial": "C96-10258",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_018",
+    "assignedFrom": "2024-07-01"
+  },
+  {
+    "id": "cart_res_019_1",
+    "serial": "C96-10259",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_019",
+    "assignedFrom": "2023-12-01"
+  },
+  {
+    "id": "cart_res_020_1",
+    "serial": "C96-10260",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_020",
+    "assignedFrom": "2022-05-01"
+  },
+  {
+    "id": "cart_res_020_2",
+    "serial": "C96-10261",
+    "catalogId": "cat_res_recycling",
+    "siteId": "site_res_020",
+    "assignedFrom": "2022-05-01"
+  },
+  {
+    "id": "cart_res_021_1",
+    "serial": "C96-10262",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_021",
+    "assignedFrom": "2021-10-01"
+  },
+  {
+    "id": "cart_res_022_1",
+    "serial": "C96-10263",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_022",
+    "assignedFrom": "2020-03-01"
+  },
+  {
+    "id": "cart_res_023_1",
+    "serial": "C96-10264",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_023",
+    "assignedFrom": "2019-08-01"
+  },
+  {
+    "id": "cart_res_024_1",
+    "serial": "C96-10265",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_024",
+    "assignedFrom": "2018-01-01"
+  },
+  {
+    "id": "cart_res_024_2",
+    "serial": "C96-10266",
+    "catalogId": "cat_res_recycling",
+    "siteId": "site_res_024",
+    "assignedFrom": "2018-01-01"
+  },
+  {
+    "id": "cart_res_025_1",
+    "serial": "C96-10267",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_025",
+    "assignedFrom": "2025-06-01"
+  },
+  {
+    "id": "cart_res_026_1",
+    "serial": "C96-10268",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_026",
+    "assignedFrom": "2024-11-01"
+  },
+  {
+    "id": "cart_res_027_1",
+    "serial": "C96-10269",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_027",
+    "assignedFrom": "2023-04-01"
+  },
+  {
+    "id": "cart_res_028_1",
+    "serial": "C96-10270",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_028",
+    "assignedFrom": "2022-09-01"
+  },
+  {
+    "id": "cart_res_028_2",
+    "serial": "C96-10271",
+    "catalogId": "cat_res_recycling",
+    "siteId": "site_res_028",
+    "assignedFrom": "2022-09-01"
+  },
+  {
+    "id": "cart_res_029_1",
+    "serial": "C96-10272",
+    "catalogId": "cat_res_96",
+    "siteId": "site_res_029",
+    "assignedFrom": "2021-02-01"
+  },
+  {
+    "id": "cart_res_030_1",
+    "serial": "C96-10273",
+    "catalogId": "cat_res_64",
+    "siteId": "site_res_030",
+    "assignedFrom": "2020-07-01"
+  },
+  {
+    "id": "fl_001",
+    "serial": "FL-457",
+    "catalogId": "cat_fl_2yd",
+    "siteId": "site_fl_001",
+    "assignedFrom": "2024-02-01"
+  },
+  {
+    "id": "fl_002",
+    "serial": "FL-458",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_fl_002",
+    "assignedFrom": "2025-03-01"
+  },
+  {
+    "id": "fl_003",
+    "serial": "FL-459",
+    "catalogId": "cat_fl_2yd",
+    "siteId": "site_fl_003",
+    "assignedFrom": "2023-04-01"
+  },
+  {
+    "id": "fl_004",
+    "serial": "FL-460",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_fl_004",
+    "assignedFrom": "2024-05-01"
+  },
+  {
+    "id": "fl_005",
+    "serial": "FL-461",
+    "catalogId": "cat_fl_2yd",
+    "siteId": "site_fl_005",
+    "assignedFrom": "2025-06-01"
+  },
+  {
+    "id": "fl_006",
+    "serial": "FL-462",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_fl_006",
+    "assignedFrom": "2023-01-01"
+  },
+  {
+    "id": "fl_007",
+    "serial": "FL-463",
+    "catalogId": "cat_fl_2yd",
+    "siteId": "site_fl_007",
+    "assignedFrom": "2024-02-01"
+  },
+  {
+    "id": "fl_008",
+    "serial": "FL-464",
+    "catalogId": "cat_fl_3yd",
+    "siteId": "site_fl_008",
+    "assignedFrom": "2025-03-01"
+  }
+]

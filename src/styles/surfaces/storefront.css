@@ -1,0 +1,158 @@
+/*
+  Storefront surface (CHECKLIST.md box 2D.4, filled). Everything here is scoped to .surface-storefront, so the
+  trashlab.com values (addendum M) reach the storefront subtree and nothing else. src/styles/tokens.css is not touched.
+
+  Sources: storefront/src/styles/tokens.css (the prototype's token names, most of them aliases of the canonical --tl-
+  set), storefront/tailwind.config.cjs (which Tailwind name reads which token), and
+  storefront/docs/trashlab-design-language.md (the values read from the live trashlab.com DOM).
+
+  Part 1: the --rt-* values the theme bridge (src/styles/theme.css) reads, one per name the storefront's utilities
+  use (DESIGN.md "The names each prototype uses"). The five trashlab.com values that differ from shared/tokens.css are
+  raw values here, exactly as in the prototype: cyan #10A6CC, brand deep #201A69, section ground #F6F7FB, card border
+  #E2E8F0, and the 48/60 display, 40/50 title, 32px radius, and pill sizes. Two of them collide with shared names
+  (--tl-brand-deep is #2F2A90 and --tl-cyan is #10D6E6 in shared); the collision is avoided by setting only the
+  --rt-* variables on this wrapper and never redefining a --tl-* name.
+
+  Part 2: the ground the prototype set on html (font, size, line height, color, background), plus the page height
+  under the persona bar and the top offset the agent drawer uses.
+
+  Part 3: Tailwind 3 preflight behaviour the prototype relied on that Tailwind 4 dropped, restored inside the wrapper
+  only, in the base layer so every utility still wins.
+*/
+
+.surface-storefront {
+  /* Part 1: theme bridge values */
+
+  /* color: neutrals, lightest to darkest (prototype tokens.css) */
+  --rt-color-white: var(--tl-surface);
+  --rt-color-gray-50: var(--tl-bg);
+  --rt-color-gray-100: var(--tl-line-soft);
+  --rt-color-gray-200: var(--tl-line);
+  --rt-color-gray-400: var(--tl-lavender);
+  --rt-color-gray-600: var(--tl-ink-2);
+  --rt-color-gray-900: var(--tl-ink);
+
+  /* color: the brand. The prototype's `brand` is the same indigo as `accent` (tailwind.config.cjs). */
+  --rt-color-accent: var(--tl-brand);
+  --rt-color-accent-strong: var(--tl-ink);
+  --rt-color-accent-soft: var(--tl-accent-soft);
+  --rt-color-brand: var(--tl-brand);
+  --rt-color-lavender: var(--tl-lavender);
+
+  /* color: trashlab.com (docs/trashlab-design-language.md) */
+  --rt-color-cyan: #10A6CC;
+  --rt-color-brand-deep: #201A69;
+  --rt-color-hairline-on-brand: var(--tl-ink-2);
+  --rt-color-on-brand: var(--tl-on-brand);
+  --rt-color-on-brand-85: color-mix(in srgb, var(--tl-on-brand) 85%, transparent);
+  --rt-color-on-brand-80: color-mix(in srgb, var(--tl-on-brand) 80%, transparent);
+  --rt-color-on-brand-25: color-mix(in srgb, var(--tl-on-brand) 25%, transparent);
+  --rt-color-on-brand-18: color-mix(in srgb, var(--tl-on-brand) 18%, transparent);
+  --rt-color-on-brand-12: color-mix(in srgb, var(--tl-on-brand) 12%, transparent);
+
+  /* color: states */
+  --rt-color-success: var(--tl-ok);
+  --rt-color-success-soft: var(--tl-ok-soft);
+  --rt-color-warning: var(--tl-warn);
+  --rt-color-warning-soft: var(--tl-warn-soft);
+  --rt-color-danger: var(--tl-danger);
+  --rt-color-danger-soft: var(--tl-danger-soft);
+
+  /* color: semantic aliases. bg and line are trashlab.com values. */
+  --rt-color-bg: #F6F7FB;
+  --rt-color-surface: var(--tl-surface);
+  --rt-color-ink: var(--tl-ink);
+  --rt-color-ink-muted: var(--tl-ink-2);
+  --rt-color-line: #E2E8F0;
+
+  /* text: size and line height only (display also carries tracking); weights come from font-* utilities */
+  --rt-text-display: 48px;
+  --rt-text-display--line-height: 60px;
+  --rt-text-display--letter-spacing: normal;
+  --rt-text-title: var(--tl-text-40);
+  --rt-text-title--line-height: 50px;
+  --rt-text-stat: var(--tl-text-40);
+  --rt-text-stat--line-height: 48px;
+  --rt-text-heading: 24px;
+  --rt-text-heading--line-height: 32px;
+  --rt-text-eyebrow: 18px;
+  --rt-text-eyebrow--line-height: 27px;
+  --rt-text-lede: 18px;
+  --rt-text-lede--line-height: 28px;
+  --rt-text-body: var(--tl-text-16);
+  --rt-text-body--line-height: 24px;
+  --rt-text-row: var(--tl-text-15);
+  --rt-text-row--line-height: 22px;
+  --rt-text-label: var(--tl-text-14);
+  --rt-text-label--line-height: 20px;
+  --rt-text-small: var(--tl-text-13);
+  --rt-text-small--line-height: var(--tl-leading-13);
+
+  /* font */
+  --rt-font-sans: var(--tl-font-sans);
+
+  /* radius. Bare `rounded` is the prototype's DEFAULT, which it set to radius-sm (8px). */
+  --rt-radius: var(--tl-radius-sm);
+  --rt-radius-sm: var(--tl-radius-sm);
+  --rt-radius-md: var(--tl-radius-md);
+  --rt-radius-lg: var(--tl-radius-lg);
+  --rt-radius-xl: 32px;
+  --rt-radius-pill: 9999px;
+
+  /* spacing, 4px steps, and the trashlab.com sizes */
+  --rt-spacing-1: var(--tl-space-1);
+  --rt-spacing-2: var(--tl-space-2);
+  --rt-spacing-3: var(--tl-space-3);
+  --rt-spacing-4: var(--tl-space-4);
+  --rt-spacing-5: var(--tl-space-5);
+  --rt-spacing-6: var(--tl-space-6);
+  --rt-spacing-8: var(--tl-space-8);
+  --rt-spacing-12: calc(var(--tl-space-6) * 2);
+  --rt-spacing-header: 80px;
+  --rt-spacing-button: 50px;
+  --rt-spacing-button-compact: 44px;
+
+  /* container */
+  --rt-container-page: 1200px;
+
+  /* Part 2: ground */
+  --sf-chrome-top: var(--pb-height, 0px);
+  background: var(--rt-color-bg);
+  color: var(--rt-color-ink);
+  font-family: var(--rt-font-sans);
+  font-size: var(--rt-text-body);
+  line-height: var(--rt-text-body--line-height);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* The prototype's page was min-h-screen with no bar above it; here it fills the viewport below the persona bar. */
+.surface-storefront .sf-page {
+  min-height: calc(100vh - var(--sf-chrome-top));
+}
+
+/* trashlab.com: headlines drop to 30/37.5 on phones (text-3xl below the sm breakpoint). */
+@media (max-width: 639.98px) {
+  .surface-storefront {
+    --rt-text-display: 30px;
+    --rt-text-display--line-height: 37.5px;
+    --rt-text-title: 30px;
+    --rt-text-title--line-height: 37.5px;
+  }
+}
+
+/* Part 3: Tailwind 3 preflight gave buttons a pointer cursor; Tailwind 4 leaves the default arrow. */
+@layer base {
+  .surface-storefront :where(button:not(:disabled), [role="button"]:not(:disabled)) {
+    cursor: pointer;
+  }
+}
+
+/* The storefront's `text-eyebrow` is a font size (18/27, tailwind.config.cjs). Tailwind 4 compiles the class to the
+   bridge's color of the same name only, so the size is set here, inside the wrapper, in the utilities layer. A
+   leading-* utility on the same element still wins through --tw-leading, as with every bridged size. */
+@layer utilities {
+  .surface-storefront .text-eyebrow {
+    font-size: var(--rt-text-eyebrow);
+    line-height: var(--tw-leading, var(--rt-text-eyebrow--line-height));
+  }
+}

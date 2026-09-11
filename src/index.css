@@ -1,0 +1,13 @@
+/*
+  Stylesheet entry for the merged app. Tailwind scans src/ only (source("."), relative to this file), so the prototype
+  folders at the repo root never add classes to this build.
+*/
+@import "tailwindcss" source(".");
+@import "./styles/tokens.css";
+@import "./styles/theme.css";
+@import "./styles/shell.css";
+@import "./styles/surfaces/billing.css";
+@import "./styles/surfaces/account.css";
+@import "./styles/surfaces/pricing.css";
+@import "./styles/surfaces/portal.css";
+@import "./styles/surfaces/storefront.css";

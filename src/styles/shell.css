@@ -1,0 +1,152 @@
+/*
+  Persona bar and shell (src/shell). Uses the --tl- Paper tokens directly (tokens.css); it is the one piece of UI that
+  sits outside every surface wrapper.
+*/
+
+:root {
+  --pb-height: 48px;
+}
+
+html, body, #root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--tl-bg);
+  color: var(--tl-ink);
+  font-family: var(--tl-font-sans);
+  font-size: var(--tl-text-14);
+  line-height: var(--tl-leading-normal);
+  -webkit-font-smoothing: antialiased;
+}
+
+.pb-bar {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  height: var(--pb-height);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: var(--tl-space-5);
+  padding: 0 var(--tl-space-5);
+  background: var(--tl-brand-deep);
+  border-bottom: 1px solid var(--tl-brand-line);
+  color: var(--tl-on-brand);
+  font-family: var(--tl-font-sans);
+}
+.pb-brand {
+  color: var(--tl-on-brand);
+  font-weight: var(--tl-weight-bold);
+  font-size: var(--tl-text-15);
+  text-decoration: none;
+}
+.pb-personas {
+  display: flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: var(--tl-radius-pill);
+  background: var(--tl-brand-line);
+}
+.pb-persona {
+  padding: var(--tl-space-1) var(--tl-space-3-5);
+  border-radius: var(--tl-radius-pill);
+  color: var(--tl-brand-tab-ink);
+  font-size: var(--tl-text-13);
+  font-weight: var(--tl-weight-semibold);
+  line-height: var(--tl-leading-13);
+  text-decoration: none;
+}
+.pb-persona:hover { color: var(--tl-on-brand); }
+.pb-persona[data-active="true"] { background: var(--tl-on-brand); color: var(--tl-brand-deep); }
+.pb-screens { display: flex; gap: var(--tl-space-1); }
+.pb-screen {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--tl-space-1-5);
+  padding: var(--tl-space-1-5) var(--tl-space-3);
+  border-radius: var(--tl-radius-pill);
+  color: var(--tl-brand-tab-ink);
+  font-size: var(--tl-text-13);
+  font-weight: var(--tl-weight-medium);
+  line-height: var(--tl-leading-13);
+  text-decoration: none;
+}
+.pb-screen:hover { color: var(--tl-on-brand); }
+.pb-screen[data-active="true"] { background: var(--tl-brand-active-bg); color: var(--tl-on-brand); font-weight: var(--tl-weight-semibold); }
+.pb-screen[data-active="true"]::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--tl-cyan);
+}
+/* Live open-item count on a persona tab or screen link (box 3.7). */
+.pb-persona { display: inline-flex; align-items: center; gap: var(--tl-space-1-5); }
+.pb-count {
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: var(--tl-radius-pill);
+  background: var(--tl-cyan);
+  color: var(--tl-brand-deep);
+  font-family: var(--tl-font-mono);
+  font-size: var(--tl-text-11);
+  font-weight: var(--tl-weight-bold);
+  line-height: 18px;
+  text-align: center;
+}
+.pb-brand:focus-visible, .pb-persona:focus-visible, .pb-screen:focus-visible, .pb-reset:focus-visible {
+  outline: 2px solid var(--tl-cyan);
+  outline-offset: 2px;
+}
+.pb-right { margin-left: auto; display: flex; align-items: center; gap: var(--tl-space-4); }
+.pb-clock { font-family: var(--tl-font-mono); font-size: var(--tl-text-12); color: var(--tl-on-brand); white-space: nowrap; }
+.pb-clock-label {
+  font-family: var(--tl-font-sans);
+  font-size: var(--tl-text-11);
+  font-weight: var(--tl-weight-bold);
+  letter-spacing: var(--tl-tracking-caps);
+  text-transform: uppercase;
+  color: var(--tl-brand-meta);
+  margin-right: var(--tl-space-1);
+}
+.pb-reset {
+  appearance: none;
+  height: 30px;
+  padding: 0 var(--tl-space-3);
+  border-radius: var(--tl-radius-pill);
+  border: 1px solid var(--tl-brand-line-strong);
+  background: transparent;
+  color: var(--tl-on-brand);
+  font-family: var(--tl-font-sans);
+  font-size: var(--tl-text-12);
+  font-weight: var(--tl-weight-semibold);
+  cursor: pointer;
+}
+.pb-reset:hover { background: var(--tl-brand-active-bg); }
+
+.pb-placeholder, .pb-notfound {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--tl-space-10) var(--tl-page-inline);
+  font-family: var(--tl-font-sans);
+  color: var(--tl-ink);
+}
+.pb-placeholder h1, .pb-notfound h1 { font-size: var(--tl-text-28); line-height: var(--tl-leading-28-stat); margin: var(--tl-space-2) 0; }
+.pb-placeholder p, .pb-notfound p { color: var(--tl-ink-2); }
+.pb-placeholder-eyebrow {
+  margin: 0;
+  font-size: var(--tl-text-11);
+  font-weight: var(--tl-weight-bold);
+  letter-spacing: var(--tl-tracking-caps);
+  text-transform: uppercase;
+  color: var(--tl-accent);
+}
+.pb-placeholder-path { font-family: var(--tl-font-mono); font-size: var(--tl-text-12); }
+.pb-notfound a { color: var(--tl-brand); }
+
+@media (max-width: 900px) {
+  .pb-screens, .pb-clock-label { display: none; }
+}

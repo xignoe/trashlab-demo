@@ -1,0 +1,26 @@
+[
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_oakridge",
+    "invoiceId": "inv_oakridge_2026_06",
+    "cents": 13680
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_oakridge",
+    "invoiceId": "inv_oakridge_2026_07",
+    "cents": 13680
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_oakridge",
+    "invoiceId": "inv_oakridge_2026_08",
+    "cents": 13680
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_card_ro_homeowner",
+    "invoiceId": "inv_ro_homeowner",
+    "cents": 65832
+  }
+]

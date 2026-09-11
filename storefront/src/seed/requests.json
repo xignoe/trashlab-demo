@@ -1,0 +1,11 @@
+[
+  {
+    "id": "req_holt_vacation",
+    "accountId": "acct_res_holt",
+    "siteId": "site_res_holt",
+    "kind": "vacationHold",
+    "status": "scheduled",
+    "createdVia": "portal",
+    "note": "Hold pickups 2026-09-07 through 2026-09-21"
+  }
+]

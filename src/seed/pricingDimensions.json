@@ -1,0 +1,234 @@
+[
+  {
+    "id": "zone",
+    "name": "Zone type",
+    "source": "zone",
+    "values": [],
+    "builtIn": true,
+    "description": "Open market, boundary, city franchise, or not served: decides serviceability and tax"
+  },
+  {
+    "id": "geoZone",
+    "name": "Zone",
+    "source": "geoZone",
+    "values": [],
+    "builtIn": true,
+    "description": "The zone drawn on the map that holds the site"
+  },
+  {
+    "id": "frequency",
+    "name": "Frequency",
+    "source": "frequency",
+    "values": [],
+    "builtIn": true,
+    "description": "How often the service runs"
+  },
+  {
+    "id": "service",
+    "name": "Service",
+    "source": "service",
+    "values": [],
+    "builtIn": true,
+    "description": "The catalog item on the line"
+  },
+  {
+    "id": "category",
+    "name": "Category",
+    "source": "category",
+    "values": [],
+    "builtIn": true,
+    "description": "The service category"
+  },
+  {
+    "id": "lob",
+    "name": "Line of business",
+    "source": "lob",
+    "values": [],
+    "builtIn": true,
+    "description": "Residential, frontload, or roll-off"
+  },
+  {
+    "id": "cycle",
+    "name": "Billing cycle",
+    "source": "cycle",
+    "values": [],
+    "builtIn": true,
+    "description": "The billing cycle of the account"
+  },
+  {
+    "id": "dayOfWeek",
+    "name": "Day of week",
+    "source": "dayOfWeek",
+    "builtIn": true,
+    "description": "Route day for recurring service, service date for events and hauls",
+    "values": [
+      {
+        "id": "mon",
+        "label": "Monday"
+      },
+      {
+        "id": "tue",
+        "label": "Tuesday"
+      },
+      {
+        "id": "wed",
+        "label": "Wednesday"
+      },
+      {
+        "id": "thu",
+        "label": "Thursday"
+      },
+      {
+        "id": "fri",
+        "label": "Friday"
+      },
+      {
+        "id": "sat",
+        "label": "Saturday"
+      },
+      {
+        "id": "sun",
+        "label": "Sunday"
+      }
+    ]
+  },
+  {
+    "id": "material",
+    "name": "Material",
+    "source": "material",
+    "values": [],
+    "builtIn": true,
+    "description": "Roll-off material, from the scale ticket"
+  },
+  {
+    "id": "customerTier",
+    "name": "Customer tier",
+    "source": "account",
+    "defaultValueId": "standard",
+    "description": "Set on the account; keys discounts and broker rate cards",
+    "values": [
+      {
+        "id": "standard",
+        "label": "Standard"
+      },
+      {
+        "id": "vip",
+        "label": "VIP"
+      },
+      {
+        "id": "friendsFamily",
+        "label": "Friends and family"
+      },
+      {
+        "id": "nationalBroker",
+        "label": "National broker"
+      }
+    ],
+    "assignments": {
+      "acct_res_021": "vip",
+      "acct_res_025": "vip",
+      "acct_res_029": "friendsFamily",
+      "acct_pm_oakridge": "nationalBroker"
+    }
+  },
+  {
+    "id": "serviceSpeed",
+    "name": "Service speed",
+    "source": "input",
+    "defaultValueId": "standard",
+    "description": "Asked when quoting an on-demand job; billing uses Standard",
+    "values": [
+      {
+        "id": "standard",
+        "label": "Standard"
+      },
+      {
+        "id": "nextDay",
+        "label": "Next day"
+      },
+      {
+        "id": "sameDay",
+        "label": "Same day"
+      }
+    ]
+  },
+  {
+    "id": "access",
+    "name": "Site access",
+    "source": "site",
+    "defaultValueId": "curbside",
+    "description": "Set on the site by the office",
+    "values": [
+      {
+        "id": "curbside",
+        "label": "Curbside"
+      },
+      {
+        "id": "gated",
+        "label": "Gated or coded"
+      },
+      {
+        "id": "walkOut",
+        "label": "Walk-out service"
+      }
+    ],
+    "assignments": {
+      "site_bakery": "gated",
+      "site_res_012": "walkOut",
+      "site_res_018": "walkOut"
+    }
+  },
+  {
+    "id": "collectionsPerMonth",
+    "name": "Collections per month",
+    "source": "serviceLine",
+    "type": "number",
+    "unit": "collections per month",
+    "description": "Set on a commercial service line. A service priced per collection multiplies its price by it; rates can be banded by it",
+    "values": [
+      {
+        "id": "c1_4",
+        "label": "1 to 4",
+        "min": 1,
+        "max": 5
+      },
+      {
+        "id": "c5_12",
+        "label": "5 to 12",
+        "min": 5,
+        "max": 13
+      },
+      {
+        "id": "c13_plus",
+        "label": "13 or more",
+        "min": 13
+      }
+    ]
+  },
+  {
+    "id": "equipmentRental",
+    "name": "Equipment rental",
+    "source": "serviceLine",
+    "type": "yesNo",
+    "defaultValueId": "no",
+    "description": "The customer rents the container from the hauler instead of owning it",
+    "values": [
+      {
+        "id": "yes",
+        "label": "Yes"
+      },
+      {
+        "id": "no",
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "id": "gateCode",
+    "name": "Gate code",
+    "source": "site",
+    "type": "text",
+    "description": "Kept for the driver; never changes a price",
+    "values": []
+  }
+]

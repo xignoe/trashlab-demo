@@ -1,0 +1,340 @@
+/*
+  Portal surface (Phase 2, box 2C.4). Everything here is scoped to .surface-portal, so portal's pattern classes
+  (.tl-card, .tl-pill, .tl-table, .tl-drawer, .tl-money, which billing also defines with different rules) can never
+  style another surface, and another surface's classes never reach here.
+
+  Sources: portal/tailwind.config.js (which utility names the portal used), portal/src/styles/tokens.css (the
+  portal's own variable names, each an alias of a --tl- token since addendum F2), and portal/src/styles/tl-tokens.css,
+  which is shared/tokens.css and therefore src/styles/tokens.css already (loaded app wide, not repeated here).
+
+  Part 1: the --rt-* values the theme bridge (src/styles/theme.css) reads, one per name in portal's Tailwind config.
+  Part 2: the portal's own variable names, copied from its tokens.css :root into the wrapper.
+  Part 3: Tailwind 4 differences the portal relied on, set back inside the wrapper.
+  Part 4: the ground portal's body rule set.
+  Part 5: portal's component classes, unchanged except for nesting and the notes marked "merged app".
+*/
+
+.surface-portal {
+  /* Part 1: theme bridge values (portal/tailwind.config.js, each through the portal alias it named) */
+
+  /* color */
+  --rt-color-bg: var(--tl-bg);
+  --rt-color-surface: var(--tl-surface);
+  --rt-color-surface-2: var(--tl-surface-muted);
+  --rt-color-border: var(--tl-line-soft);
+  --rt-color-ink: var(--tl-ink);
+  --rt-color-ink-2: var(--tl-ink-2);
+  --rt-color-ink-3: var(--tl-ink-3);
+  --rt-color-accent: var(--tl-brand);
+  --rt-color-accent-ink: var(--tl-on-brand);
+  --rt-color-accent-soft: var(--tl-line-soft);
+  --rt-color-ok: var(--tl-ok);
+  --rt-color-ok-soft: var(--tl-ok-soft);
+  --rt-color-warn: var(--tl-warn);
+  --rt-color-warn-soft: var(--tl-warn-soft);
+  --rt-color-danger: var(--tl-danger);
+  --rt-color-danger-soft: var(--tl-danger-soft);
+  --rt-color-info: var(--tl-info);
+  --rt-color-info-soft: var(--tl-info-soft);
+  /* Tailwind 3's own values for names the portal inherited from the default palette (white, and gray-200, the
+     default border color, which Tailwind 4 changed to currentColor). */
+  --rt-color-white: #fff;
+  --rt-color-gray-200: #e5e7eb;
+
+  /* font */
+  --rt-font-sans: var(--tl-font-sans);
+  --rt-font-mono: var(--tl-font-mono);
+
+  /* text: portal's six sizes (tokens.css --text-xs to --text-2xl). The config gave them no line height, so every one
+     inherited the body's 1.5 (portal tokens.css body rule, --leading-normal). The bridge needs a value, so it is 1.5. */
+  --rt-text-xs: var(--tl-text-12);
+  --rt-text-xs--line-height: var(--tl-leading-normal);
+  --rt-text-sm: var(--tl-text-13);
+  --rt-text-sm--line-height: var(--tl-leading-normal);
+  --rt-text-base: var(--tl-text-14);
+  --rt-text-base--line-height: var(--tl-leading-normal);
+  --rt-text-lg: var(--tl-text-16);
+  --rt-text-lg--line-height: var(--tl-leading-normal);
+  --rt-text-xl: var(--tl-text-22);
+  --rt-text-xl--line-height: var(--tl-leading-normal);
+  --rt-text-2xl: var(--tl-text-28);
+  --rt-text-2xl--line-height: var(--tl-leading-normal);
+
+  /* radius: sm, md, lg, pill from the config; bare `rounded` was not configured, so it keeps Tailwind 3's 0.25rem */
+  --rt-radius: 0.25rem;
+  --rt-radius-sm: var(--tl-radius-sm);
+  --rt-radius-md: var(--tl-radius-md);
+  --rt-radius-lg: var(--tl-radius-lg);
+  --rt-radius-pill: var(--tl-radius-pill);
+
+  /* spacing 1 to 6 and 8 (the 4px steps) */
+  --rt-spacing-1: var(--tl-space-1);
+  --rt-spacing-2: var(--tl-space-2);
+  --rt-spacing-3: var(--tl-space-3);
+  --rt-spacing-4: var(--tl-space-4);
+  --rt-spacing-5: var(--tl-space-5);
+  --rt-spacing-6: var(--tl-space-6);
+  --rt-spacing-8: var(--tl-space-8);
+
+  /* shadow */
+  --rt-shadow-panel: var(--tl-shadow-card);
+  --rt-shadow-drawer: -8px 0 24px #1A174F1F;
+
+  /* Part 2: portal variable names (portal/src/styles/tokens.css :root), read by the component classes below and by
+     inline styles in the screens. --leading-tight is left out on purpose, see part 3. */
+
+  /* Color: surfaces and ink */
+  --color-bg: var(--tl-bg);
+  --color-surface: var(--tl-surface);
+  --color-surface-2: var(--tl-surface-muted);
+  --color-border: var(--tl-line-soft);
+  --color-border-strong: var(--tl-line);
+  --color-ink: var(--tl-ink);
+  --color-ink-2: var(--tl-ink-2);
+  --color-ink-3: var(--tl-ink-3);
+
+  /* Color: accent. Paper's primary action color is the brand indigo, so the portal accent aliases --tl-brand. */
+  --color-accent: var(--tl-brand);
+  --color-accent-hover: var(--tl-brand-deep);
+  --color-accent-ink: var(--tl-on-brand);
+  --color-accent-soft: var(--tl-line-soft);
+
+  /* Color: status */
+  --color-ok: var(--tl-ok);
+  --color-ok-soft: var(--tl-ok-soft);
+  --color-warn: var(--tl-warn);
+  --color-warn-soft: var(--tl-warn-soft);
+  --color-danger: var(--tl-danger);
+  --color-danger-soft: var(--tl-danger-soft);
+  --color-info: var(--tl-info);
+  --color-info-soft: var(--tl-info-soft);
+  --color-neutral: var(--tl-neutral);
+  --color-neutral-soft: var(--tl-neutral-soft);
+
+  /* Type */
+  --font-sans: var(--tl-font-sans);
+  --font-mono: var(--tl-font-mono);
+  --text-xs: var(--tl-text-12);
+  --text-sm: var(--tl-text-13);
+  --text-base: var(--tl-text-14);
+  --text-lg: var(--tl-text-16);
+  --text-xl: var(--tl-text-22);
+  --text-2xl: var(--tl-text-28);
+  --leading-normal: var(--tl-leading-normal);
+  --weight-regular: var(--tl-weight-regular);
+  --weight-medium: var(--tl-weight-medium);
+  --weight-semibold: var(--tl-weight-semibold);
+
+  /* Spacing (4px base, same steps) */
+  --space-1: var(--tl-space-1);
+  --space-2: var(--tl-space-2);
+  --space-3: var(--tl-space-3);
+  --space-4: var(--tl-space-4);
+  --space-5: var(--tl-space-5);
+  --space-6: var(--tl-space-6);
+  --space-8: var(--tl-space-8);
+
+  /* Radii */
+  --radius-sm: var(--tl-radius-sm);
+  --radius-md: var(--tl-radius-md);
+  --radius-lg: var(--tl-radius-lg);
+  --radius-pill: var(--tl-radius-pill);
+
+  /* Elevation */
+  --shadow-panel: var(--tl-shadow-card);
+  --shadow-drawer: -8px 0 24px #1A174F1F; /* portal-local: Paper's side panel is docked, not an overlay drawer */
+
+  /* Layout */
+  --topbar-height: var(--tl-nav-height);
+  --drawer-width: var(--tl-panel-width);
+  --content-max: 1120px; /* portal-local: Paper's 1440 page is an office layout with a 400px side panel */
+
+  /* Component patterns: pill (Paper: 12px 700, ink text, colored dot) */
+  --pill-padding: 2px 10px;
+  --pill-font-size: var(--tl-text-12);
+  --pill-weight: var(--tl-weight-bold);
+  --pill-radius: var(--tl-radius-pill);
+
+  /* Component patterns: panel and card */
+  --panel-padding: var(--tl-space-5);
+  --panel-radius: var(--tl-radius-lg);
+  --panel-border: var(--tl-border);
+  --panel-bg: var(--tl-surface);
+
+  /* Component patterns: table */
+  --table-row-height: 40px;
+  --table-cell-padding: var(--tl-space-2) var(--tl-space-3);
+  --table-head-bg: var(--tl-surface);
+  --table-head-ink: var(--tl-ink-2);
+  --table-row-border: var(--tl-border-soft);
+  --table-row-hover: var(--tl-surface-muted);
+
+  /* Component patterns: button (Paper: pill buttons, brand fill) */
+  --button-height: var(--tl-control-height-compact);
+  --button-padding: 0 var(--tl-space-4);
+  --button-radius: var(--tl-radius-pill);
+  --button-font-size: var(--tl-text-13);
+  --button-weight: var(--tl-weight-semibold);
+
+  /* Component patterns: form field */
+  --field-height: var(--tl-control-height-compact);
+  --field-padding: 0 var(--tl-space-3);
+  --field-radius: var(--tl-radius-sm);
+  --field-border: var(--tl-border);
+  --field-focus-ring: 0 0 0 3px var(--tl-line-soft);
+
+  /* Part 3: Tailwind 4 differences, set back to what the Tailwind 3 prototype got.
+     shared/tokens.css's @theme changes leading-tight and tracking-tight app wide (1.15, -0.01em). The portal's
+     `leading-tight` utility (the drawer title) was Tailwind 3's 1.25, so the utility's variable goes back to 1.25.
+     The portal's own --leading-tight alias (1.15, read only by .tl-pill) shared that name, so .tl-pill reads
+     --tl-leading-tight directly instead. */
+  --leading-tight: 1.25;
+  --tracking-tight: -0.025em;
+
+  /* Part 4: ground (was portal's body rule) */
+  min-height: calc(100vh - var(--pb-height));
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+
+  /* Tailwind 3's preflight gave buttons a pointer cursor and placeholders gray-400; Tailwind 4's does neither. */
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #9ca3af;
+    opacity: 1;
+  }
+
+  /* Part 5: component classes built from the tokens above. Kept small so screens compose from these. */
+
+  .tl-panel {
+    background: var(--panel-bg);
+    border: var(--panel-border);
+    border-radius: var(--panel-radius);
+    padding: var(--panel-padding);
+    box-shadow: var(--shadow-panel);
+  }
+
+  .tl-card {
+    background: var(--panel-bg);
+    border: var(--panel-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .tl-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--pill-padding);
+    border-radius: var(--pill-radius);
+    font-size: var(--pill-font-size);
+    font-weight: var(--pill-weight);
+    line-height: var(--tl-leading-tight); /* merged app: was var(--leading-tight), see part 3 */
+    white-space: nowrap;
+    background: var(--color-neutral-soft);
+    color: var(--color-ink);
+    --pill-dot: var(--color-neutral);
+  }
+  /* Paper status pill: ink text on a soft ground, the status color carried by a 6px dot. */
+  .tl-pill::before { content: ''; width: 6px; height: 6px; border-radius: 999px; background: var(--pill-dot); flex-shrink: 0; }
+  .tl-pill--ok { background: var(--color-ok-soft); --pill-dot: var(--color-ok); }
+  .tl-pill--warn { background: var(--color-warn-soft); --pill-dot: var(--color-warn); }
+  .tl-pill--danger { background: var(--color-danger-soft); --pill-dot: var(--color-danger); }
+  .tl-pill--info { background: var(--color-info-soft); --pill-dot: var(--color-info); }
+
+  .tl-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    height: var(--button-height);
+    padding: var(--button-padding);
+    border-radius: var(--button-radius);
+    font-size: var(--button-font-size);
+    font-weight: var(--button-weight);
+    border: 1px solid transparent;
+    cursor: pointer;
+    background: var(--color-accent);
+    color: var(--color-accent-ink);
+  }
+  .tl-button:hover { background: var(--color-accent-hover); }
+  .tl-button:disabled { opacity: 0.5; cursor: not-allowed; }
+  .tl-button--secondary {
+    background: var(--color-surface);
+    color: var(--color-ink);
+    border-color: var(--color-border-strong);
+  }
+  .tl-button--secondary:hover { background: var(--color-surface-2); }
+  .tl-button--ghost {
+    background: transparent;
+    color: var(--color-accent);
+  }
+  .tl-button--ghost:hover { background: var(--color-accent-soft); }
+
+  .tl-field {
+    height: var(--field-height);
+    padding: var(--field-padding);
+    border: var(--field-border);
+    border-radius: var(--field-radius);
+    background: var(--color-surface);
+    color: var(--color-ink);
+    font: inherit;
+    font-size: var(--text-sm);
+    width: 100%;
+  }
+  .tl-field:focus { outline: none; box-shadow: var(--field-focus-ring); border-color: var(--color-accent); }
+  .tl-label {
+    display: block;
+    font-size: var(--text-xs);
+    font-weight: var(--weight-medium);
+    color: var(--color-ink-2);
+    margin-bottom: var(--space-1);
+  }
+
+  .tl-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+  }
+  .tl-table th {
+    text-align: left;
+    padding: var(--table-cell-padding);
+    background: var(--table-head-bg);
+    color: var(--table-head-ink);
+    font-weight: var(--weight-medium);
+    font-size: var(--text-xs);
+    border-bottom: var(--table-row-border);
+  }
+  .tl-table td {
+    padding: var(--table-cell-padding);
+    border-bottom: var(--table-row-border);
+    height: var(--table-row-height);
+    vertical-align: middle;
+  }
+  .tl-table tr:hover td { background: var(--table-row-hover); }
+  .tl-table td.num, .tl-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+  /* merged app: starts below the persona bar (PORT_DECISIONS.md entry 13); the prototype's was top 0, height 100% */
+  .tl-drawer {
+    position: fixed;
+    top: var(--pb-height);
+    right: 0;
+    height: calc(100% - var(--pb-height));
+    width: var(--drawer-width);
+    max-width: 100vw;
+    background: var(--color-surface);
+    border-left: 1px solid var(--color-border);
+    box-shadow: var(--shadow-drawer);
+    overflow-y: auto;
+    padding: var(--space-6);
+  }
+
+  .tl-money { font-variant-numeric: tabular-nums; }
+}

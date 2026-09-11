@@ -1,0 +1,6 @@
+{
+  "extraBags": 250,
+  "overload": 1000,
+  "contamination": 2000,
+  "dryRun": 2500
+}

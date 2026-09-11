@@ -1,0 +1,63 @@
+[
+  {
+    "id": "addr_open_single",
+    "label": "Single 96 gal cart, Tuesday route",
+    "line1": "412 Larkspur Ln",
+    "city": "Piedmont",
+    "state": "GA",
+    "zip": "30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "addr_open_second_cart",
+    "label": "Second cart household, Monday route",
+    "line1": "88 Copper Kettle Ct",
+    "city": "Piedmont",
+    "state": "GA",
+    "zip": "30512",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "addr_open_recycling",
+    "label": "Recycling add-on, Tuesday route",
+    "line1": "2071 Meadowbrook Dr",
+    "city": "Piedmont",
+    "state": "GA",
+    "zip": "30512",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "addr_franchise",
+    "label": "Inside the Ashford city franchise",
+    "line1": "530 Main St",
+    "city": "Ashford",
+    "state": "GA",
+    "zip": "30540",
+    "zoneId": "zone_franchise",
+    "franchiseHolder": "Southeast Sanitation"
+  },
+  {
+    "id": "addr_boundary",
+    "label": "Zone boundary, private road",
+    "line1": "1180 Ridge Hollow Rd",
+    "city": "Piedmont",
+    "state": "GA",
+    "zip": "30512",
+    "zoneId": "zone_boundary",
+    "routeId": "route_tue_res",
+    "boundaryReason": "private road access"
+  },
+  {
+    "id": "addr_commercial",
+    "label": "Business storefront, front load route",
+    "line1": "1500 Commerce Way, Suite B",
+    "city": "Piedmont",
+    "state": "GA",
+    "zip": "30512",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  }
+]

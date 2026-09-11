@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-label="Plastic film and food waste in the wood container">
+  <rect width="640" height="400" fill="#c9b8a0"/>
+  <rect x="0" y="300" width="640" height="100" fill="#7a6a55"/>
+  <rect x="150" y="140" width="340" height="170" rx="10" fill="#4b5563"/>
+  <rect x="140" y="126" width="360" height="22" rx="6" fill="#374151"/>
+  <text x="320" y="240" text-anchor="middle" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" fill="#e5e7eb">WOOD ONLY</text>
+  <path d="M190 150 q30 -40 60 0 q20 30 50 -10 q30 -20 40 10" stroke="#93c5fd" stroke-width="10" fill="none" opacity="0.9"/>
+  <circle cx="420" cy="150" r="16" fill="#b45309"/><circle cx="445" cy="140" r="12" fill="#dc2626"/>
+  <text x="20" y="380" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18" fill="#ffffff">Plastic film and food waste in the wood container</text>
+  <text x="620" y="30" text-anchor="end" font-family="ui-monospace, monospace" font-size="14" fill="#ffffff" opacity="0.8">Driver photo, placeholder</text>
+</svg>

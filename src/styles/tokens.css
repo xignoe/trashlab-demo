@@ -1,0 +1,229 @@
+/* CANONICAL TrashLab tokens.
+   Source: billing/src/styles/tokens.css, whose values were read from the Paper file 01M24VYMM89TECB7A4ZC0WYY57 with get_computed_styles
+   (see billing/DESIGN.md and billing/docs/paper-reference.md). account/src/styles/tokens.css carries the same values under shorter names.
+   storefront and portal shipped a neutral green fallback set because Paper was unreachable; pricing read approximate values off a screenshot.
+   Rule: do not restyle mid-phase. Each surface adopts this file in its final polish phase, keeping its own variable names as aliases if needed.
+   The merge (prompts/06-merge.md) uses this file as the single stylesheet. */
+
+/*
+  TrashLab billing surface tokens.
+
+  Source: the TrashLab Paper file (id 01M24VYMM89TECB7A4ZC0WYY57), artboard "Account view - Office"
+  (node D3-0) plus the dispatch nav (node 2-0) read before it was removed. The values were read by the
+  manager from Paper (get_jsx and get_computed_styles) and written to docs/paper-reference.md because the
+  subagent Paper MCP quota was exhausted on 2026-09-10. Every value below is copied from that reference;
+  the few values the reference does not name are marked "derived" and listed in DESIGN.md.
+
+  Every variable is prefixed --tl- and mirrored into the Tailwind v4 @theme block at the bottom.
+*/
+
+:root {
+  /* Color: brand and ink (D3-0) */
+  --tl-brand: #312D97;            /* nav, primary button, dark summary card */
+  --tl-brand-deep: #2F2A90;       /* secondary button text */
+  --tl-brand-active-bg: #FFFFFF1F;/* active nav tab background */
+  --tl-brand-line: #FFFFFF1A;     /* nav bottom border, search field background */
+  --tl-brand-line-strong: #FFFFFF29; /* search field border */
+  --tl-brand-tab-ink: #F1F5F9CC;  /* inactive nav tab text */
+  --tl-brand-meta: #FFFFFFB3;     /* dark summary card meta text */
+  --tl-ink: #1A174F;              /* titles, primary cells, pill text, avatar initials */
+  --tl-ink-2: #6260AF;            /* subtitle, captions, table header, meta */
+  --tl-ink-3: var(--tl-ink-2);    /* alias: Paper uses two ink levels only */
+  --tl-accent: #5149D7;           /* eyebrows */
+  --tl-lavender: #818DF0;         /* avatar, neutral pill dot, callout border */
+  --tl-cyan: #10D6E6;             /* active nav tab dot */
+
+  /* Color: surfaces and lines (D3-0) */
+  --tl-bg: #F7F7FF;               /* page background, callout background */
+  --tl-surface: #FFFFFF;          /* cards, buttons, side panel */
+  --tl-surface-muted: #F7F7FF;    /* alias of page background for inset areas */
+  --tl-line: #D3D1FF;             /* card border, table header rule, photo placeholder, dark card labels */
+  --tl-line-soft: #ECEBFF;        /* table row rule, list row rule, secondary button border, neutral pill */
+  --tl-on-brand: #FFFFFF;
+
+  /* Color: status (D3-0 status pill variants) */
+  --tl-danger: #C8382D;           /* past due dot, negative stat eyebrow */
+  --tl-danger-soft: #FDE8E6;      /* past due pill background */
+  --tl-warn: #F5A524;             /* warning dot */
+  --tl-warn-soft: #FFF4DF;        /* warning pill background */
+  --tl-ok: #1F9D6B;               /* healthy dot */
+  --tl-ok-soft: var(--tl-line-soft); /* derived: reference names the healthy dot only */
+  --tl-neutral: var(--tl-lavender);  /* neutral dot */
+  --tl-neutral-soft: var(--tl-line-soft); /* neutral pill background */
+  --tl-info: var(--tl-accent);    /* derived: no info variant in Paper */
+  --tl-info-soft: var(--tl-line-soft);
+  --tl-accent-ink: var(--tl-brand); /* derived: selected state, no Paper variant */
+  --tl-accent-soft: var(--tl-line);
+  --tl-on-accent: #FFFFFF;
+  --tl-code-bg: var(--tl-line-soft);
+
+  /* Type: families (Paper file lists Manrope and IBM Plex Mono only) */
+  --tl-font-sans: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --tl-font-display: var(--tl-font-sans);
+  --tl-font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+
+  /* Type: scale 11/12/13/14/15/16/22/28/40 with line heights */
+  --tl-text-11: 11px;  --tl-leading-11: 14px;  /* eyebrow, 700, 0.16em, uppercase */
+  --tl-text-12: 12px;  --tl-leading-12: 16px;  /* pill 700, table header 700, meta 600, footnote 500 */
+  --tl-text-13: 13px;  --tl-leading-13: 18px;  /* stat caption 500, avatar initials 700 */
+  --tl-text-14: 14px;  --tl-leading-14: 21px;  /* body and callout 21px, nav tab 500, primary cell 600 */
+  --tl-text-15: 15px;  --tl-leading-15: 20px;  /* card and panel titles 700 */
+  --tl-text-16: 16px;  --tl-leading-16: 22px;  /* reserved by the manager, no artboard use recorded */
+  --tl-text-22: 22px;  --tl-leading-22: 28px;  /* reserved by the manager, no artboard use recorded */
+  --tl-text-28: 28px;  --tl-leading-28: 34px;  /* page title 700 at 34px; stat value 600 at 32px */
+  --tl-leading-28-stat: 32px;
+  --tl-text-40: 40px;  --tl-leading-40: 44px;  /* dark summary big number, mono 600, -0.02em */
+
+  /* Type: role aliases kept for existing markup */
+  --tl-text-xs: var(--tl-text-11);
+  --tl-text-sm: var(--tl-text-13);
+  --tl-text-md: var(--tl-text-14);
+  --tl-text-lg: var(--tl-text-16);
+  --tl-text-xl: var(--tl-text-22);
+  --tl-text-2xl: var(--tl-text-28);
+  --tl-text-3xl: var(--tl-text-40);
+  --tl-leading-tight: 1.15;
+  --tl-leading-normal: 1.5;
+
+  /* Type: weights and tracking */
+  --tl-weight-regular: 400;
+  --tl-weight-medium: 500;
+  --tl-weight-semibold: 600;
+  --tl-weight-bold: 700;
+  --tl-tracking-caps: 0.16em;     /* eyebrow */
+  --tl-tracking-tight: -0.01em;   /* page title */
+  --tl-tracking-display: -0.02em; /* dark summary big number */
+
+  /* Spacing: 40/32/24/20/18/16/14/12/10/8/6/4 */
+  --tl-space-1: 4px;
+  --tl-space-1-5: 6px;
+  --tl-space-2: 8px;
+  --tl-space-2-5: 10px;
+  --tl-space-3: 12px;
+  --tl-space-3-5: 14px;
+  --tl-space-4: 16px;
+  --tl-space-4-5: 18px;
+  --tl-space-5: 20px;
+  --tl-space-6: 24px;
+  --tl-space-8: 32px;
+  --tl-space-10: 40px;
+
+  /* Radii */
+  --tl-radius-sm: 8px;            /* photo placeholder */
+  --tl-radius-md: 12px;           /* callout */
+  --tl-radius-lg: 16px;           /* card, side panel, dark summary card */
+  --tl-radius-pill: 999px;        /* nav tab, pill, buttons, search field */
+
+  /* Borders and shadows */
+  --tl-border: 1px solid var(--tl-line);
+  --tl-border-soft: 1px solid var(--tl-line-soft);
+  --tl-border-strong: 2px solid var(--tl-line-soft);   /* secondary button */
+  --tl-shadow-card: #D3D1FF66 0px 10px 15px -3px, #D3D1FF66 0px 4px 6px -4px;
+  --tl-shadow-panel: var(--tl-shadow-card);            /* side panel list card uses the card shadow */
+
+  /* Layout (D3-0 column layout, 2-0 nav) */
+  --tl-nav-height: 64px;
+  --tl-page-max: 1440px;
+  --tl-page-inline: 40px;
+  --tl-main-width: 936px;
+  --tl-panel-width: 400px;
+  --tl-column-gap: 24px;
+  --tl-card-gap: 20px;
+  --tl-tile-gap: 16px;
+  --tl-control-height: 40px;
+  --tl-control-height-compact: 36px;
+  --tl-avatar-size: 36px;
+  --tl-photo-size: 48px;
+}
+
+@theme {
+  --font-sans: var(--tl-font-sans);
+  --font-display: var(--tl-font-display);
+  --font-mono: var(--tl-font-mono);
+
+  --color-brand: var(--tl-brand);
+  --color-brand-deep: var(--tl-brand-deep);
+  --color-brand-active-bg: var(--tl-brand-active-bg);
+  --color-brand-line: var(--tl-brand-line);
+  --color-brand-line-strong: var(--tl-brand-line-strong);
+  --color-brand-tab-ink: var(--tl-brand-tab-ink);
+  --color-brand-meta: var(--tl-brand-meta);
+  --color-ink: var(--tl-ink);
+  --color-ink-2: var(--tl-ink-2);
+  --color-ink-3: var(--tl-ink-3);
+  --color-accent: var(--tl-accent);
+  --color-lavender: var(--tl-lavender);
+  --color-cyan: var(--tl-cyan);
+  --color-bg: var(--tl-bg);
+  --color-surface: var(--tl-surface);
+  --color-surface-muted: var(--tl-surface-muted);
+  --color-line: var(--tl-line);
+  --color-line-soft: var(--tl-line-soft);
+  --color-on-brand: var(--tl-on-brand);
+  --color-danger: var(--tl-danger);
+  --color-danger-soft: var(--tl-danger-soft);
+  --color-warn: var(--tl-warn);
+  --color-warn-soft: var(--tl-warn-soft);
+  --color-ok: var(--tl-ok);
+  --color-ok-soft: var(--tl-ok-soft);
+  --color-neutral: var(--tl-neutral);
+  --color-neutral-soft: var(--tl-neutral-soft);
+  --color-info: var(--tl-info);
+  --color-info-soft: var(--tl-info-soft);
+  --color-accent-ink: var(--tl-accent-ink);
+  --color-accent-soft: var(--tl-accent-soft);
+  --color-on-accent: var(--tl-on-accent);
+  --color-code-bg: var(--tl-code-bg);
+
+  --text-11: var(--tl-text-11);  --text-11--line-height: var(--tl-leading-11);
+  --text-12: var(--tl-text-12);  --text-12--line-height: var(--tl-leading-12);
+  --text-13: var(--tl-text-13);  --text-13--line-height: var(--tl-leading-13);
+  --text-14: var(--tl-text-14);  --text-14--line-height: var(--tl-leading-14);
+  --text-15: var(--tl-text-15);  --text-15--line-height: var(--tl-leading-15);
+  --text-16: var(--tl-text-16);  --text-16--line-height: var(--tl-leading-16);
+  --text-22: var(--tl-text-22);  --text-22--line-height: var(--tl-leading-22);
+  --text-28: var(--tl-text-28);  --text-28--line-height: var(--tl-leading-28);
+  --text-40: var(--tl-text-40);  --text-40--line-height: var(--tl-leading-40);
+  --text-xs: var(--tl-text-xs);  --text-xs--line-height: var(--tl-leading-11);
+  --text-sm: var(--tl-text-sm);  --text-sm--line-height: var(--tl-leading-13);
+  --text-md: var(--tl-text-md);  --text-md--line-height: var(--tl-leading-14);
+  --text-lg: var(--tl-text-lg);  --text-lg--line-height: var(--tl-leading-16);
+  --text-xl: var(--tl-text-xl);  --text-xl--line-height: var(--tl-leading-22);
+  --text-2xl: var(--tl-text-2xl); --text-2xl--line-height: var(--tl-leading-28);
+  --text-3xl: var(--tl-text-3xl); --text-3xl--line-height: var(--tl-leading-40);
+
+  --font-weight-regular: var(--tl-weight-regular);
+  --font-weight-medium: var(--tl-weight-medium);
+  --font-weight-semibold: var(--tl-weight-semibold);
+  --font-weight-bold: var(--tl-weight-bold);
+
+  --tracking-caps: var(--tl-tracking-caps);
+  --tracking-tight: var(--tl-tracking-tight);
+  --tracking-display: var(--tl-tracking-display);
+  --leading-tight: var(--tl-leading-tight);
+  --leading-normal: var(--tl-leading-normal);
+
+  --spacing-1: var(--tl-space-1);
+  --spacing-1\.5: var(--tl-space-1-5);
+  --spacing-2: var(--tl-space-2);
+  --spacing-2\.5: var(--tl-space-2-5);
+  --spacing-3: var(--tl-space-3);
+  --spacing-3\.5: var(--tl-space-3-5);
+  --spacing-4: var(--tl-space-4);
+  --spacing-4\.5: var(--tl-space-4-5);
+  --spacing-5: var(--tl-space-5);
+  --spacing-6: var(--tl-space-6);
+  --spacing-8: var(--tl-space-8);
+  --spacing-10: var(--tl-space-10);
+  --spacing-nav: var(--tl-nav-height);
+  --spacing-main: var(--tl-main-width);
+  --spacing-panel: var(--tl-panel-width);
+
+  --radius-sm: var(--tl-radius-sm);
+  --radius-md: var(--tl-radius-md);
+  --radius-lg: var(--tl-radius-lg);
+  --radius-pill: var(--tl-radius-pill);
+
+  --shadow-card: var(--tl-shadow-card);
+  --shadow-panel: var(--tl-shadow-panel);
+}

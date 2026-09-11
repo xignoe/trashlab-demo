@@ -1,0 +1,25 @@
+[
+  {
+    "id": "fee_fuel_7pct",
+    "name": "Fuel and environmental surcharge",
+    "kind": "percent",
+    "value": 7,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring",
+      "event"
+    ],
+    "taxable": true
+  },
+  {
+    "id": "fee_env_1",
+    "name": "Environmental fee",
+    "kind": "flat",
+    "value": 100,
+    "base": "serviceLines",
+    "appliesTo": [
+      "recurring"
+    ],
+    "taxable": false
+  }
+]

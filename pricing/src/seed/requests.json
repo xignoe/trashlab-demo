@@ -1,0 +1,30 @@
+[
+  {
+    "id": "req_holt_vacation",
+    "accountId": "acct_res_holt",
+    "siteId": "site_res_holt",
+    "kind": "vacationHold",
+    "status": "scheduled",
+    "createdVia": "portal",
+    "note": "Away Sep 1 through Sep 21, resume Sep 22"
+  },
+  {
+    "id": "req_bakery_quote",
+    "accountId": "acct_bakery",
+    "siteId": "site_bakery",
+    "kind": "quote",
+    "status": "open",
+    "createdVia": "storefront",
+    "note": "Asked for a second 3 yd on the wood stream"
+  },
+  {
+    "id": "req_hale_recovery",
+    "accountId": "acct_contractor_hale",
+    "siteId": "site_hale_1",
+    "kind": "extraPickup",
+    "status": "scheduled",
+    "createdVia": "phone",
+    "workOrderId": "wo_hale_003",
+    "note": "Pull box B before Friday pour"
+  }
+]

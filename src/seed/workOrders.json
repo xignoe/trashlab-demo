@@ -1,0 +1,53 @@
+[
+  {
+    "id": "wo_res_007_deliver",
+    "siteId": "site_res_007",
+    "kind": "deliver",
+    "status": "done",
+    "scheduledFor": "2026-09-15",
+    "serviceItemId": "si_res_007_extra",
+    "containerId": "cart_res_007_2",
+    "requestId": "req_res_007_cart",
+    "completedAt": "2026-09-15"
+  },
+  {
+    "id": "wo_ro_home_deliver",
+    "siteId": "site_ro_home",
+    "kind": "deliver",
+    "status": "done",
+    "scheduledFor": "2026-08-07",
+    "serviceItemId": "si_ro_home",
+    "containerId": "box_2004",
+    "completedAt": "2026-08-07"
+  },
+  {
+    "id": "wo_hale_haul_1",
+    "siteId": "site_hale_a",
+    "kind": "dumpAndReturn",
+    "status": "done",
+    "scheduledFor": "2026-09-03",
+    "serviceItemId": "si_hale_1",
+    "containerId": "box_2001",
+    "completedAt": "2026-09-03"
+  },
+  {
+    "id": "wo_hale_haul_2",
+    "siteId": "site_hale_b",
+    "kind": "dumpAndReturn",
+    "status": "done",
+    "scheduledFor": "2026-09-08",
+    "serviceItemId": "si_hale_2",
+    "containerId": "box_2002",
+    "completedAt": "2026-09-08"
+  },
+  {
+    "id": "wo_hale_haul_3",
+    "siteId": "site_hale_a",
+    "kind": "dumpAndReturn",
+    "status": "done",
+    "scheduledFor": "2026-09-01",
+    "serviceItemId": "si_hale_3",
+    "containerId": "box_2003",
+    "completedAt": "2026-09-01"
+  }
+]

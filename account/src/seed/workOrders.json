@@ -1,0 +1,71 @@
+[
+  {
+    "id": "wo_hale_deliver_1",
+    "siteId": "site_hale_job1",
+    "kind": "deliver",
+    "status": "done",
+    "scheduledFor": "2026-08-18",
+    "serviceItemId": "si_hale_job1",
+    "containerId": "cont_hale_1",
+    "completedAt": "2026-08-18"
+  },
+  {
+    "id": "wo_hale_deliver_2",
+    "siteId": "site_hale_job1",
+    "kind": "deliver",
+    "status": "done",
+    "scheduledFor": "2026-08-25",
+    "serviceItemId": "si_hale_job1",
+    "containerId": "cont_hale_2",
+    "completedAt": "2026-08-25"
+  },
+  {
+    "id": "wo_hale_deliver_3",
+    "siteId": "site_hale_job2",
+    "kind": "deliver",
+    "status": "done",
+    "scheduledFor": "2026-08-28",
+    "serviceItemId": "si_hale_job2",
+    "containerId": "cont_hale_3",
+    "completedAt": "2026-08-28"
+  },
+  {
+    "id": "wo_hale_dr_1",
+    "siteId": "site_hale_job1",
+    "kind": "dumpAndReturn",
+    "status": "done",
+    "scheduledFor": "2026-09-01",
+    "serviceItemId": "si_hale_job1",
+    "containerId": "cont_hale_1",
+    "completedAt": "2026-09-01"
+  },
+  {
+    "id": "wo_hale_dr_2",
+    "siteId": "site_hale_job2",
+    "kind": "dumpAndReturn",
+    "status": "done",
+    "scheduledFor": "2026-09-04",
+    "serviceItemId": "si_hale_job2",
+    "containerId": "cont_hale_3",
+    "completedAt": "2026-09-04"
+  },
+  {
+    "id": "wo_hale_dr_3",
+    "siteId": "site_hale_job1",
+    "kind": "dumpAndReturn",
+    "status": "scheduled",
+    "scheduledFor": "2026-09-11",
+    "serviceItemId": "si_hale_job1",
+    "containerId": "cont_hale_2"
+  },
+  {
+    "id": "wo_ro_home_deliver",
+    "siteId": "site_ro_home",
+    "kind": "deliver",
+    "status": "done",
+    "scheduledFor": "2026-08-07",
+    "serviceItemId": "si_ro_home",
+    "containerId": "cont_ro_home",
+    "completedAt": "2026-08-07"
+  }
+]

@@ -1,0 +1,589 @@
+[
+  {
+    "id": "ch_res_maple_0001_96",
+    "accountId": "acct_res_maple",
+    "siteId": "site_res_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_96",
+    "description": "96 gal cart, weekly, Jul 1 to Sep 30 2026",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_maple_96"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 4500,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 265
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 280,
+    "totalCents": 5145,
+    "pricing": {
+      "rateVersionId": "rv_res_96_open_weekly",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_res_maple_0001_extra",
+    "accountId": "acct_res_maple",
+    "siteId": "site_res_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_extra_cart",
+    "description": "Extra 96 gal cart, weekly, Jul 1 to Sep 30 2026",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_maple_extra"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 1400,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 45
+      }
+    ],
+    "taxCents": 90,
+    "totalCents": 1535,
+    "pricing": {
+      "rateVersionId": "rv_res_extra_open_weekly",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_res_maple_0001_recycling",
+    "accountId": "acct_res_maple",
+    "siteId": "site_res_maple",
+    "lineType": "recurring",
+    "catalogId": "cat_res_recycling",
+    "description": "Recycling cart, every other week, Jul 1 to Sep 30 2026",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_res_maple_recycling"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 1900,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 50
+      }
+    ],
+    "taxCents": 115,
+    "totalCents": 2065,
+    "pricing": {
+      "rateVersionId": "rv_res_recycling_open_eow",
+      "ruleWon": "zoneRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_bakery_0001_3yd",
+    "accountId": "acct_bakery",
+    "siteId": "site_bakery",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd",
+    "description": "3 yd frontload, 2x weekly, Sep 2026",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_bakery_3yd"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 19800,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1386
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1483,
+    "totalCents": 22769,
+    "pricing": {
+      "contractId": "contract_bakery",
+      "ruleWon": "contractOverride"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_bakery_0001_3yd_wood",
+    "accountId": "acct_bakery",
+    "siteId": "site_bakery",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_3yd_wood",
+    "description": "3 yd frontload wood waste, 2x weekly, Sep 2026",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_bakery_3yd_wood"
+    },
+    "period": {
+      "start": "2026-09-01",
+      "end": "2026-09-30"
+    },
+    "baseCents": 17100,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1197
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1281,
+    "totalCents": 19678,
+    "pricing": {
+      "contractId": "contract_bakery",
+      "ruleWon": "contractOverride"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0001_site1",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_1",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Building A, Jun 2026 (PO-OAK-2026-01)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_1_2yd"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0001_site2",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_2",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Building B, Jun 2026 (PO-OAK-2026-02)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_2_2yd"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0001_site3",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_3",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Building C, Jun 2026 (PO-OAK-2026-03)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_3_2yd"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0001_site4",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_4",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Clubhouse, Jun 2026 (PO-OAK-2026-04)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_4_2yd"
+    },
+    "period": {
+      "start": "2026-06-01",
+      "end": "2026-06-30"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0002_site1",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_1",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Building A, Jul 2026 (PO-OAK-2026-01)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_1_2yd"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0002_site2",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_2",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Building B, Jul 2026 (PO-OAK-2026-02)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_2_2yd"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0002_site3",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_3",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Building C, Jul 2026 (PO-OAK-2026-03)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_3_2yd"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0002_site4",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_4",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Clubhouse, Jul 2026 (PO-OAK-2026-04)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_4_2yd"
+    },
+    "period": {
+      "start": "2026-07-01",
+      "end": "2026-07-31"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0003_site1",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_1",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Building A, Aug 2026 (PO-OAK-2026-01)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_1_2yd"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0003_site2",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_2",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Building B, Aug 2026 (PO-OAK-2026-02)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_2_2yd"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0003_site3",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_3",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Building C, Aug 2026 (PO-OAK-2026-03)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_3_2yd"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  },
+  {
+    "id": "ch_oakridge_0003_site4",
+    "accountId": "acct_pm_oakridge",
+    "siteId": "site_oakridge_4",
+    "lineType": "recurring",
+    "catalogId": "cat_fl_2yd",
+    "description": "2 yd frontload, weekly, Clubhouse, Aug 2026 (PO-OAK-2026-04)",
+    "source": {
+      "type": "serviceItem",
+      "id": "si_oakridge_4_2yd"
+    },
+    "period": {
+      "start": "2026-08-01",
+      "end": "2026-08-31"
+    },
+    "baseCents": 16000,
+    "fees": [
+      {
+        "feeRuleId": "fee_fuel_7pct",
+        "cents": 1120
+      },
+      {
+        "feeRuleId": "fee_env_1",
+        "cents": 100
+      }
+    ],
+    "taxCents": 1198,
+    "totalCents": 18418,
+    "pricing": {
+      "rateVersionId": "rv_fl_2yd_weekly",
+      "ruleWon": "standardRate"
+    },
+    "status": "posted",
+    "evidenceIds": []
+  }
+]

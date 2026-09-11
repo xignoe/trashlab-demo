@@ -1,0 +1,96 @@
+[
+  {
+    "id": "inv_maple_2026q3",
+    "accountId": "acct_res_maple",
+    "number": "INV-2026-0712",
+    "chargeIds": [
+      "chg_maple_2026q3"
+    ],
+    "subtotalCents": 8745,
+    "feeCents": 0,
+    "taxCents": 0,
+    "totalCents": 8745,
+    "issuedAt": "2026-07-01T09:00:00-04:00",
+    "dueAt": "2026-07-01T09:00:00-04:00",
+    "postedAt": "2026-07-01T09:00:00-04:00",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_oakridge_2026_06",
+    "accountId": "acct_pm_oakridge",
+    "number": "INV-2026-0718",
+    "chargeIds": [
+      "chg_oakridge_2026_06_s1",
+      "chg_oakridge_2026_06_s2",
+      "chg_oakridge_2026_06_s3",
+      "chg_oakridge_2026_06_s4"
+    ],
+    "subtotalCents": 11600,
+    "feeCents": 1212,
+    "taxCents": 868,
+    "totalCents": 13680,
+    "issuedAt": "2026-07-01T09:00:00-04:00",
+    "dueAt": "2026-07-31T09:00:00-04:00",
+    "postedAt": "2026-07-01T09:00:00-04:00",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_oakridge_2026_07",
+    "accountId": "acct_pm_oakridge",
+    "number": "INV-2026-0819",
+    "chargeIds": [
+      "chg_oakridge_2026_07_s1",
+      "chg_oakridge_2026_07_s2",
+      "chg_oakridge_2026_07_s3",
+      "chg_oakridge_2026_07_s4"
+    ],
+    "subtotalCents": 11600,
+    "feeCents": 1212,
+    "taxCents": 868,
+    "totalCents": 13680,
+    "issuedAt": "2026-08-01T09:00:00-04:00",
+    "dueAt": "2026-08-31T09:00:00-04:00",
+    "postedAt": "2026-08-01T09:00:00-04:00",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_oakridge_2026_08",
+    "accountId": "acct_pm_oakridge",
+    "number": "INV-2026-0921",
+    "chargeIds": [
+      "chg_oakridge_2026_08_s1",
+      "chg_oakridge_2026_08_s2",
+      "chg_oakridge_2026_08_s3",
+      "chg_oakridge_2026_08_s4"
+    ],
+    "subtotalCents": 11600,
+    "feeCents": 1212,
+    "taxCents": 868,
+    "totalCents": 13680,
+    "issuedAt": "2026-09-01T09:00:00-04:00",
+    "dueAt": "2026-10-01T09:00:00-04:00",
+    "postedAt": "2026-09-01T09:00:00-04:00",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_ro_homeowner",
+    "accountId": "acct_ro_homeowner",
+    "number": "INV-2026-0805",
+    "chargeIds": [
+      "chg_ro_homeowner_haul"
+    ],
+    "subtotalCents": 57500,
+    "feeCents": 4025,
+    "taxCents": 4307,
+    "totalCents": 65832,
+    "issuedAt": "2026-08-05T09:00:00-04:00",
+    "dueAt": "2026-08-05T09:00:00-04:00",
+    "postedAt": "2026-08-05T09:00:00-04:00",
+    "locked": true,
+    "deliveredVia": "email"
+  }
+]

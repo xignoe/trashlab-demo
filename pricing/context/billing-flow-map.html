@@ -1,0 +1,520 @@
+<title>Hauler Billing Flow Map</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root {
+    --bg: #F2F4F6;
+    --surface: #FFFFFF;
+    --ink: #17202B;
+    --ink-2: #4A5563;
+    --ink-3: #7A8592;
+    --line: #CBD2DA;
+    --lane-p: #E6EBF0;
+    --lane-a: #EDF0F3;
+    --lane-c: #E9EFEA;
+    --accent: #C9541F;
+    --accent-ink: #9E3F12;
+    --code-bg: #E8ECF0;
+    --gap-bg: #F7E9E1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12171D;
+      --surface: #1A2129;
+      --ink: #E8ECF0;
+      --ink-2: #B4BDC7;
+      --ink-3: #7F8A96;
+      --line: #36414D;
+      --lane-p: #1F2731;
+      --lane-a: #232C36;
+      --lane-c: #1F2A24;
+      --accent: #E8823F;
+      --accent-ink: #F0A06A;
+      --code-bg: #232C36;
+      --gap-bg: #2B221C;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12171D;
+    --surface: #1A2129;
+    --ink: #E8ECF0;
+    --ink-2: #B4BDC7;
+    --ink-3: #7F8A96;
+    --line: #36414D;
+    --lane-p: #1F2731;
+    --lane-a: #232C36;
+    --lane-c: #1F2A24;
+    --accent: #E8823F;
+    --accent-ink: #F0A06A;
+    --code-bg: #232C36;
+    --gap-bg: #2B221C;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    padding-block: 40px 80px;
+    padding-inline: 24px;
+  }
+  .wrap { max-width: 1240px; margin: 0 auto; }
+  h1 {
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 800;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  h2 {
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 48px 0 12px;
+    text-wrap: balance;
+  }
+  h3 {
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 28px 0 8px;
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-bottom: 8px;
+  }
+  .lede { max-width: 68ch; color: var(--ink-2); margin: 0 0 24px; }
+  p { max-width: 72ch; }
+  a { color: var(--accent-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  figure { margin: 0; }
+  .diagram {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    overflow-x: auto;
+    padding: 12px;
+  }
+  .diagram svg { min-width: 1180px; width: 100%; height: auto; display: block; color: var(--ink); }
+  figcaption { font-size: 13px; color: var(--ink-2); margin-top: 10px; max-width: 80ch; }
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 18px; margin-top: 10px;
+    font-size: 13px; color: var(--ink-2);
+  }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .sw { width: 28px; height: 0; border-top: 2px solid var(--ink); }
+  .sw.dash { border-top-style: dashed; }
+  .sw.acc { border-top-color: var(--accent); border-top-width: 3px; }
+  .lanes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 16px; }
+  .lane {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    padding: 18px 20px 6px;
+  }
+  .lane.p { border-top: 4px solid var(--ink-3); }
+  .lane.a { border-top: 4px solid var(--accent); }
+  .lane.c { border-top: 4px solid #4F8A5B; }
+  .lane h3 { margin-top: 0; }
+  .lane .who { font-size: 13px; color: var(--ink-2); margin: 0 0 12px; }
+  .node {
+    display: grid; grid-template-columns: 44px 1fr; gap: 10px;
+    padding: 12px 0; border-top: 1px solid var(--line);
+  }
+  .node code {
+    font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+    font-size: 12px; font-weight: 500;
+    background: var(--code-bg); color: var(--ink);
+    padding: 2px 6px; align-self: start; justify-self: start;
+  }
+  .node b { display: block; font-weight: 600; margin-bottom: 3px; }
+  .node p { margin: 0 0 6px; font-size: 14px; }
+  .node .src { font-size: 12.5px; color: var(--ink-2); margin: 0; }
+  .node .src a { margin-right: 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; background: var(--surface); }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-top: 1px solid var(--line); }
+  th { font-family: "Archivo", sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 0.02em; }
+  thead th { border-top: 0; border-bottom: 2px solid var(--ink); }
+  td code { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 12.5px; background: var(--code-bg); padding: 1px 5px; }
+  tr.gap td:first-child { border-left: 3px solid var(--accent); }
+  tr.gap td { background: var(--gap-bg); }
+  .tablewrap { overflow-x: auto; border: 1px solid var(--line); }
+  .tension { border-left: 3px solid var(--accent); padding: 4px 16px; margin: 12px 0; background: var(--surface); max-width: 76ch; }
+  .tension p { margin: 8px 0; }
+  .note { font-size: 13px; color: var(--ink-3); max-width: 76ch; }
+  @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+
+<div class="wrap">
+  <div class="eyebrow">TrashLab work trial · billing and pricing product</div>
+  <h1>Hauler Billing Flow Map</h1>
+  <p class="lede">A proposed high-level map of how money moves through a hauler's billing system, drawn across the three surfaces we are building: the pricing modeler defines what things cost, the account tracker turns services into invoices and payments, and the prospective customer buys off a public slice of the rate card. Every node below is tied to a real hauler policy, rate sheet, contract, or vendor help doc. Nothing in the flow is invented.</p>
+
+  <figure>
+    <div class="diagram">
+    <svg viewBox="0 0 1500 690" role="img" aria-label="Three swimlanes: pricing modeler on top defines catalog, zones, rate card, fee rules, and contracts; account tracker in the middle runs account setup, charges, invoice review, delivery, payment, accounting sync, and dunning; prospective customer at the bottom enters an address, sees a price, chooses service, pays the first cycle, then uses the portal. Arrows show the rate card feeding both the storefront and account pricing, signup creating the account, and portal payments and requests flowing back into billing.">
+      <defs>
+        <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+        </marker>
+        <marker id="arwacc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="var(--accent)"/>
+        </marker>
+      </defs>
+
+      <!-- lanes -->
+      <rect x="10" y="30" width="1480" height="130" fill="var(--lane-p)" stroke="none"/>
+      <rect x="10" y="270" width="1480" height="215" fill="var(--lane-a)" stroke="none"/>
+      <rect x="10" y="540" width="1480" height="130" fill="var(--lane-c)" stroke="none"/>
+      <text x="22" y="52" font-family="Archivo, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" fill="var(--ink-3)">1 · PRICING MODELER (owner / GM)</text>
+      <text x="22" y="292" font-family="Archivo, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" fill="var(--ink-3)">2 · ACCOUNT TRACKER (office / CSR)</text>
+      <text x="22" y="562" font-family="Archivo, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" fill="var(--ink-3)">3 · PROSPECTIVE CUSTOMER (storefront and portal)</text>
+
+      <!-- lane 1 nodes: cy 100 -->
+      <g font-family="IBM Plex Sans, sans-serif" font-size="12" text-anchor="middle">
+        <rect x="115" y="72" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="190" y="93" font-weight="600">P1 Service catalog</text>
+        <text x="190" y="110" font-size="10.5" fill="var(--ink-2)">cart · frontload · rolloff</text>
+
+        <rect x="275" y="72" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="350" y="93" font-weight="600">P2 Zones</text>
+        <text x="350" y="110" font-size="10.5" fill="var(--ink-2)">area · day · tax · cycle</text>
+
+        <rect x="435" y="72" width="150" height="56" fill="var(--surface)" stroke="var(--accent)" stroke-width="2.5"/>
+        <text x="510" y="93" font-weight="600">P3 Rate card</text>
+        <text x="510" y="110" font-size="10.5" fill="var(--ink-2)">zone × service × freq</text>
+
+        <rect x="595" y="72" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="670" y="93" font-weight="600">P4 Fee and tax rules</text>
+        <text x="670" y="110" font-size="10.5" fill="var(--ink-2)">fuel · env · franchise · tax</text>
+
+        <rect x="755" y="72" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="830" y="93" font-weight="600">P5 Contracts</text>
+        <text x="830" y="110" font-size="10.5" fill="var(--ink-2)">overrides · escalators · term</text>
+      </g>
+
+      <!-- lane 2 row a: cy 340 -->
+      <g font-family="IBM Plex Sans, sans-serif" font-size="12" text-anchor="middle">
+        <rect x="35" y="312" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="110" y="333" font-weight="600">A1 Account</text>
+        <text x="110" y="350" font-size="10.5" fill="var(--ink-2)">+ service location(s)</text>
+
+        <rect x="195" y="312" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="270" y="333" font-weight="600">A2 Agreement</text>
+        <text x="270" y="350" font-size="10.5" fill="var(--ink-2)">service items, priced</text>
+
+        <rect x="355" y="312" width="150" height="56" fill="var(--surface)" stroke="var(--accent)" stroke-width="2.5"/>
+        <text x="430" y="333" font-weight="600">A3 Recurring charges</text>
+        <text x="430" y="350" font-size="10.5" fill="var(--ink-2)">in advance, by cycle</text>
+
+        <rect x="515" y="312" width="150" height="56" fill="var(--surface)" stroke="var(--accent)" stroke-width="2.5"/>
+        <text x="590" y="333" font-weight="600">A4 Event charges</text>
+        <text x="590" y="350" font-size="10.5" fill="var(--ink-2)">extras · tons · dry runs</text>
+
+        <rect x="675" y="312" width="150" height="56" fill="var(--surface)" stroke="var(--accent)" stroke-width="2.5"/>
+        <text x="750" y="333" font-weight="600">A5 Review queue</text>
+        <text x="750" y="350" font-size="10.5" fill="var(--ink-2)">proof of service attached</text>
+
+        <rect x="835" y="312" width="150" height="56" fill="var(--surface)" stroke="var(--accent)" stroke-width="2.5"/>
+        <text x="910" y="333" font-weight="600">A6 Invoice</text>
+        <text x="910" y="350" font-size="10.5" fill="var(--ink-2)">mail · email · portal</text>
+
+        <rect x="995" y="312" width="150" height="56" fill="var(--surface)" stroke="var(--accent)" stroke-width="2.5"/>
+        <text x="1070" y="333" font-weight="600">A7 Payment</text>
+        <text x="1070" y="350" font-size="10.5" fill="var(--ink-2)">check · card · ACH · autopay</text>
+
+        <rect x="1155" y="312" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="1230" y="333" font-weight="600">A8 Accounting sync</text>
+        <text x="1230" y="350" font-size="10.5" fill="var(--ink-2)">QuickBooks, lump deposits</text>
+
+        <rect x="1315" y="312" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="1390" y="333" font-weight="600">A9 Dunning</text>
+        <text x="1390" y="350" font-size="10.5" fill="var(--ink-2)">late fee · suspend · remove</text>
+      </g>
+
+      <!-- lane 2 row b: cy 440 -->
+      <g font-family="IBM Plex Sans, sans-serif" font-size="12" text-anchor="middle">
+        <rect x="195" y="412" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3"/>
+        <text x="270" y="433" font-weight="600">B1 Service change</text>
+        <text x="270" y="450" font-size="10.5" fill="var(--ink-2)">effective date → work order</text>
+
+        <rect x="515" y="412" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3"/>
+        <text x="590" y="433" font-weight="600">B2 Field events</text>
+        <text x="590" y="450" font-size="10.5" fill="var(--ink-2)">driver app · scale ticket</text>
+      </g>
+
+      <!-- lane 3 nodes: cy 610 -->
+      <g font-family="IBM Plex Sans, sans-serif" font-size="12" text-anchor="middle">
+        <rect x="115" y="582" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="190" y="603" font-weight="600">C1 Enter address</text>
+        <text x="190" y="620" font-size="10.5" fill="var(--ink-2)">zone match, serviceable?</text>
+
+        <rect x="275" y="582" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="350" y="603" font-weight="600">C2 See price</text>
+        <text x="350" y="620" font-size="10.5" fill="var(--ink-2)">public services + fees</text>
+
+        <rect x="435" y="582" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="510" y="603" font-weight="600">C3 Choose service</text>
+        <text x="510" y="620" font-size="10.5" fill="var(--ink-2)">cart size · add-ons · start date</text>
+
+        <rect x="595" y="582" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="670" y="603" font-weight="600">C4 Pay first cycle</text>
+        <text x="670" y="620" font-size="10.5" fill="var(--ink-2)">+ delivery fee, card on file</text>
+
+        <rect x="1235" y="582" width="150" height="56" fill="var(--surface)" stroke="currentColor" stroke-width="1.2"/>
+        <text x="1310" y="603" font-weight="600">C5 Portal</text>
+        <text x="1310" y="620" font-size="10.5" fill="var(--ink-2)">pay · autopay · request · hold</text>
+      </g>
+
+      <!-- edges -->
+      <g fill="none" stroke="currentColor" stroke-width="1.4" marker-end="url(#arw)">
+        <!-- lane 1 chain -->
+        <line x1="265" y1="100" x2="274" y2="100"/>
+        <line x1="425" y1="100" x2="434" y2="100"/>
+        <line x1="585" y1="100" x2="594" y2="100"/>
+        <line x1="745" y1="100" x2="754" y2="100"/>
+        <!-- lane 2 chain -->
+        <line x1="185" y1="340" x2="194" y2="340"/>
+        <line x1="345" y1="340" x2="354" y2="340"/>
+        <line x1="505" y1="340" x2="514" y2="340"/>
+        <line x1="665" y1="340" x2="674" y2="340"/>
+        <line x1="825" y1="340" x2="834" y2="340"/>
+        <line x1="985" y1="340" x2="994" y2="340"/>
+        <line x1="1145" y1="340" x2="1154" y2="340"/>
+        <!-- A6 unpaid -> A9 (below row a) -->
+        <path d="M930,368 V395 H1390 V367"/>
+        <!-- B1 -> A2 and B1 -> A3 -->
+        <line x1="255" y1="412" x2="255" y2="369"/>
+        <path d="M345,440 H430 V369"/>
+        <!-- B2 -> A4 -->
+        <line x1="590" y1="412" x2="590" y2="369"/>
+        <!-- lane 3 chain -->
+        <line x1="265" y1="610" x2="274" y2="610"/>
+        <line x1="425" y1="610" x2="434" y2="610"/>
+        <line x1="585" y1="610" x2="594" y2="610"/>
+        <!-- P2 -> C1 -->
+        <path d="M335,128 V190 H190 V581"/>
+        <!-- P3 -> C2 -->
+        <path d="M525,128 V175 H350 V581"/>
+        <!-- P3 -> A2 -->
+        <path d="M495,128 V205 H255 V311"/>
+        <!-- P5 -> A2 -->
+        <path d="M830,128 V235 H285 V311"/>
+        <!-- P4 -> A3 and A4 -->
+        <path d="M670,128 V255 H430 V311"/>
+        <path d="M685,128 V255 H590 V311"/>
+        <!-- C4 -> A1 -->
+        <path d="M670,582 V520 H110 V369"/>
+        <!-- A6 -> C5 -->
+        <path d="M895,368 V520 H1295 V581"/>
+        <!-- C5 -> A7 -->
+        <path d="M1325,582 V500 H1070 V369"/>
+        <!-- C5 -> B1 (request) -->
+        <path d="M1345,582 V478 H346"/>
+      </g>
+
+      <!-- edge labels -->
+      <g font-family="IBM Plex Sans, sans-serif" font-size="11" font-size="10.5" fill="var(--ink-2)">
+        <text x="200" y="185" text-anchor="start">serviceable? route day, tax, cycle</text>
+        <text x="360" y="171" text-anchor="start">public subset of the rate card</text>
+        <text x="300" y="201" text-anchor="start">list price</text>
+        <text x="360" y="231" text-anchor="start">contract price wins over list</text>
+        <text x="700" y="250" text-anchor="start">fees and taxes applied per charge line</text>
+        <text x="1000" y="390" text-anchor="start">unpaid after due date</text>
+        <text x="350" y="428" text-anchor="start">next cycle, or prorate per policy</text>
+        <text x="600" y="395" text-anchor="start">exceptions, photos, tons</text>
+        <text x="200" y="514" text-anchor="start">creates account, agreement, delivery work order</text>
+        <text x="920" y="514" text-anchor="start">invoice posted to portal</text>
+        <text x="1080" y="494" text-anchor="start">pays, enrolls autopay</text>
+        <text x="620" y="472" text-anchor="start">requests: extra pickup, upsize cart, vacation hold</text>
+      </g>
+    </svg>
+    </div>
+    <div class="legend">
+      <span><i class="sw acc"></i> the billing spine: charges become invoices become payments</span>
+      <span><i class="sw"></i> flow</span>
+      <span><i class="sw dash"></i> inputs that originate outside the office (field, customer)</span>
+    </div>
+    <figcaption>The rate card (P3) is the single source of price for both the storefront (C2) and account pricing (A2), with contracts (P5) overriding it per account. Signup (C4) creates the account and a delivery work order. Charges are the hinge: recurring charges are generated in advance by billing cycle, event charges arrive from the truck and the scale, and both pass a review queue before an invoice exists. Portal payments and service requests flow back into A7 and B1 rather than living as separate transactions.</figcaption>
+  </figure>
+
+  <h2>Evidence for each node</h2>
+  <p class="lede">What real haulers and vendors do today at each step, with the source. Where practice varies by region or hauler size, the node says so.</p>
+
+  <div class="lanes">
+    <section class="lane p">
+      <h3>1 · Pricing modeler</h3>
+      <p class="who">Owner or GM. Defines the catalog once so every quote and invoice is consistent.</p>
+
+      <div class="node"><code>P1</code><div>
+        <b>Service catalog by line of business</b>
+        <p>Residential is a cart (35/64/96 gal) at a frequency; frontload is a container size (1 to 8 yd) at pickups per week; rolloff is a box size with a rental period and a tonnage cap, or a haul fee plus disposal per ton. Franchise rate sheets publish the whole matrix, which is the clearest public picture of what a catalog contains.</p>
+        <p class="src"><a href="https://www.slocounty.ca.gov/departments/public-works/forms-documents/solid-waste-resources/franchise-agreements/mid-state-solid-waste-and-recycling/wm-rate-sheet">WM SLO County rate sheet</a> <a href="https://www.eldoradocounty.ca.gov/files/assets/county/v/2/documents/public-safety-amp-justice/solid-waste/franchise-area-a-b-and-c-rates-effective-july-1-2025.pdf">El Dorado Disposal rates</a> <a href="https://www.gleasonrolloffandrecycling.com/pricing">Gleason rolloff pricing</a></p>
+      </div></div>
+
+      <div class="node"><code>P2</code><div>
+        <b>Zones carry more than price</b>
+        <p>TrashBolt's polygon system assigns products, pricing, taxes, delivery fee, fuel surcharge, route ID, service day, and billing cycle per polygon, and separates sales polygons (where you want customers) from operational polygons (where routes run) so an address on the wrong side of a street is rejected. Docket prices rolloff by zip and customer type; ServiceCore configures service areas with pricing tiers.</p>
+        <p class="src"><a href="https://trashbolt.com/trashbolts-layered-polygon-system/">TrashBolt layered polygons</a> <a href="https://www.yourdocket.com/features/billing-payments/">Docket billing</a> <a href="https://servicecore.com/billing-your-customers/">ServiceCore billing</a></p>
+      </div></div>
+
+      <div class="node"><code>P3</code><div>
+        <b>Rate card: zone × service × frequency</b>
+        <p>Howie's charges $90/quarter inside city limits and $126 outside; Xpress Dumpster varies rolloff price by county. WM SLO lists 2 yd frontload from $228.31 (1x/wk) to $1,025.76 (5x/wk). Haulers build the number from truck cost per lift plus disposal by density plus margin, which is why the same container is priced differently for a restaurant and an office.</p>
+        <p class="src"><a href="https://www.howies.com/curbside-trash-recycling.html">Howie's</a> <a href="https://www.xpressdumpsterrentals.com/dumpster-pricing-guide">Xpress Dumpster</a> <a href="https://www.waste360.com/commercial-waste/the-art-of-commercial-pricing">Waste360, Art of Commercial Pricing</a></p>
+      </div></div>
+
+      <div class="node"><code>P4</code><div>
+        <b>Fee and tax rules live on the line item</b>
+        <p>Casella's energy fee is a percent of invoice keyed to the DOE diesel index plus a fixed 9% environmental component; Republic charges an 18% environmental recovery fee and $5.95 per paper invoice. Washington's 3.6% solid waste tax applies to collection but not container rental or late fees. Jacksonville's 17% franchise fee audit found 6 of 10 haulers excluding admin, late, and fuel fees from the base. Small haulers often opt out entirely ("no fuel surcharges, no admin fees"). Varies widely by state and by hauler.</p>
+        <p class="src"><a href="https://api-prod.casella.com/umbraco/media/rlabcbva/20250901-casella-ee-fee-table-history-tracker.pdf">Casella fee table</a> <a href="https://www.republicservices.com/customer-support/fee-disclosures">Republic fee disclosures</a> <a href="https://dor.wa.gov/book/export/html/1130">WA DOR</a> <a href="https://www.jacksonville.gov/city-council/docs/council-auditor/793-nonresidential-solid-waste-franchise-fees-a.aspx">Jacksonville audit</a> <a href="https://www.htdisposal.com/residential">Home Town Disposal</a></p>
+      </div></div>
+
+      <div class="node"><code>P5</code><div>
+        <b>Contract overrides and escalators</b>
+        <p>Every commercial account is negotiated, so the real price is on the account, not the rate card. WM's commercial terms auto-renew, allow increases for disposal, CPI, and fuel, and treat other increases as accepted unless the customer objects within 30 days. County Waste's 24-month residential price lock steps up by 5% or CPI-U at term end. TrashLab's billing page already models "contract rates and price escalators" and schedulable annual escalations.</p>
+        <p class="src"><a href="https://www.wm.com/us/en/terms/terms-and-conditions-for-commercial-and-roll-off">WM commercial T&amp;C</a> <a href="https://countywasteservice.com/cws-terms-of-service-24-month-agreement/">County Waste 24-month terms</a> <a href="https://trashlab.com/waste-billing-software-features">TrashLab billing features</a></p>
+      </div></div>
+    </section>
+
+    <section class="lane a">
+      <h3>2 · Account tracker</h3>
+      <p class="who">Office manager or CSR. Sees customer, sites, services, and price in one place; runs the billing cycle.</p>
+
+      <div class="node"><code>A1</code><div>
+        <b>Account with one or more service locations</b>
+        <p>Docket, CurbWaste, and Hauler Hero all separate the billing entity from the service address. Docket assigns each client a type (Residential/Retail, Contractor Prepay, Commercial/Industrial, Contractor Bulk Bill) that drives prepay vs net terms and per-job vs bulk invoicing. Parent/child accounts are a known gap: Hauler Hero reviewers call them a work in progress.</p>
+        <p class="src"><a href="https://support.yourdocket.com/hc/en-us/articles/35745006617997-Docket-Billing-Workflow-Configuration-Guide">Docket billing workflow guide</a> <a href="https://www.capterra.com/p/10006624/Hauler-Hero/">Hauler Hero reviews</a></p>
+      </div></div>
+
+      <div class="node"><code>A2</code><div>
+        <b>Agreement of priced service items</b>
+        <p>Service = container or cart + frequency + material + rate, where the rate resolves from the contract if present, else the rate card for the zone. Hauler Hero groups accounts into billing "payment groups"; TrashLab lists billable events as completed jobs, route events, container movement, and disposal data.</p>
+        <p class="src"><a href="https://www.haulerhero.com/features/billing">Hauler Hero billing</a> <a href="https://trashlab.com/waste-billing-software-features">TrashLab billing features</a></p>
+      </div></div>
+
+      <div class="node"><code>B1</code><div>
+        <b>Service change: policy decides proration</b>
+        <p>Evergreen charges $40 for a cart size swap; Saint Paul charges $40 if you change cart size more than once a quarter; Preferred Waste and GFL do not prorate at all; County Waste prorates first and last partial months. The product needs an effective date on the change and a per-hauler policy for what happens to the current cycle. Varies by hauler.</p>
+        <p class="src"><a href="https://evergreenws.com/services/residential/trash-recycling/">Evergreen</a> <a href="https://www.stpaul.gov/departments/public-works/residential-garbage/garbage-service-and-carts">Saint Paul</a> <a href="https://pwastesolutions.com/rules/">Preferred Waste</a> <a href="https://gflenv.com/frequently-asked-questions/">GFL FAQ</a></p>
+      </div></div>
+
+      <div class="node"><code>A3</code><div>
+        <b>Recurring charges in advance, by cycle</b>
+        <p>Residential is mostly quarterly or monthly in advance (Home Town $87.45/quarter, Howie's first quarter paid at signup, WM residential "billed in advance" monthly, quarterly, or annually). Frontload is flat monthly. Rolloff retail is charged at booking; contractor charges accumulate in Docket's Charge Bank until the monthly bulk invoice.</p>
+        <p class="src"><a href="https://www.htdisposal.com/residential">Home Town Disposal</a> <a href="https://www.wm.com/us/en/terms/terms-and-conditions-for-residential-subscription-services">WM residential terms</a> <a href="https://support.yourdocket.com/hc/en-us/articles/35745006617997-Docket-Billing-Workflow-Configuration-Guide">Docket Charge Bank</a></p>
+      </div></div>
+
+      <div class="node"><code>B2</code><div>
+        <b>Field events feed billing</b>
+        <p>Drivers log overloads and extra bags with photos in the Hauler Hero app so the office can follow up or escalate (the article stops short of auto-charging). Scale tickets return net tons; Gleason charges the card on file for overage, Docket reads tickets with Weight Ticket AI. Routeware names "the extra pickup that never gets charged" as the core leakage.</p>
+        <p class="src"><a href="https://blog.haulerhero.com/residential-cart-overloads-the-hidden-margin-killer-on-every-route-and-how-haulers-get-ahead-of-it">Hauler Hero on overloads</a> <a href="https://www.gleasonrolloffandrecycling.com/pricing">Gleason</a> <a href="https://routeware.com/blog/waste-billing-software/">Routeware</a></p>
+      </div></div>
+
+      <div class="node"><code>A4</code><div>
+        <b>Event charges: extras, tonnage, dry runs</b>
+        <p>Preferred bills $2.50 per loose bag and $25 per unscheduled return trip; Xpress charges $150 if a box is blocked; rolloff overage runs $70 to $100 per ton after the cap; extra rental days $15 to $50. TrashLab lists exactly this set as "exception billing": overages, extra rental days, contamination, relocation, failed service.</p>
+        <p class="src"><a href="https://pwastesolutions.com/rules/">Preferred Waste</a> <a href="https://www.xpressdumpsterrentals.com/dumpster-pricing-guide">Xpress Dumpster</a> <a href="https://trashlab.com/waste-billing-software">TrashLab billing</a></p>
+      </div></div>
+
+      <div class="node"><code>A5</code><div>
+        <b>Review queue with proof of service</b>
+        <p>TrashLab's stated workflow: audit completed work, exceptions, proof of service, and customer rules before invoices are sent, with photos and disposal tickets attached so disputes resolve against evidence. CurbWaste's billing docs have a "Needs Action" exception tab for the same purpose.</p>
+        <p class="src"><a href="https://trashlab.com/waste-billing-software-features">TrashLab billing features</a> <a href="https://knowledgebase.curbwaste.com/billing">CurbWaste billing KB</a></p>
+      </div></div>
+
+      <div class="node"><code>A6</code><div>
+        <b>Invoice delivered by mail, email, or portal</b>
+        <p>Paper is still common enough that Republic charges $5.95 per paper invoice and WM waives its admin charge only for paperless plus autopay. Small haulers still publish PO boxes for checks.</p>
+        <p class="src"><a href="https://www.republicservices.com/customer-support/fee-disclosures">Republic fees</a> <a href="https://www.wm.com/us/en/terms/terms-and-conditions-for-residential-subscription-services">WM residential terms</a></p>
+      </div></div>
+
+      <div class="node"><code>A7</code><div>
+        <b>Payment and allocation</b>
+        <p>Check, card by phone, card and ACH online, autopay runs, cash at the scale, and (Docket) the driver taking payment on site. Card usually carries a fee ($1.99 at WM, 3% at Preferred) with ACH free; autopay is discounted ($1/mo at Howie's) or mandatory (County Waste). Partial payments and credits need allocation across invoices, which the ERD already models as PAYMENT_ALLOCATION.</p>
+        <p class="src"><a href="https://www.yourdocket.com/features/billing-payments/">Docket payments</a> <a href="https://www.howies.com/curbside-trash-recycling.html">Howie's</a> <a href="https://pwastesolutions.com/rules/">Preferred Waste</a></p>
+      </div></div>
+
+      <div class="node"><code>A8</code><div>
+        <b>Accounting sync and lump-sum deposits</b>
+        <p>Processors deposit many customer payments as one lump sum, so staff group payments into Undeposited Funds, add fees as negative lines, and match the bank feed or revenue gets duplicated. QuickBooks sync is the single most common billing complaint across vendor reviews (one-way sync, parent-account dumping, QBO-only).</p>
+        <p class="src"><a href="https://support.yourdocket.com/hc/en-us/articles/39982359181197-Reconcile-Batch-Payments-in-QuickBooks-Online-QBO">Docket QBO reconciliation</a> <a href="https://www.capterra.com/p/158918/ServiceCore/reviews/">ServiceCore reviews</a> <a href="http://www.trashflow.com/quickbooks-comparison.php">Trash Flow vs QuickBooks</a></p>
+      </div></div>
+
+      <div class="node"><code>A9</code><div>
+        <b>Dunning: late fee, suspend, reinstate, remove</b>
+        <p>Preferred: $10 late fee at day 5, two-pickup grace, then suspension and a reinstatement fee plus one month in advance. Home Town: suspended accounts must pay 24 hours before pickup day or lose the week. Bill's: $7 late fee, $5 reinstatement. Franchise areas: 1.5%/month finance charge, $25 reinstatement, $75 cart pickup. City-billed systems roll unpaid balances onto the property tax bill.</p>
+        <p class="src"><a href="https://pwastesolutions.com/rules/">Preferred Waste</a> <a href="https://www.htdisposal.com/residential">Home Town</a> <a href="https://www.billstrash.com/guidlines">Bill's</a> <a href="https://www.stpaul.gov/departments/public-works/residential-garbage/garbage-service-and-carts">Saint Paul</a></p>
+      </div></div>
+    </section>
+
+    <section class="lane c">
+      <h3>3 · Prospective customer</h3>
+      <p class="who">New homeowner or small business. Wants a price for their address and a start date without calling.</p>
+
+      <div class="node"><code>C1</code><div>
+        <b>Address first, then everything else</b>
+        <p>Waste Connections: "tell us where you live, we'll check availability and show you the price." WM's location pages hide price behind "Find Availability." TrashBolt reports that once a hauler has online signup, about half of new signups arrive through it and 30% of those after hours. Most platforms, TrashLab included, bolt this on rather than build it natively.</p>
+        <p class="src"><a href="https://www.wasteconnections.com/services/residential/residential-garbage-pickup">Waste Connections</a> <a href="https://www.wm.com/us/en/location/az/phoenix/trash-pickup-phoenix-az">WM location page</a> <a href="https://www.waste360.com/fleet-technology/successful-hauler-sells-to-wm-now-helps-haulers-grow">Waste360 on TrashBolt</a></p>
+      </div></div>
+
+      <div class="node"><code>C2</code><div>
+        <b>The public price is a slice, with its fees</b>
+        <p>Trash Taxi of Georgia shows the fee stack up front: $27.95 setup, $1/mo EPA fee, 7% fuel surcharge, monthly rate billed quarterly. Dresnek sells "Waste Pickup, Quarterly Billing, $72" as a WooCommerce product. Commercial and contractor pricing stays off the page because it is negotiated per account.</p>
+        <p class="src"><a href="https://www.trashtaxiofgeorgia.com/contact-us/sign-up-now/">Trash Taxi signup</a> <a href="https://dresnekdisposal.com/product/waste-pickup-quarterly-billing/">Dresnek</a></p>
+      </div></div>
+
+      <div class="node"><code>C3</code><div>
+        <b>Choose cart, add-ons, start date</b>
+        <p>WM's online subscription flow picks a start date and promises setup "in a few minutes" with no annual contract. Red Oak Sanitation asks for the start date and payment up front. Cart delivery happens before the first pickup.</p>
+        <p class="src"><a href="https://www.wm.com/us/en/cpn/moving">WM moving page</a> <a href="https://redoaksanitation.com/blog/how-to-set-up-trash-service-at-your-new-home/">Red Oak Sanitation</a></p>
+      </div></div>
+
+      <div class="node"><code>C4</code><div>
+        <b>Pay the first cycle in advance</b>
+        <p>Howie's collects the first quarter at signup; WM bills in advance; Texas Pride requires a 3-month non-refundable commitment; County Waste requires autopay. Rolloff retail is charged at booking with the card kept on file for overage (Gleason, Budget Dumpster). This payment is what creates the account and the delivery work order upstream.</p>
+        <p class="src"><a href="https://www.howies.com/curbside-trash-recycling.html">Howie's</a> <a href="https://www.texaspridedisposal.com/residential">Texas Pride</a> <a href="https://www.budgetdumpster.com/rental-terms-and-conditions/roll-off-dumpster.php">Budget Dumpster terms</a></p>
+      </div></div>
+
+      <div class="node"><code>C5</code><div>
+        <b>Portal: pay, autopay, request, hold</b>
+        <p>Republic's portal is the fullest public feature list: pay with saved methods, one-click autopay, paperless, schedule extra or bulk pickup, report a missed pickup, relocate a container, seasonal stop and restart, multi-site switching. GFL has a one-button vacation hold. TrashLab's portal turns service requests into dispatchable work and states that portal payments should "integrate with the billing system rather than existing as isolated transactions," which is why C5 feeds A7 and B1 rather than a side ledger.</p>
+        <p class="src"><a href="https://www.republicservices.com/customer-support/online-account-updates">Republic portal</a> <a href="https://gflenv.com/frequently-asked-questions/">GFL FAQ</a> <a href="https://trashlab.com/waste-customer-portal-software">TrashLab portal</a></p>
+      </div></div>
+    </section>
+  </div>
+
+  <h2>What the ERD has, and what the billing flow needs added</h2>
+  <p class="lede">Your entity map already carries the account and operations spine. The billing flow above needs a pricing layer and a charge layer that are not yet on it. Highlighted rows are the additions.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>Entity</th><th>Role in the flow</th><th>Why it has to exist, with the real-world case</th></tr></thead>
+    <tbody>
+      <tr><td><code>CUSTOMER</code> → <code>ACCOUNT</code> → <code>SERVICE_LOCATION</code></td><td>A1</td><td>Already present. Docket's client types and the multi-site invoice grouping problem both hang off ACCOUNT.</td></tr>
+      <tr><td><code>SERVICE_AGREEMENT</code> → <code>SERVICE_ITEM</code></td><td>A2</td><td>Already present. Needs an effective start and end date per item so B1 can work (Evergreen swap fee, County Waste proration).</td></tr>
+      <tr><td><code>WORK_ORDER</code> → <code>SERVICE_EVENT</code></td><td>B1, B2</td><td>Already present. SERVICE_EVENT is where exceptions (extra bags, overload, dry run) and photos attach; today this is what Hauler Hero drivers log.</td></tr>
+      <tr><td><code>INVOICE</code> → <code>PAYMENT</code> → <code>PAYMENT_ALLOCATION</code></td><td>A6, A7</td><td>Already present. Allocation is right: partial payments and credits across invoices are routine.</td></tr>
+      <tr class="gap"><td><code>ZONE</code></td><td>P2, C1</td><td>Serviceability, route day, tax jurisdiction, delivery fee, and billing cycle by polygon. TrashBolt's polygon system is the working example; Docket's zip-based matrix is the simpler version.</td></tr>
+      <tr class="gap"><td><code>PRICE_BOOK</code> / <code>RATE</code></td><td>P1, P3</td><td>Service definition × zone × frequency → price, with its own effective dates so an annual increase is a new rate version, not an edit. WM SLO's "+3.16% effective 01/01/2026" is a rate version.</td></tr>
+      <tr class="gap"><td><code>FEE_RULE</code> and <code>TAX_RULE</code></td><td>P4</td><td>Percent-of-invoice or per-line rules keyed to an index (DOE diesel), a jurisdiction (WA 3.6%), a franchise (Jacksonville 17%), or a line type (late fees excluded). Applied when a CHARGE is created, not at invoice time, so the base is auditable.</td></tr>
+      <tr class="gap"><td><code>CONTRACT</code> with <code>ESCALATOR</code></td><td>P5</td><td>Per-account price override, term, renewal window, and escalation rule (CPI, fixed %, "5% or CPI-U"). WM's 90-to-180-day notice window and six-month liquidated damages are contract attributes.</td></tr>
+      <tr class="gap"><td><code>CHARGE</code></td><td>A3, A4</td><td>The missing hinge between SERVICE_ITEM / SERVICE_EVENT and INVOICE. A recurring charge references a SERVICE_ITEM and a cycle; an event charge references a SERVICE_EVENT or SCALE_TICKET. Docket's Charge Bank is literally this table. Without it, "review before invoicing" has nothing to review.</td></tr>
+      <tr class="gap"><td><code>SCALE_TICKET</code></td><td>B2, A4</td><td>Gross, tare, net, material, facility. Source document for rolloff overage and for the hauler's own disposal cost. TrashLab ties tonnage pass-through to the source ticket.</td></tr>
+      <tr class="gap"><td><code>CREDIT_MEMO</code> / <code>ADJUSTMENT</code></td><td>B1, A5</td><td>How mid-cycle changes actually land at haulers that do not prorate: a next-invoice adjustment. CurbWaste's billing KB lists credit notes, voids, and partial refunds as separate operations.</td></tr>
+      <tr class="gap"><td><code>BILLING_CYCLE</code> on <code>ACCOUNT</code></td><td>A3</td><td>Monthly, quarterly, annual, prepay-at-booking, or net-30 bulk. Hauler Hero's payment groups and Docket's client types are both this attribute wearing different names.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Where the three surfaces pull against each other</h2>
+  <div class="tension"><p><b>Price by street vs price you can publish.</b> The pricing modeler wants zone-level and contract-level pricing because route density sets the real cost (about $8 per lift at 80 lifts a day, per Waste360). The storefront needs one number a homeowner will trust. The resolution in the map is that C2 shows only the public subset of P3 for the matched zone, and commercial stays behind a quote request.</p></div>
+  <div class="tension"><p><b>Effective-dated changes vs "we don't prorate."</b> The account tracker needs effective dates on every service item to make B1 clean. Many haulers have written policies against proration and will keep them. The product should treat proration as a per-hauler policy on the billing cycle, not a default behavior.</p></div>
+  <div class="tension"><p><b>Exceptions that should be billed vs relationships the office protects.</b> B2 produces more billable events than A4 will ever invoice, on purpose. The review queue (A5) is where that judgment happens, which argues for making "waive" a first-class action with a reason, so leakage is measured rather than invisible.</p></div>
+
+  <p class="note">Sources are the same set used in the research brief saved to the project. Vendor ROI figures (TrashBolt's 50%, TrashLab's 3x) are self-reported. The ERD reference is the entity map you shared; entity names in the additions table are proposals, not TrashLab's internal names.</p>
+</div>

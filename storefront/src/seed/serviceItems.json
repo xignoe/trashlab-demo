@@ -1,0 +1,638 @@
+[
+  {
+    "id": "si_maple_96",
+    "siteId": "site_res_maple",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_maple_96"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_maple_extra",
+    "siteId": "site_res_maple",
+    "catalogId": "cat_res_extra_cart",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_maple_extra"
+    ],
+    "effectiveFrom": "2025-06-02",
+    "status": "active"
+  },
+  {
+    "id": "si_maple_recycling",
+    "siteId": "site_res_maple",
+    "catalogId": "cat_res_recycling",
+    "qty": 1,
+    "frequency": "eow",
+    "containerIds": [
+      "cont_maple_recycling"
+    ],
+    "effectiveFrom": "2025-06-02",
+    "status": "active"
+  },
+  {
+    "id": "si_holt_96",
+    "siteId": "site_res_holt",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_holt_96"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_kerr_96",
+    "siteId": "site_res_kerr",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_kerr_96"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "held"
+  },
+  {
+    "id": "si_bakery_3yd",
+    "siteId": "site_bakery",
+    "catalogId": "cat_fl_3yd",
+    "qty": 1,
+    "frequency": "2x",
+    "containerIds": [
+      "cont_bakery_3yd"
+    ],
+    "effectiveFrom": "2026-01-01",
+    "status": "active"
+  },
+  {
+    "id": "si_bakery_3yd_wood",
+    "siteId": "site_bakery",
+    "catalogId": "cat_fl_3yd_wood",
+    "qty": 1,
+    "frequency": "2x",
+    "containerIds": [
+      "cont_bakery_3yd_wood"
+    ],
+    "effectiveFrom": "2026-01-01",
+    "status": "active"
+  },
+  {
+    "id": "si_oakridge_1",
+    "siteId": "site_oakridge_1",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_oakridge_1"
+    ],
+    "effectiveFrom": "2025-02-03",
+    "status": "active"
+  },
+  {
+    "id": "si_oakridge_2",
+    "siteId": "site_oakridge_2",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_oakridge_2"
+    ],
+    "effectiveFrom": "2025-02-03",
+    "status": "active"
+  },
+  {
+    "id": "si_oakridge_3",
+    "siteId": "site_oakridge_3",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_oakridge_3"
+    ],
+    "effectiveFrom": "2025-02-03",
+    "status": "active"
+  },
+  {
+    "id": "si_oakridge_4",
+    "siteId": "site_oakridge_4",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_oakridge_4"
+    ],
+    "effectiveFrom": "2025-02-03",
+    "status": "active"
+  },
+  {
+    "id": "si_hale_box_101",
+    "siteId": "site_hale_riverside",
+    "catalogId": "cat_ro_20yd",
+    "qty": 1,
+    "frequency": "onCall",
+    "containerIds": [
+      "cont_ro_101"
+    ],
+    "effectiveFrom": "2026-08-13",
+    "status": "active"
+  },
+  {
+    "id": "si_hale_box_102",
+    "siteId": "site_hale_riverside",
+    "catalogId": "cat_ro_20yd",
+    "qty": 1,
+    "frequency": "onCall",
+    "containerIds": [
+      "cont_ro_102"
+    ],
+    "effectiveFrom": "2026-08-13",
+    "status": "active"
+  },
+  {
+    "id": "si_hale_box_103",
+    "siteId": "site_hale_depot",
+    "catalogId": "cat_ro_20yd",
+    "qty": 1,
+    "frequency": "onCall",
+    "containerIds": [
+      "cont_ro_103"
+    ],
+    "effectiveFrom": "2026-08-20",
+    "status": "active"
+  },
+  {
+    "id": "si_ro_homeowner",
+    "siteId": "site_ro_homeowner",
+    "catalogId": "cat_ro_20yd",
+    "qty": 1,
+    "frequency": "onCall",
+    "containerIds": [
+      "cont_ro_104"
+    ],
+    "effectiveFrom": "2026-08-07",
+    "status": "active"
+  },
+  {
+    "id": "si_res_001",
+    "siteId": "site_res_001",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_001"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_002",
+    "siteId": "site_res_002",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_002"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_003",
+    "siteId": "site_res_003",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_003"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_004",
+    "siteId": "site_res_004",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_004"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_005",
+    "siteId": "site_res_005",
+    "catalogId": "cat_res_64",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_005"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_006",
+    "siteId": "site_res_006",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_006"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_007",
+    "siteId": "site_res_007",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_007"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_008",
+    "siteId": "site_res_008",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_008"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_009",
+    "siteId": "site_res_009",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_009"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_010",
+    "siteId": "site_res_010",
+    "catalogId": "cat_res_64",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_010"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_011",
+    "siteId": "site_res_011",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_011"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_012",
+    "siteId": "site_res_012",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_012"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_013",
+    "siteId": "site_res_013",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_013"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_014",
+    "siteId": "site_res_014",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_014"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_015",
+    "siteId": "site_res_015",
+    "catalogId": "cat_res_64",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_015"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_016",
+    "siteId": "site_res_016",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_016"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_017",
+    "siteId": "site_res_017",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_017"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_018",
+    "siteId": "site_res_018",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_018"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_019",
+    "siteId": "site_res_019",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_019"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_020",
+    "siteId": "site_res_020",
+    "catalogId": "cat_res_64",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_020"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_021",
+    "siteId": "site_res_021",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_021"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_022",
+    "siteId": "site_res_022",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_022"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_023",
+    "siteId": "site_res_023",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_023"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_024",
+    "siteId": "site_res_024",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_024"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_025",
+    "siteId": "site_res_025",
+    "catalogId": "cat_res_64",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_025"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_026",
+    "siteId": "site_res_026",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_026"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_027",
+    "siteId": "site_res_027",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_027"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_028",
+    "siteId": "site_res_028",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_028"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_029",
+    "siteId": "site_res_029",
+    "catalogId": "cat_res_96",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_029"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_res_030",
+    "siteId": "site_res_030",
+    "catalogId": "cat_res_64",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_res_030"
+    ],
+    "effectiveFrom": "2024-03-04",
+    "status": "active"
+  },
+  {
+    "id": "si_fl_001",
+    "siteId": "site_fl_001",
+    "catalogId": "cat_fl_3yd",
+    "qty": 1,
+    "frequency": "2x",
+    "containerIds": [
+      "cont_fl_001"
+    ],
+    "effectiveFrom": "2025-01-06",
+    "status": "active"
+  },
+  {
+    "id": "si_fl_002",
+    "siteId": "site_fl_002",
+    "catalogId": "cat_fl_3yd",
+    "qty": 1,
+    "frequency": "2x",
+    "containerIds": [
+      "cont_fl_002"
+    ],
+    "effectiveFrom": "2025-01-06",
+    "status": "active"
+  },
+  {
+    "id": "si_fl_003",
+    "siteId": "site_fl_003",
+    "catalogId": "cat_fl_3yd",
+    "qty": 1,
+    "frequency": "2x",
+    "containerIds": [
+      "cont_fl_003"
+    ],
+    "effectiveFrom": "2025-01-06",
+    "status": "active"
+  },
+  {
+    "id": "si_fl_004",
+    "siteId": "site_fl_004",
+    "catalogId": "cat_fl_2yd",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_fl_004"
+    ],
+    "effectiveFrom": "2025-01-06",
+    "status": "active"
+  },
+  {
+    "id": "si_fl_005",
+    "siteId": "site_fl_005",
+    "catalogId": "cat_fl_3yd",
+    "qty": 1,
+    "frequency": "2x",
+    "containerIds": [
+      "cont_fl_005"
+    ],
+    "effectiveFrom": "2025-01-06",
+    "status": "active"
+  },
+  {
+    "id": "si_fl_006",
+    "siteId": "site_fl_006",
+    "catalogId": "cat_fl_3yd",
+    "qty": 1,
+    "frequency": "2x",
+    "containerIds": [
+      "cont_fl_006"
+    ],
+    "effectiveFrom": "2025-01-06",
+    "status": "active"
+  },
+  {
+    "id": "si_fl_007",
+    "siteId": "site_fl_007",
+    "catalogId": "cat_fl_3yd",
+    "qty": 1,
+    "frequency": "2x",
+    "containerIds": [
+      "cont_fl_007"
+    ],
+    "effectiveFrom": "2025-01-06",
+    "status": "active"
+  },
+  {
+    "id": "si_fl_008",
+    "siteId": "site_fl_008",
+    "catalogId": "cat_fl_2yd",
+    "qty": 1,
+    "frequency": "weekly",
+    "containerIds": [
+      "cont_fl_008"
+    ],
+    "effectiveFrom": "2025-01-06",
+    "status": "active"
+  }
+]

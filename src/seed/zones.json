@@ -1,0 +1,38 @@
+[
+  {
+    "id": "zone_open",
+    "name": "Open market",
+    "serviceability": "open",
+    "taxRatePct": 7,
+    "franchiseFeePct": 0,
+    "deliveryFeeCents": 2500,
+    "publicPricing": true
+  },
+  {
+    "id": "zone_boundary",
+    "name": "Boundary",
+    "serviceability": "boundary",
+    "taxRatePct": 7,
+    "franchiseFeePct": 0,
+    "deliveryFeeCents": 2500,
+    "publicPricing": true
+  },
+  {
+    "id": "zone_franchise",
+    "name": "City franchise",
+    "serviceability": "franchise",
+    "taxRatePct": 7,
+    "franchiseFeePct": 17,
+    "deliveryFeeCents": 2500,
+    "publicPricing": false
+  },
+  {
+    "id": "zone_notserved",
+    "name": "Not served",
+    "serviceability": "notServed",
+    "taxRatePct": 0,
+    "franchiseFeePct": 0,
+    "deliveryFeeCents": 0,
+    "publicPricing": false
+  }
+]

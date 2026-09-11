@@ -1,0 +1,144 @@
+[
+  {
+    "id": "pay_chk_oakridge",
+    "accountId": "acct_pm_oakridge",
+    "method": "check",
+    "cents": 41040,
+    "receivedAt": "2026-09-04T11:20:00-04:00",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_ro_homeowner",
+    "accountId": "acct_ro_homeowner",
+    "method": "card",
+    "cents": 65832,
+    "receivedAt": "2026-08-05T16:02:00-04:00",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_001",
+    "accountId": "acct_res_001",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-06T08:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_002",
+    "accountId": "acct_res_002",
+    "method": "autopay",
+    "cents": 10261,
+    "receivedAt": "2026-09-06T09:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_003",
+    "accountId": "acct_res_003",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-06T10:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_004",
+    "accountId": "acct_res_004",
+    "method": "autopay",
+    "cents": 10261,
+    "receivedAt": "2026-09-06T11:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_005",
+    "accountId": "acct_res_005",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-06T12:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_006",
+    "accountId": "acct_res_006",
+    "method": "autopay",
+    "cents": 10261,
+    "receivedAt": "2026-09-06T13:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_007",
+    "accountId": "acct_res_007",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-06T14:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_008",
+    "accountId": "acct_res_008",
+    "method": "autopay",
+    "cents": 10261,
+    "receivedAt": "2026-09-07T15:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_009",
+    "accountId": "acct_res_009",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-07T16:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_010",
+    "accountId": "acct_res_010",
+    "method": "autopay",
+    "cents": 10261,
+    "receivedAt": "2026-09-07T17:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_011",
+    "accountId": "acct_res_011",
+    "method": "card",
+    "cents": 10261,
+    "receivedAt": "2026-09-07T18:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_012",
+    "accountId": "acct_res_012",
+    "method": "autopay",
+    "cents": 10261,
+    "receivedAt": "2026-09-07T19:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_013",
+    "accountId": "acct_res_013",
+    "method": "card",
+    "cents": 4355,
+    "receivedAt": "2026-09-07T20:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  },
+  {
+    "id": "pay_card_0908_014",
+    "accountId": "acct_res_014",
+    "method": "autopay",
+    "cents": 4355,
+    "receivedAt": "2026-09-07T21:15:00-04:00",
+    "processorBatchId": "batch_0908",
+    "status": "settled"
+  }
+]

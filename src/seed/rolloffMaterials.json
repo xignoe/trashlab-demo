@@ -1,0 +1,71 @@
+[
+  {
+    "id": "mat_mixed",
+    "name": "Mixed debris (C&D)",
+    "ticketCodes": [
+      "C&D",
+      "Mixed",
+      "Debris"
+    ],
+    "handling": "standard",
+    "disposalCentsPerTon": 4800,
+    "note": "Remodel and construction debris, furniture, general junk"
+  },
+  {
+    "id": "mat_household",
+    "name": "Household cleanout",
+    "ticketCodes": [
+      "MSW",
+      "Household"
+    ],
+    "handling": "accepted",
+    "disposalCentsPerTon": 5200,
+    "note": "Bagged trash and cleanouts; landfill charges more than the C&D cell"
+  },
+  {
+    "id": "mat_roofing",
+    "name": "Roofing shingles",
+    "ticketCodes": [
+      "Roofing",
+      "Shingles"
+    ],
+    "handling": "accepted",
+    "heavy": true,
+    "disposalCentsPerTon": 5500,
+    "note": "About 1 t per 10 squares of one layer; 10 and 20 yd only"
+  },
+  {
+    "id": "mat_yard",
+    "name": "Yard waste and brush",
+    "ticketCodes": [
+      "Yard",
+      "Brush"
+    ],
+    "handling": "accepted",
+    "disposalCentsPerTon": 2800,
+    "note": "Goes to the compost site, which is cheaper than the landfill"
+  },
+  {
+    "id": "mat_clean_fill",
+    "name": "Clean concrete, brick, dirt",
+    "ticketCodes": [
+      "Concrete",
+      "Dirt",
+      "Clean fill"
+    ],
+    "handling": "restricted",
+    "heavy": true,
+    "maxFillPct": 50,
+    "disposalCentsPerTon": 1500,
+    "note": "Fill to the halfway line; nothing mixed in, or it bills as mixed debris"
+  },
+  {
+    "id": "mat_hazard",
+    "name": "Hazardous and liquids",
+    "ticketCodes": [
+      "Hazardous"
+    ],
+    "handling": "prohibited",
+    "note": "Paint, oil, chemicals, batteries, asbestos. Refused at the gate"
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "rolloff_policy",
+    "tonRounding": "exact",
+    "freeRadiusMiles": 15,
+    "tripCentsPerMile": 350,
+    "swapCents": 29500,
+    "relocationCents": 7500,
+    "dryRunCents": 15000,
+    "prohibitedItems": [
+      {
+        "id": "item_mattress",
+        "name": "Mattress or box spring",
+        "cents": 2500
+      },
+      {
+        "id": "item_tire",
+        "name": "Tire, car or light truck",
+        "cents": 1500
+      },
+      {
+        "id": "item_appliance",
+        "name": "Appliance with refrigerant",
+        "cents": 7500
+      },
+      {
+        "id": "item_electronics",
+        "name": "TV or monitor",
+        "cents": 2000
+      }
+    ]
+  }
+]

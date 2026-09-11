@@ -1,0 +1,227 @@
+[
+  {
+    "id": "party_maple",
+    "name": "Dana Maple",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_holt",
+    "name": "Marcus Holt",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_kerr",
+    "name": "Lewis Kerr",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_bakery",
+    "name": "Sunrise Bakery",
+    "kind": "business"
+  },
+  {
+    "id": "party_oakridge",
+    "name": "Oakridge Property Management",
+    "kind": "propertyManager"
+  },
+  {
+    "id": "party_hale",
+    "name": "Hale Construction",
+    "kind": "contractor"
+  },
+  {
+    "id": "party_ro_home",
+    "name": "Priya Raman",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_001",
+    "name": "Avery Alvarez",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_002",
+    "name": "Jordan Bennett",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_003",
+    "name": "Riley Chen",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_004",
+    "name": "Casey Dawson",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_005",
+    "name": "Morgan Espinoza",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_006",
+    "name": "Taylor Foster",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_007",
+    "name": "Quinn Garcia",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_008",
+    "name": "Reese Hughes",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_009",
+    "name": "Skyler Ibarra",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_010",
+    "name": "Devon Jensen",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_011",
+    "name": "Harper Kim",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_012",
+    "name": "Rowan Lopez",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_013",
+    "name": "Sage Moore",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_014",
+    "name": "Emerson Nakamura",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_015",
+    "name": "Finley Owens",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_016",
+    "name": "Blake Patel",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_017",
+    "name": "Cameron Quigley",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_018",
+    "name": "Drew Russo",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_019",
+    "name": "Ellis Singh",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_020",
+    "name": "Hayden Torres",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_021",
+    "name": "Jamie Underwood",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_022",
+    "name": "Kendall Vance",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_023",
+    "name": "Logan Walsh",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_024",
+    "name": "Marlow Xu",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_025",
+    "name": "Noel Young",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_026",
+    "name": "Parker Zimmer",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_027",
+    "name": "Remy Abbott",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_028",
+    "name": "Shea Brooks",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_029",
+    "name": "Tatum Cole",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_res_030",
+    "name": "Wren Delgado",
+    "kind": "homeowner"
+  },
+  {
+    "id": "party_fl_001",
+    "name": "Copper Kettle Diner",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_002",
+    "name": "Northgate Auto Care",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_003",
+    "name": "Blue Heron Vet Clinic",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_004",
+    "name": "Parkway Fitness",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_005",
+    "name": "Marigold Florist",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_006",
+    "name": "Ridgeline Hardware",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_007",
+    "name": "Tidewater Print Shop",
+    "kind": "business"
+  },
+  {
+    "id": "party_fl_008",
+    "name": "Juniper Day School",
+    "kind": "business"
+  }
+]

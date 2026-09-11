@@ -1,0 +1,281 @@
+[
+  {
+    "id": "cat_res_96",
+    "lob": "residential",
+    "name": "96 gal cart",
+    "sizeLabel": "96 gal",
+    "unit": "cart",
+    "public": true,
+    "categoryId": "sc_res_carts",
+    "priceUnit": "month",
+    "pricedBy": [
+      "zone",
+      "frequency",
+      "customerTier"
+    ]
+  },
+  {
+    "id": "cat_res_64",
+    "lob": "residential",
+    "name": "64 gal cart",
+    "sizeLabel": "64 gal",
+    "unit": "cart",
+    "public": true,
+    "categoryId": "sc_res_carts",
+    "priceUnit": "month",
+    "pricedBy": [
+      "zone",
+      "frequency",
+      "customerTier"
+    ]
+  },
+  {
+    "id": "cat_res_extra_cart",
+    "lob": "residential",
+    "name": "Extra 96 gal cart",
+    "sizeLabel": "96 gal",
+    "unit": "cart",
+    "public": true,
+    "categoryId": "sc_res_addons",
+    "priceUnit": "month",
+    "pricedBy": [
+      "zone",
+      "frequency",
+      "customerTier"
+    ]
+  },
+  {
+    "id": "cat_res_recycling",
+    "lob": "residential",
+    "name": "Recycling cart",
+    "sizeLabel": "96 gal",
+    "unit": "cart",
+    "public": true,
+    "categoryId": "sc_res_addons",
+    "priceUnit": "month",
+    "pricedBy": [
+      "zone",
+      "frequency",
+      "customerTier"
+    ]
+  },
+  {
+    "id": "cat_fl_2yd",
+    "lob": "frontload",
+    "name": "2 yd frontload container",
+    "sizeLabel": "2 yd",
+    "unit": "container",
+    "public": false,
+    "categoryId": "sc_fl_trash",
+    "priceUnit": "month",
+    "pricedBy": [
+      "zone",
+      "frequency"
+    ]
+  },
+  {
+    "id": "cat_fl_3yd",
+    "lob": "frontload",
+    "name": "3 yd frontload container",
+    "sizeLabel": "3 yd",
+    "unit": "container",
+    "public": false,
+    "categoryId": "sc_fl_trash",
+    "priceUnit": "month",
+    "pricedBy": [
+      "zone",
+      "frequency"
+    ]
+  },
+  {
+    "id": "cat_fl_3yd_wood",
+    "lob": "frontload",
+    "name": "3 yd wood waste container",
+    "sizeLabel": "3 yd",
+    "unit": "container",
+    "public": false,
+    "categoryId": "sc_fl_specialty",
+    "priceUnit": "month",
+    "pricedBy": [
+      "zone",
+      "frequency"
+    ]
+  },
+  {
+    "id": "cat_ro_20yd",
+    "lob": "rolloff",
+    "name": "20 yd rolloff box",
+    "sizeLabel": "20 yd",
+    "unit": "box",
+    "rolloff": {
+      "includedTons": 3,
+      "includedDays": 30,
+      "extraDayCents": 700,
+      "overageCentsPerTon": 7000,
+      "maxRentalDays": 90,
+      "overageTiers": [
+        {
+          "aboveTons": 3,
+          "centsPerTon": 9000
+        }
+      ]
+    },
+    "public": false,
+    "categoryId": "sc_ro_boxes",
+    "priceUnit": "haul",
+    "pricedBy": [
+      "zone",
+      "serviceSpeed"
+    ]
+  },
+  {
+    "id": "cat_fl_4yd",
+    "lob": "frontload",
+    "name": "4 yd frontload container",
+    "sizeLabel": "4 yd",
+    "unit": "container",
+    "public": false,
+    "categoryId": "sc_fl_trash",
+    "priceUnit": "month",
+    "pricedBy": [
+      "zone",
+      "frequency"
+    ]
+  },
+  {
+    "id": "cat_fl_6yd",
+    "lob": "frontload",
+    "name": "6 yd frontload container",
+    "sizeLabel": "6 yd",
+    "unit": "container",
+    "public": false,
+    "categoryId": "sc_fl_trash",
+    "priceUnit": "month",
+    "pricedBy": [
+      "zone",
+      "frequency"
+    ]
+  },
+  {
+    "id": "cat_fl_8yd",
+    "lob": "frontload",
+    "name": "8 yd frontload container",
+    "sizeLabel": "8 yd",
+    "unit": "container",
+    "public": false,
+    "categoryId": "sc_fl_trash",
+    "priceUnit": "month",
+    "pricedBy": [
+      "zone",
+      "frequency"
+    ]
+  },
+  {
+    "id": "cat_ro_10yd",
+    "lob": "rolloff",
+    "name": "10 yd rolloff box",
+    "sizeLabel": "10 yd",
+    "unit": "box",
+    "rolloff": {
+      "includedTons": 2,
+      "includedDays": 30,
+      "extraDayCents": 700,
+      "overageCentsPerTon": 7000,
+      "maxRentalDays": 90,
+      "overageTiers": [
+        {
+          "aboveTons": 3,
+          "centsPerTon": 9000
+        }
+      ]
+    },
+    "public": false,
+    "categoryId": "sc_ro_boxes",
+    "priceUnit": "haul",
+    "pricedBy": [
+      "zone",
+      "serviceSpeed"
+    ]
+  },
+  {
+    "id": "cat_ro_30yd",
+    "lob": "rolloff",
+    "name": "30 yd rolloff box",
+    "sizeLabel": "30 yd",
+    "unit": "box",
+    "rolloff": {
+      "includedTons": 4,
+      "includedDays": 30,
+      "extraDayCents": 700,
+      "overageCentsPerTon": 7000,
+      "maxRentalDays": 90,
+      "overageTiers": [
+        {
+          "aboveTons": 3,
+          "centsPerTon": 9000
+        }
+      ]
+    },
+    "public": false,
+    "categoryId": "sc_ro_boxes",
+    "priceUnit": "haul",
+    "pricedBy": [
+      "zone",
+      "serviceSpeed"
+    ]
+  },
+  {
+    "id": "cat_ro_40yd",
+    "lob": "rolloff",
+    "name": "40 yd rolloff box",
+    "sizeLabel": "40 yd",
+    "unit": "box",
+    "rolloff": {
+      "includedTons": 5,
+      "includedDays": 30,
+      "extraDayCents": 700,
+      "overageCentsPerTon": 7000,
+      "maxRentalDays": 90,
+      "overageTiers": [
+        {
+          "aboveTons": 3,
+          "centsPerTon": 9000
+        }
+      ]
+    },
+    "public": false,
+    "categoryId": "sc_ro_boxes",
+    "priceUnit": "haul",
+    "pricedBy": [
+      "zone",
+      "serviceSpeed"
+    ]
+  },
+  {
+    "id": "cat_ro_compactor_30yd",
+    "lob": "rolloff",
+    "name": "30 yd compactor",
+    "sizeLabel": "30 yd",
+    "unit": "box",
+    "rolloff": {
+      "includedTons": 6,
+      "includedDays": 30,
+      "extraDayCents": 700,
+      "overageCentsPerTon": 7000,
+      "maxRentalDays": 90,
+      "overageTiers": [
+        {
+          "aboveTons": 3,
+          "centsPerTon": 9000
+        }
+      ]
+    },
+    "public": false,
+    "categoryId": "sc_ro_compactors",
+    "priceUnit": "haul",
+    "pricedBy": [
+      "zone",
+      "serviceSpeed"
+    ]
+  }
+]

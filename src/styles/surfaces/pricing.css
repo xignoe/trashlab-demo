@@ -1,0 +1,125 @@
+/*
+  Pricing surface (CHECKLIST.md box 2B.4). Everything here is scoped to .surface-pricing.
+
+  Sources: pricing/src/styles/tokens.css and the @theme inline block in pricing/src/index.css. Pricing's block 1 was
+  shared/tokens.css copied unchanged, which src/styles/tokens.css already provides on :root, so only pricing's own
+  names (its block 2 aliases) are declared below, scoped to the wrapper instead of :root (DESIGN.md rule 5).
+
+  Addendum K5: pricing's color token --tl-border is renamed --tl-border-color. In src/styles/tokens.css --tl-border is
+  the "1px solid" shorthand, so the old name would have painted a shorthand into a color slot.
+
+  Line heights: pricing's `mono` and `eyebrow` sizes carried no line height, so their text inherited the body's line
+  height, pricing's --tl-leading-body (= --tl-leading-normal, 1.5). The bridge needs a value, so both are set to that.
+
+  tokens.css has its own @theme block that sets leading-tight to 1.15 and tracking-tight to -0.01em app wide. Pricing
+  never imported that block (its tokens.css had no @theme), so its leading-tight and tracking-tight were Tailwind's
+  defaults, 1.25 and -0.025em. Both are set back inside the wrapper.
+
+  Pricing used no pattern classes (only utilities), so there is nothing else to nest.
+*/
+
+.surface-pricing {
+  /* Pricing's own names (pricing/src/styles/tokens.css block 2), aliases of the shared Paper values. */
+  --tl-border-color: var(--tl-line);
+  --tl-text: var(--tl-ink);
+  --tl-text-muted: var(--tl-ink-2);
+  --tl-accent-strong: var(--tl-brand);
+  --tl-success: var(--tl-ok);
+  --tl-success-soft: var(--tl-ok-soft);
+  --tl-warning: var(--tl-warn);
+  --tl-warning-soft: var(--tl-warn-soft);
+  --tl-text-display: var(--tl-text-28);
+  --tl-text-h1: var(--tl-text-22);
+  --tl-text-h2: var(--tl-text-15);
+  --tl-text-body: var(--tl-text-14);
+  --tl-text-small: var(--tl-text-12);
+  --tl-text-mono: var(--tl-text-13);
+  --tl-text-eyebrow: var(--tl-text-11);
+  --tl-leading-body: var(--tl-leading-normal);
+  --tl-tracking-eyebrow: var(--tl-tracking-caps);
+  --tl-page-gutter: var(--tl-page-inline);
+  --tl-shadow-raised: var(--tl-shadow-panel);
+
+  /* Theme bridge: every name pricing's @theme inline block declared, set to the value it pointed at there. */
+  --rt-color-bg: var(--tl-bg);
+  --rt-color-surface: var(--tl-surface);
+  --rt-color-surface-muted: var(--tl-surface-muted);
+  --rt-color-line: var(--tl-border-color);
+  --rt-color-ink: var(--tl-text);
+  --rt-color-muted: var(--tl-text-muted);
+  --rt-color-accent: var(--tl-accent);
+  --rt-color-accent-soft: var(--tl-accent-soft);
+  --rt-color-accent-strong: var(--tl-accent-strong);
+  --rt-color-success: var(--tl-success);
+  --rt-color-success-soft: var(--tl-success-soft);
+  --rt-color-warning: var(--tl-warning);
+  --rt-color-warning-soft: var(--tl-warning-soft);
+  --rt-color-danger: var(--tl-danger);
+  --rt-color-danger-soft: var(--tl-danger-soft);
+  --rt-color-info: var(--tl-info);
+
+  --rt-font-sans: var(--tl-font-sans);
+  --rt-font-mono: var(--tl-font-mono);
+
+  --rt-text-display: var(--tl-text-display);
+  --rt-text-display--line-height: var(--tl-leading-tight);
+  --rt-text-h1: var(--tl-text-h1);
+  --rt-text-h1--line-height: var(--tl-leading-tight);
+  --rt-text-h2: var(--tl-text-h2);
+  --rt-text-h2--line-height: var(--tl-leading-tight);
+  --rt-text-body: var(--tl-text-body);
+  --rt-text-body--line-height: var(--tl-leading-body);
+  --rt-text-small: var(--tl-text-small);
+  --rt-text-small--line-height: var(--tl-leading-body);
+  --rt-text-mono: var(--tl-text-mono);
+  --rt-text-mono--line-height: var(--tl-leading-body);
+  --rt-text-eyebrow: var(--tl-text-eyebrow);
+  --rt-text-eyebrow--line-height: var(--tl-leading-body);
+
+  --rt-radius-sm: var(--tl-radius-sm);
+  --rt-radius-md: var(--tl-radius-md);
+  --rt-radius-card: var(--tl-radius-lg);
+  --rt-radius-pill: var(--tl-radius-pill);
+
+  --rt-shadow-card: var(--tl-shadow-card);
+  --rt-shadow-raised: var(--tl-shadow-raised);
+
+  /* Tailwind's own leading-tight and tracking-tight, which pricing had (see the header). */
+  --leading-tight: 1.25;
+  --tracking-tight: -0.025em;
+
+
+  /* Ground: what pricing/src/index.css set on body and on App's root div (min-h-screen bg-bg text-ink). */
+  min-height: calc(100vh - var(--pb-height, 48px));
+  background: var(--tl-bg);
+  color: var(--tl-text);
+  font-family: var(--tl-font-sans);
+  font-size: var(--tl-text-body);
+  line-height: var(--tl-leading-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  text-eyebrow collision, part 2 (PORT_DECISIONS.md, request 1). theme.css bridges both --color-eyebrow (account's
+  color) and --text-eyebrow (pricing's and storefront's font size). Tailwind 4 resolves the one class text-eyebrow to
+  the color alone, `.text-eyebrow { color: var(--rt-color-eyebrow) }`, so in the merged build text-eyebrow never set
+  a font size: pricing's 11px eyebrows, pills, and table headers rendered at the inherited 14px.
+
+  Resolved at the root (DECISIONS.md entry 28): the bridge no longer declares an eyebrow color, so text-eyebrow now
+  sets the size on its own and these rules are redundant but harmless. Originally, pricing restored the size here, scoped to the wrapper and without renaming a
+  class. These rules are unlayered, so they win over the utility; line-height still honours an explicit leading-*
+  through --tw-leading, exactly as a Tailwind text size does. Because the utility's color can also win over a color
+  class that sorts before "eyebrow", each color class pricing pairs with text-eyebrow is pinned explicitly.
+*/
+.surface-pricing .text-eyebrow {
+  font-size: var(--rt-text-eyebrow);
+  line-height: var(--tw-leading, var(--rt-text-eyebrow--line-height));
+}
+.surface-pricing .text-eyebrow.text-accent { color: var(--rt-color-accent); }
+.surface-pricing .text-eyebrow.text-accent-soft { color: var(--rt-color-accent-soft); }
+.surface-pricing .text-eyebrow.text-muted { color: var(--rt-color-muted); }
+.surface-pricing .text-eyebrow.text-muted\/60 { color: color-mix(in oklab, var(--rt-color-muted) 60%, transparent); }
+.surface-pricing .text-eyebrow.text-ink { color: var(--rt-color-ink); }
+.surface-pricing .text-eyebrow.text-success { color: var(--rt-color-success); }
+.surface-pricing .text-eyebrow.text-warning { color: var(--rt-color-warning); }
+.surface-pricing .text-eyebrow.text-danger { color: var(--rt-color-danger); }

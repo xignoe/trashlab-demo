@@ -1,0 +1,10 @@
+{
+  "name": "trashlab-checkin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "status": "python3 build_status.py --run-builds",
+    "shots": "node shots.mjs"
+  },
+  "devDependencies": { "puppeteer-core": "^22.0.0" }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "quote_held_ridge",
+    "kind": "residentialSignup",
+    "address": "1180 Ridge Hollow Rd, Piedmont, GA 30512",
+    "zoneId": "zone_boundary",
+    "lines": [
+      {
+        "catalogId": "cat_res_96",
+        "qty": 1,
+        "frequency": "weekly",
+        "priceCents": 3100
+      }
+    ],
+    "dueTodayCents": 13623,
+    "recurringCents": 10948,
+    "status": "held",
+    "holdReason": "confirm private road access",
+    "holdDeadline": "2026-09-11T10:00:00-04:00",
+    "expiresAt": "2026-09-17T23:59:59-04:00",
+    "paymentTokenId": "tok_ridge_4242",
+    "createdVia": "storefront"
+  },
+  {
+    "id": "quote_bakery_request",
+    "kind": "commercialRequest",
+    "address": "880 Commerce St",
+    "zoneId": "zone_open",
+    "lines": [
+      {
+        "catalogId": "cat_fl_3yd",
+        "qty": 1,
+        "frequency": "3x",
+        "priceCents": 0
+      }
+    ],
+    "dueTodayCents": 0,
+    "recurringCents": 0,
+    "status": "draft",
+    "expiresAt": "2026-10-10T23:59:59-04:00",
+    "createdVia": "storefront"
+  }
+]

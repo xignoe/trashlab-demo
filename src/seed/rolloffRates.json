@@ -1,0 +1,236 @@
+[
+  {
+    "id": "rr_10yd_household_2026",
+    "catalogId": "cat_ro_10yd",
+    "materialId": "mat_household",
+    "available": true,
+    "haulDeltaCents": 2500,
+    "includedTons": 2,
+    "overageCentsPerTon": 8000,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_20yd_household_2026",
+    "catalogId": "cat_ro_20yd",
+    "materialId": "mat_household",
+    "available": true,
+    "haulDeltaCents": 2500,
+    "includedTons": 3,
+    "overageCentsPerTon": 8000,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_30yd_household_2026",
+    "catalogId": "cat_ro_30yd",
+    "materialId": "mat_household",
+    "available": true,
+    "haulDeltaCents": 2500,
+    "includedTons": 4,
+    "overageCentsPerTon": 8000,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_40yd_household_2026",
+    "catalogId": "cat_ro_40yd",
+    "materialId": "mat_household",
+    "available": true,
+    "haulDeltaCents": 2500,
+    "includedTons": 5,
+    "overageCentsPerTon": 8000,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_compactor_30yd_household_2026",
+    "catalogId": "cat_ro_compactor_30yd",
+    "materialId": "mat_household",
+    "available": false,
+    "haulDeltaCents": 0,
+    "includedTons": 0,
+    "overageCentsPerTon": 0,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_10yd_roofing_2026",
+    "catalogId": "cat_ro_10yd",
+    "materialId": "mat_roofing",
+    "available": true,
+    "haulDeltaCents": 5000,
+    "includedTons": 3,
+    "overageCentsPerTon": 6500,
+    "overageTiers": [
+      {
+        "aboveTons": 2,
+        "centsPerTon": 8500
+      }
+    ],
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_20yd_roofing_2026",
+    "catalogId": "cat_ro_20yd",
+    "materialId": "mat_roofing",
+    "available": true,
+    "haulDeltaCents": 7500,
+    "includedTons": 5,
+    "overageCentsPerTon": 6500,
+    "overageTiers": [
+      {
+        "aboveTons": 2,
+        "centsPerTon": 8500
+      }
+    ],
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_30yd_roofing_2026",
+    "catalogId": "cat_ro_30yd",
+    "materialId": "mat_roofing",
+    "available": false,
+    "haulDeltaCents": 0,
+    "includedTons": 0,
+    "overageCentsPerTon": 0,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_40yd_roofing_2026",
+    "catalogId": "cat_ro_40yd",
+    "materialId": "mat_roofing",
+    "available": false,
+    "haulDeltaCents": 0,
+    "includedTons": 0,
+    "overageCentsPerTon": 0,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_compactor_30yd_roofing_2026",
+    "catalogId": "cat_ro_compactor_30yd",
+    "materialId": "mat_roofing",
+    "available": false,
+    "haulDeltaCents": 0,
+    "includedTons": 0,
+    "overageCentsPerTon": 0,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_10yd_yard_2026",
+    "catalogId": "cat_ro_10yd",
+    "materialId": "mat_yard",
+    "available": true,
+    "haulDeltaCents": -2500,
+    "includedTons": 2,
+    "overageCentsPerTon": 5500,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_20yd_yard_2026",
+    "catalogId": "cat_ro_20yd",
+    "materialId": "mat_yard",
+    "available": true,
+    "haulDeltaCents": -2500,
+    "includedTons": 3,
+    "overageCentsPerTon": 5500,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_30yd_yard_2026",
+    "catalogId": "cat_ro_30yd",
+    "materialId": "mat_yard",
+    "available": true,
+    "haulDeltaCents": -2500,
+    "includedTons": 4,
+    "overageCentsPerTon": 5500,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_40yd_yard_2026",
+    "catalogId": "cat_ro_40yd",
+    "materialId": "mat_yard",
+    "available": true,
+    "haulDeltaCents": -2500,
+    "includedTons": 5,
+    "overageCentsPerTon": 5500,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_compactor_30yd_yard_2026",
+    "catalogId": "cat_ro_compactor_30yd",
+    "materialId": "mat_yard",
+    "available": false,
+    "haulDeltaCents": 0,
+    "includedTons": 0,
+    "overageCentsPerTon": 0,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_10yd_clean_fill_2026",
+    "catalogId": "cat_ro_10yd",
+    "materialId": "mat_clean_fill",
+    "available": true,
+    "haulDeltaCents": 0,
+    "includedTons": 8,
+    "overageCentsPerTon": 4000,
+    "minBilledTons": 4,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_20yd_clean_fill_2026",
+    "catalogId": "cat_ro_20yd",
+    "materialId": "mat_clean_fill",
+    "available": true,
+    "haulDeltaCents": 5000,
+    "includedTons": 10,
+    "overageCentsPerTon": 4000,
+    "minBilledTons": 5,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_30yd_clean_fill_2026",
+    "catalogId": "cat_ro_30yd",
+    "materialId": "mat_clean_fill",
+    "available": false,
+    "haulDeltaCents": 0,
+    "includedTons": 0,
+    "overageCentsPerTon": 0,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_40yd_clean_fill_2026",
+    "catalogId": "cat_ro_40yd",
+    "materialId": "mat_clean_fill",
+    "available": false,
+    "haulDeltaCents": 0,
+    "includedTons": 0,
+    "overageCentsPerTon": 0,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  },
+  {
+    "id": "rr_compactor_30yd_clean_fill_2026",
+    "catalogId": "cat_ro_compactor_30yd",
+    "materialId": "mat_clean_fill",
+    "available": false,
+    "haulDeltaCents": 0,
+    "includedTons": 0,
+    "overageCentsPerTon": 0,
+    "effectiveFrom": "2026-01-01",
+    "publishedAt": "2025-12-15T09:00:00-05:00"
+  }
+]

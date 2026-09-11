@@ -1,0 +1,41 @@
+[
+  {
+    "id": "wo_ro_homeowner_deliver",
+    "siteId": "site_ro_homeowner",
+    "kind": "deliver",
+    "status": "done",
+    "scheduledFor": "2026-08-07",
+    "serviceItemId": "si_ro_homeowner",
+    "containerId": "cont_ro_homeowner",
+    "completedAt": "2026-08-07T09:30:00"
+  },
+  {
+    "id": "wo_hale_001",
+    "siteId": "site_hale_1",
+    "kind": "dumpAndReturn",
+    "status": "done",
+    "scheduledFor": "2026-09-03",
+    "serviceItemId": "si_hale_1_ro_a",
+    "containerId": "cont_hale_1_ro_a",
+    "completedAt": "2026-09-03T11:10:00"
+  },
+  {
+    "id": "wo_hale_002",
+    "siteId": "site_hale_2",
+    "kind": "dumpAndReturn",
+    "status": "done",
+    "scheduledFor": "2026-08-27",
+    "serviceItemId": "si_hale_2_ro_a",
+    "containerId": "cont_hale_2_ro_a",
+    "completedAt": "2026-08-27T14:40:00"
+  },
+  {
+    "id": "wo_hale_003",
+    "siteId": "site_hale_1",
+    "kind": "recovery",
+    "status": "scheduled",
+    "scheduledFor": "2026-09-10",
+    "serviceItemId": "si_hale_1_ro_b",
+    "containerId": "cont_hale_1_ro_b"
+  }
+]

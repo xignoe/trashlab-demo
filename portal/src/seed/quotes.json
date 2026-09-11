@@ -1,0 +1,43 @@
+[
+  {
+    "id": "quote_held_ridge",
+    "kind": "residentialSignup",
+    "address": "18 Ridge Hollow Rd",
+    "zoneId": "zone_boundary",
+    "lines": [
+      {
+        "catalogId": "cat_res_96",
+        "qty": 1,
+        "frequency": "weekly",
+        "priceCents": 2900
+      }
+    ],
+    "dueTodayCents": 11200,
+    "recurringCents": 2900,
+    "status": "held",
+    "holdReason": "confirm private road access",
+    "holdDeadline": "2026-09-11T10:00:00",
+    "expiresAt": "2026-09-24T23:59:59",
+    "paymentTokenId": "tok_ridge_7f31",
+    "createdVia": "storefront"
+  },
+  {
+    "id": "quote_bakery_request",
+    "kind": "commercialRequest",
+    "address": "220 Commerce St",
+    "zoneId": "zone_open",
+    "lines": [
+      {
+        "catalogId": "cat_fl_2yd",
+        "qty": 1,
+        "frequency": "3x",
+        "priceCents": 0
+      }
+    ],
+    "dueTodayCents": 0,
+    "recurringCents": 0,
+    "status": "draft",
+    "expiresAt": "2026-10-10T23:59:59",
+    "createdVia": "storefront"
+  }
+]

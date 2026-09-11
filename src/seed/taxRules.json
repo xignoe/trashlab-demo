@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tax_zone_open",
+    "zoneId": "zone_open",
+    "ratePct": 7,
+    "appliesTo": [
+      "recurring",
+      "event",
+      "fee"
+    ],
+    "name": "Sales tax, state and county",
+    "jurisdiction": "state"
+  },
+  {
+    "id": "tax_zone_boundary",
+    "zoneId": "zone_boundary",
+    "ratePct": 7,
+    "appliesTo": [
+      "recurring",
+      "event",
+      "fee"
+    ],
+    "name": "Sales tax, state and county",
+    "jurisdiction": "state"
+  },
+  {
+    "id": "tax_zone_franchise",
+    "zoneId": "zone_franchise",
+    "ratePct": 7,
+    "appliesTo": [
+      "recurring",
+      "event",
+      "fee"
+    ],
+    "name": "Sales tax, state and county",
+    "jurisdiction": "state"
+  }
+]

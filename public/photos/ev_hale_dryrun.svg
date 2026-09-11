@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" role="img" aria-label="Driver photo placeholder: dryRun, 2200 Industrial Pkwy, 2026-09-03">
+  <rect width="320" height="240" fill="#4A5563"/>
+  <rect x="16" y="16" width="288" height="208" fill="none" stroke="#CBD2DA" stroke-width="2" stroke-dasharray="6 6"/>
+  <text x="160" y="112" text-anchor="middle" font-family="IBM Plex Mono, Menlo, monospace" font-size="16" fill="#F2F4F6">driver photo</text>
+  <text x="160" y="140" text-anchor="middle" font-family="IBM Plex Mono, Menlo, monospace" font-size="14" fill="#E8ECF0">dryRun, 2200 Industrial Pkwy, 2026-09-03</text>
+</svg>

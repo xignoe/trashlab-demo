@@ -1,0 +1,408 @@
+[
+  {
+    "id": "site_maple",
+    "accountId": "acct_res_maple",
+    "occupantPartyId": "party_maple",
+    "address": "412 Maple Hollow Ln",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res",
+    "accessNotes": "Cart at end of driveway, left of mailbox"
+  },
+  {
+    "id": "site_holt",
+    "accountId": "acct_res_holt",
+    "occupantPartyId": "party_holt",
+    "address": "77 Brookside Ct",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_kerr",
+    "accountId": "acct_res_kerr",
+    "occupantPartyId": "party_kerr",
+    "address": "1509 Old Mill Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_bakery",
+    "accountId": "acct_bakery",
+    "occupantPartyId": "party_bakery",
+    "address": "220 Commerce St",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl",
+    "accessNotes": "Enclosure behind the loading dock, gate code 4411"
+  },
+  {
+    "id": "site_oak_1",
+    "accountId": "acct_pm_oakridge",
+    "occupantPartyId": "party_oakridge",
+    "address": "100 Oakridge Commons, Bldg A",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl",
+    "poNumber": "PO-OAK-1041",
+    "accessNotes": "Enclosure keyed, driver has key 12"
+  },
+  {
+    "id": "site_oak_2",
+    "accountId": "acct_pm_oakridge",
+    "occupantPartyId": "party_oakridge",
+    "address": "100 Oakridge Commons, Bldg B",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl",
+    "poNumber": "PO-OAK-1042",
+    "accessNotes": "Enclosure keyed, driver has key 12"
+  },
+  {
+    "id": "site_oak_3",
+    "accountId": "acct_pm_oakridge",
+    "occupantPartyId": "party_oakridge",
+    "address": "35 Ridgeview Plaza",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl",
+    "poNumber": "PO-OAK-1107",
+    "accessNotes": "Enclosure keyed, driver has key 12"
+  },
+  {
+    "id": "site_oak_4",
+    "accountId": "acct_pm_oakridge",
+    "occupantPartyId": "party_oakridge",
+    "address": "8 Elmwood Terrace Apartments",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl",
+    "poNumber": "PO-OAK-1210",
+    "accessNotes": "Enclosure keyed, driver has key 12"
+  },
+  {
+    "id": "site_hale_job1",
+    "accountId": "acct_contractor_hale",
+    "occupantPartyId": "party_hale",
+    "address": "900 Riverbend Pkwy, lot 14",
+    "zoneId": "zone_open",
+    "routeId": "route_thu_ro",
+    "poNumber": "HALE-JOB-2231",
+    "accessNotes": "Site trailer on the left, boxes staged by the fence"
+  },
+  {
+    "id": "site_hale_job2",
+    "accountId": "acct_contractor_hale",
+    "occupantPartyId": "party_hale",
+    "address": "61 Quarry Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_thu_ro",
+    "poNumber": "HALE-JOB-2240"
+  },
+  {
+    "id": "site_raman",
+    "accountId": "acct_ro_homeowner",
+    "occupantPartyId": "party_raman",
+    "address": "34 Larkspur Dr",
+    "zoneId": "zone_open",
+    "routeId": "route_thu_ro",
+    "accessNotes": "Box on the driveway apron, keep clear of the garage door"
+  },
+  {
+    "id": "site_res_001",
+    "accountId": "acct_res_001",
+    "occupantPartyId": "party_res_001",
+    "address": "113 Cedar Loop",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_002",
+    "accountId": "acct_res_002",
+    "occupantPartyId": "party_res_002",
+    "address": "126 Willow Bend",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_003",
+    "accountId": "acct_res_003",
+    "occupantPartyId": "party_res_003",
+    "address": "139 Hickory Ct",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_004",
+    "accountId": "acct_res_004",
+    "occupantPartyId": "party_res_004",
+    "address": "152 Laurel Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_005",
+    "accountId": "acct_res_005",
+    "occupantPartyId": "party_res_005",
+    "address": "165 Sycamore Way",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_006",
+    "accountId": "acct_res_006",
+    "occupantPartyId": "party_res_006",
+    "address": "178 Birch Hollow",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_007",
+    "accountId": "acct_res_007",
+    "occupantPartyId": "party_res_007",
+    "address": "191 Chestnut St",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_008",
+    "accountId": "acct_res_008",
+    "occupantPartyId": "party_res_008",
+    "address": "204 Poplar Trl",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_009",
+    "accountId": "acct_res_009",
+    "occupantPartyId": "party_res_009",
+    "address": "217 Magnolia Pl",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_010",
+    "accountId": "acct_res_010",
+    "occupantPartyId": "party_res_010",
+    "address": "230 Pine Ridge Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_011",
+    "accountId": "acct_res_011",
+    "occupantPartyId": "party_res_011",
+    "address": "243 Cedar Loop",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_012",
+    "accountId": "acct_res_012",
+    "occupantPartyId": "party_res_012",
+    "address": "256 Willow Bend",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_013",
+    "accountId": "acct_res_013",
+    "occupantPartyId": "party_res_013",
+    "address": "269 Hickory Ct",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_014",
+    "accountId": "acct_res_014",
+    "occupantPartyId": "party_res_014",
+    "address": "282 Laurel Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_015",
+    "accountId": "acct_res_015",
+    "occupantPartyId": "party_res_015",
+    "address": "295 Sycamore Way",
+    "zoneId": "zone_open",
+    "routeId": "route_mon_res"
+  },
+  {
+    "id": "site_res_016",
+    "accountId": "acct_res_016",
+    "occupantPartyId": "party_res_016",
+    "address": "308 Birch Hollow",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_017",
+    "accountId": "acct_res_017",
+    "occupantPartyId": "party_res_017",
+    "address": "321 Chestnut St",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_018",
+    "accountId": "acct_res_018",
+    "occupantPartyId": "party_res_018",
+    "address": "334 Poplar Trl",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_019",
+    "accountId": "acct_res_019",
+    "occupantPartyId": "party_res_019",
+    "address": "347 Magnolia Pl",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_020",
+    "accountId": "acct_res_020",
+    "occupantPartyId": "party_res_020",
+    "address": "360 Pine Ridge Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_021",
+    "accountId": "acct_res_021",
+    "occupantPartyId": "party_res_021",
+    "address": "373 Cedar Loop",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_022",
+    "accountId": "acct_res_022",
+    "occupantPartyId": "party_res_022",
+    "address": "386 Willow Bend",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_023",
+    "accountId": "acct_res_023",
+    "occupantPartyId": "party_res_023",
+    "address": "399 Hickory Ct",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_024",
+    "accountId": "acct_res_024",
+    "occupantPartyId": "party_res_024",
+    "address": "412 Laurel Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_025",
+    "accountId": "acct_res_025",
+    "occupantPartyId": "party_res_025",
+    "address": "425 Sycamore Way",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_026",
+    "accountId": "acct_res_026",
+    "occupantPartyId": "party_res_026",
+    "address": "438 Birch Hollow",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_027",
+    "accountId": "acct_res_027",
+    "occupantPartyId": "party_res_027",
+    "address": "451 Chestnut St",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_028",
+    "accountId": "acct_res_028",
+    "occupantPartyId": "party_res_028",
+    "address": "464 Poplar Trl",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_029",
+    "accountId": "acct_res_029",
+    "occupantPartyId": "party_res_029",
+    "address": "477 Magnolia Pl",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_res_030",
+    "accountId": "acct_res_030",
+    "occupantPartyId": "party_res_030",
+    "address": "490 Pine Ridge Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_tue_res"
+  },
+  {
+    "id": "site_fl_001",
+    "accountId": "acct_fl_001",
+    "occupantPartyId": "party_fl_001",
+    "address": "1400 Industrial Blvd",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_002",
+    "accountId": "acct_fl_002",
+    "occupantPartyId": "party_fl_002",
+    "address": "52 Main St",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_003",
+    "accountId": "acct_fl_003",
+    "occupantPartyId": "party_fl_003",
+    "address": "780 Northgate Dr",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_004",
+    "accountId": "acct_fl_004",
+    "occupantPartyId": "party_fl_004",
+    "address": "215 Elm St",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_005",
+    "accountId": "acct_fl_005",
+    "occupantPartyId": "party_fl_005",
+    "address": "99 Heron Way",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_006",
+    "accountId": "acct_fl_006",
+    "occupantPartyId": "party_fl_006",
+    "address": "3300 Summit Ave",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_007",
+    "accountId": "acct_fl_007",
+    "occupantPartyId": "party_fl_007",
+    "address": "17 Harbor Ln",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  },
+  {
+    "id": "site_fl_008",
+    "accountId": "acct_fl_008",
+    "occupantPartyId": "party_fl_008",
+    "address": "640 Lakeside Rd",
+    "zoneId": "zone_open",
+    "routeId": "route_wed_fl"
+  }
+]

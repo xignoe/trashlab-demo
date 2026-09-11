@@ -1,0 +1,174 @@
+/* Design tokens for the TrashLab account view.
+   Source: PAPER_TOKENS.md, the computed styles the manager extracted on 2026-09-10 from Paper file
+   01M24VYMM89TECB7A4ZC0WYY57, artboard "Haul-E Dispatch, Agent Console" (node 1-0, 1440x900).
+   Every light value below is read from that artboard unless its comment says "chosen" (no such color on
+   the artboard, picked to sit with it) or "derived" (a lighter or darker step of an artboard color).
+   The artboard is light only; every dark value is derived from the same navy scene, never read from Paper.
+   Token names from Phase 1 are all kept so component code keeps working. See DESIGN.md for the full map. */
+
+:root {
+  /* ground and surfaces */
+  --bg: #F7F7FF;            /* artboard background, also the reasoning inset */
+  --surface: #FFFFFF;       /* approval cards, activity card, autopilot pill */
+  --surface-2: #ECEBFF;     /* icon tile background; muted panels and the rail */
+  --surface-3: #F7F7FF;     /* reasoning inset; table stripes and hover (same as ground) */
+
+  /* ink */
+  --ink: #1A174F;           /* headings, card titles, body */
+  --ink-2: #6260AF;         /* subtitles, meta lines, tertiary text */
+  --ink-3: #8B89C4;         /* chosen: a lighter step of ink muted for hints and placeholders */
+
+  /* lines */
+  --line: #D3D1FF;          /* approval card border, autopilot pill border */
+  --line-quiet: #ECEBFF;    /* compact row border, secondary button border */
+
+  /* brand and accents */
+  --accent: #312D97;        /* brand navy: nav bar, primary button fill, route health card */
+  --accent-ink: #2F2A90;    /* secondary button label; link ink */
+  --accent-2: #818DF0;      /* periwinkle: inset left rule, avatar fill, adjusted bar */
+  --eyebrow: #5149D7;       /* uppercase 11px labels */
+  --code-bg: #ECEBFF;       /* icon tile background reused for inline code */
+  --gap-bg: #FFF4DF;        /* kept from Phase 1; now the amber pill background */
+
+  /* on-navy: text and controls drawn on the brand navy (nav bar, route health card) */
+  --on-accent: #FFFFFF;             /* wordmark, big stat, card head label on navy */
+  --on-accent-2: #D3D1FF;           /* lavender secondary text on navy */
+  --on-accent-line: #FFFFFF1A;      /* nav bar hairline */
+  --on-accent-active: #FFFFFF1F;    /* active nav tab, progress track */
+  --on-accent-border: #FFFFFF29;    /* search border on navy */
+
+  /* status pairs: dot or text color on a tinted background */
+  --warn: #F5A524;          /* "Decide by 11:30" dot, "down" bar */
+  --warn-bg: #FFF4DF;       /* "Decide by" pill background */
+  --info: #10D6E6;          /* "on time" progress bar */
+  --info-bg: #E0FBFD;       /* chosen: cyan tint at the amber pill's lightness */
+  --ok: #1F9D6B;            /* chosen: no green on the artboard */
+  --ok-bg: #E3F6EE;         /* chosen */
+  --danger: #C8382D;        /* chosen: no red on the artboard */
+  --danger-bg: #FDE8E6;     /* chosen */
+  --hold: #5149D7;          /* chosen: the eyebrow indigo, so hold reads distinct from ok, warn, danger */
+  --hold-bg: #ECEBFF;       /* chosen: icon tile background */
+
+  /* type: one family on the artboard (Manrope 500, 600, 700, 800); mono is a chosen addition for money and ids */
+  --font-heading: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --text-2xs: 11px;         /* eyebrow, line 14 */
+  --text-xs: 12px;          /* pill and small label, line 16 */
+  --text-sm: 13px;          /* meta and subtitle, line 16 */
+  --text-base: 14px;        /* body, line 21; button label and page subtitle, line 18 */
+  --text-md: 15px;          /* card head label, line 18 */
+  --text-lg: 16px;          /* card title, line 22 */
+  --text-xl: 22px;          /* chosen: section title step between card title and page title */
+  --text-2xl: 28px;         /* page title, line 34, tracking -0.01em */
+  --text-3xl: 44px;         /* big stat, line 44, weight 800, tracking -0.02em */
+  --weight-meta: 500;
+  --weight-label: 600;
+  --weight-heading: 700;
+  --weight-stat: 800;
+
+  /* shape */
+  --radius-xs: 4px;         /* chosen: inline code chips */
+  --radius-sm: 8px;         /* fields */
+  --radius-md: 12px;        /* inset blocks, icon tiles */
+  --radius-lg: 16px;        /* cards */
+  --radius-pill: 999px;     /* pills, buttons, search, avatar */
+  --shadow-card: 0px 10px 15px -3px #D3D1FF66, 0px 4px 6px -4px #D3D1FF66;
+  --shadow-drawer: -8px 0 24px #1A174F1F;   /* derived: ink at 12% for the side drawer */
+
+  /* spacing scale plus the artboard's named measures */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --card-pad-block: 22px;
+  --card-pad-inline: 24px;
+  --card-gap: 16px;
+  --control-height: 40px;   /* buttons and fields */
+  --nav-height: 64px;
+  --page-inline: 40px;
+  --page-top: 36px;
+  --main-width: 936px;
+  --side-width: 400px;
+  --workspace-gap: 24px;
+  --drawer-width: 420px;
+  --rail-width: 260px;
+  color-scheme: light dark;
+}
+
+/* Dark values: derived from the same navy scene (PAPER_TOKENS.md names ground, surface, line, ink, ink muted;
+   the rest are derived steps of those). Same three-state guard as before: system dark unless the app pins light. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14123A;
+    --surface: #1E1B4F;
+    --surface-2: #2A2668;
+    --surface-3: #232059;
+    --ink: #EEEDFF;
+    --ink-2: #B4B2E6;
+    --ink-3: #8D8BC9;
+    --line: #3A368A;
+    --line-quiet: #2A2668;
+    --accent: #6F7BEA;
+    --accent-ink: #A9B2F5;
+    --accent-2: #98A3F5;
+    --eyebrow: #A9B2F5;
+    --code-bg: #2A2668;
+    --gap-bg: #3D2E10;
+    --on-accent: #FFFFFF;
+    --on-accent-2: #D3D1FF;
+    --on-accent-line: #FFFFFF1A;
+    --on-accent-active: #FFFFFF1F;
+    --on-accent-border: #FFFFFF29;
+    --warn: #F5A524;
+    --warn-bg: #3D2E10;
+    --info: #10D6E6;
+    --info-bg: #0F3A44;
+    --ok: #3FBF8A;
+    --ok-bg: #123A2C;
+    --danger: #F0766B;
+    --danger-bg: #45201D;
+    --hold: #A9B2F5;
+    --hold-bg: #2A2668;
+    --shadow-card: 0px 10px 15px -3px #00000066, 0px 4px 6px -4px #00000066;
+    --shadow-drawer: -8px 0 24px #00000080;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #14123A;
+  --surface: #1E1B4F;
+  --surface-2: #2A2668;
+  --surface-3: #232059;
+  --ink: #EEEDFF;
+  --ink-2: #B4B2E6;
+  --ink-3: #8D8BC9;
+  --line: #3A368A;
+  --line-quiet: #2A2668;
+  --accent: #6F7BEA;
+  --accent-ink: #A9B2F5;
+  --accent-2: #98A3F5;
+  --eyebrow: #A9B2F5;
+  --code-bg: #2A2668;
+  --gap-bg: #3D2E10;
+  --on-accent: #FFFFFF;
+  --on-accent-2: #D3D1FF;
+  --on-accent-line: #FFFFFF1A;
+  --on-accent-active: #FFFFFF1F;
+  --on-accent-border: #FFFFFF29;
+  --warn: #F5A524;
+  --warn-bg: #3D2E10;
+  --info: #10D6E6;
+  --info-bg: #0F3A44;
+  --ok: #3FBF8A;
+  --ok-bg: #123A2C;
+  --danger: #F0766B;
+  --danger-bg: #45201D;
+  --hold: #A9B2F5;
+  --hold-bg: #2A2668;
+  --shadow-card: 0px 10px 15px -3px #00000066, 0px 4px 6px -4px #00000066;
+  --shadow-drawer: -8px 0 24px #00000080;
+}

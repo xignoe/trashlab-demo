@@ -1,0 +1,35 @@
+[
+  {
+    "id": "ticket_hale_1",
+    "workOrderId": "wo_hale_haul_1",
+    "containerId": "box_2001",
+    "facility": "Piedmont Transfer Station",
+    "material": "C&D",
+    "grossLbs": 30400,
+    "tareLbs": 22000,
+    "netLbs": 8400,
+    "ticketedAt": "2026-09-03T14:22:00-04:00"
+  },
+  {
+    "id": "ticket_hale_2",
+    "workOrderId": "wo_hale_haul_2",
+    "containerId": "box_2002",
+    "facility": "Piedmont Transfer Station",
+    "material": "C&D",
+    "grossLbs": 29100,
+    "tareLbs": 22000,
+    "netLbs": 7100,
+    "ticketedAt": "2026-09-08T11:05:00-04:00"
+  },
+  {
+    "id": "ticket_hale_3",
+    "workOrderId": "wo_hale_haul_3",
+    "containerId": "box_2003",
+    "facility": "Piedmont Transfer Station",
+    "material": "C&D",
+    "grossLbs": 26900,
+    "tareLbs": 22000,
+    "netLbs": 4900,
+    "ticketedAt": "2026-09-01T15:40:00-04:00"
+  }
+]

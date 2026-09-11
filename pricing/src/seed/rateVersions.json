@@ -1,0 +1,17 @@
+[
+  { "id": "rv_res_96_open_weekly_2024", "catalogId": "cat_res_96", "zoneId": "zone_open", "frequency": "weekly", "priceCents": 2700, "effectiveFrom": "2024-01-01", "status": "published", "publishedAt": "2023-12-15T09:00:00" },
+  { "id": "rv_res_96_open_weekly", "catalogId": "cat_res_96", "zoneId": "zone_open", "frequency": "weekly", "priceCents": 2900, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00", "supersedesId": "rv_res_96_open_weekly_2024" },
+  { "id": "rv_res_64_open_weekly", "catalogId": "cat_res_64", "zoneId": "zone_open", "frequency": "weekly", "priceCents": 2600, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_res_extra_open_weekly", "catalogId": "cat_res_extra_cart", "zoneId": "zone_open", "frequency": "weekly", "priceCents": 900, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_res_recycling_open_eow", "catalogId": "cat_res_recycling", "zoneId": "zone_open", "frequency": "eow", "priceCents": 1200, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_res_96_boundary_weekly", "catalogId": "cat_res_96", "zoneId": "zone_boundary", "frequency": "weekly", "priceCents": 3100, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_res_64_boundary_weekly", "catalogId": "cat_res_64", "zoneId": "zone_boundary", "frequency": "weekly", "priceCents": 2800, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_res_extra_boundary_weekly", "catalogId": "cat_res_extra_cart", "zoneId": "zone_boundary", "frequency": "weekly", "priceCents": 1000, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_res_recycling_boundary_eow", "catalogId": "cat_res_recycling", "zoneId": "zone_boundary", "frequency": "eow", "priceCents": 1300, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_fl_2yd_weekly", "catalogId": "cat_fl_2yd", "frequency": "weekly", "priceCents": 16000, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_fl_2yd_2x", "catalogId": "cat_fl_2yd", "frequency": "2x", "priceCents": 28000, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_fl_3yd_weekly", "catalogId": "cat_fl_3yd", "frequency": "weekly", "priceCents": 12500, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_fl_3yd_2x", "catalogId": "cat_fl_3yd", "frequency": "2x", "priceCents": 22000, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_fl_3yd_wood_2x", "catalogId": "cat_fl_3yd_wood", "frequency": "2x", "priceCents": 19000, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" },
+  { "id": "rv_ro_20yd", "catalogId": "cat_ro_20yd", "frequency": "onCall", "priceCents": 57500, "effectiveFrom": "2025-01-01", "status": "published", "publishedAt": "2024-12-10T09:00:00" }
+]

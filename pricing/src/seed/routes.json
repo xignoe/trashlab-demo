@@ -1,0 +1,83 @@
+[
+  {
+    "id": "route_mon_res",
+    "day": "Mon",
+    "lob": "residential",
+    "stopSiteIds": [
+      "site_res_maple",
+      "site_res_kerr",
+      "site_res_001",
+      "site_res_002",
+      "site_res_003",
+      "site_res_004",
+      "site_res_005",
+      "site_res_006",
+      "site_res_007",
+      "site_res_008",
+      "site_res_009",
+      "site_res_010",
+      "site_res_011",
+      "site_res_012",
+      "site_res_013",
+      "site_res_014",
+      "site_res_015"
+    ],
+    "capacityStops": 400
+  },
+  {
+    "id": "route_tue_res",
+    "day": "Tue",
+    "lob": "residential",
+    "stopSiteIds": [
+      "site_res_holt",
+      "site_res_016",
+      "site_res_017",
+      "site_res_018",
+      "site_res_019",
+      "site_res_020",
+      "site_res_021",
+      "site_res_022",
+      "site_res_023",
+      "site_res_024",
+      "site_res_025",
+      "site_res_026",
+      "site_res_027",
+      "site_res_028",
+      "site_res_029",
+      "site_res_030"
+    ],
+    "capacityStops": 400
+  },
+  {
+    "id": "route_wed_fl",
+    "day": "Wed",
+    "lob": "frontload",
+    "stopSiteIds": [
+      "site_bakery",
+      "site_oakridge_1",
+      "site_oakridge_2",
+      "site_oakridge_3",
+      "site_oakridge_4",
+      "site_fl_001",
+      "site_fl_002",
+      "site_fl_003",
+      "site_fl_004",
+      "site_fl_005",
+      "site_fl_006",
+      "site_fl_007",
+      "site_fl_008"
+    ],
+    "capacityStops": 120
+  },
+  {
+    "id": "route_thu_ro",
+    "day": "Thu",
+    "lob": "rolloff",
+    "stopSiteIds": [
+      "site_hale_1",
+      "site_hale_2",
+      "site_ro_homeowner"
+    ],
+    "capacityStops": 30
+  }
+]

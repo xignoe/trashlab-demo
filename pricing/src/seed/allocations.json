@@ -1,0 +1,20 @@
+[
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_oakridge",
+    "invoiceId": "inv_oakridge_0001",
+    "cents": 73672
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_oakridge",
+    "invoiceId": "inv_oakridge_0002",
+    "cents": 73672
+  },
+  {
+    "sourceType": "payment",
+    "sourceId": "pay_chk_oakridge",
+    "invoiceId": "inv_oakridge_0003",
+    "cents": 73672
+  }
+]

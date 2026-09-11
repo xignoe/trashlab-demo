@@ -1,0 +1,99 @@
+[
+  {
+    "id": "inv_res_maple_0001",
+    "accountId": "acct_res_maple",
+    "number": "INV-1001",
+    "chargeIds": [
+      "ch_res_maple_0001_96",
+      "ch_res_maple_0001_extra",
+      "ch_res_maple_0001_recycling"
+    ],
+    "subtotalCents": 7800,
+    "feeCents": 460,
+    "taxCents": 485,
+    "totalCents": 8745,
+    "issuedAt": "2026-07-01",
+    "dueAt": "2026-07-15",
+    "postedAt": "2026-07-01T06:00:00",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_bakery_0001",
+    "accountId": "acct_bakery",
+    "number": "INV-1002",
+    "chargeIds": [
+      "ch_bakery_0001_3yd",
+      "ch_bakery_0001_3yd_wood"
+    ],
+    "subtotalCents": 36900,
+    "feeCents": 2783,
+    "taxCents": 2764,
+    "totalCents": 42447,
+    "issuedAt": "2026-09-01",
+    "dueAt": "2026-09-15",
+    "postedAt": "2026-09-01T06:00:00",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_oakridge_0001",
+    "accountId": "acct_pm_oakridge",
+    "number": "INV-1010",
+    "chargeIds": [
+      "ch_oakridge_0001_site1",
+      "ch_oakridge_0001_site2",
+      "ch_oakridge_0001_site3",
+      "ch_oakridge_0001_site4"
+    ],
+    "subtotalCents": 64000,
+    "feeCents": 4880,
+    "taxCents": 4792,
+    "totalCents": 73672,
+    "issuedAt": "2026-06-30",
+    "dueAt": "2026-07-30",
+    "postedAt": "2026-06-30T18:00:00",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_oakridge_0002",
+    "accountId": "acct_pm_oakridge",
+    "number": "INV-1011",
+    "chargeIds": [
+      "ch_oakridge_0002_site1",
+      "ch_oakridge_0002_site2",
+      "ch_oakridge_0002_site3",
+      "ch_oakridge_0002_site4"
+    ],
+    "subtotalCents": 64000,
+    "feeCents": 4880,
+    "taxCents": 4792,
+    "totalCents": 73672,
+    "issuedAt": "2026-07-31",
+    "dueAt": "2026-08-30",
+    "postedAt": "2026-07-31T18:00:00",
+    "locked": true,
+    "deliveredVia": "email"
+  },
+  {
+    "id": "inv_oakridge_0003",
+    "accountId": "acct_pm_oakridge",
+    "number": "INV-1012",
+    "chargeIds": [
+      "ch_oakridge_0003_site1",
+      "ch_oakridge_0003_site2",
+      "ch_oakridge_0003_site3",
+      "ch_oakridge_0003_site4"
+    ],
+    "subtotalCents": 64000,
+    "feeCents": 4880,
+    "taxCents": 4792,
+    "totalCents": 73672,
+    "issuedAt": "2026-08-31",
+    "dueAt": "2026-09-30",
+    "postedAt": "2026-08-31T18:00:00",
+    "locked": true,
+    "deliveredVia": "email"
+  }
+]

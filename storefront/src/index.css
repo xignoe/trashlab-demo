@@ -1,0 +1,15 @@
+/* Addendum F2: the canonical --tl- tokens first, then the storefront names that alias them. */
+@import '../../shared/tokens.css';
+@import './styles/tokens.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+  -webkit-font-smoothing: antialiased;
+}
